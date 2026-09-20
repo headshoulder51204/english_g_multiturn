@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TalkieTown US - Kids & Teens American English Game</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="scenarios.js"></script>
+  <style>
+    @keyframes bounce-slow {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes pulse-ring {
+      0% { transform: scale(0.95); opacity: 0.8; }
+      50% { transform: scale(1.15); opacity: 0.4; }
+      100% { transform: scale(0.95); opacity: 0.8; }
+    }
+    .animate-bounce-slow {
+      animation: bounce-slow 2.4s ease-in-out infinite;
+    }
+    .animate-pulse-ring {
+      animation: pulse-ring 1.8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    .comic-border {
+      border: 3px solid #111827 !important;
+      box-shadow: 5px 5px 0px #111827 !important;
+    }
+    .comic-bubble {
+      position: relative;
+      background: #ffffff;
+      border: 3px solid #111827 !important;
+      box-shadow: 4px 4px 0px #111827 !important;
+    }
+    .comic-bubble::after {
+      content: '';
+      position: absolute;
+      bottom: -14px;
+      left: 36px;
+      border-width: 14px 14px 0;
+      border-style: solid;
+      border-color: #111827 transparent;
+      display: block;
+      width: 0;
+    }
+    .scene-art-container svg {
+      filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.08));
+    }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-900 antialiased p-3 sm:p-6 select-none min-h-screen flex items-center justify-center">
+  <!-- Main Container -->
+  <div id="game-app" class="w-full max-w-3xl mx-auto rounded-3xl p-4 sm:p-6 transition-all duration-300 shadow-xl border border-slate-200 bg-white">
+    
+    <!-- Top Control Bar -->
+    <header class="flex flex-wrap items-center justify-between gap-2 pb-4 mb-4 border-b border-slate-200">
+      <!-- Title & Branding -->
+      <div class="flex items-center gap-2">
+        <span id="brand-badge" class="text-2xl sm:text-3xl">🦁</span>
+        <div>
+          <h1 id="brand-title" class="font-extrabold text-lg sm:text-xl tracking-tight text-amber-500">TalkieTown US</h1>
+          <p id="brand-subtitle" class="text-xs text-slate-500 font-medium">Real American Spoken English & Slang</p>
+        </div>
+      </div>
+
+      <!-- Theme & Config Controls -->
+      <div class="flex flex-wrap items-center gap-1.5 sm:gap-2 text-xs">
+        <button id="theme-toggle-btn" onclick="toggleVisualTheme()" class="px-2.5 py-1.5 rounded-full font-bold transition-all shadow-sm flex items-center gap-1 bg-amber-100 hover:bg-amber-200 text-amber-900 cursor-pointer">
+          <span id="theme-btn-icon">🎨</span>
+          <span id="theme-btn-text">Cartoon Theme</span>
+        </button>
+
+        <button id="input-mode-btn" onclick="toggleInputMode()" class="px-2.5 py-1.5 rounded-full font-bold transition-all shadow-sm flex items-center gap-1 bg-blue-100 hover:bg-blue-200 text-blue-900 cursor-pointer">
+          <span id="mode-btn-icon">🎙️</span>
+          <span id="mode-btn-text">Voice Mode</span>
+        </button>
+
+        <button id="speed-toggle-btn" onclick="toggleTtsSpeed()" class="px-2.5 py-1.5 rounded-full font-bold transition-all shadow-sm flex items-center gap-1 bg-teal-100 hover:bg-teal-200 text-teal-900 cursor-pointer" title="원어민 발음 재생 속도 조절">
+          <span id="speed-btn-icon">🐰</span>
+          <span id="speed-btn-text">Normal</span>
+        </button>
+
+        <button id="sound-toggle-btn" onclick="toggleSoundFx()" class="px-2.5 py-1.5 rounded-full font-bold transition-all shadow-sm flex items-center gap-1 bg-purple-100 hover:bg-purple-200 text-purple-900 cursor-pointer" title="효과음 켜기/끄기">
+          <span id="sound-btn-icon">🔊</span>
+          <span id="sound-btn-text">Sound ON</span>
+        </button>
+
+        <button id="kr-tip-btn" onclick="toggleKoreanTip()" class="px-2.5 py-1.5 rounded-full font-bold transition-all shadow-sm flex items-center gap-1 bg-emerald-100 hover:bg-emerald-200 text-emerald-900 cursor-pointer">
+          <span>🇰🇷</span>
+          <span id="kr-tip-text">Tip ON</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- 4-Tier Age Navigation (Extensible Registry) -->
+    <nav class="grid grid-cols-2 sm:grid-cols-4 gap-1.5 sm:gap-2 mb-4 p-1.5 rounded-2xl bg-slate-100">
+      <button onclick="selectTier('tier1')" id="tier-btn-tier1" class="tier-tab py-1.5 px-2 rounded-xl font-bold text-xs text-center transition-all flex items-center justify-center gap-1 cursor-pointer">
+        <span>🐣</span> <span>만 6~8세</span>
+      </button>
+      <button onclick="selectTier('tier2')" id="tier-btn-tier2" class="tier-tab py-1.5 px-2 rounded-xl font-bold text-xs text-center transition-all flex items-center justify-center gap-1 shadow bg-white text-amber-500 cursor-pointer">
+        <span>🦁</span> <span>만 9~10세</span>
+      </button>
+      <button onclick="selectTier('tier3')" id="tier-btn-tier3" class="tier-tab py-1.5 px-2 rounded-xl font-bold text-xs text-center transition-all flex items-center justify-center gap-1 cursor-pointer">
+        <span>🚀</span> <span>만 11~13세</span>
+      </button>
+      <button onclick="selectTier('tier4')" id="tier-btn-tier4" class="tier-tab py-1.5 px-2 rounded-xl font-bold text-xs text-center transition-all flex items-center justify-center gap-1 cursor-pointer">
+        <span>🎸</span> <span>만 14~16세</span>
+      </button>
+    </nav>
+
+    <!-- Stage Area -->
+    <main id="stage-card" class="relative rounded-2xl p-4 sm:p-6 transition-all duration-300 bg-gradient-to-b from-amber-50 to-orange-50/40 border-2 border-amber-200">
+      
+      <!-- Top Stage Bar -->
+      <div class="flex items-center justify-between mb-3 text-xs font-semibold text-slate-500">
+        <span id="episode-tag" class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-amber-500/15 text-amber-800 font-extrabold text-xs">
+          📍 Episode 1/10: The Big Swing
+        </span>
+        <div class="flex items-center gap-2">
+          <span id="turn-indicator" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-blue-100 text-blue-900 font-extrabold text-xs">
+            💬 Turn 1/2
+          </span>
+          <span id="streak-badge" class="flex items-center gap-1 text-orange-500 font-extrabold">🔥 3 Streak</span>
+          <span id="stars-badge" class="flex items-center gap-1 text-yellow-500 font-extrabold">⭐ <span id="star-count">12</span></span>
+        </div>
+      </div>
+
+      <!-- Episode Visual Scene Artwork (Illustration Banner) -->
+      <div id="scene-art-box" class="scene-art-container w-full h-32 sm:h-36 rounded-2xl mb-4 overflow-hidden flex items-center justify-center relative shadow-inner border border-amber-200/80 bg-white">
+        <!-- SVG Artwork -->
+      </div>
+
+      <!-- Dialogue Scene -->
+      <div class="flex items-start gap-3 sm:gap-4 mb-4">
+        <div class="flex flex-col items-center shrink-0">
+          <div id="npc-avatar-box" class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-amber-400 flex items-center justify-center text-3xl sm:text-4xl shadow-md animate-bounce-slow">
+            🦁
+          </div>
+          <span id="npc-name" class="mt-1 font-extrabold text-xs text-slate-900">Leo</span>
+        </div>
+
+        <div class="flex-1">
+          <div id="dialogue-bubble" class="p-3.5 sm:p-4 rounded-2xl bg-white shadow-md border border-amber-200 transition-all relative">
+            <div class="flex items-center justify-between gap-2 mb-1">
+              <span id="bubble-subtitle" class="text-[11px] font-extrabold text-amber-500 uppercase tracking-wider">Friend says</span>
+              <button onclick="speakCurrentDialogue()" title="원어민 발음 듣기" class="p-1 px-2 rounded-lg hover:bg-amber-100 text-amber-600 flex items-center gap-1 text-xs font-bold transition cursor-pointer">
+                🔊 Listen
+              </button>
+            </div>
+            <p id="npc-sentence-en" class="font-bold text-base sm:text-lg text-slate-900 leading-snug">
+              "Hey! The big tire swing is open! Who's riding first?"
+            </p>
+            <p id="npc-sentence-kr" class="text-xs text-slate-500 mt-1">
+              "야! 대형 타이어 그네 비었다! 누가 먼저 탈래?"
+            </p>
+          </div>
+
+          <!-- Multi-Turn Tiki-Taka: NPC Reaction Bubble -->
+          <div id="npc-reaction-bubble" class="hidden mt-2.5 p-3 rounded-2xl bg-emerald-50 border-2 border-emerald-300 shadow-sm text-xs transition-all transform scale-95 opacity-0">
+            <div class="flex items-center justify-between gap-1 mb-1">
+              <span class="font-extrabold text-emerald-800 flex items-center gap-1">
+                <span>💬</span> <span id="npc-reaction-title">Friend's Reaction (티키타카)</span>
+              </span>
+              <button onclick="speakNpcReaction()" title="친구 반응 듣기" class="px-2 py-0.5 rounded bg-emerald-200/60 hover:bg-emerald-200 text-emerald-900 font-bold text-[11px] flex items-center gap-1 cursor-pointer">
+                🔊 Listen
+              </button>
+            </div>
+            <p id="npc-reaction-en" class="font-bold text-slate-900 text-sm sm:text-base leading-snug">
+              "Aw man, you were fast! Okay, you ride first!"
+            </p>
+            <p id="npc-reaction-kr" class="text-slate-600 text-xs mt-0.5">
+              "아깝다, 너 진짜 빨랐다! 그래 네가 먼저 타!"
+            </p>
+            <div class="mt-2.5 flex items-center justify-between">
+              <span id="next-turn-countdown" class="text-[11px] font-medium text-emerald-700">다음 대화로 연결 중... ⏱️</span>
+              <button id="next-turn-btn" onclick="advanceTurn()" class="px-3 py-1 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold text-xs shadow-md transition transform active:scale-95 cursor-pointer">
+                Next Turn ▶
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mission Prompt -->
+      <div class="text-center my-3">
+        <span class="inline-block px-3 py-0.5 rounded-full text-[11px] font-extrabold bg-amber-500 text-white shadow-sm uppercase tracking-wide">
+          🎯 YOUR MISSION
+        </span>
+        <h3 id="mission-prompt" class="font-extrabold text-sm sm:text-base text-slate-900 mt-1">
+          "내가 먼저 찜했어!"라고 현지 미국 구어체로 당당하게 외쳐보세요!
+        </h3>
+      </div>
+
+      <!-- Korean Cultural Nuance Tip Card -->
+      <div id="cultural-tip-card" class="mb-3.5 p-3 rounded-xl bg-amber-500/10 border border-amber-500/20 text-xs transition-all">
+        <p class="font-bold text-amber-800 flex items-center gap-1 mb-0.5">
+          💡 미국 현지 뉘앙스 꿀팁:
+        </p>
+        <p id="cultural-tip-text" class="text-slate-700 leading-relaxed">
+          미국 아이들은 놀이터 그네, 남은 피자 한 조각, 자동차 앞좌석을 찜할 때 <strong>"I call dibs!"</strong>라는 말을 매일 사용해요!
+        </p>
+      </div>
+
+      <!-- Interaction Area -->
+      <div id="interactive-area" class="mt-3 pt-3 border-t border-slate-200">
+        
+        <!-- Voice Mode -->
+        <div id="voice-mode-container" class="flex flex-col items-center justify-center py-1">
+          <div class="relative mb-2.5">
+            <div id="mic-pulse-ring" class="hidden absolute -inset-2 rounded-full bg-red-400/40 animate-pulse-ring"></div>
+            <button id="mic-action-btn" onclick="handleMicClick()" class="relative z-10 w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-to-tr from-amber-500 to-orange-400 hover:from-amber-600 hover:to-orange-500 text-white flex flex-col items-center justify-center shadow-lg transform active:scale-95 transition-all cursor-pointer">
+              <span id="mic-icon" class="text-2xl sm:text-3xl">🎙️</span>
+              <span id="mic-status-label" class="text-[10px] sm:text-xs font-extrabold mt-0.5 uppercase tracking-wide">Speak</span>
+            </button>
+          </div>
+          <p id="voice-target-hint" class="text-xs font-bold text-slate-500 text-center mb-2">
+            말해야 할 문장: <span class="text-amber-600 font-extrabold text-sm underline underline-offset-2">"I call dibs!"</span>
+          </p>
+          <div class="flex items-center gap-2">
+            <button onclick="simulateVoiceSuccess()" class="px-2.5 py-1 rounded-lg text-xs bg-slate-200 hover:bg-slate-300 font-medium text-slate-700 transition cursor-pointer">
+              ⚡ 테스트: 발화 성공 시뮬레이션
+            </button>
+          </div>
+        </div>
+
+        <!-- Touch Mode -->
+        <div id="touch-mode-container" class="hidden space-y-2">
+          <p class="text-xs font-bold text-center text-slate-500 mb-1.5">
+            미국 친구들이 실제로 쓰는 가장 자연스러운 표현을 골라보세요!
+          </p>
+          <div id="options-grid" class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+            <!-- Options -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Feedback Banner -->
+      <div id="feedback-banner" class="hidden mt-3 p-3 rounded-xl text-center font-extrabold text-xs sm:text-sm transition-all transform scale-95 opacity-0">
+        <span id="feedback-message">Awesome! 🌟</span>
+      </div>
+
+    </main>
+
+    <!-- Footer Controls -->
+    <footer class="flex items-center justify-between mt-4 pt-2 text-xs text-slate-500 font-medium">
+      <button onclick="previousScenario()" class="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 font-bold transition cursor-pointer">
+        ◀ Previous Episode
+      </button>
+      <span id="scenario-counter" class="font-extrabold text-slate-700">Episode 1 / 10</span>
+      <button onclick="nextScenario()" class="px-3 py-1.5 rounded-lg bg-amber-500 hover:bg-amber-600 text-white font-bold shadow-sm transition cursor-pointer">
+        Next Episode ▶
+      </button>
+    </footer>
+
+    <!-- Tier Completion Celebration Modal -->
+    <div id="tier-clear-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm transition-all">
+      <div class="bg-white rounded-3xl p-6 sm:p-8 max-w-md w-full text-center shadow-2xl border-4 border-amber-400 transform scale-100 animate-bounce-slow">
+        <div class="text-5xl sm:text-6xl mb-3">🏆</div>
+        <h2 id="modal-title" class="text-xl sm:text-2xl font-black text-slate-900 mb-1">Level Master!</h2>
+        <p id="modal-subtitle" class="text-sm font-bold text-amber-600 mb-4">10개 멀티턴 에피소드를 모두 완벽하게 마스터했습니다!</p>
+        
+        <div class="grid grid-cols-2 gap-3 mb-6 p-3 rounded-2xl bg-amber-50 border border-amber-200">
+          <div class="text-center">
+            <span class="text-xs text-slate-500 font-bold block">누적 별점</span>
+            <span id="modal-stars" class="text-xl font-black text-yellow-500">⭐ 15</span>
+          </div>
+          <div class="text-center">
+            <span class="text-xs text-slate-500 font-bold block">최고 콤보</span>
+            <span id="modal-streak" class="text-xl font-black text-orange-500">🔥 5 Streak</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <button onclick="advanceToNextTier()" class="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-extrabold text-sm shadow-md transition transform active:scale-95 cursor-pointer">
+            🚀 다음 연령대 레벨 도전하기
+          </button>
+          <button onclick="closeTierModal()" class="w-full py-2.5 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition cursor-pointer">
+            🔄 현재 레벨 다시 복습하기
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confetti-canvas" class="pointer-events-none fixed inset-0 z-50 w-full h-full"></canvas>
+
+  </div>
+
+  <!-- Game Engine Script -->
+  <script>
+    const state = {
+      theme: 'cartoon',
+      inputMode: 'voice',
+      showKoreanTip: true,
+      currentTier: 'tier2',
+      scenarioIndex: 0,
+      turnIndex: 0,
+      stars: 12,
+      streak: 3,
+      maxStreak: 3,
+      soundEnabled: true,
+      ttsSpeed: 0.92,
+      isListening: false
+    };
+
+    // Vector Scene Illustrations
+    const SCENE_ILLUSTRATIONS = {
+      swing: `<svg viewBox="0 0 500 180" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#BAE6FD" /><stop offset="100%" stop-color="#E0F2FE" /></linearGradient>
+          <linearGradient id="grassGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#86EFAC" /><stop offset="100%" stop-color="#4ADE80" /></linearGradient>
+        </defs>
+        <rect width="500" height="180" fill="url(#skyGrad)" />
+        <circle cx="70" cy="45" r="22" fill="#FDE047" />
+        <path d="M 0,130 Q 150,95 300,120 T 500,105 L 500,180 L 0,180 Z" fill="url(#grassGrad)" />
+        <line x1="200" y1="25" x2="165" y2="155" stroke="#78350F" stroke-width="6" stroke-linecap="round" />
+        <line x1="200" y1="25" x2="235" y2="155" stroke="#78350F" stroke-width="6" stroke-linecap="round" />
+        <line x1="180" y1="25" x2="320" y2="25" stroke="#78350F" stroke-width="8" stroke-linecap="round" />
+        <line x1="300" y1="25" x2="265" y2="155" stroke="#78350F" stroke-width="6" stroke-linecap="round" />
+        <line x1="300" y1="25" x2="335" y2="155" stroke="#78350F" stroke-width="6" stroke-linecap="round" />
+        <line x1="240" y1="25" x2="242" y2="95" stroke="#D97706" stroke-width="3" />
+        <line x1="260" y1="25" x2="258" y2="95" stroke="#D97706" stroke-width="3" />
+        <ellipse cx="250" cy="115" rx="20" ry="14" fill="#374151" />
+        <ellipse cx="250" cy="115" rx="11" ry="7" fill="#86EFAC" />
+      </svg>`,
+
+      tag: `<svg viewBox="0 0 500 180" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+        <rect width="500" height="180" fill="#FEF08A" />
+        <polygon points="250,90 40,0 60,0" fill="#FDE047" opacity="0.6" /><polygon points="250,90 450,0 470,0" fill="#FDE047" opacity="0.6" />
+        <path d="M 0,135 Q 250,120 500,135 L 500,180 L 0,180 Z" fill="#FB923C" />
+        <ellipse cx="250" cy="100" r="42" fill="#FFFFFF" /><text x="250" y="112" font-size="42" text-anchor="middle">👟💨</text>
+        <text x="250" y="55" font-size="20" font-weight="900" fill="#EA580C" text-anchor="middle">TAG! YOU'RE IT!</text>
+      </svg>`,
+
+      sandcastle: `<svg viewBox="0 0 500 180" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+        <rect width="500" height="180" fill="#E0F2FE" /><path d="M 0,120 Q 250,105 500,120 L 500,180 L 0,180 Z" fill="#FDE68A" />
+        <rect x="210" y="75" width="80" height="65" fill="#F59E0B" rx="4" /><polygon points="210,75 250,35 290,75" fill="#D97706" />
+        <rect x="175" y="90" width="30" height="50" fill="#F59E0B" rx="2" /><polygon points="175,90 190,65 205,90" fill="#EF4444" />
+        <rect x="295" y="90" width="30" height="50" fill="#F59E0B" rx="2" /><polygon points="295,90 310,65 325,90" fill="#3B82F6" />
+        <text x="130" y="145" font-size="34">🪣</text><text x="355" y="145" font-size="34">⭐</text>
+      </svg>`,
+
+      cafeteria: `<svg viewBox="0 0 500 180" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+        <rect width="500" height="180" fill="#FFF7ED" />
+        <rect x="40" y="95" width="420" height="75" fill="#FB923C" rx="12" /><rect x="55" y="105" width="390" height="60" fill="#FDBA74" rx="8" />
+        <ellipse cx="140" cy="130" rx="35" ry="18" fill="#FFFFFF" /><text x="140" y="137" font-size="28" text-anchor="middle">🍕</text>
+        <ellipse cx="250" cy="130" rx="35" ry="18" fill="#FFFFFF" /><text x="250" y="137" font-size="28" text-anchor="middle">🍪</text>
+        <ellipse cx="360" cy="130" rx="35" ry="18" fill="#FFFFFF" /><text x="360" y="137" font-size="28" text-anchor="middle">🧃</text>
+        <text x="250" y="55" font-size="22" font-weight="900" fill="#C2410C" text-anchor="middle">LUNCH TIME SWAP!</text>
+      </svg>`,
+
+      toybox: `<svg viewBox="0 0 500 180" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+        <rect width="500" height="180" fill="#FDF2F8" />
+        <rect x="220" y="100" width="60" height="35" fill="#EF4444" rx="4" />
+        <rect x="175" y="115" width="50" height="30" fill="#3B82F6" rx="4" /><rect x="275" y="115" width="50" height="30" fill="#10B981" rx="4" />
+        <text x="120" y="135" font-size="36">🧸</text><text x="350" y="135" font-size="36">🚀</text>
+        <text x="250" y="55" font-size="24" font-weight="900" fill="#DB2777" text-anchor="middle">LEGO & TOY TIME!</text>
+      </svg>`,
+
+      boardgame: `<svg viewBox="0 0 500 180" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+        <rect width="500" height="180" fill="#EDE9FE" />
+        <rect x="130" y="45" width="240" height="100" fill="#DDD6FE" rx="10" stroke="#7C3AED" stroke-width="3" />
+        <circle cx="170" cy="95" r="22" fill="#EF4444" /><circle cx="250" cy="95" r="22" fill="#FBBF24" /><circle cx="330" cy="95" r="22" fill="#10B981" />
+        <text x="170" y="103" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">1</text><text x="250" y="103" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">🎲</text><text x="330" y="103" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">WIN</text>
+      </svg>`,
+
+      party: `<svg viewBox="0 0 500 180" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+        <rect width="500" height="180" fill="#FEFCE8" />
+        <rect x="200" y="90" width="100" height="55" fill="#F472B6" rx="6" /><text x="250" y="55" font-size="24" text-anchor="middle">🎂🎈</text>
+        <text x="250" y="125" font-size="18" font-weight="900" fill="#FFFFFF" text-anchor="middle">PARTY TIME!</text>
+      </svg>`,
+
+      boba: `<svg viewBox="0 0 500 180" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+        <rect width="500" height="180" fill="#F0FDF4" />
+        <polygon points="225,50 275,50 268,140 232,140" fill="#FED7AA" stroke="#EA580C" stroke-width="3" />
+        <line x1="250" y1="20" x2="250" y2="135" stroke="#9333EA" stroke-width="6" stroke-linecap="round" />
+        <circle cx="240" cy="130" r="4" fill="#475569" /><circle cx="250" cy="132" r="4" fill="#475569" /><circle cx="260" cy="130" r="4" fill="#475569" />
+        <text x="150" y="115" font-size="34">🛍️</text><text x="330" y="115" font-size="34">✨</text>
+        <text x="250" y="40" font-size="20" font-weight="900" fill="#15803D" text-anchor="middle">WEEKEND HANGOUT</text>
+      </svg>`,
+
+      project: `<svg viewBox="0 0 500 180" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+        <rect width="500" height="180" fill="#EFF6FF" />
+        <rect x="150" y="35" width="200" height="115" fill="#FFFFFF" rx="8" stroke="#3B82F6" stroke-width="4" />
+        <text x="250" y="85" font-size="18" font-weight="900" fill="#1D4ED8" text-anchor="middle">SCIENCE FAIR</text>
+        <text x="90" y="110" font-size="32">✂️</text><text x="375" y="110" font-size="32">🎨</text>
+      </svg>`,
+
+      skate: `<svg viewBox="0 0 500 180" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+        <rect width="500" height="180" fill="#FEF2F2" />
+        <path d="M 50,30 Q 250,150 450,30 L 450,180 L 50,180 Z" fill="#E2E8F0" />
+        <ellipse cx="250" cy="65" rx="45" ry="10" fill="#DC2626" transform="rotate(-15 250 65)" />
+        <text x="250" y="145" font-size="24" font-weight="900" fill="#991B1B" text-anchor="middle">THAT'S SICK! 🔥</text>
+      </svg>`,
+
+      // Tier 4: Teen Pop / High School Scene
+      teenLocker: `<svg viewBox="0 0 500 180" class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+        <rect width="500" height="180" fill="#FAF5FF" />
+        <!-- School Lockers -->
+        <rect x="80" y="30" width="70" height="130" fill="#7C3AED" rx="4" stroke="#4C1D95" stroke-width="3" />
+        <line x1="115" y1="50" x2="115" y2="70" stroke="#DDD6FE" stroke-width="4" />
+        <circle cx="135" cy="95" r="5" fill="#FBBF24" />
+        <rect x="160" y="30" width="70" height="130" fill="#8B5CF6" rx="4" stroke="#4C1D95" stroke-width="3" />
+        <line x1="195" y1="50" x2="195" y2="70" stroke="#DDD6FE" stroke-width="4" />
+        <circle cx="215" cy="95" r="5" fill="#FBBF24" />
+        <rect x="240" y="30" width="70" height="130" fill="#A78BFA" rx="4" stroke="#4C1D95" stroke-width="3" />
+        <line x1="275" y1="50" x2="275" y2="70" stroke="#DDD6FE" stroke-width="4" />
+        <circle cx="295" cy="95" r="5" fill="#FBBF24" />
+        <!-- Basketball & Headphones -->
+        <text x="360" y="125" font-size="44">🎧</text>
+        <text x="420" y="125" font-size="40">🏀</text>
+        <text x="250" y="22" font-size="16" font-weight="900" fill="#5B21B6" text-anchor="middle">HIGH SCHOOL VIBES</text>
+      </svg>`
+    };
+
+    // 4-Tier Scenarios Database (5 Scenes per Tier = 20 Rich Scenarios!)
+    const SCENARIOS = {
+      // Tier 1: 만 6~8세
+      tier1: [
+        {
+          tierId: 'tier1',
+          episode: '📍 Scene 1/5: Sandcastle Masterpiece',
+          artKey: 'sandcastle',
+          npcName: 'Penny',
+          npcAvatar: '🐧',
+          npcEn: "Look at my giant sandcastle! It's so cool!",
+          npcKr: "내 거대한 모래성 좀 봐! 진짜 멋지지!",
+          mission: '"저것 좀 봐!"라고 자연스럽게 감탄해보세요!',
+          target: "Look at that!",
+          culturalTip: '초등 저학년 아이들은 신기한 것을 볼 때 "Look at that!"을 가장 먼저 씁니다.',
+          options: [
+            { text: "Look at that!", isCorrect: true, tip: "저것 좀 봐! (가장 자연스러운 감탄)" },
+            { text: "I observe a castle.", isCorrect: false, tip: "너무 딱딱한 사전식 문장이에요." },
+            { text: "Good evening, sir.", isCorrect: false, tip: "친구에게 쓰는 말이 아니에요!" }
+          ]
+        },
+        {
+          tierId: 'tier1',
+          episode: '📍 Scene 2/5: Playground Tag Game',
+          artKey: 'tag',
+          npcName: 'Leo',
+          npcAvatar: '🦁',
+          npcEn: "We are playing tag right now! Wanna join us?",
+          npcKr: "우리 지금 술래잡기 할 건데! 같이 할래?",
+          mission: '"나도 같이 놀아도 돼?"라고 물어보세요!',
+          target: "Can I play?",
+          culturalTip: '"Can I play?"는 놀이터에서 친구 무리에 들어갈 때 마법처럼 통하는 표현이에요.',
+          options: [
+            { text: "Can I play?", isCorrect: true, tip: "나도 같이 놀아도 돼? (최고 빈출 표현)" },
+            { text: "I refuse your request.", isCorrect: false, tip: "친구의 제안을 거절하는 말이에요." },
+            { text: "Yes, I am a child.", isCorrect: false, tip: "상황에 맞지 않아요!" }
+          ]
+        },
+        {
+          tierId: 'tier1',
+          episode: '📍 Scene 3/5: Snack Sharing Time',
+          artKey: 'cafeteria',
+          npcName: 'Sammy',
+          npcAvatar: '🦊',
+          npcEn: "Mmm, my mom packed yummy strawberry gummy bears!",
+          npcKr: "음~ 우리 엄마가 맛있는 딸기 젤리 싸주셨어!",
+          mission: '"나도 한 개만 주면 안 돼?"라고 예쁘게 부탁해보세요!',
+          target: "Can I have some?",
+          culturalTip: '친구가 맛있는 간식을 먹을 때 "Can I have some?"은 가장 즐겨 쓰는 공손한 구어체입니다.',
+          options: [
+            { text: "Can I have some?", isCorrect: true, tip: "나도 좀 줄래? (자연스러운 요청)" },
+            { text: "Surrender your food.", isCorrect: false, tip: "음식을 내놓으라는 험악한 말이에요!" },
+            { text: "Thank you for lunch.", isCorrect: false, tip: "아직 받지도 않았어요!" }
+          ]
+        },
+        {
+          tierId: 'tier1',
+          episode: '📍 Scene 4/5: LEGO Toy Box',
+          artKey: 'toybox',
+          npcName: 'Leo',
+          npcAvatar: '🦁',
+          npcEn: "Who gets to put the golden dragon on top of the tower?",
+          npcKr: "탑 꼭대기에 황금 용 올릴 사람 누구?",
+          mission: '"이번엔 내 차례야!"라고 씩씩하게 말해보세요!',
+          target: "My turn!",
+          culturalTip: '놀이나 게임에서 순서를 말할 때 "My turn!"이라고 외치면 됩니다.',
+          options: [
+            { text: "My turn!", isCorrect: true, tip: "내 차례야! (가장 명쾌한 순서 표현)" },
+            { text: "I have chronological priority.", isCorrect: false, tip: "로봇처럼 딱딱한 표현이에요." },
+            { text: "Good night.", isCorrect: false, tip: "자러 갈 때 하는 인사예요!" }
+          ]
+        },
+        {
+          tierId: 'tier1',
+          episode: '📍 Scene 5/5: Oopsie Crayon Drop',
+          artKey: 'tag',
+          npcName: 'Penny',
+          npcAvatar: '🐧',
+          npcEn: "Oops! I accidentally knocked down your blue crayon!",
+          npcKr: "앗! 내가 실수로 네 파란색 크레파스를 떨어뜨렸어!",
+          mission: '"괜찮아! 신경 쓰지 마!"라고 친구를 안심시켜주세요!',
+          target: "No biggie!",
+          culturalTip: '"No biggie!"는 "No big deal(별일 아니야)"의 아주 귀여운 키즈 구어체입니다.',
+          options: [
+            { text: "No biggie!", isCorrect: true, tip: "별거 아니야, 괜찮아! (귀여운 위로)" },
+            { text: "Pay for my crayon now.", isCorrect: false, tip: "너무 매정하게 화를 내는 말이에요." },
+            { text: "I am fine, and you?", isCorrect: false, tip: "기계적 답변이에요." }
+          ]
+        }
+      ],
+
+      // Tier 2: 만 9~10세
+      tier2: [
+        {
+          tierId: 'tier2',
+          episode: '📍 Scene 1/5: Playground Big Swing',
+          artKey: 'swing',
+          npcName: 'Leo',
+          npcAvatar: '🦁',
+          npcEn: "Hey! The big tire swing is finally open! Who's riding first?",
+          npcKr: "야! 대형 타이어 그네 드디어 비었다! 누가 먼저 탈래?",
+          mission: '"내가 먼저 찜했어!"라고 현지 미국 구어체로 외쳐보세요!',
+          target: "I call dibs!",
+          culturalTip: '미국 아이들은 그네, 피자 조각, 소파 자리를 선점할 때 "I call dibs!"를 외쳐요.',
+          options: [
+            { text: "I call dibs!", isCorrect: true, tip: "내가 찜했어! (미국 초등생 만능 슬랭)" },
+            { text: "I claim ownership of swing.", isCorrect: false, tip: "딱딱한 법률 용어 같아요!" },
+            { text: "I am fine, thank you.", isCorrect: false, tip: "기계적인 답변이에요." }
+          ]
+        },
+        {
+          tierId: 'tier2',
+          episode: '📍 Scene 2/5: Cafeteria Lunch Swap',
+          artKey: 'cafeteria',
+          npcName: 'Sammy',
+          npcAvatar: '🦊',
+          npcEn: "I brought extra warm chocolate chip cookies! Who wants in?",
+          npcKr: "나 오늘 따끈한 초코칩 쿠키 더 챙겨왔어! 같이 먹을 사람?",
+          mission: '"나도 낄래! 나도 바꿀래!"라고 신나게 반응해보세요!',
+          target: "Count me in!",
+          culturalTip: '"Count me in!"은 친구들의 제안에 "나도 끼워줘!", "나도 할래!"라고 할 때 씁니다.',
+          options: [
+            { text: "Count me in!", isCorrect: true, tip: "나도 낄래! (완벽한 또래 구어체)" },
+            { text: "Calculate my mathematical presence.", isCorrect: false, tip: "수학 계산기 같아요." },
+            { text: "No way, José!", isCorrect: false, tip: "거절하는 말이 되어버려요!" }
+          ]
+        },
+        {
+          tierId: 'tier2',
+          episode: '📍 Scene 3/5: Board Game Rules Dispute',
+          artKey: 'boardgame',
+          npcName: 'Penny',
+          npcAvatar: '🐧',
+          npcEn: "You landed on my dragon tile! That means I take all your gold!",
+          npcKr: "내 드래곤 타일에 걸렸지롱! 그럼 네 금화 전부 다 내 거야!",
+          mission: '"말도 안 돼! 억지 부리지 마!"라고 반박해보세요!',
+          target: "No way!",
+          culturalTip: '"No way!"는 미국 일상에서 황당하거나 믿을 수 없을 때 가장 속 시원하게 외치는 표현입니다.',
+          options: [
+            { text: "No way!", isCorrect: true, tip: "말도 안 돼! (현지 초빈출 표현)" },
+            { text: "That is scientifically false.", isCorrect: false, tip: "과학 논문 같아요." },
+            { text: "Good afternoon.", isCorrect: false, tip: "상황과 안 맞아요." }
+          ]
+        },
+        {
+          tierId: 'tier2',
+          episode: '📍 Scene 4/5: Birthday Party Cake Rush',
+          artKey: 'party',
+          npcName: 'Leo',
+          npcAvatar: '🦁',
+          npcEn: "Quick, hurry up! Cut the cake right now, I want the biggest slice!",
+          npcKr: "빨리, 서둘러! 지금 당장 케이크 잘라줘, 내가 제일 큰 조각 먹을래!",
+          mission: '"진정해! 서두르지 마!"라고 차분하게 말해보세요!',
+          target: "Hold your horses!",
+          culturalTip: '"Hold your horses!"는 너무 흥분해서 서두르는 친구에게 "워워~ 진정해!"라고 말리는 관용구입니다.',
+          options: [
+            { text: "Hold your horses!", isCorrect: true, tip: "진정해, 서두르지 마! (미국 현지 관용구)" },
+            { text: "Keep your wild animals.", isCorrect: false, tip: "글자 그대로 번역한 엉뚱한 말이에요." },
+            { text: "Happy New Year.", isCorrect: false, tip: "생일 파티와 안 맞는 인사예요." }
+          ]
+        },
+        {
+          tierId: 'tier2',
+          episode: '📍 Scene 5/5: Cafeteria Seat Saving',
+          artKey: 'cafeteria',
+          npcName: 'Sammy',
+          npcAvatar: '🦊',
+          npcEn: "Hey! I have to go grab a carton of milk from the front counter!",
+          npcKr: "야! 나 저 앞 카운터에서 우유 팩 하나 가져와야 해!",
+          mission: '"내 자리 좀 맡아줘!"라고 부탁해보세요!',
+          target: "Save me a seat!",
+          culturalTip: '급식실이나 영화관에서 자리를 맡아달라고 할 때 쓰는 공식 표현입니다.',
+          options: [
+            { text: "Save me a seat!", isCorrect: true, tip: "자리 맡아줘! (급식실 필수 표현)" },
+            { text: "Rescue the chair.", isCorrect: false, tip: "의자를 구출하라는 어색한 말이에요." },
+            { text: "Sit down forever.", isCorrect: false, tip: "부자연스러운 문장이에요." }
+          ]
+        }
+      ],
+
+      // Tier 3: 만 11~13세
+      tier3: [
+        {
+          tierId: 'tier3',
+          episode: '📍 Scene 1/5: Weekend Boba Plan',
+          artKey: 'boba',
+          npcName: 'Alex',
+          npcAvatar: '⚡',
+          npcEn: "A bunch of us are hitting the mall for boba after practice. You coming?",
+          npcKr: "우리 연습 끝나고 버블티 마시러 몰에 갈 건데. 너도 올래?",
+          mission: '"완전 콜이지! 당연히 가지!"라고 쿨하게 승낙해보세요!',
+          target: "I'm totally down.",
+          culturalTip: '"I\'m down"은 친구의 제안에 "완전 찬성", "나도 할래"라는 뜻의 10대 최고 빈출 표현입니다.',
+          options: [
+            { text: "I'm totally down.", isCorrect: true, tip: "완전 콜! (미국 10대 최고 빈출 표현)" },
+            { text: "I fall down on floor.", isCorrect: false, tip: "넘어진다는 엉뚱한 뜻이에요." },
+            { text: "I have zero interest.", isCorrect: false, tip: "너무 냉정한 표현이에요." }
+          ]
+        },
+        {
+          tierId: 'tier3',
+          episode: '📍 Scene 2/5: Science Poster Crunch',
+          artKey: 'project',
+          npcName: 'Chloe',
+          npcAvatar: '🎨',
+          npcEn: "Oh man, I totally spaced out and forgot the poster markers at home!",
+          npcKr: "아 망했다, 나 완전 넋 놓고 있다가 포스터용 매직을 집에 두고 왔어!",
+          mission: '"걱정 마, 신경 쓰지 마! 내가 여분 있어!"라고 안심시켜보세요!',
+          target: "Don't sweat it.",
+          culturalTip: '"Don\'t sweat it"은 사소한 실수로 당황한 친구에게 "땀 뺄 것 없어(신경 쓰지 마)"라고 달래줄 때 씁니다.',
+          options: [
+            { text: "Don't sweat it.", isCorrect: true, tip: "걱정 마, 신경 쓰지 마! (자연스러운 위로)" },
+            { text: "Do not produce perspiration.", isCorrect: false, tip: "의학 논문 같아요." },
+            { text: "Give me twenty dollars.", isCorrect: false, tip: "엉뚱한 말이에요." }
+          ]
+        },
+        {
+          tierId: 'tier3',
+          episode: '📍 Scene 3/5: Skate Park Kickflip',
+          artKey: 'skate',
+          npcName: 'Alex',
+          npcAvatar: '⚡',
+          npcEn: "Check this out! I just landed a clean 360 kickflip down three stairs!",
+          npcKr: "이것 좀 봐! 나 방금 3단 계단에서 360 킥플립 깔끔하게 성공했어!",
+          mission: '"대박 멋지다! 쩐다!"라고 환호해보세요!',
+          target: "That's so sick!",
+          culturalTip: '미국 10대 슬랭에서 "sick"은 아프다는 뜻이 아니라 "대박 멋진, 끝내주는"이라는 최고의 찬사입니다.',
+          options: [
+            { text: "That's so sick!", isCorrect: true, tip: "대박 멋져, 끝내준다! (미국 10대 찬사)" },
+            { text: "You should visit the hospital.", isCorrect: false, tip: "진짜 병원 가라는 오해예요!" },
+            { text: "What is your name?", isCorrect: false, tip: "상황과 안 맞아요." }
+          ]
+        },
+        {
+          tierId: 'tier3',
+          episode: '📍 Scene 4/5: Surprise Pop Quiz Alert',
+          artKey: 'project',
+          npcName: 'Chloe',
+          npcAvatar: '🎨',
+          npcEn: "I heard Mr. Miller is planning a surprise vocabulary pop quiz next period!",
+          npcKr: "듣자 하니 밀러 선생님이 다음 시간에 깜짝 영어 쪽지시험 보신대!",
+          mission: '"미리 귀띔해줘서 고마워!"라고 말해보세요!',
+          target: "Thanks for the heads-up!",
+          culturalTip: '"heads-up"은 사전 경고나 미리 알려주는 정보(귀띔)를 의미합니다.',
+          options: [
+            { text: "Thanks for the heads-up!", isCorrect: true, tip: "미리 귀띔해줘서 고마워! (필수 생활 표현)" },
+            { text: "Lift your head upward.", isCorrect: false, tip: "고개를 들라는 물리적인 명령이에요." },
+            { text: "I enjoy taking quizzes.", isCorrect: false, tip: "엉뚱한 답변이에요." }
+          ]
+        },
+        {
+          tierId: 'tier3',
+          episode: '📍 Scene 5/5: Arcade Snack Treat',
+          artKey: 'boba',
+          npcName: 'Alex',
+          npcAvatar: '⚡',
+          npcEn: "Hey, we played games all afternoon. Who's paying for the nachos?",
+          npcKr: "야, 우리 오후 내내 게임했네. 나초는 누가 쏠 거야?",
+          mission: '"내가 쏠게! 내가 살게!"라고 당당하게 말해보세요!',
+          target: "It's on me.",
+          culturalTip: '"It\'s on me"는 음식이나 간식 값을 "내가 낼게", "내가 쏠게"라고 할 때 가장 자주 쓰는 표현입니다.',
+          options: [
+            { text: "It's on me.", isCorrect: true, tip: "내가 쏠게, 내가 살게! (자신감 넘치는 한 턱)" },
+            { text: "The nachos are physically on my body.", isCorrect: false, tip: "음식이 몸에 엎질러졌다는 뜻이에요." },
+            { text: "Bye bye.", isCorrect: false, tip: "도망치듯 작별 인사를 하는 말이에요." }
+          ]
+        }
+      ],
+
+      // ================= NEW TIER 4: 만 14~16세 (청소년/중등 Z세대 하이틴 슬랭) =================
+      tier4: [
+        {
+          tierId: 'tier4',
+          episode: '📍 Scene 1/5: High School Basketball Rumor',
+          artKey: 'teenLocker',
+          npcName: 'Jordan',
+          npcAvatar: '🏀',
+          npcEn: "Did you hear? Jake scored 40 points in the varsity game with a buzzer beater!",
+          npcKr: "너 들었어? 제이크가 대표팀 경기에서 버저비터로 40점 넣었대!",
+          mission: '"진짜로! 거짓말 아니고 실화야!"라고 맞장구쳐보세요!',
+          target: "No cap!",
+          culturalTip: '"No cap"은 미국 10대와 청소년들이 "No lie / For real(거짓말 아니고 진짜야, 레알)"이라는 뜻으로 입에 달고 사는 대표 Z세대 슬랭입니다.',
+          options: [
+            { text: "No cap!", isCorrect: true, tip: "거짓말 아니고 진짜야! (미국 10대 최고 빈출 슬랭)" },
+            { text: "Remove your baseball hat.", isCorrect: false, tip: "모자를 벗으라는 엉뚱한 직역이에요." },
+            { text: "I dislike basketball.", isCorrect: false, tip: "대화 분위기를 깨는 말이에요." }
+          ]
+        },
+        {
+          tierId: 'tier4',
+          episode: '📍 Scene 2/5: Study Session at Cafe',
+          artKey: 'teenLocker',
+          npcName: 'Taylor',
+          npcAvatar: '🎧',
+          npcEn: "We're hitting the cafe right after the bell rings to study for finals. You in?",
+          npcKr: "우리 종 치자마자 기말고사 공부하러 카페 갈 건데. 너도 올 거지?",
+          mission: '"콜! 당연하지! 약속!"이라고 쿨하게 수락해보세요!',
+          target: "Bet!",
+          culturalTip: '"Bet!"은 상대방의 제안이나 도전에 "좋아, 콜!", "당연하지(You bet/Deal)"를 단 한 단어로 쿨하게 확답하는 미국 청소년 슬랭입니다.',
+          options: [
+            { text: "Bet!", isCorrect: true, tip: "콜! 당연하지! (초강력 확답 슬랭)" },
+            { text: "I will gamble five dollars.", isCorrect: false, tip: "돈을 걸고 도박하겠다는 오해를 사요!" },
+            { text: "I prefer drinking water.", isCorrect: false, tip: "초점에서 벗어난 답변이에요." }
+          ]
+        },
+        {
+          tierId: 'tier4',
+          episode: '📍 Scene 3/5: School Presentation Nerves',
+          artKey: 'teenLocker',
+          npcName: 'Jordan',
+          npcAvatar: '🏀',
+          npcEn: "You're up next to present our debate topic in front of the whole class!",
+          npcKr: "다음 차례 너야! 반 전체 앞에서 우리 토론 주제 발표해야 해!",
+          mission: '"나 은근히 속으로 약간 긴장돼."라고 솔직한 속마음을 털어놓아 보세요!',
+          target: "I'm lowkey nervous.",
+          culturalTip: '"lowkey"는 대놓고 티 내진 않지만 "은근히, 마음속으로 약간"이라는 뉘앙스를 표현할 때 현지 청소년들이 매일 씁니다.',
+          options: [
+            { text: "I'm lowkey nervous.", isCorrect: true, tip: "은근히 떨려/약간 긴장돼 (필수 뉘앙스 표현)" },
+            { text: "My keys are at the bottom.", isCorrect: false, tip: "열쇠가 바닥에 있다는 엉뚱한 말이에요." },
+            { text: "I have already fallen asleep.", isCorrect: false, tip: "발표 직전에 잠들었다는 이상한 말이에요." }
+          ]
+        },
+        {
+          tierId: 'tier4',
+          episode: '📍 Scene 4/5: Hilarious Viral Meme',
+          artKey: 'teenLocker',
+          npcName: 'Taylor',
+          npcAvatar: '🎧',
+          npcEn: "Look at this video of the teacher's cat jumping onto the keyboard during class!",
+          npcKr: "선생님 고양이가 수업 중에 키보드로 뛰어든 영상 좀 봐! ㅋㅋㅋ",
+          mission: '"아 너무 웃겨서 빵 터졌네! 기절각이다!"라고 반응해보세요!',
+          target: "I'm dead!",
+          culturalTip: '"I\'m dead!"는 진짜 생명이 다했다는 뜻이 아니라 "너무 웃겨서 쓰러질 것 같다(dying of laughter)"는 뜻의 일상 슬랭입니다.',
+          options: [
+            { text: "I'm dead!", isCorrect: true, tip: "너무 웃겨서 기절각이야! (빵 터졌을 때 리액션)" },
+            { text: "Call an ambulance immediately.", isCorrect: false, tip: "진짜 구급차를 부르는 황당한 상황이 돼요!" },
+            { text: "I need to purchase a feline.", isCorrect: false, tip: "고양이를 사겠다는 로봇 번역이에요." }
+          ]
+        },
+        {
+          tierId: 'tier4',
+          episode: '📍 Scene 5/5: No Homework Announcement',
+          artKey: 'teenLocker',
+          npcName: 'Jordan',
+          npcAvatar: '🏀',
+          npcEn: "No way! Principal just announced that the whole school gets no homework this Friday!",
+          npcKr: "대박! 교장선생님이 이번 주 금요일 전교생 숙제 전부 면제라고 방송하셨어!",
+          mission: '"진짜로? 레알 실화야?"라고 놀라며 되물어보세요!',
+          target: "For real?",
+          culturalTip: '"For real?" 또는 줄여서 "FR?"은 놀랍거나 믿기 힘든 소식을 들었을 때 "진짜야? 레알이야?"라고 반문하는 미국 전역의 만능 표현입니다.',
+          options: [
+            { text: "For real?", isCorrect: true, tip: "진짜로? 실화야? (만능 확인 표현)" },
+            { text: "Is this made of genuine plastic?", isCorrect: false, tip: "진짜 플라스틱이냐고 묻는 오역이에요." },
+            { text: "See you next century.", isCorrect: false, tip: "다음 세기에 보자는 엉뚱한 인사예요." }
+          ]
+        }
+      ]
+    };
+
+    // ================= AUDIO & SYNTHESIZER ENGINE =================
+    let globalAudioCtx = null;
+    function getAudioContext() {
+      if (!globalAudioCtx) {
+        globalAudioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      }
+      if (globalAudioCtx.state === 'suspended') {
+        globalAudioCtx.resume();
+      }
+      return globalAudioCtx;
+    }
+
+    function playSuccessChime(isPerfect = true) {
+      if (!state.soundEnabled) return;
+      try {
+        const audioCtx = getAudioContext();
+        const now = audioCtx.currentTime;
+        const notes = isPerfect ? [523.25, 659.25, 783.99, 1046.50] : [523.25, 659.25, 783.99];
+        
+        notes.forEach((freq, idx) => {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = isPerfect ? 'triangle' : 'sine';
+          osc.frequency.setValueAtTime(freq, now + idx * 0.08);
+          gain.gain.setValueAtTime(0, now + idx * 0.08);
+          gain.gain.linearRampToValueAtTime(0.2, now + idx * 0.08 + 0.02);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.08 + 0.4);
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+          osc.start(now + idx * 0.08);
+          osc.stop(now + idx * 0.08 + 0.4);
+        });
+      } catch (e) {
+        console.warn('Audio play error', e);
+      }
+    }
+
+    function playStreakBonus() {
+      if (!state.soundEnabled) return;
+      try {
+        const audioCtx = getAudioContext();
+        const now = audioCtx.currentTime;
+        const notes = [783.99, 987.77, 1174.66, 1567.98];
+        notes.forEach((freq, idx) => {
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(freq, now + idx * 0.05);
+          gain.gain.setValueAtTime(0.22, now + idx * 0.05);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + idx * 0.05 + 0.25);
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+          osc.start(now + idx * 0.05);
+          osc.stop(now + idx * 0.05 + 0.25);
+        });
+      } catch (e) {
+        console.warn('Audio play error', e);
+      }
+    }
+
+    function playRetryBuzz() {
+      if (!state.soundEnabled) return;
+      try {
+        const audioCtx = getAudioContext();
+        const now = audioCtx.currentTime;
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'sawtooth';
+        osc.frequency.setValueAtTime(220, now);
+        osc.frequency.setValueAtTime(175, now + 0.12);
+        gain.gain.setValueAtTime(0.12, now);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.3);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start(now);
+        osc.stop(now + 0.3);
+      } catch (e) {
+        console.warn('Audio play error', e);
+      }
+    }
+
+    function playPopBubble() {
+      if (!state.soundEnabled) return;
+      try {
+        const audioCtx = getAudioContext();
+        const now = audioCtx.currentTime;
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(450, now);
+        osc.frequency.exponentialRampToValueAtTime(800, now + 0.06);
+        gain.gain.setValueAtTime(0.12, now);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.08);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start(now);
+        osc.stop(now + 0.08);
+      } catch (e) {
+        console.warn('Audio play error', e);
+      }
+    }
+
+    function toggleSoundFx() {
+      state.soundEnabled = !state.soundEnabled;
+      const icon = document.getElementById('sound-btn-icon');
+      const text = document.getElementById('sound-btn-text');
+      if (state.soundEnabled) {
+        icon.textContent = '🔊';
+        text.textContent = 'Sound ON';
+        playPopBubble();
+      } else {
+        icon.textContent = '🔇';
+        text.textContent = 'Sound OFF';
+      }
+    }
+
+    function toggleTtsSpeed() {
+      state.ttsSpeed = state.ttsSpeed >= 0.9 ? 0.72 : 0.92;
+      const icon = document.getElementById('speed-btn-icon');
+      const text = document.getElementById('speed-btn-text');
+      if (state.ttsSpeed < 0.9) {
+        icon.textContent = '🐢';
+        text.textContent = 'Slow (0.7x)';
+      } else {
+        icon.textContent = '🐰';
+        text.textContent = 'Normal';
+      }
+      playPopBubble();
+    }
+
+    let turnTimer = null;
+
+    function getCurrentEpisode() {
+      const data = window.SCENARIOS || SCENARIOS;
+      const list = data[state.currentTier] || data.tier2;
+      return list[state.scenarioIndex % list.length];
+    }
+
+    function getCurrentTurn() {
+      const ep = getCurrentEpisode();
+      if (!ep) return null;
+      if (ep.turns && Array.isArray(ep.turns) && ep.turns.length > 0) {
+        return ep.turns[state.turnIndex % ep.turns.length];
+      }
+      return ep;
+    }
+
+    function speakCurrentDialogue() {
+      playPopBubble();
+      const turn = getCurrentTurn();
+      if (!turn) return;
+      speakText(turn.npcEn);
+    }
+
+    function speakNpcReaction() {
+      playPopBubble();
+      const turn = getCurrentTurn();
+      if (!turn || !turn.npcReactionEn) return;
+      speakText(turn.npcReactionEn);
+    }
+
+    function speakText(text, speedRate) {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'en-US';
+        utterance.rate = speedRate || state.ttsSpeed || 0.92;
+        utterance.pitch = 1.05;
+        window.speechSynthesis.speak(utterance);
+      }
+    }
+
+    function advanceTurn() {
+      if (turnTimer) {
+        clearTimeout(turnTimer);
+        turnTimer = null;
+      }
+      const ep = getCurrentEpisode();
+      if (!ep || !ep.turns) {
+        nextScenario();
+        return;
+      }
+      if (state.turnIndex < ep.turns.length - 1) {
+        state.turnIndex++;
+        renderScenario();
+      } else {
+        // Episode finished!
+        nextScenario();
+      }
+    }
+
+    function renderScenario() {
+      if (turnTimer) {
+        clearTimeout(turnTimer);
+        turnTimer = null;
+      }
+      const ep = getCurrentEpisode();
+      const turn = getCurrentTurn();
+      if (!ep || !turn) return;
+
+      // Hide reaction bubble
+      const reactionBubble = document.getElementById('npc-reaction-bubble');
+      if (reactionBubble) {
+        reactionBubble.classList.add('hidden');
+        reactionBubble.classList.remove('scale-100', 'opacity-100');
+      }
+
+      // Update episode & turn tags
+      document.getElementById('episode-tag').textContent = ep.episode || `📍 Episode ${state.scenarioIndex + 1}: ${ep.title}`;
+      
+      const totalTurns = ep.turns ? ep.turns.length : 1;
+      const currentTurnNum = state.turnIndex + 1;
+      const turnDots = Array.from({ length: totalTurns }, (_, i) => (i < currentTurnNum ? '🔵' : '⚪')).join(' ');
+      document.getElementById('turn-indicator').innerHTML = `💬 Turn ${currentTurnNum}/${totalTurns} <span class="text-[10px] ml-0.5">${turnDots}</span>`;
+
+      // NPC details
+      document.getElementById('npc-name').textContent = turn.npcName;
+      document.getElementById('npc-avatar-box').textContent = turn.npcAvatar;
+      document.getElementById('npc-sentence-en').textContent = `"${turn.npcEn}"`;
+      document.getElementById('npc-sentence-kr').textContent = `"${turn.npcKr}"`;
+      document.getElementById('mission-prompt').textContent = turn.mission;
+      document.getElementById('voice-target-hint').innerHTML = `말해야 할 문장: <span class="text-amber-600 font-extrabold text-sm underline underline-offset-2">"${turn.target}"</span>`;
+      document.getElementById('cultural-tip-text').innerHTML = turn.culturalTip;
+
+      // Illustration Artwork
+      const artBox = document.getElementById('scene-art-box');
+      const svgCode = SCENE_ILLUSTRATIONS[ep.artKey] || SCENE_ILLUSTRATIONS.swing;
+      artBox.innerHTML = svgCode;
+
+      // Counter
+      const data = window.SCENARIOS || SCENARIOS;
+      const list = data[state.currentTier] || data.tier2;
+      document.getElementById('scenario-counter').textContent = `Episode ${state.scenarioIndex + 1} / ${list.length} (Turn ${currentTurnNum}/${totalTurns})`;
+
+      // Choice Options
+      const optionsGrid = document.getElementById('options-grid');
+      optionsGrid.innerHTML = '';
+      turn.options.forEach((opt, idx) => {
+        const btn = document.createElement('button');
+        btn.className = `option-card text-left p-3 rounded-xl border-2 font-bold text-xs sm:text-sm transition-all transform active:scale-95 shadow-sm bg-white border-amber-200 hover:border-amber-400 hover:bg-amber-50/50 cursor-pointer`;
+        btn.onclick = () => {
+          playPopBubble();
+          handleChoiceSelection(opt);
+        };
+        btn.innerHTML = `
+          <div class="flex items-center justify-between gap-1 mb-1">
+            <span class="px-2 py-0.5 rounded text-[10px] font-extrabold bg-amber-100 text-amber-800">Choice ${idx + 1}</span>
+            <span class="text-xs">🔊</span>
+          </div>
+          <div class="text-sm font-extrabold text-slate-900 mb-0.5">"${opt.text}"</div>
+          <div class="text-[11px] text-slate-500 font-medium">${opt.tip}</div>
+        `;
+        optionsGrid.appendChild(btn);
+      });
+
+      hideFeedback();
+    }
+
+    function toggleVisualTheme() {
+      playPopBubble();
+      state.theme = state.theme === 'cartoon' ? 'comic' : 'cartoon';
+      applyThemeStyles();
+    }
+
+    function applyThemeStyles() {
+      const app = document.getElementById('game-app');
+      const stage = document.getElementById('stage-card');
+      const brandBadge = document.getElementById('brand-badge');
+      const brandTitle = document.getElementById('brand-title');
+      const themeBtnIcon = document.getElementById('theme-btn-icon');
+      const themeBtnText = document.getElementById('theme-btn-text');
+      const bubble = document.getElementById('dialogue-bubble');
+      const npcAvatar = document.getElementById('npc-avatar-box');
+      const artBox = document.getElementById('scene-art-box');
+
+      if (state.theme === 'comic') {
+        themeBtnIcon.textContent = '⚡';
+        themeBtnText.textContent = 'Comic Pop-Art';
+        brandBadge.textContent = '💥';
+        brandTitle.className = 'font-black text-lg sm:text-xl tracking-wider text-rose-600 uppercase italic';
+        app.classList.add('comic-border');
+        stage.classList.add('comic-border');
+        artBox.classList.add('comic-border');
+        bubble.className = 'comic-bubble p-4 rounded-xl transition-all';
+        npcAvatar.className = 'w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-yellow-400 border-4 border-black flex items-center justify-center text-3xl sm:text-4xl shadow-[4px_4px_0px_#000]';
+      } else {
+        themeBtnIcon.textContent = '🎨';
+        themeBtnText.textContent = 'Cartoon Theme';
+        brandBadge.textContent = '🦁';
+        brandTitle.className = 'font-extrabold text-lg sm:text-xl tracking-tight text-amber-500';
+        app.classList.remove('comic-border');
+        stage.classList.remove('comic-border');
+        artBox.classList.remove('comic-border');
+        bubble.className = 'p-3.5 sm:p-4 rounded-2xl bg-white shadow-md border border-amber-200 transition-all';
+        npcAvatar.className = 'w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-amber-400 flex items-center justify-center text-3xl sm:text-4xl shadow-md animate-bounce-slow';
+      }
+    }
+
+    function toggleInputMode() {
+      playPopBubble();
+      state.inputMode = state.inputMode === 'voice' ? 'touch' : 'voice';
+      const voiceContainer = document.getElementById('voice-mode-container');
+      const touchContainer = document.getElementById('touch-mode-container');
+      const modeBtnIcon = document.getElementById('mode-btn-icon');
+      const modeBtnText = document.getElementById('mode-btn-text');
+
+      if (state.inputMode === 'touch') {
+        voiceContainer.classList.add('hidden');
+        touchContainer.classList.remove('hidden');
+        modeBtnIcon.textContent = '👆';
+        modeBtnText.textContent = 'Touch Mode';
+      } else {
+        touchContainer.classList.add('hidden');
+        voiceContainer.classList.remove('hidden');
+        modeBtnIcon.textContent = '🎙️';
+        modeBtnText.textContent = 'Voice Mode';
+      }
+    }
+
+    function toggleKoreanTip() {
+      playPopBubble();
+      state.showKoreanTip = !state.showKoreanTip;
+      const card = document.getElementById('cultural-tip-card');
+      const text = document.getElementById('kr-tip-text');
+      if (state.showKoreanTip) {
+        card.classList.remove('hidden');
+        text.textContent = 'Tip ON';
+      } else {
+        card.classList.add('hidden');
+        text.textContent = 'Tip OFF';
+      }
+    }
+
+    function selectTier(tierId) {
+      playPopBubble();
+      if (turnTimer) {
+        clearTimeout(turnTimer);
+        turnTimer = null;
+      }
+      state.currentTier = tierId;
+      state.scenarioIndex = 0;
+      state.turnIndex = 0;
+
+      document.querySelectorAll('.tier-tab').forEach(btn => {
+        btn.classList.remove('shadow', 'bg-white', 'text-amber-500');
+      });
+      const activeBtn = document.getElementById(`tier-btn-${tierId}`);
+      if (activeBtn) {
+        activeBtn.classList.add('shadow', 'bg-white', 'text-amber-500');
+      }
+
+      renderScenario();
+    }
+
+    // ================= SPEECH NORMALIZATION & FUZZY MATCHING ENGINE =================
+    function normalizeSpeech(text) {
+      if (!text) return '';
+      let str = text.toLowerCase().trim();
+      str = str.replace(/['’]/g, '');
+      const contractionMap = {
+        'im': 'i am',
+        'wanna': 'want to',
+        'gonna': 'going to',
+        'cant': 'cannot',
+        'dont': 'do not',
+        'didnt': 'did not',
+        'isnt': 'is not',
+        'thats': 'that is',
+        'whats': 'what is',
+        'its': 'it is',
+        'youre': 'you are',
+        'theyre': 'they are',
+        'were': 'we are',
+        'ill': 'i will',
+        'id': 'i would',
+        'fr': 'for real'
+      };
+      str = str.replace(/[^a-z0-9 ]/g, ' ');
+      const words = str.split(/\s+/).filter(Boolean).map(w => contractionMap[w] || w);
+      return words.join(' ').trim();
+    }
+
+    function calculateSimilarity(recognizedText, targetText) {
+      const normRec = normalizeSpeech(recognizedText);
+      const normTarget = normalizeSpeech(targetText);
+
+      if (!normRec || !normTarget) return 0;
+      if (normRec === normTarget) return 100;
+
+      // Substring check (boost score for natural phrases)
+      if (normRec.includes(normTarget)) return 95;
+      if (normTarget.includes(normRec)) {
+        return Math.max(75, Math.round((normRec.length / normTarget.length) * 100));
+      }
+
+      // Levenshtein distance matrix
+      const m = normRec.length;
+      const n = normTarget.length;
+      const dp = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(0));
+
+      for (let i = 0; i <= m; i++) dp[i][0] = i;
+      for (let j = 0; j <= n; j++) dp[0][j] = j;
+
+      for (let i = 1; i <= m; i++) {
+        for (let j = 1; j <= n; j++) {
+          if (normRec[i - 1] === normTarget[j - 1]) {
+            dp[i][j] = dp[i - 1][j - 1];
+          } else {
+            dp[i][j] = 1 + Math.min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]);
+          }
+        }
+      }
+
+      const maxLen = Math.max(m, n);
+      const distance = dp[m][n];
+      return Math.max(0, Math.round((1 - distance / maxLen) * 100));
+    }
+
+    function handleMicClick() {
+      playPopBubble();
+      const current = getCurrentTurn();
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+      if (!SpeechRecognition) {
+        simulateVoiceSuccess();
+        return;
+      }
+
+      const recognition = new SpeechRecognition();
+      recognition.lang = 'en-US';
+      recognition.interimResults = false;
+
+      const micPulse = document.getElementById('mic-pulse-ring');
+      const micLabel = document.getElementById('mic-status-label');
+      
+      micPulse.classList.remove('hidden');
+      micLabel.textContent = 'Listening...';
+
+      recognition.onresult = (event) => {
+        micPulse.classList.add('hidden');
+        micLabel.textContent = 'Speak';
+        const transcript = event.results[0][0].transcript;
+        const similarity = calculateSimilarity(transcript, current.target);
+
+        if (similarity >= 70) {
+          triggerWin(current.target, similarity);
+        } else {
+          triggerTryAgain(`들린 발음: "${transcript}" (일치율: ${similarity}%)\n원어민 발음을 다시 듣고 따라해보세요!`, current.target);
+        }
+      };
+
+      recognition.onerror = () => {
+        micPulse.classList.add('hidden');
+        micLabel.textContent = 'Speak';
+        simulateVoiceSuccess();
+      };
+
+      recognition.start();
+    }
+
+    function simulateVoiceSuccess() {
+      playPopBubble();
+      const current = getCurrentTurn();
+      speakText(current.target);
+      triggerWin(current.target, 95);
+    }
+
+    function handleChoiceSelection(option) {
+      speakText(option.text);
+      if (option.isCorrect) {
+        triggerWin(option.text, 100);
+      } else {
+        triggerTryAgain(`"${option.text}" 은(는) 상황에 어색해요! 다시 골라보세요.`, null);
+      }
+    }
+
+    function triggerWin(phrase, similarity = 100) {
+      const isPerfect = similarity >= 90;
+      playSuccessChime(isPerfect);
+
+      const starsEarned = isPerfect ? 3 : 2;
+      state.stars += starsEarned;
+      state.streak += 1;
+      if (state.streak > state.maxStreak) {
+        state.maxStreak = state.streak;
+      }
+
+      if (state.streak >= 3) {
+        setTimeout(playStreakBonus, 350);
+      }
+
+      document.getElementById('star-count').textContent = state.stars;
+      document.getElementById('streak-badge').innerHTML = `🔥 ${state.streak} Streak`;
+
+      const turn = getCurrentTurn();
+      const ep = getCurrentEpisode();
+      const isLastTurn = !ep.turns || state.turnIndex >= ep.turns.length - 1;
+
+      // Show NPC Reaction Bubble (Multi-Turn Tiki-Taka)
+      const reactionBubble = document.getElementById('npc-reaction-bubble');
+      if (turn && turn.npcReactionEn && reactionBubble) {
+        document.getElementById('npc-reaction-en').textContent = `"${turn.npcReactionEn}"`;
+        document.getElementById('npc-reaction-kr').textContent = `"${turn.npcReactionKr}"`;
+        reactionBubble.classList.remove('hidden');
+        setTimeout(() => {
+          reactionBubble.classList.add('scale-100', 'opacity-100');
+        }, 10);
+        
+        // Auto-play NPC reaction with TTS
+        setTimeout(() => {
+          speakText(turn.npcReactionEn);
+        }, 400);
+
+        // Next Turn Button setup
+        const nextTurnBtn = document.getElementById('next-turn-btn');
+        const countdownText = document.getElementById('next-turn-countdown');
+        if (isLastTurn) {
+          nextTurnBtn.textContent = 'Next Episode ▶';
+          countdownText.textContent = '🎉 에피소드 클리어! 다음 퀘스트 준비 중...';
+        } else {
+          nextTurnBtn.textContent = 'Next Turn ▶';
+          countdownText.textContent = '다음 대화 턴으로 연결 중... ⏱️';
+        }
+
+        // Auto advance after 2.8s
+        if (turnTimer) clearTimeout(turnTimer);
+        turnTimer = setTimeout(() => {
+          advanceTurn();
+        }, 2800);
+      }
+
+      const starIcons = isPerfect ? '⭐⭐⭐ Perfect!' : '⭐⭐ Great Job!';
+      const winText = isLastTurn
+        ? `🎉 ${starIcons} (일치율 ${similarity}%)\n에피소드 클리어! "${phrase}"`
+        : `🎉 ${starIcons} (일치율 ${similarity}%)\n"${phrase}" 정답! 친구의 리액션을 들어보세요!`;
+      showFeedback(winText, true);
+      launchConfetti();
+    }
+
+    function triggerTryAgain(msg, replayTarget) {
+      playRetryBuzz();
+      state.streak = 0;
+      document.getElementById('streak-badge').innerHTML = `🔥 0 Streak`;
+      showFeedback(`💪 ${msg}`, false);
+
+      if (replayTarget) {
+        setTimeout(() => speakText(replayTarget, 0.75), 1100);
+      }
+    }
+
+    function showFeedback(text, isWin) {
+      const banner = document.getElementById('feedback-banner');
+      const msg = document.getElementById('feedback-message');
+      msg.innerHTML = text.replace(/\n/g, '<br>');
+      banner.className = `mt-3 p-3 rounded-xl text-center font-extrabold text-xs sm:text-sm transition-all transform scale-100 opacity-100 leading-snug ${
+        isWin ? 'bg-emerald-500 text-white shadow-lg' : 'bg-rose-500 text-white shadow'
+      }`;
+      banner.classList.remove('hidden');
+    }
+
+    function hideFeedback() {
+      const banner = document.getElementById('feedback-banner');
+      banner.classList.add('hidden');
+      banner.classList.remove('scale-100', 'opacity-100');
+    }
+
+    function nextScenario() {
+      playPopBubble();
+      if (turnTimer) {
+        clearTimeout(turnTimer);
+        turnTimer = null;
+      }
+      const data = window.SCENARIOS || SCENARIOS;
+      const list = data[state.currentTier] || data.tier2;
+      if (state.scenarioIndex === list.length - 1) {
+        showTierClearModal();
+        return;
+      }
+      state.scenarioIndex = (state.scenarioIndex + 1) % list.length;
+      state.turnIndex = 0;
+      renderScenario();
+    }
+
+    function previousScenario() {
+      playPopBubble();
+      if (turnTimer) {
+        clearTimeout(turnTimer);
+        turnTimer = null;
+      }
+      const data = window.SCENARIOS || SCENARIOS;
+      const list = data[state.currentTier] || data.tier2;
+      state.scenarioIndex = (state.scenarioIndex - 1 + list.length) % list.length;
+      state.turnIndex = 0;
+      renderScenario();
+    }
+
+    function showTierClearModal() {
+      playSuccessChime(true);
+      setTimeout(playStreakBonus, 400);
+      launchConfetti();
+
+      const modal = document.getElementById('tier-clear-modal');
+      const tierTitles = {
+        tier1: '🐣 만 6~8세 기초 구어체 10개 에피소드 (30턴) 정복 완료!',
+        tier2: '🦁 만 9~10세 또래 슬랭 10개 에피소드 (40턴) 정복 완료!',
+        tier3: '🚀 만 11~13세 현지 10대 뉘앙스 10개 에피소드 (50턴) 정복 완료!',
+        tier4: '🎸 만 14~16세 하이틴 Z세대 슬랭 10개 에피소드 (60턴) 정복 완료!'
+      };
+
+      document.getElementById('modal-title').textContent = '🏆 Tier Master!';
+      document.getElementById('modal-subtitle').textContent = tierTitles[state.currentTier] || '10개 에피소드를 모두 완벽하게 마스터했습니다!';
+      document.getElementById('modal-stars').textContent = `⭐ ${state.stars}`;
+      document.getElementById('modal-streak').textContent = `🔥 ${state.maxStreak} Streak`;
+
+      modal.classList.remove('hidden');
+    }
+
+    function advanceToNextTier() {
+      playPopBubble();
+      closeTierModal();
+      const tierOrder = ['tier1', 'tier2', 'tier3', 'tier4'];
+      const currentIdx = tierOrder.indexOf(state.currentTier);
+      const nextTier = tierOrder[(currentIdx + 1) % tierOrder.length];
+      selectTier(nextTier);
+    }
+
+    function closeTierModal() {
+      playPopBubble();
+      const modal = document.getElementById('tier-clear-modal');
+      modal.classList.add('hidden');
+      state.scenarioIndex = 0;
+      state.turnIndex = 0;
+      renderScenario();
+    }
+
+    function launchConfetti() {
+      const canvas = document.getElementById('confetti-canvas');
+      const ctx = canvas.getContext('2d');
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const particles = [];
+      const colors = ['#f59e0b', '#ef4444', '#10b981', '#3b82f6', '#8b5cf6', '#ec4899'];
+
+      for (let i = 0; i < 45; i++) {
+        particles.push({
+          x: canvas.width / 2,
+          y: canvas.height / 2,
+          vx: (Math.random() - 0.5) * 14,
+          vy: (Math.random() - 0.7) * 16,
+          size: Math.random() * 8 + 4,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          rotation: Math.random() * 360,
+          vRot: (Math.random() - 0.5) * 10
+        });
+      }
+
+      let frames = 0;
+      function render() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => {
+          p.x += p.vx;
+          p.y += p.vy;
+          p.vy += 0.45;
+          p.rotation += p.vRot;
+
+          ctx.save();
+          ctx.translate(p.x, p.y);
+          ctx.rotate((p.rotation * Math.PI) / 180);
+          ctx.fillStyle = p.color;
+          ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size);
+          ctx.restore();
+        });
+
+        frames++;
+        if (frames < 70) {
+          requestAnimationFrame(render);
+        } else {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+      }
+      render();
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      renderScenario();
+    });
+  </script>
+</body>
+</html>
