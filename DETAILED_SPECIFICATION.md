@@ -1,8 +1,8 @@
 # 📐 TalkieTown US - 세부 기술 및 기능 설계서 (Detailed Technical Specification)
 
-> **문서 버전**: v1.1 (1.5배 차등 턴 수 확장: Tier 1: 3턴, Tier 2: 4턴, Tier 3: 5턴, Tier 4: 6턴 / 총 180턴)  
+> **문서 버전**: v1.2 (기본동사 & 구동사 확장: Tier 1: 4턴, Tier 2: 5턴, Tier 3: 6턴, Tier 4: 7턴 / 총 220턴)  
 > **관련 문서**: [DESIGN_DRAFT.md](file:///C:/Users/tickl/PycharmProjects/english_game/DESIGN_DRAFT.md), [AGENTS.md](file:///C:/Users/tickl/PycharmProjects/english_game/AGENTS.md)  
-> **상태**: 4개 티어 40개 에피소드 및 180턴 FSM 상태 머신 구현 확정
+> **상태**: 4개 티어 40개 에피소드 및 220턴 FSM 상태 머신 구현 확정
 
 ---
 
@@ -31,7 +31,7 @@ flowchart TD
         end
 
         subgraph DataLayer ["Data & Curriculum Layer"]
-            ScenarioData["Dialogue Registry (Tier 1~4 JSON / 180 Turns)"]
+            ScenarioData["Dialogue Registry (Tier 1~4 JSON / 220 Turns)"]
             UserProgress["Local Progress & Streak Store"]
         end
     end
@@ -51,7 +51,7 @@ flowchart TD
 
 ## 2. 대화 커리큘럼 데이터 모델 및 JSON 스키마 (Data Model)
 
-각 에피소드는 연령 티어에 따라 3~6턴의 `DialogueTurn` 배열을 포함하며, 턴마다 화자 정보, 플레이어 발화 미션, 선택지, 그리고 미국 문화 팁이 포함됩니다.
+각 에피소드는 연령 티어에 따라 4~7턴의 `DialogueTurn` 배열을 포함하며, 턴마다 화자 정보, 플레이어 발화 미션, 선택지, 그리고 미국 문화 팁이 포함됩니다. 특히 **원어민 빈출 기본동사(get, take, make, have, put, keep, give, let, go, come...)** 및 **생활 구동사(pick up, clean up, watch out, hold on, come on, get on, hang on, eat up, give up, back up, pull out, jump in, wipe off, keep down, duck down, hang out, hit up, check out, cool off, go over, figure out, plug in, look forward to, chill out, find out, wrap up, come up with, calm down, back down, try on, point out, head out...)** 가 대화 전반에 체계적으로 녹아있습니다.
 
 ### 2.1 TypeScript 인터페이스 정의
 ```typescript
@@ -67,7 +67,7 @@ export interface ChoiceOption {
 
 /** 대화 단일 턴 스키마 */
 export interface DialogueTurn {
-  turnIndex: number;          // 턴 번호 (1, 2, 3, 4, 5, 6)
+  turnIndex: number;          // 턴 번호 (1, 2, 3, 4, 5, 6, 7)
   npcName: string;            // NPC 이름 (Penny, Leo, Sammy, Maya, Chloe, Jordan 등)
   npcAvatar: string;          // 이모지 (🦁, 🐧, 🦊, 🛹, 🎨, 🏀 등)
   npcEn: string;              // NPC 발화 영어
@@ -87,7 +87,7 @@ export interface DialogueEpisode {
   title: string;              // 한국어 제목 (예: "모래성 감탄")
   episode: string;            // 에피소드 라벨 (예: "📍 Episode 1/10: Sandcastle Masterpiece")
   artKey: string;             // SVG 아트워크 키 (sandcastle, cafeteria, swing 등)
-  turns: DialogueTurn[];      // Tier 1: 3턴, Tier 2: 4턴, Tier 3: 5턴, Tier 4: 6턴
+  turns: DialogueTurn[];      // Tier 1: 4턴, Tier 2: 5턴, Tier 3: 6턴, Tier 4: 7턴
 }
 ```
 

@@ -1,4 +1,4 @@
-"""Tier 3 Scenarios: Ages 11-13 (10 episodes x 5 turns = 50 turns)."""
+"""Tier 3 Scenarios: Ages 11-13 (10 episodes x 6 turns = 60 turns)."""
 from scenarios_common import make_ep, make_turn
 
 t3 = [
@@ -27,7 +27,12 @@ t3 = [
                   '"그렇게 하자! 딱 좋다!"라고 약속을 확정하세요!', "Sounds like a plan!",
                   "Boom! Board games and boba at four PM sharp! See you there!", "좋았어! 정확히 4시에 버블티 마시며 보드게임 격파하자!",
                   '약속 시간과 장소가 확정되었을 때 "그 계획 완벽해, 그렇게 하자"며 확답하는 관용구입니다.',
-                  "그렇게 하자! 딱 좋다! (완벽한 일정 확정)", "I reject this scheme.", "계획 거부한다는 딱딱한 말이에요.", "Class is canceled.", "수업 취소라는 엉뚱한 말이에요.")
+                  "그렇게 하자! 딱 좋다! (완벽한 일정 확정)", "I reject this scheme.", "계획 거부한다는 딱딱한 말이에요.", "Class is canceled.", "수업 취소라는 엉뚱한 말이에요."),
+        make_turn(6, "Maya", "🛹", "We finish school at 3 PM and boba opens right next door! What's the whole afternoon plan?", "3시에 학교 끝나고 버블티 집 바로 옆에 열어! 오후 전체 계획이 뭐야?",
+                  '"방과 후에 같이 어울려 놀자!"라고 구동사 hang out을 써서 제안해보세요!', "Let's hang out after school!",
+                  "Definitely! Boba, Uno tournaments, and good music all afternoon!", "무조건이지! 오후 내내 버블티 마시며 우노 보드게임 토너먼트 뜨자!",
+                  '구동사 "hang out"은 친구들과 부담 없이 시간 보내며 어울려 놀 때 미국 10대들이 가장 기본적으로 쓰는 구동사입니다.',
+                  "방과 후에 같이 놀자! (친구 어울림 대표 구동사)", "Let's fight outside.", "밖에서 싸우자는 엉뚱한 말이에요.", "Never talk again.", "다신 말하지 말라는 절교예요.")
     ]),
 
     make_ep("t3_e2", "tier3", "스케이트보드 묘기 성공", "📍 Episode 2/10: Skatepark Kickflip Landing", "skatepark", [
@@ -55,7 +60,12 @@ t3 = [
                   '"나 해볼 수 있어, 맡겨줘!"라고 자신감을 장착하세요!', "I got this!",
                   "That's the spirit! Pop the tail and commit to the landing!", "바로 그 기세지! 꼬리 차고 착지에 몸을 던져!",
                   '자신 있게 도전에 임하며 "내가 해낼게, 걱정 마"라고 스스로와 동료에게 힘을 실어주는 말입니다.',
-                  "나 해낼 수 있어! (자신만만한 도전)", "I have forgotten everything.", "다 까먹었다는 포기예요.", "Skating is illegal.", "불법이라는 엉뚱한 말이에요.")
+                  "나 해낼 수 있어! (자신만만한 도전)", "I have forgotten everything.", "다 까먹었다는 포기예요.", "Skating is illegal.", "불법이라는 엉뚱한 말이에요."),
+        make_turn(6, "Jordan", "🏀", "The sunset session is wrapping up! My board is packed and ready!", "일몰 스케이트 세션 마무리됐어! 내 보드 다 챙겼다!",
+                  '"이따가 메시지로 연락해!"라고 구동사 hit up을 써서 작별해보세요!', "Hit me up later!",
+                  "For sure! I'll drop the slow-mo kickflip video in our group chat! Peace out!", "당연하지! 우리 단톡방에 슬로모션 킥플립 영상 올릴게! 안녕!",
+                  '구동사 "hit up"은 전화, 문자, SNS 등으로 "나한테 연락해"라고 쿨하게 말할 때 쓰는 대중적인 구어체입니다.',
+                  "이따가 연락해! (쿨한 연락 요청 구동사)", "Punch me in face.", "얼굴 때리라는 무서운 오역이에요.", "Block my number.", "차단하라는 엉뚱한 말이에요.")
     ]),
 
     make_ep("t3_e3", "tier3", "과학 프로젝트 파트너", "📍 Episode 3/10: Volcano Chemistry Lab", "scienceLab", [
@@ -83,7 +93,12 @@ t3 = [
                   '"우리 만점 받았다, 해냈어!"라고 환호해보세요!', "We aced it!",
                   "First place ribbon for our volcanic lab! Best partners ever!", "화산 실험 전교 1등 리본 달았다! 우리 최고의 파트너야!",
                   '시험이나 발표, 프로젝트에서 최고점(A학점)을 받고 완벽하게 성공했을 때 외치는 단어입니다.',
-                  "우리 만점 받았어! (최고 성취 환호)", "We failed totally.", "완전 망했다는 오답이에요.", "Clean the floor.", "바닥 닦으라는 잔소리예요.")
+                  "우리 만점 받았어! (최고 성취 환호)", "We failed totally.", "완전 망했다는 오답이에요.", "Clean the floor.", "바닥 닦으라는 잔소리예요."),
+        make_turn(6, "Maya", "🛹", "The crimson foam overflowed exactly like planned! But the lab desk is all foamy!", "붉은 거품이 계획대로 완벽하게 넘쳤어! 근데 실험실 책상이 온통 거품투성이야!",
+                  '"실험대 깨끗이 치우자!"라고 구동사 clean up을 써서 말해보세요!', "Let's clean up the lab!",
+                  "Grabbing paper towels right now! Mr. Clark is gonna give us an easy A+!", "지금 페이퍼 타월 가져올게! 클라크 선생님이 무조건 A+ 주실 거야!",
+                  '구동사 "clean up"은 과학 실험실이나 작업 공간을 원상태로 말끔히 정리정돈할 때 쓰는 기본 표현입니다.',
+                  "실험실 깨끗이 치우자! (공간 정리정돈 구동사)", "Leave the mess.", "어지럽힌 채 두라는 무책임한 말이에요.", "Pour it on floor.", "바닥에 쏟으라는 오답이에요.")
     ]),
 
     make_ep("t3_e4", "tier4_preview_or_t3", "쇼핑몰 후드티 쇼핑", "📍 Episode 4/10: Mint Green Hoodie Hunt", "mall", [
@@ -111,7 +126,12 @@ t3 = [
                   '"후회 없는 선택이야!"라고 든든하게 지지해주세요!', "No regrets!",
                   "Zero regrets! Wearing this to school first thing Monday morning!", "후회 0퍼센트! 월요일 아침에 학교 가자마자 이거 입을 거야!",
                   '좋은 선택을 내린 후 "절대 후회 따윈 없다"고 확신하며 만족감을 표현할 때 씁니다.',
-                  "후회 없는 완벽한 선택이야! (만족감 확신)", "I regret everything.", "모든 걸 후회한다는 반대말이에요.", "Return it tomorrow.", "내일 환불하라는 초 치기예요.")
+                  "후회 없는 완벽한 선택이야! (만족감 확신)", "I regret everything.", "모든 걸 후회한다는 반대말이에요.", "Return it tomorrow.", "내일 환불하라는 초 치기예요."),
+        make_turn(6, "Chloe", "🎨", "The shopping mall food court is right upstairs! I smell warm cinnamon pretzels!", "쇼핑몰 푸드코트 바로 위층이야! 따끈한 시나몬 프레첼 냄새 난다!",
+                  '"저기 한번 구경 가보자!"라고 구동사 check out을 써서 제안해보세요!', "Let's check it out!",
+                  "Warm butter glaze and sweet iced lemonade! Best shopping finale ever!", "따끈한 버터 글레이즈에 시원한 레모네이드! 최고의 쇼핑 마무리 코스다!",
+                  '구동사 "check out"은 새로운 장소나 음식, 볼거리를 "확인하다/구경하러 가다"라는 뜻의 만능 구동사입니다.',
+                  "저기 한번 구경 가보자! (탐색과 방문 필수 구동사)", "Run away from food.", "음식에서 도망치라는 딴소리예요.", "Close your nose.", "코 막으라는 엉뚱한 말이에요.")
     ]),
 
     make_ep("t3_e5", "tier3", "음악 플레이리스트 공유", "📍 Episode 5/10: Shared Headphone Jams", "teenLocker", [
@@ -139,7 +159,12 @@ t3 = [
                   '"진짜 버릴 게 없는 순도 100% 명곡이다!"라고 극찬해보세요!', "Pure gold.",
                   "Shared the link to our group chat! Everyone needs this on their radar!", "우리 단톡방에 링크 쐈다! 애들 다 이 노래 들어야 해!",
                   '품질이나 완성도가 흠잡을 데 없이 뛰어난 작품이나 곡을 "순금 같다, 명작이다"라고 칭송하는 말입니다.',
-                  "순도 100% 명작이야! (최고의 찬사)", "Fake gold plastic.", "가짜 금이라는 악담이에요.", "I have no headphones.", "이어폰 없다는 딴소리예요.")
+                  "순도 100% 명작이야! (최고의 찬사)", "Fake gold plastic.", "가짜 금이라는 악담이에요.", "I have no headphones.", "이어폰 없다는 딴소리예요."),
+        make_turn(6, "Jordan", "🏀", "My phone battery just dipped to fifteen percent! The music might cut off!", "내 폰 배터리 방금 15퍼센트로 떨어졌어! 노래 끊길지도 몰라!",
+                  '"얼른 충전기 꽂아!"라고 구동사 plug in을 써서 말해보세요!', "Plug it in!",
+                  "Connected to the portable power bank! The music marathon keeps rolling uninterrupted!", "보조배터리에 연결 완료! 음악 마라톤은 끊김 없이 계속된다!",
+                  '구동사 "plug in"은 전자기기나 충전기를 전원에 꽂아 연결할 때 전 세계에서 매일 쓰는 기본 구동사입니다.',
+                  "얼른 충전기 꽂아! (전원 연결 필수 구동사)", "Unplug everything.", "다 뽑으라는 반대말이에요.", "Throw phone away.", "폰 버리라는 극단적인 오답이에요.")
     ]),
 
     make_ep("t3_e6", "tier3", "락커룸 사물함 자물쇠", "📍 Episode 6/10: Locker Combination Amnesia", "teenLocker", [
@@ -167,7 +192,12 @@ t3 = [
                   '"위기 넘겼다, 살았다!"라고 가슴을 쓸어내려 보세요!', "Crisis averted!",
                   "Grab your sneakers and sprint! We made it by the skin of our teeth!", "운동화 챙겨서 뛰어! 우리 진짜 간발의 차로 세이프했다!",
                   '큰 곤경이나 재난 상황을 아슬아슬하게 피했을 때 안도하며 외치는 멋진 구어체입니다.',
-                  "위기 넘겼다, 살았다! (안도의 한숨)", "Crisis started.", "위기 시작이라는 반대말이에요.", "I failed gym class.", "체육 낙제라는 오답이에요.")
+                  "위기 넘겼다, 살았다! (안도의 한숨)", "Crisis started.", "위기 시작이라는 반대말이에요.", "I failed gym class.", "체육 낙제라는 오답이에요."),
+        make_turn(6, "Maya", "🛹", "We grabbed our sneakers, but my locker door is swinging wide open!", "운동화는 챙겼는데, 내 사물함 문이 활짝 열려있어!",
+                  '"얼른 문 닫아!"라고 기본동사 shut을 써서 말해보세요!', "Shut it close!",
+                  "Slammed and clicked shut! Hallway is clear, sprint to the gymnasium!", "쾅 닫히면서 잠겼다! 복도 비었다, 체육관으로 전력 질주!",
+                  '기본동사 "shut"은 문이나 뚜껑을 빠르고 단단하게 닫을 때 직관적으로 쓰이는 핵심 동사입니다.',
+                  "얼른 딱 닫아! (문 단속 기본동사)", "Leave it open.", "열어두라는 위험한 말이에요.", "Break the hinges.", "경첩 부수라는 오답이에요.")
     ]),
 
     make_ep("t3_e7", "tier3", "급식 메뉴 실망", "📍 Episode 7/10: Cafeteria Mystery Loaf", "cafeteria", [
@@ -195,7 +225,12 @@ t3 = [
                   '"나도 무조건 낄래!"라고 지갑을 챙겨 일어나세요!', "Count me in.",
                   "Race you to the hall! Lunch crisis solved with snacks!", "복도까지 달리기다! 점심 위기는 스낵으로 완벽 해결!",
                   '어떤 행동이나 모임에 빠짐없이 동참하겠다고 활기차게 선언하는 만능 표현입니다.',
-                  "나도 무조건 낄래! (활기찬 동참 선언)", "Leave me alone.", "혼자 내버려 두라는 쌀쌀맞은 말이에요.", "I love broccoli.", "브로콜리 좋다는 거짓말이에요.")
+                  "나도 무조건 낄래! (활기찬 동참 선언)", "Leave me alone.", "혼자 내버려 두라는 쌀쌀맞은 말이에요.", "I love broccoli.", "브로콜리 좋다는 거짓말이에요."),
+        make_turn(6, "Chloe", "🎨", "The snack vending machine has delicious barbecue chips and cold soda!", "자판기에 맛있는 바비큐 감자칩이랑 시원한 탄산음료 가득 차 있어!",
+                  '"얼른 뽑아먹자!"라고 기본동사 get을 써서 말해보세요!', "Let's go get some!",
+                  "Dollar bills accepted! Crunchy chips dropped into the slot! Lunch is saved!", "지폐 투입 완료! 바삭한 칩이 슬롯으로 툭 떨어졌다! 점심 위기 탈출!",
+                  '기본동사 "go"와 "get"이 결합한 "go get ~"은 음식이나 간식을 사러 가거나 가져올 때 가장 자연스럽게 쓰입니다.',
+                  "얼른 사 먹으러 가자! (간식 획득 기본동사)", "Drop the coins.", "동전 떨어뜨리라는 오답이에요.", "Starve until dinner.", "저녁까지 굶자는 포기예요.")
     ]),
 
     make_ep("t3_e8", "tier3", "방과 후 자전거 라이딩", "📍 Episode 8/10: Sunset Ridge Bike Climb", "sunset", [
@@ -223,7 +258,12 @@ t3 = [
                   '"풍경 진짜 대박이다!"라고 노을을 바라보며 외치세요!', "What a view!",
                   "Golden hour perfection! Best bike ride of the entire year!", "골든 아워의 정석이다! 올해 최고의 자전거 라이딩이었어!",
                   '숨 막히게 아름다운 경치나 풍경을 마주했을 때 감탄을 쏟아내는 대표 관용구입니다.',
-                  "풍경 진짜 대박이야! (절경 감탄)", "I cannot see anything.", "아무것도 안 보인다는 오답이에요.", "Close your eyes.", "눈 감으라는 엉뚱한 말이에요.")
+                  "풍경 진짜 대박이야! (절경 감탄)", "I cannot see anything.", "아무것도 안 보인다는 오답이에요.", "Close your eyes.", "눈 감으라는 엉뚱한 말이에요."),
+        make_turn(6, "Jordan", "🏀", "The mountain air is getting pretty chilly, and the twilight streetlights are turning on!", "산 공기가 꽤 쌀쌀해지고, 땅거미 내려앉으면서 가로등이 켜지고 있어!",
+                  '"이제 자전거 타고 내려가자!"라고 구동사 head down을 써서 말해보세요!', "Let's head down!",
+                  "Flipping bike headlights on! Coasting smooth down the asphalt all the way home!", "자전거 전조등 ON! 아스팔트 길 타고 집까지 시원하게 미끄러져 내려가자!",
+                  '구동사 "head down"은 특정 방향(아래쪽, 남쪽, 시내 등)을 향해 "내려가다/출발하다"라는 이동 구동사입니다.',
+                  "이제 내려가자! (방향 이동 필수 구동사)", "Sleep on the hill.", "언덕에서 자라는 엉뚱한 말이에요.", "Crash the bicycle.", "자전거 박으라는 위험한 말이에요.")
     ]),
 
     make_ep("t3_e9", "tier3", "시험 전날 스터디 그룹", "📍 Episode 9/10: Pre-Exam Flashcard Sprint", "library", [
@@ -251,7 +291,12 @@ t3 = [
                   '"시험 치를 준비 완전 완료!"라고 자신감을 뽐내보세요!', "Ready for battle!",
                   "Tomorrow's exam doesn't stand a chance against us! Sleep well tonight!", "내일 시험지는 우리 손에 박살 날 일만 남았다! 오늘 밤 푹 자자!",
                   '모든 준비를 완벽하게 마치고 결전의 날을 당당하게 맞이할 때 외치는 전의에 찬 구호입니다.',
-                  "실전 준비 완료! (자신감 충천)", "I surrender tomorrow.", "내일 항복하겠다는 오답이에요.", "Cancel the school.", "학교 취소하라는 헛소리예요.")
+                  "실전 준비 완료! (자신감 충천)", "I surrender tomorrow.", "내일 항복하겠다는 오답이에요.", "Cancel the school.", "학교 취소하라는 헛소리예요."),
+        make_turn(6, "Maya", "🛹", "Our eyes are getting dry and we covered all twenty flashcard questions three times!", "눈도 뻑뻑해지고 플래시카드 20개 질문 세 번이나 전수 복습했어!",
+                  '"오늘은 이만 정리하자!"라고 구동사 wrap up을 써서 제안해보세요!', "Let's wrap it up!",
+                  "Packing up highlighters! A good night of sleep is our final secret weapon for an A!", "형광펜 정리 끝! 오늘 밤 푹 자는 게 만점 받는 마지막 비밀 무기야!",
+                  '구동사 "wrap up"은 공부나 회의, 프로젝트를 만족스럽게 "마무리짓다/끝마치다"라는 뜻의 핵심 구동사입니다.',
+                  "오늘은 이만 마무리하자! (학습 종료 필수 구동사)", "Study all night long.", "밤새우라는 무리한 말이에요.", "Rip the textbooks.", "교과서 찢으라는 나쁜 말이에요.")
     ]),
 
     make_ep("t3_e10", "tier3", "주말 캠핑 불멍", "📍 Episode 10/10: Fireside S'mores & Lore", "campfire", [
@@ -279,6 +324,11 @@ t3 = [
                   '"진짜 아늑하고 힐링되는 분위기야."라고 편안한 밤을 음미해보세요!', "Cozy vibes.",
                   "Crackling logs and a sky full of shooting stars... Best campout ever!", "타닥타닥 타는 장작불에 별똥별 가득한 하늘... 인생 최고의 캠핑이야!",
                   '따뜻하고 편안하며 감성적인 힐링 무드를 한마디로 요약할 때 10대들이 가장 사랑하는 표현입니다.',
-                  "진짜 아늑하고 힐링되는 분위기야. (감성적인 힐링)", "Horrible terrible mood.", "끔찍한 분위기라는 악담이에요.", "I hate camping.", "캠핑 싫다는 투덜거림이에요.")
+                  "진짜 아늑하고 힐링되는 분위기야. (감성적인 힐링)", "Horrible terrible mood.", "끔찍한 분위기라는 악담이에요.", "I hate camping.", "캠핑 싫다는 투덜거림이에요."),
+        make_turn(6, "Chloe", "🎨", "The night breeze is blowing sparks toward the dry pine needles!", "밤바람이 마른 솔잎 쪽으로 불씨를 날리고 있어!",
+                  '"불씨 완전히 꺼두자!"라고 구동사 put out을 써서 말해보세요!', "Put the fire out!",
+                  "Pouring the water bucket over the embers! Hiss... completely extinguished and safe!", "숯불 위에 양동이 물 붓는 중! 치이익... 완전히 진화 완료, 안전해!",
+                  '구동사 "put out"은 모닥불, 촛불, 담배 등의 불을 "끄다/진화하다"라는 뜻으로 캠핑과 안전에서 필수입니다.',
+                  "불씨 완전히 꺼둬! (소화 및 진화 필수 구동사)", "Pour gasoline.", "휘발유 부으라는 위험천만한 말이에요.", "Run away leaving fire.", "불 두고 도망치라는 범죄예요.")
     ])
 ]

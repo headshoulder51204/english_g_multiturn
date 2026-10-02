@@ -1,4 +1,4 @@
-"""Tier 1 Scenarios: Ages 6-8 (10 episodes x 3 turns = 30 turns)."""
+"""Tier 1 Scenarios: Ages 6-8 (10 episodes x 4 turns = 40 turns)."""
 from scenarios_common import make_ep, make_turn
 
 t1 = [
@@ -17,7 +17,12 @@ t1 = [
                   '"다 완성했다!"라고 환호해보세요!', "All done!",
                   "Our sandcastle is the king of the whole beach! High five!", "우리 모래성이 온 해변에서 제일 멋져! 하이파이브!",
                   '장난감 조립이나 만들기를 마쳤을 때 아이들이 가장 신나게 외치는 표현입니다.',
-                  "다 완성했다! (기쁨의 완료)", "Work is terminated.", "너무 기계적인 표현이에요.", "I want to sleep.", "상황에 어색해요.")
+                  "다 완성했다! (기쁨의 완료)", "Work is terminated.", "너무 기계적인 표현이에요.", "I want to sleep.", "상황에 어색해요."),
+        make_turn(4, "Penny", "🐧", "The sun is going down and the tide is coming in! Where do our shovels go?", "해가 지고 파도가 밀려오고 있어! 우리 모래삽은 어디다 두지?",
+                  '"장난감 치우자!"라고 구동사 clean up을 써서 말해보세요!', "Let's clean up!",
+                  "Good idea! Let's put all the buckets in my beach bag! Done!", "좋은 생각이야! 양동이들 내 비치백에 다 넣자! 끝!",
+                  '구동사 "clean up"은 놀이나 식사 후에 주변을 깨끗하게 정리할 때 아이들이 매일 쓰는 필수 표현입니다.',
+                  "깨끗이 치우자! (정리정돈 필수 구동사)", "Break the castle.", "모래성 부수자는 엉뚱한 말이에요.", "Eat sand.", "모래 먹자는 이상한 말이에요.")
     ]),
 
     make_ep("t1_e2", "tier1", "놀이터 술래잡기", "📍 Episode 2/10: Playground Tag", "tag", [
@@ -35,7 +40,12 @@ t1 = [
                   '"안전지대 세이프!"라고 당당하게 외쳐보세요!', "Safe base!",
                   "Haha, Sammy couldn't catch us! We're untouchable!", "하하 새미가 우리 못 잡았지! 우리 완전 세이프야!",
                   '놀이터 술래잡기에서 안전지대(Safe zone/base)에 도착했을 때 외치는 아동 필수 규칙 표현입니다.',
-                  "세이프! (안전지대 도달)", "You lose completely.", "친구를 놀리는 나쁜 말이에요.", "It is midnight.", "자정이라는 엉뚱한 말이에요.")
+                  "세이프! (안전지대 도달)", "You lose completely.", "친구를 놀리는 나쁜 말이에요.", "It is midnight.", "자정이라는 엉뚱한 말이에요."),
+        make_turn(4, "Leo", "🦁", "Sammy is zooming right around the big oak tree! Look out for that tree root!", "새미가 참나무 주변을 쌩쌩 달리고 있어! 저기 나무뿌리 걸리지 않게 조심해!",
+                  '"발밑 조심해!"라고 구동사 watch out을 써서 외쳐보세요!', "Watch out!",
+                  "Phew, you warned him just in time! He hopped right over it!", "휴, 네가 딱 맞춰 경고해줬어! 폴짝 뛰어넘었다!",
+                  '구동사 "Watch out!"은 장애물이나 위험이 닥쳤을 때 "조심해!"라고 즉시 외치는 가장 기본적이고 긴박한 표현입니다.',
+                  "조심해! (위험 경고 필수 구동사)", "Fall down hard.", "세게 넘어지라는 악담이에요.", "Sleep on grass.", "잔디에서 자라는 엉뚱한 말이에요.")
     ]),
 
     make_ep("t1_e3", "tier1", "간식 나눠먹기", "📍 Episode 3/10: Snack Sharing", "cafeteria", [
@@ -53,7 +63,12 @@ t1 = [
                   '"정말 고마워!"라고 환하게 감사 인사를 해보세요!', "Thank you so much!",
                   "Anytime, buddy! Sharing snacks makes everything better!", "언제든 말해 친구야! 나눠 먹는 게 최고지!",
                   '친구의 따뜻한 호의에 활짝 웃으며 건네는 가장 예쁜 아동 감사 표현입니다.',
-                  "정말 고마워! (진심 어린 감사)", "Give me money instead.", "무례한 오답이에요.", "I hate apples.", "음식 투정이에요.")
+                  "정말 고마워! (진심 어린 감사)", "Give me money instead.", "무례한 오답이에요.", "I hate apples.", "음식 투정이에요."),
+        make_turn(4, "Sammy", "🦊", "I have grape and strawberry left in the pouch! Which one do you want?", "봉지에 포도맛이랑 딸기맛 남았어! 너 어떤 거 먹을래?",
+                  '"하나 집어봐!"라고 기본동사 take를 써서 골라보세요!', "Take one!",
+                  "I'll take the purple grape bear! Om nom nom, so juicy!", "난 보라색 포도 곰 젤리 먹을래! 냠냠 완전 즙 터진다!",
+                  '기본동사 "take"는 손으로 물건을 집거나 선택할 때 "Take one(하나 골라봐/집어봐)"처럼 매일 쓰이는 핵심 동사입니다.',
+                  "하나 골라봐! (선택을 권하는 기본동사)", "Throw it away.", "버리라는 나쁜 말이에요.", "Hide the food.", "음식 숨기라는 엉뚱한 말이에요.")
     ]),
 
     make_ep("t1_e4", "tier1", "레고 블록 꼭대기", "📍 Episode 4/10: LEGO Tower Top", "toybox", [
@@ -71,7 +86,12 @@ t1 = [
                   '"하이파이브!"라고 손바닥을 부딪치며 외쳐보세요!', "High five!",
                   "Slap! That was a loud one! We rock!", "짝! 소리 진짜 시원하다! 우리 완전 짱이야!",
                   '성공이나 승리의 순간 미국 아이들이 손바닥을 맞부딪치며 외치는 필수 제스처 구호입니다.',
-                  "하이파이브! (팀워크의 상징)", "Do not touch hands.", "거절하는 차가운 말이에요.", "Take an aspirin.", "두통약 먹으라는 엉뚱한 말이에요.")
+                  "하이파이브! (팀워크의 상징)", "Do not touch hands.", "거절하는 차가운 말이에요.", "Take an aspirin.", "두통약 먹으라는 엉뚱한 말이에요."),
+        make_turn(4, "Leo", "🦁", "Whoa, the golden dragon is tilting! Don't let the bricks tumble!", "우와, 황금 용이 기울어지고 있어! 블록 안 와르르 무너지게 조심해!",
+                  '"잠깐 기다려봐!"라고 구동사 hold on을 써서 진정시켜보세요!', "Hold on!",
+                  "Phew, I steady it with both hands! The tower is standing strong!", "휴, 두 손으로 중심 잡았어! 탑이 튼튼하게 서 있다!",
+                  '구동사 "Hold on!"은 "잠깐만!", "기다려 봐!"라는 뜻으로 급하거나 위험한 순간 멈추라고 할 때 입버릇처럼 쓰입니다.',
+                  "잠깐만 기다려! (순간을 멈추는 필수 구동사)", "Smash it down.", "부숴버리라는 심술궂은 말이에요.", "I am crying.", "울고 있다는 딴소리예요.")
     ]),
 
     make_ep("t1_e5", "tier1", "크레파스 실수", "📍 Episode 5/10: Crayon Drop Oopsie", "tag", [
@@ -89,7 +109,12 @@ t1 = [
                   '"진짜 멋지다!"라고 친구와 함께 감탄해보세요!', "Looks great!",
                   "Our drawing is definitely going up on the class wall!", "우리 그림 무조건 교실 벽에 전시될 거야!",
                   '결과물이나 작품을 보고 짧고 따뜻하게 칭찬할 때 가장 자주 쓰는 아동 표현입니다.',
-                  "진짜 멋지다! (따뜻한 칭찬)", "It looks dirty.", "친구 기분을 망쳐요.", "I am not here.", "부재중이라는 오답이에요.")
+                  "진짜 멋지다! (따뜻한 칭찬)", "It looks dirty.", "친구 기분을 망쳐요.", "I am not here.", "부재중이라는 오답이에요."),
+        make_turn(4, "Penny", "🐧", "Oh, look! The yellow sun crayon rolled all the way under the chair!", "어 저기 봐! 노란 해님 크레파스가 의자 밑으로 데굴데굴 굴러갔어!",
+                  '"내가 주워올릴게!"라고 구동사 pick up을 써서 말해보세요!', "I'll pick it up!",
+                  "You got it! Thank you for picking it up so fast!", "네가 해냈네! 얼른 주워줘서 진짜 고마워!",
+                  '구동사 "pick up"은 바닥에 떨어진 물건을 손으로 "집어 올리다"라는 뜻으로 일상생활에서 매일 사용합니다.',
+                  "내가 주워올릴게! (물건 줍기 필수 구동사)", "Kick it far.", "멀리 차라는 나쁜 말이에요.", "Leave it dirty.", "더럽게 두라는 오답이에요.")
     ]),
 
     make_ep("t1_e6", "tier1", "미끄럼틀 양보", "📍 Episode 6/10: Slide Line Etiquette", "swing", [
@@ -107,7 +132,12 @@ t1 = [
                   '"나 출발한다!"라고 씩씩하게 외쳐보세요!', "Here I go!",
                   "Wheeee! Look at you zoom! You were even faster than me!", "와아아! 너 진짜 날아왔다! 나보다 훨씬 빨랐어!",
                   '놀이기구를 타거나 다이빙, 달리기를 시작하며 몸을 던질 때 외치는 만능 구호입니다.',
-                  "나 출발한다! (씩씩한 출발)", "I am retreating.", "후퇴한다는 군대 용어예요.", "Stop the slide.", "미끄럼틀 멈추라는 말이에요.")
+                  "나 출발한다! (씩씩한 출발)", "I am retreating.", "후퇴한다는 군대 용어예요.", "Stop the slide.", "미끄럼틀 멈추라는 말이에요."),
+        make_turn(4, "Sammy", "🦊", "That was the fastest slide ever! The stairs are empty right now!", "역대급으로 빠른 미끄럼틀이었어! 지금 계단 텅 비어있어!",
+                  '"빨리 와!"라고 재촉하며 구동사 come on을 써서 외쳐보세요!', "Come on!",
+                  "Running to the ladder right now! Let's slide down together again!", "지금 사다리로 뛰어가는 중! 우리 같이 한 번 더 슝 내려가자!",
+                  '구동사 "Come on!"은 "빨리 와!", "어서!", "힘내!"처럼 친구를 부르거나 재촉할 때 전 세계에서 가장 많이 쓰는 구동사입니다.',
+                  "빨리 와, 어서! (재촉과 활기의 구동사)", "Go away.", "저리 가라는 차가운 말이에요.", "Stop playing.", "놀지 말라는 김빠지는 소리예요.")
     ]),
 
     make_ep("t1_e7", "tier1", "잃어버린 스티커", "📍 Episode 7/10: Lost Dinosaur Sticker", "toybox", [
@@ -125,7 +155,12 @@ t1 = [
                   '"천만에, 별말을!"이라고 쿨하게 화답해보세요!', "You got it!",
                   "You're the sweetest friend in our whole school!", "너 우리 학교에서 제일 다정한 친구야!",
                   '친구가 큰 감사를 표할 때 미국 아이들이 "천만에, 언제든 말해!"라는 뜻으로 자주 쓰는 관용구입니다.',
-                  "천만에, 별말을! (다정한 화답)", "You owe me money.", "돈 내놓으라는 무례한 말이에요.", "I will hide it.", "숨기겠다는 나쁜 말이에요.")
+                  "천만에, 별말을! (다정한 화답)", "You owe me money.", "돈 내놓으라는 무례한 말이에요.", "I will hide it.", "숨기겠다는 나쁜 말이에요."),
+        make_turn(4, "Penny", "🐧", "I finally got my favorite T-rex sticker back! Where should I put it?", "최애 티라노 스티커 되찾았다! 이거 어디에 둘까?",
+                  '"소중히 잘 보관해!"라고 기본동사 keep을 써서 조언해보세요!', "Keep it safe!",
+                  "Putting it inside my secret pocket zipper! It's safe now!", "내 비밀 주머니 지퍼 안에 쏙 넣었어! 이제 절대 안 잃어버려!",
+                  '기본동사 "keep"은 어떤 상태를 그대로 유지하거나 소중한 물건을 지킬 때 "Keep it safe(안전하게 잘 둬)"로 쓰입니다.',
+                  "안전하게 잘 보관해! (상태 유지 기본동사)", "Throw it out.", "버리라는 이상한 말이에요.", "Lose it again.", "다시 잃어버리라는 악담이에요.")
     ]),
 
     make_ep("t1_e8", "tier1", "왕 비눗방울 불기", "📍 Episode 8/10: Giant Bubble Blast", "tag", [
@@ -143,7 +178,12 @@ t1 = [
                   '"다 터뜨려!"라고 신나게 점프하며 외쳐보세요!', "Pop it!",
                   "Pop pop pop! We cleared the whole playground sky!", "톡톡톡! 우리가 운동장 하늘을 비눗방울로 싹 정복했어!",
                   '풍선이나 비눗방울을 터뜨릴 때 아이들이 방방 뛰며 소리치는 직관적인 단어입니다.',
-                  "터뜨려! (신나는 점프 외침)", "Do not touch air.", "공기 만지지 말라는 엉뚱한 말이에요.", "I am bored.", "지루하다는 찬물 끼얹기예요.")
+                  "터뜨려! (신나는 점프 외침)", "Do not touch air.", "공기 만지지 말라는 엉뚱한 말이에요.", "I am bored.", "지루하다는 찬물 끼얹기예요."),
+        make_turn(4, "Leo", "🦁", "Look! A giant rainbow bubble is floating toward the swings! Quick!", "봐봐! 무지개 왕 비눗방울이 그네 쪽으로 둥실둥실 날아간다! 얼른!",
+                  '"얼른 가서 잡아!"라고 기본동사 go와 get을 써서 외쳐보세요!', "Go get it!",
+                  "I'm running after it! POP! Bubble splash right on my nose!", "내가 뒤쫓아 뛰어간다! 톡! 내 코끝에서 퐁 터졌어!",
+                  '기본동사 "go"와 "get"이 결합한 "Go get it!"은 목표를 향해 "얼른 가서 잡아라/가져와라!"라고 신나게 뛸 때 쓰는 표현입니다.',
+                  "얼른 가서 잡아! (행동 촉구 기본동사 콤보)", "Look away.", "딴 데 보라는 오답이에요.", "Sit down.", "주저앉으라는 김빠지는 말이에요.")
     ]),
 
     make_ep("t1_e9", "tier1", "종이비행기 날리기", "📍 Episode 9/10: Airplane Launch", "tag", [
@@ -161,7 +201,12 @@ t1 = [
                   '"한 번 더 하자!"라고 도전 정신을 불태워보세요!', "One more time!",
                   "Yes! Let's aim for the big oak tree this time!", "좋아! 이번엔 저 큰 참나무까지 날려보는 거야!",
                   '놀이나 게임이 너무 재미있어서 또 하자고 조를 때 미국 아이들이 가장 많이 쓰는 관용구입니다.',
-                  "한 번 더! (신나는 재도전)", "I quit forever.", "영원히 때려치운다는 말이에요.", "I am thirty years old.", "나이 거짓말이에요.")
+                  "한 번 더! (신나는 재도전)", "I quit forever.", "영원히 때려치운다는 말이에요.", "I am thirty years old.", "나이 거짓말이에요."),
+        make_turn(4, "Sammy", "🦊", "The jet glided all the way onto the soft grass field!", "종이 제트기가 저기 부드러운 잔디밭 위까지 미끄러져 날아갔어!",
+                  '"얼른 주우러 가자!"라고 구동사 pick up을 써서 말해보세요!', "Let's pick it up!",
+                  "Got it! Not a single bend on the wings! Launch number two ready!", "찾았다! 날개 하나도 안 구겨졌어! 2차 발사 준비 완료!",
+                  '구동사 "pick up"은 날아간 종이비행기나 장난감을 다시 집어 들 때 가장 많이 쓰는 기본 구동사입니다.',
+                  "얼른 주우러 가자! (물건 회수 필수 구동사)", "Step on it.", "밟아 뭉개라는 나쁜 말이에요.", "Burn the paper.", "종이 태우라는 위험한 말이에요.")
     ]),
 
     make_ep("t1_e10", "tier1", "하교 작별 인사", "📍 Episode 10/10: After-School Farewell", "cafeteria", [
@@ -179,6 +224,11 @@ t1 = [
                   '"이따 또 봐!"라고 손을 흔들며 외쳐보세요!', "Catch you later!",
                   "Save me a window seat next to you tomorrow morning! Bye!", "내일 아침에 내 창가 옆자리 맡아놔줘! 안녕!",
                   '친구와 헤어질 때 "또 봐, 나중에 봐"의 뜻으로 가볍고 경쾌하게 쓰는 키즈 구어체입니다.',
-                  "이따 또 봐! (경쾌한 작별)", "I am trapped.", "갇혔다는 공포스런 말이에요.", "My name is John.", "자기소개예요.")
+                  "이따 또 봐! (경쾌한 작별)", "I am trapped.", "갇혔다는 공포스런 말이에요.", "My name is John.", "자기소개예요."),
+        make_turn(4, "Penny", "🐧", "The yellow bus doors are folding open! The driver says hop in!", "노란 스쿨버스 문이 덜컹 열린다! 기사님이 얼른 타래!",
+                  '"얼른 버스 타!"라고 구동사 get on을 써서 말해보세요!', "Get on!",
+                  "Climbing the steps! Save me a seat tomorrow morning! Bye!", "계단 올라탄다! 내일 아침에도 창가 자리 맡아줘! 안녕!",
+                  '구동사 "Get on"은 버스나 기차 등 대형 교통수단에 탑승할 때 "얼른 타!"라는 의미로 쓰이는 필수 구동사입니다.',
+                  "얼른 올라타! (교통수단 탑승 구동사)", "Fall off.", "떨어지라는 악담이에요.", "Sleep outside.", "밖에서 자라는 엉뚱한 말이에요.")
     ])
 ]

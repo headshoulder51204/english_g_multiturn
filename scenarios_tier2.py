@@ -1,4 +1,4 @@
-"""Tier 2 Scenarios: Ages 9-10 (10 episodes x 4 turns = 40 turns)."""
+"""Tier 2 Scenarios: Ages 9-10 (10 episodes x 5 turns = 50 turns)."""
 from scenarios_common import make_ep, make_turn
 
 t2 = [
@@ -22,7 +22,12 @@ t2 = [
                   '"오늘 진짜 최고의 날이다!"라고 환호해보세요!', "Best day ever!",
                   "Totally! We rule the playground today!", "완전 인정! 오늘 놀이터는 우리가 접수했다!",
                   '신나게 놀며 행복이 폭발할 때 미국 아이들이 매일 쓰는 대표적 찬사입니다.',
-                  "진짜 최고의 날이야! (행복의 찬사)", "Worst day ever.", "최악의 날이라는 반대말이에요.", "School starts now.", "쉬는 시간 끝났다는 찬물이에요.")
+                  "진짜 최고의 날이야! (행복의 찬사)", "Worst day ever.", "최악의 날이라는 반대말이에요.", "School starts now.", "쉬는 시간 끝났다는 찬물이에요."),
+        make_turn(5, "Leo", "🦁", "I'm gonna push the tire swing in a giant spinning whirlpool! 3, 2, 1!", "내가 타이어 그네를 거대한 회오리처럼 뱅글뱅글 밀어줄게! 3, 2, 1!",
+                  '"손잡이 꽉 잡아!"라고 구동사 hang on을 써서 외쳐보세요!', "Hang on tight!",
+                  "Holding on with both hands! Wheeeeee, we're flying through the clouds!", "두 손으로 꽉 잡았어! 우와아아 우리 구름 속을 나는 것 같아!",
+                  '구동사 "Hang on"은 손으로 무언가를 꽉 붙잡거나, 잠깐 멈춰 기다릴 때 "Hang on tight!(꽉 잡아!)"로 일상에서 쓰입니다.',
+                  "손잡이 꽉 잡아! (안전 필수 구동사)", "Let go now.", "손 놓으라는 위험한 말이에요.", "Close your eyes.", "눈 감으라는 엉뚱한 말이에요.")
     ]),
 
     make_ep("t2_e2", "tier2", "급식실 자리 맡기", "📍 Episode 2/10: Cafeteria Seat Rescue", "cafeteria", [
@@ -45,7 +50,12 @@ t2 = [
                   '"나랑 바꾸자!"라고 신나게 제안해보세요!', "Trade ya!",
                   "Deal! Warm breadsticks for cold pudding! Win-win!", "콜! 따끈한 마늘빵이랑 시원한 푸딩 맞교환! 윈윈이다!",
                   '급식실이나 놀이터에서 간식을 맞바꿀 때 아이들이 리드미컬하게 외치는 슬랭입니다.',
-                  "나랑 바꾸자! (신나는 간식 교환)", "I keep everything.", "욕심부리는 쌀쌀맞은 말이에요.", "Throw it away.", "버리라는 나쁜 말이에요.")
+                  "나랑 바꾸자! (신나는 간식 교환)", "I keep everything.", "욕심부리는 쌀쌀맞은 말이에요.", "Throw it away.", "버리라는 나쁜 말이에요."),
+        make_turn(5, "Penny", "🐧", "Our trays are settled and the pizza cheese is still warm and stretchy!", "우리 식판 자리 잡았고 피자 치즈 아직 따끈따끈 쭉 늘어나!",
+                  '"얼른 맛있게 다 먹자!"라고 구동사 eat up을 써서 말해보세요!', "Eat up!",
+                  "Mmm, this garlic crust is amazing! Best Friday lunch ever!", "음, 이 마늘 도우 진짜 환상적이다! 역대 최고의 금요일 점심이야!",
+                  '구동사 "Eat up"은 남김없이 "맛있게 다 먹어!"라고 권할 때 미국인들이 가장 친근하게 쓰는 식사 구동사입니다.',
+                  "맛있게 다 먹자! (식사 권유 필수 구동사)", "Spit it out.", "뱉으라는 무례한 말이에요.", "Hide the food.", "음식 숨기라는 이상한 말이에요.")
     ]),
 
     make_ep("t2_e3", "tier2", "피구 경기 작전", "📍 Episode 3/10: Dodgeball Showdown", "basketball", [
@@ -60,7 +70,7 @@ t2 = [
                   '공이나 물체가 날아올 때 "조심해, 위험해!"라고 알리는 가장 직관적인 스포츠 경고입니다.',
                   "조심해! (날아오는 공 경고)", "Use your head.", "머리 쓰라는 다른 뜻이에요.", "Good afternoon.", "오후 인사예요."),
         make_turn(3, "Sammy", "🦊", "Now you caught the rebound! Throw it right at their back line!", "너 리바운드 공 잡았잖아! 쟤네 뒷줄 향해 바로 던져!",
-                  '"나이스 샷!"이라고 환호하며 날려보세요!', "Nice throw!",
+                  '"나이스 샷!"라고 환호하며 날려보세요!', "Nice throw!",
                   "Smack! Double elimination! Their two strongest players are out!", "퍽! 더블 아웃! 상대 팀 에이스 두 명 한 방에 퇴장!",
                   '스포츠나 경기에서 훌륭한 플레이를 보았을 때 관중과 선수가 다 함께 외치는 찬사입니다.',
                   "멋진 투구야! (플레이 찬사)", "Awful ball.", "형편없다는 악담이에요.", "I want dinner.", "저녁밥 달라는 딴소리예요."),
@@ -68,7 +78,12 @@ t2 = [
                   '"우리가 이겼다!"라고 승리의 포효를 질러보세요!', "We won!",
                   "Recess Dodgeball Champions! High fives all around!", "쉬는 시간 피구 챔피언 등극! 다들 하이파이브!",
                   '경기에서 승리했을 때 온몸으로 기쁨을 터뜨리는 가장 순수하고 강력한 외침입니다.',
-                  "우리가 이겼어! (승리의 환호)", "We surrendered.", "항복했다는 패배자 말이에요.", "Time to study.", "공부하자는 김빠지는 말이에요.")
+                  "우리가 이겼어! (승리의 환호)", "We surrendered.", "항복했다는 패배자 말이에요.", "Time to study.", "공부하자는 김빠지는 말이에요."),
+        make_turn(5, "Sammy", "🦊", "Only two of us left against three on their team! Can we pull off a comeback?", "우리 팀 둘 남고 쟤네 셋 남았어! 역전승 가능할까?",
+                  '"절대 포기하지 마!"라고 구동사 give up을 써서 용기를 북돋워주세요!', "Don't give up!",
+                  "You're right! We've got this! Let's watch the red ball and dodge together!", "네 말이 맞아! 우리 할 수 있어! 빨간 공 잘 보면서 같이 피하자!",
+                  '구동사 "give up"은 포기하다라는 뜻으로, "Don\'t give up!(절대 포기하지 마!)"은 스포츠와 일상에서 가장 힘이 되는 응원 구호입니다.',
+                  "절대 포기하지 마! (용기 충전 대표 구동사)", "Give up now.", "지금 포기하라는 패배자 말이에요.", "Go home alone.", "혼자 집 가라는 딴소리예요.")
     ]),
 
     make_ep("t2_e4", "tier2", "만화책 스포일러 방어", "📍 Episode 4/10: Comic Spoiler Shield", "library", [
@@ -91,7 +106,12 @@ t2 = [
                   '"그 말도 일리 있네, 인정!"이라고 동의해보세요!', "Fair enough.",
                   "Deal! Meet by the library lockers right at noon!", "콜! 딱 정오에 도서관 락커 앞에서 만나서 폭풍 수다 떨자!",
                   '상대방의 합리적인 제안이나 타협안에 고개를 끄덕이며 "그럼 그렇게 하자"고 할 때 씁니다.',
-                  "그 말도 일리 있네! (합리적 수용)", "Completely unfair.", "완전 불공평하다는 반발이에요.", "Library is noisy.", "도서관 시끄럽다는 불평이에요.")
+                  "그 말도 일리 있네! (합리적 수용)", "Completely unfair.", "완전 불공평하다는 반발이에요.", "Library is noisy.", "도서관 시끄럽다는 불평이에요."),
+        make_turn(5, "Leo", "🦁", "You are totally gonna love chapter seven! Here, take Volume 4 into your backpack!", "너 진짜 7장 완전 좋아할걸! 자, 4권 네 가방에 얼른 챙겨 넣어!",
+                  '"고마워, 잘 챙겨둘게!"라고 구동사 put away를 써서 말해보세요!', "I'll put it away!",
+                  "Take good care of it! We'll talk all about the epic battle at recess tomorrow!", "소중히 잘 읽어줘! 내일 쉬는 시간에 대결 장면 이야기 폭풍 수다 떨자!",
+                  '구동사 "put away"는 책이나 물건을 제자리나 가방에 "정리하여 넣어두다/챙기다"라는 뜻의 핵심 구동사입니다.',
+                  "가방에 잘 넣어둘게! (정리 및 보관 구동사)", "Tear the pages.", "책 찢으라는 나쁜 말이에요.", "Throw it away.", "버리라는 무례한 말이에요.")
     ]),
 
     make_ep("t2_e5", "tier2", "쉬는 시간 달리기 대결", "📍 Episode 5/10: Recess Sprint Showdown", "playground", [
@@ -114,7 +134,12 @@ t2 = [
                   '"내일 재대결이야!"라고 다음 승부를 기약하세요!', "Rematch tomorrow!",
                   "You're on! Bring your lucky neon sneakers tomorrow!", "좋았어, 받아주지! 내일 형광 행운 운동화 신고 와라!",
                   '팽팽한 승부 끝에 다음 판을 약속하며 승부욕을 불태울 때 쓰는 멋진 스포츠 구어체입니다.',
-                  "내일 재대결이야! (승부 기약)", "I quit running.", "달리기 그만둔다는 말이에요.", "Where is lunch?", "점심밥 찾는 말이에요.")
+                  "내일 재대결이야! (승부 기약)", "I quit running.", "달리기 그만둔다는 말이에요.", "Where is lunch?", "점심밥 찾는 말이에요."),
+        make_turn(5, "Sammy", "🦊", "Phew! My heart is racing and I drank all my cold water!", "휴! 심장 엄청 쿵쾅거리고 시원한 물 다 마셨어!",
+                  '"숨 좀 돌리자!"라고 기본동사 take를 써서 제안해보세요!', "Let's take a breath!",
+                  "Phew, yes! Deep breaths in and out... My lungs are finally calming down!", "휴 맞아! 숨 깊이 들이쉬고 내쉬고... 숨 이제 좀 찬찬히 가라앉는다!",
+                  '기본동사 "take"와 명사가 결합하여 "Take a breath(숨을 고르다/쉬다)"처럼 신체 회복을 표현할 때 자연스럽게 쓰입니다.',
+                  "숨 좀 고르자! (호흡 회복 기본동사)", "Run another mile.", "1마일 더 뛰라는 끔찍한 말이에요.", "Stop breathing.", "숨 멈추라는 위험한 말이에요.")
     ]),
 
     make_ep("t2_e6", "tier2", "포켓몬 카드 교환", "📍 Episode 6/10: Trading Card Bargain", "teenLocker", [
@@ -137,7 +162,12 @@ t2 = [
                   '"거래해서 즐거웠어!"라고 악수를 청해보세요!', "Pleasure doing business!",
                   "Haha, you sound like a Wall Street broker! High five!", "하하 너 월스트리트 주식 브로커 같다! 하이파이브!",
                   '친구들끼리 카드나 장난감을 교환한 뒤 어른스럽고 유머러스하게 건네는 비즈니스 인사입니다.',
-                  "거래해서 즐거웠어! (유머러스한 거래 인사)", "Give it back now.", "당장 돌려달라는 억지예요.", "I forgot my wallet.", "지갑 없다는 말이에요.")
+                  "거래해서 즐거웠어! (유머러스한 거래 인사)", "Give it back now.", "당장 돌려달라는 억지예요.", "I forgot my wallet.", "지갑 없다는 말이에요."),
+        make_turn(5, "Penny", "🐧", "This shiny panther card is going straight into my top-secret binder!", "이 반짝이는 표범 카드 내 일급비밀 카드 앨범에 바로 넣을 거야!",
+                  '"소중히 잘 간직해!"라고 기본동사 keep을 써서 격려해보세요!', "Keep it safe!",
+                  "Locked with double sleeves! It's never getting scratched! Thanks for the trade!", "이중 슬리브 장착 완료! 흠집 절대 안 나게 할게! 교환해줘서 고마워!",
+                  '기본동사 "keep"은 "상태를 유지하다, 간직하다"라는 뜻으로, "Keep it safe(안전하게 잘 간직해)"는 카드를 넘겨줄 때 멋진 당부 표현입니다.',
+                  "소중히 잘 간직해! (보관 당부 기본동사)", "Drop on ground.", "바닥에 떨어뜨리라는 오답이에요.", "Fold in half.", "반으로 접으라는 악담이에요.")
     ]),
 
     make_ep("t2_e7", "tier2", "숙제 깜빡했을 때", "📍 Episode 7/10: Forgotten Homework Crisis", "classroom", [
@@ -160,7 +190,12 @@ t2 = [
                   '"내가 신세 한 번 갚을게!"라고 의리를 보여주세요!', "I owe you one!",
                   "Haha remember that at lunchtime! Extra tater tots for me!", "하하 점심시간에 잊지 마라! 내 식판에 감자튀김 더 얹어주기다!",
                   '큰 도움을 받은 뒤 상대방에게 은혜를 반드시 갚겠다고 약속하는 신뢰의 표현입니다.',
-                  "내가 신세 꼭 갚을게! (의리 넘치는 약속)", "You owe me money.", "네가 돈 내놓으라는 적반하장이에요.", "Class is dismissed.", "수업 끝났다는 거짓말이에요.")
+                  "내가 신세 꼭 갚을게! (의리 넘치는 약속)", "You owe me money.", "네가 돈 내놓으라는 적반하장이에요.", "Class is dismissed.", "수업 끝났다는 거짓말이에요."),
+        make_turn(5, "Leo", "🦁", "Pencils down! Mr. Davis took the stack of worksheets to his teacher desk!", "연필 끝! 선생님이 과제물 뭉치 교탁으로 다 들고 가셨어!",
+                  '"위기 잘 넘겼다!"라고 구동사 get through를 써서 기뻐해보세요!', "We got through it!",
+                  "High five! That was the closest homework close-call of the entire year!", "하이파이브! 올해 과제 제출 중에 진짜 역대급으로 심장 쫄깃했어!",
+                  '구동사 "get through"는 힘든 고비나 위기 상황을 "무사히 통과하다/이겨내다"라는 뜻으로 널리 쓰입니다.',
+                  "위기 잘 넘겼다! (난관 극복 구동사)", "We got arrested.", "체포되었다는 엉뚱한 오역이에요.", "Give me homework.", "숙제 더 달라는 망언이에요.")
     ]),
 
     make_ep("t2_e8", "tier2", "게임 오버 후 재도전", "📍 Episode 8/10: Arcade Boss Battle", "toybox", [
@@ -170,7 +205,7 @@ t2 = [
                   '아슬아슬한 승부나 위기에서 한 끗 차이로 비켜갔을 때 쓰는 대표적인 탄식 표현입니다.',
                   "진짜 아까웠어! (아슬아슬한 탄식)", "That was very far.", "멀었다는 반대말이에요.", "I hate games.", "게임 싫다는 초 치기예요."),
         make_turn(2, "Sammy", "🦊", "We still have three glowing arcade tokens left in the slot!", "슬롯에 아직 번쩍이는 오락실 토큰 세 개나 남아있어!",
-                  '"한 판 더 가자! 재도전!"이라고 패기 있게 외치세요!', "Let's run it back!",
+                  '"한 판 더 가자! 재도전!"라고 패기 있게 외치세요!', "Let's run it back!",
                   "Insert coin! This time I'll freeze him with the ice cannon!", "코인 투입! 이번엔 내가 얼음 대포로 녀석 꽁꽁 얼려버릴게!",
                   '게임이나 시합에서 패배 후 곧바로 다시 리턴 매치를 시작할 때 외치는 최신 게이머 슬랭입니다.',
                   "한 판 더 가자! (패기 넘치는 재도전)", "Run away home.", "집으로 도망치라는 뜻이에요.", "Turn off TV.", "TV 끄라는 김빠지는 소리예요."),
@@ -183,7 +218,12 @@ t2 = [
                   '"완벽한 승리다!"라고 환호하며 자축해보세요!', "Flawless victory!",
                   "Zero deaths on stage five! We just set the high score in town!", "5단계 노데스 클리어! 우리 동네 신기록 세웠다!",
                   '흠잡을 데 없이 완벽한 경기력으로 대승을 거두었을 때 자축하는 게이머들의 명대사입니다.',
-                  "완벽한 승리야! (무결점 대승 자축)", "We lost completely.", "완패했다는 오답이에요.", "Game over forever.", "영원한 게임오버라는 엉뚱한 말이에요.")
+                  "완벽한 승리야! (무결점 대승 자축)", "We lost completely.", "완패했다는 오답이에요.", "Game over forever.", "영원한 게임오버라는 엉뚱한 말이에요."),
+        make_turn(5, "Sammy", "🦊", "The ticket dispenser is spitting out a mile-long ribbon of red prize tickets!", "티켓 배출기에서 빨간 경품 티켓이 리본처럼 1미터 넘게 쏟아져 나와!",
+                  '"티켓 다 챙겨!"라고 구동사 pick up을 써서 말해보세요!', "Pick them up!",
+                  "Rolling them into a giant ball! We have enough tickets for the giant plush bear!", "왕공처럼 돌돌 마는 중! 대형 곰 인형 바꿀 만큼 티켓 충분해!",
+                  '구동사 "pick up"은 쏟아져 나온 티켓이나 물건을 바닥에서 "주워 담다/챙기다"라는 의미로 쓰입니다.',
+                  "얼른 다 챙겨! (물건 수거 구동사)", "Burn the tickets.", "티켓 태우라는 이상한 말이에요.", "Leave them behind.", "버려두고 가자는 손해예요.")
     ]),
 
     make_ep("t2_e9", "tier2", "생일 파티 초대", "📍 Episode 9/10: Laser Tag Birthday Invite", "tag", [
@@ -206,7 +246,12 @@ t2 = [
                   '"진짜 대박 재밌을 거야!"라고 축하를 건네보세요!', "It's gonna be a blast!",
                   "The best birthday party of the fourth grade! See you Saturday!", "4학년 최고의 생일 파티가 될 거야! 토요일에 만나!",
                   '파티나 여행이 엄청나게 신나고 재밌을 것이라 확신할 때 쓰는 대표적인 찬사 표현입니다.',
-                  "진짜 대박 재밌을 거야! (최고의 파티 예고)", "It will explode dangerously.", "위험하게 폭발한다는 오역이에요.", "Happy New Year.", "새해 인사예요.")
+                  "진짜 대박 재밌을 거야! (최고의 파티 예고)", "It will explode dangerously.", "위험하게 폭발한다는 오역이에요.", "Happy New Year.", "새해 인사예요."),
+        make_turn(5, "Penny", "🐧", "Our team needs to wear dark sneakers and sneakers with good grip for the ramps!", "우리 팀 경기장 경사로 뛰려면 접지력 좋은 어두운 운동화 신고 와야 해!",
+                  '"편한 신발 신고 갈게!"라고 구동사 put on을 써서 답해보세요!', "I'll put them on!",
+                  "Perfect! Dark clothes, fast sneakers, laser blasters ready to fire! See ya Saturday!", "완벽해! 어두운 옷에 빠른 신발, 레이저 총 발사 준비 완료! 토요일에 보자!",
+                  '구동사 "put on"은 옷, 신발, 모자, 안경 등을 "착용하다/신다"라는 뜻으로 일상에서 가장 자주 쓰이는 핵심 구동사입니다.',
+                  "꼭 챙겨 신을게! (의류 착용 필수 구동사)", "Take off shoes.", "신발 벗으라는 오답이에요.", "Throw sneakers.", "신발 던지라는 엉뚱한 말이에요.")
     ]),
 
     make_ep("t2_e10", "tier2", "비밀 아지트 규칙", "📍 Episode 10/10: Secret Treehouse Vault", "treehouse", [
@@ -229,6 +274,11 @@ t2 = [
                   '"일급비밀이라고 해!"라고 장난스럽게 윙크하세요!', "Top secret!",
                   "Code Red Classified! Welcome to the secret club, agent!", "코드 레드 1급 기밀! 비밀 클럽의 정식 요원이 된 걸 환영한다!",
                   '비밀 작전이나 모임의 기밀성을 강조하며 스파이 놀이를 할 때 외치는 단어입니다.',
-                  "일급비밀이야! (비밀 클럽의 완성)", "Tell the whole world.", "온 세상에 알리라는 반대말이에요.", "I want ice cream.", "아이스크림 달라는 딴소리예요.")
+                  "일급비밀이야! (비밀 클럽의 완성)", "Tell the whole world.", "온 세상에 알리라는 반대말이에요.", "I want ice cream.", "아이스크림 달라는 딴소리예요."),
+        make_turn(5, "Leo", "🦁", "It's getting chilly and the orange sunset is hiding behind the hill!", "점점 쌀쌀해지고 주황색 노을이 언덕 뒤로 숨고 있어!",
+                  '"이제 사다리 타고 내려가자!"라고 구동사 climb down을 써서 말해보세요!', "Let's climb down!",
+                  "Ladder cleared! Trapdoor locked! Meeting back at Headquarters tomorrow at recess!", "사다리 통과! 뚜껑문 시건 완료! 내일 쉬는 시간에 비밀 본부에서 다시 집합!",
+                  '구동사 "climb down"은 나무나 사다리 높은 곳에서 "조심조심 기어내려오다"라는 뜻의 동작 구동사입니다.',
+                  "조심해서 내려가자! (하강 동작 구동사)", "Jump out window.", "창문으로 뛰어내리라는 위험한 말이에요.", "Sleep in tree.", "나무에서 자라는 엉뚱한 말이에요.")
     ])
 ]
