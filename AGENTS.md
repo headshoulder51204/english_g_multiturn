@@ -68,7 +68,7 @@
 ```
 [Orchestrator]
       │
-      ├─► 1. [Curriculum Agent] : 대화 시나리오 및 뉘앙스 데이터 JSON 작성
+      ├─► 1. [Curriculum Agent] : 대화 시나리오 및 뉘앙스 데이터 작성
       │         │
       │         ▼
       ├─► 2. [Audio Agent]      : 발음 매칭 규칙 및 사운드 FX 엔진 개발
@@ -77,19 +77,20 @@
       ├─► 3. [Frontend Agent]   : 상태 머신(FSM) 및 UI 테마/SVG 화면 연동
       │         │
       │         ▼
-      ├─► 4. [QA Verifier]      : 스모크 테스트 및 크로스 브라우징 무결성 검증
+      ├─► 4. [QA Verifier]      : python build_scenarios.py 빌드 및 스모크 테스트 무결성 검증
       │         │
       │         ▼
-      └─► 5. [DevOps Agent]     : Vercel 배포 확인 및 종합 README.md 갱신
+      └─► 5. [DevOps Agent]     : Git 커밋 ➔ git push origin main (Vercel 자동 배포) ➔ 종합 문서 갱신
 ```
 
 ---
 
-## 4. 작업 시 필수 준수 품질 게이트 (Quality Gates)
+## 4. 작업 시 필수 준수 6대 품질 게이트 (Quality Gates)
 
-모든 에이전트는 작업을 완료하고 사용자에게 인도하기 전, 아래 5대 품질 게이트를 통과해야 합니다:
+모든 에이전트는 코드나 시나리오를 추가/수정한 후 사용자에게 인도하기 전, 아래 6대 품질 게이트를 필수적으로 통과해야 합니다:
 1. **[Code Quality]** 인라인 자바스크립트 및 파이썬 코드는 표준 문법 및 예외 처리를 갖추었는가?
-2. **[Smoke Test]** `python -m http.server 3000` 환경에서 브라우저 콘솔 에러 없이 정상 구동되는가?
-3. **[Cross-Platform]** `run.bat`과 `run.sh`가 동시 최신화되어 있으며 줄바꿈/인코딩 문제가 없는가?
-4. **[Accessibility & Fallback]** 마이크 권한이 거부되거나 조용한 장소에서도 `Touch Mode`로 100% 플레이 가능한가?
-5. **[Documentation]** 산출물과 관련된 설계 문서 및 `README.md`가 동기화되었는가?
+2. **[Build & Compile]** 시나리오나 기능 추가 후 `python build_scenarios.py`를 실행하여 `scenarios.js`를 최신 상태로 컴파일했는가?
+3. **[Smoke Test]** 데이터 무결성 검증 및 로컬 서버 환경에서 브라우저 콘솔 에러 없이 정상 구동되는가?
+4. **[Cross-Platform]** `run.bat`과 `run.sh`가 동시 최신화되어 있으며 줄바꿈/인코딩 문제가 없는가?
+5. **[Documentation]** 산출물과 관련된 세부 설계서(`DETAILED_SPECIFICATION.md`) 및 `README.md`가 동기화되었는가?
+6. **[Vercel CI/CD Auto-Push]** 작업 완료 후 변경사항을 Git에 커밋하고 `git push origin main`을 즉시 실행하여 Vercel 프로덕션 자동 배포를 완료했는가?
