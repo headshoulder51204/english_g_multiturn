@@ -30,8 +30,11 @@
   - **버블 터치 피드백**: 버튼 및 카드 터치 시 귀여운 버블 팝(Pop) 효과음
   - **사운드 On/Off 토글**: 조용한 도서관/교실에서도 걱정 없는 상단 음소거 버튼 제공.
 
-### 🐢 4. 2단계 발음 속도 조절 (TTS Speed Controller)
-- 상단 `[🐰 Normal (0.9x)]` ↔ `[🐢 Slow (0.7x)]` 토글 버튼을 통해 영어가 서툰 저학년 아동도 원어민의 음소와 억양을 또렷하게 청취 가능.
+### 🐢 4. 고품질 Web Speech API TTS 발화 엔진 & 2단계 속도 조절
+- **원어민 프리미엄 보이스 자동 선택**: OS 언어 설정에 영향받지 않고 미국 원어민 음성(`Google US English`, `Natural`, `Samantha`, `Jenny` 등)을 자동 바인딩하여 정확한 음소/연음 재생.
+- **순차 대화 체이닝 (Sequential Speech Chaining)**: 선택지 발화 후 NPC 리액션이 겹치거나 잘리지 않고 자연스러운 350ms 대화 호흡으로 연속 재생.
+- **크로미움 GC 조기 수거 방지**: 긴 문장도 중간 끊김 없이 매끄럽게 끝까지 재생.
+- **2단계 발음 속도 토글**: 상단 `[🐰 Normal (0.92x)]` ↔ `[🐢 Slow (0.72x)]` 버튼을 통해 영어가 서툰 저학년 아동도 또렷하게 청취 가능.
 
 ### 🚀 5. 4개 연령대별 40개 멀티턴(Multi-turn) 에피소드 & 최고빈도 기본동사·구동사 커리큘럼 (총 260턴)
 - **실전 회화의 핵심, 원어민 필수 기본동사 & 구동사 최고빈도 전면 탑재**: 모든 에피소드에 걸쳐 미국 원어민들이 매일 쓰는 핵심 기본동사(`get`, `take`, `have`, `make`, `put`, `keep`, `give`, `let`, `go`, `come`, `turn`, `run`, `hold`, `call` 등)와 최고빈도 생활 구동사(`put on`, `put back`, `put away`, `get off`, `get in`, `get going`, `get in line`, `pick up`, `pick out`, `clean up`, `watch out`, `hold on`, `hold up`, `come on`, `get on`, `hang on`, `hang out`, `eat up`, `give up`, `give back`, `throw away`, `make sure`, `make room`, `hurry up`, `count on`, `turn off`, `turn up`, `fill up`, `back up`, `keep it up`, `keep running`, `pull up`, `hit up`, `check out`, `chill out`, `wrap up`, `calm down`, `try on`, `point out`, `head out`, `hit the road` 등)를 유기적으로 녹여냈습니다.

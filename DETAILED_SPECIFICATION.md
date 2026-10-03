@@ -212,6 +212,14 @@ function calculateSimilarity(recognizedText, targetText) {
 | **`playRetryBuzz()`** | Sawtooth | A3(220Hz) → F3(175Hz) 하강음 | Soft filter, low volume (아이 위축 방지) | 오답 재시도 |
 | **`playPopBubble()`** | Sine | 400Hz → 800Hz 순간 상승 짹(Chirp) | 0.05s 초단기 릴리즈 | 버튼 터치 피드백 |
 
+### 5.1 Web Speech API TTS 발화 음성 파이프라인
+원어민 구어체의 생생한 뉘앙스를 왜곡 없이 전달하기 위한 5단계 음성 파이프라인이 구현되어 있습니다:
+1. **원어민 보이스 자동 바인딩 (`getBestEnglishVoice`)**: OS가 한글 등 비영어 환경이더라도 브라우저 내장 프리미엄 미국 영어 음성(`Google US English`, `Microsoft Natural`, `Samantha`, `Jenny` 등)을 자동 감지하여 우선 바인딩.
+2. **크로미움 GC 조기 수거 방지 (`window._activeUtterance`)**: 긴 문장 재생 도중 브라우저 V8 가비지 컬렉터가 인스턴스를 회수하여 음성이 끊기는 현상을 전역 참조 유지로 차단.
+3. **순차 대화 발화 체이닝 (`onEnd` 콜백)**: 사용자가 고른 문장과 NPC의 리액션 문장이 겹치거나 잘리지 않고 `선택문 발화 ➔ 350ms 휴지기 ➔ NPC 리액션 발화` 순으로 자연스럽게 연결.
+4. **턴/화면 전환 캔슬 및 인터럽트 안전 처리**: 사용자가 턴을 넘기거나 음소거(Sound OFF)할 때 잔여 음성을 즉각 취소(`speechSynthesis.cancel()`)하며, 취소된 음성의 콜백이 오작동하지 않도록 필터링.
+5. **동적 발화 속도 제어**: 일반 모드(0.92x), 거북이 슬로우 모드(0.72x), 오답 모델링(0.65x) 지원.
+
 ---
 
 ## 6. 듀얼 비주얼 테마 시스템 (CSS & SVG Tokens)

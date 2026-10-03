@@ -886,6 +886,9 @@
       } else {
         icon.textContent = '🔇';
         text.textContent = 'Sound OFF';
+        if ('speechSynthesis' in window) {
+          window.speechSynthesis.cancel();
+        }
       }
     }
 
@@ -902,6 +905,45 @@
       }
       playPopBubble();
     }
+
+    // Native Voice Manager for Web Speech API TTS
+    let cachedVoices = [];
+    function updateVoicesList() {
+      if ('speechSynthesis' in window) {
+        cachedVoices = window.speechSynthesis.getVoices();
+      }
+    }
+    if ('speechSynthesis' in window) {
+      updateVoicesList();
+      if (window.speechSynthesis.onvoiceschanged !== undefined) {
+        window.speechSynthesis.onvoiceschanged = updateVoicesList;
+      }
+    }
+
+    function getBestEnglishVoice() {
+      if (!('speechSynthesis' in window)) return null;
+      const list = cachedVoices.length > 0 ? cachedVoices : window.speechSynthesis.getVoices();
+      if (!list || list.length === 0) return null;
+
+      // 1. Prefer natural / online / Google / Samantha / Jenny US English voices
+      const premiumUs = list.find(v => 
+        (v.lang === 'en-US' || v.lang === 'en_US') && 
+        (v.name.includes('Natural') || v.name.includes('Google') || v.name.includes('Samantha') || v.name.includes('Jenny') || v.name.includes('Guy') || v.name.includes('Aria'))
+      );
+      if (premiumUs) return premiumUs;
+
+      // 2. Any en-US voice
+      const anyUs = list.find(v => v.lang === 'en-US' || v.lang === 'en_US');
+      if (anyUs) return anyUs;
+
+      // 3. Any English voice (en-GB, en-AU, en-CA, etc.)
+      const anyEn = list.find(v => v.lang && v.lang.toLowerCase().startsWith('en'));
+      if (anyEn) return anyEn;
+
+      return null;
+    }
+
+    window._activeUtterance = null; // Chromium Garbage Collection protection
 
     let turnTimer = null;
 
@@ -934,18 +976,60 @@
       speakText(turn.npcReactionEn);
     }
 
-    function speakText(text, speedRate) {
-      if ('speechSynthesis' in window) {
+    function speakText(text, speedRate, onEnd) {
+      if (!('speechSynthesis' in window) || !text) {
+        if (onEnd) onEnd();
+        return;
+      }
+      if (!state.soundEnabled) {
+        if (onEnd) onEnd();
+        return;
+      }
+
+      try {
         window.speechSynthesis.cancel();
         const utterance = new SpeechSynthesisUtterance(text);
+        window._activeUtterance = utterance;
+
+        const voice = getBestEnglishVoice();
+        if (voice) {
+          utterance.voice = voice;
+        }
         utterance.lang = 'en-US';
         utterance.rate = speedRate || state.ttsSpeed || 0.92;
         utterance.pitch = 1.05;
+
+        utterance.onend = () => {
+          if (window._activeUtterance === utterance) {
+            window._activeUtterance = null;
+          }
+          if (onEnd) onEnd();
+        };
+        utterance.onerror = (e) => {
+          if (window._activeUtterance === utterance) {
+            window._activeUtterance = null;
+          }
+          // Do not trigger chained actions if intentionally canceled or interrupted
+          if (e && (e.error === 'canceled' || e.error === 'interrupted')) {
+            return;
+          }
+          if (onEnd) onEnd();
+        };
+
+        if (window.speechSynthesis.paused) {
+          window.speechSynthesis.resume();
+        }
         window.speechSynthesis.speak(utterance);
+      } catch (err) {
+        console.warn('TTS playback error:', err);
+        if (onEnd) onEnd();
       }
     }
 
     function advanceTurn() {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
       if (turnTimer) {
         clearTimeout(turnTimer);
         turnTimer = null;
@@ -965,6 +1049,9 @@
     }
 
     function renderScenario() {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
       if (turnTimer) {
         clearTimeout(turnTimer);
         turnTimer = null;
@@ -1236,20 +1323,35 @@
     function simulateVoiceSuccess() {
       playPopBubble();
       const current = getCurrentTurn();
-      speakText(current.target);
-      triggerWin(current.target, 95);
+      triggerWin(current.target, 95, false);
+      speakText(current.target, state.ttsSpeed, () => {
+        const turn = getCurrentTurn();
+        if (turn && turn.npcReactionEn) {
+          setTimeout(() => {
+            speakText(turn.npcReactionEn, state.ttsSpeed);
+          }, 350);
+        }
+      });
     }
 
     function handleChoiceSelection(option) {
-      speakText(option.text);
       if (option.isCorrect) {
-        triggerWin(option.text, 100);
+        triggerWin(option.text, 100, false);
+        speakText(option.text, state.ttsSpeed, () => {
+          const turn = getCurrentTurn();
+          if (turn && turn.npcReactionEn) {
+            setTimeout(() => {
+              speakText(turn.npcReactionEn, state.ttsSpeed);
+            }, 350);
+          }
+        });
       } else {
+        speakText(option.text, state.ttsSpeed);
         triggerTryAgain(`"${option.text}" 은(는) 상황에 어색해요! 다시 골라보세요.`, null);
       }
     }
 
-    function triggerWin(phrase, similarity = 100) {
+    function triggerWin(phrase, similarity = 100, autoPlayReaction = true) {
       const isPerfect = similarity >= 90;
       playSuccessChime(isPerfect);
 
@@ -1281,10 +1383,12 @@
           reactionBubble.classList.add('scale-100', 'opacity-100');
         }, 10);
         
-        // Auto-play NPC reaction with TTS
-        setTimeout(() => {
-          speakText(turn.npcReactionEn);
-        }, 400);
+        // Auto-play NPC reaction with TTS only if autoPlayReaction is true (e.g. STT Voice Mode)
+        if (autoPlayReaction) {
+          setTimeout(() => {
+            speakText(turn.npcReactionEn, state.ttsSpeed);
+          }, 400);
+        }
 
         // Next Turn Button setup
         const nextTurnBtn = document.getElementById('next-turn-btn');
@@ -1297,11 +1401,11 @@
           countdownText.textContent = '다음 대화 턴으로 연결 중... ⏱️';
         }
 
-        // Auto advance after 2.8s
+        // Auto advance after 4.2s (allowing comfortable listening to both utterances)
         if (turnTimer) clearTimeout(turnTimer);
         turnTimer = setTimeout(() => {
           advanceTurn();
-        }, 2800);
+        }, 4200);
       }
 
       const starIcons = isPerfect ? '⭐⭐⭐ Perfect!' : '⭐⭐ Great Job!';
@@ -1319,7 +1423,7 @@
       showFeedback(`💪 ${msg}`, false);
 
       if (replayTarget) {
-        setTimeout(() => speakText(replayTarget, 0.75), 1100);
+        setTimeout(() => speakText(replayTarget, state.ttsSpeed < 0.9 ? 0.65 : 0.75), 1100);
       }
     }
 
@@ -1341,6 +1445,9 @@
 
     function nextScenario() {
       playPopBubble();
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
       if (turnTimer) {
         clearTimeout(turnTimer);
         turnTimer = null;
@@ -1358,6 +1465,9 @@
 
     function previousScenario() {
       playPopBubble();
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
       if (turnTimer) {
         clearTimeout(turnTimer);
         turnTimer = null;
