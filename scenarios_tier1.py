@@ -1,4 +1,4 @@
-"""Tier 1 Scenarios: Ages 6-8 (10 episodes x 6 turns = 60 turns)."""
+"""Tier 1 Scenarios: Ages 6-8 (10 episodes x 7 turns = 70 turns)."""
 from scenarios_common import make_ep, make_turn
 
 t1 = [
@@ -32,7 +32,12 @@ t1 = [
                   '"우리 이제 가자!"라고 구동사 get going을 써서 씩씩하게 말해보세요!', "Let's get going!",
                   "On our way! What a super fun beach day with our giant sandcastle!", "출발! 거대한 모래성 만들고 진짜 역대급으로 신나는 해변 하루였어!",
                   '구동사 "get going"은 "이제 출발하다/가다"라는 뜻으로 자리에서 일어날 때 미국 가족과 아이들이 매일 쓰는 최고빈도 표현입니다.',
-                  "우리 이제 가자! (출발 필수 구동사)", "Sleep on sand forever.", "모래에서 자자는 오답이에요.", "Destroy the ocean.", "바다를 파괴하자는 오답이에요.")
+                  "우리 이제 가자! (출발 필수 구동사)", "Sleep on sand forever.", "모래에서 자자는 오답이에요.", "Destroy the ocean.", "바다를 파괴하자는 오답이에요."),
+        make_turn(7, "Penny", "🐧", "Look, the ice cream truck is jingling by the parking lot before we leave! Can we get a strawberry popsicle?", "봐봐, 떠나기 전에 주차장 옆에서 아이스크림 트럭 종 울린다! 딸기맛 하드 하나 먹을래?",
+                  "\"하나 사 먹자!\"라고 기본동사 get을 써서 신나게 외쳐보세요!", "Let's get one!",
+                  "Strawberry popsicle with rainbow sprinkles! Sweetest ending to our sandcastle beach adventure!", "레인보우 스프링클 뿌린 딸기맛 하드! 모래성 해변 모험의 가장 달콤한 엔딩이야!",
+                  "기본동사 \"get\"은 물건이나 음식을 \"사다/먹다/얻다\"라는 뜻으로 아이들이 일상에서 무언가를 구매하거나 먹자고 할 때 매일 쓰는 표현입니다.",
+                  "하나 사 먹자! (구매 및 취식 필수 기본동사)", "Smash the truck.", "트럭 부수라는 악담이에요.", "Never eat treats.", "간식 먹지 말라는 오답이에요.")
     ]),
 
     make_ep("t1_e2", "tier1", "놀이터 술래잡기", "📍 Episode 2/10: Playground Tag", "tag", [
@@ -65,7 +70,12 @@ t1 = [
                   '"잠깐 쉬자!"라고 기본동사 take를 써서 숨을 돌려보세요!', "Let's take a break!",
                   "Sitting under the cool tree shade! Ahh, my breath is catching up!", "시원한 나무 그늘 아래 앉았다! 아아 숨 좀 이제 골라지네!",
                   '기본동사 "take"를 활용한 "Take a break"(잠깐 쉬다/휴식하다)는 공부나 놀이 중 지쳤을 때 누구나 외치는 필수 생활 표현입니다.',
-                  "잠깐 쉬자! (휴식 필수 기본동사)", "Run twenty more miles.", "20마일 더 뛰라는 오답이에요.", "Eat soccer ball.", "축구공 먹으라는 오답이에요.")
+                  "잠깐 쉬자! (휴식 필수 기본동사)", "Run twenty more miles.", "20마일 더 뛰라는 오답이에요.", "Eat soccer ball.", "축구공 먹으라는 오답이에요."),
+        make_turn(7, "Leo", "🦁", "My water bottle is right here on the picnic table! Our throats are totally dry from running three laps!", "피크닉 테이블 위에 내 물병 딱 있어! 세 바퀴나 전력 질주해서 목 진짜 타들어간다!",
+                  "\"물 좀 마시자!\"라고 기본동사 have를 써서 숨을 돌려보세요!", "Let's have some water!",
+                  "Gulp gulp! Ice cold water tastes like heaven after playing tag! Ready for round two whenever you are!", "벌컥벌컥! 술래잡기하고 마시는 얼음물 진짜 꿀맛이다! 너만 준비되면 언제든 2라운드 출발!",
+                  "기본동사 \"have\"는 음식이나 음료를 \"먹다/마시다\"라는 뜻으로 \"Let's have some water!\"처럼 가장 자연스럽게 쓰입니다.",
+                  "물 좀 마시자! (음료 섭취 필수 기본동사)", "Spill water on dirt.", "흙에 물 쏟으라는 오답이에요.", "Run ten more laps thirsty.", "목마른 채로 열 바퀴 더 뛰자는 오답이에요.")
     ]),
 
     make_ep("t1_e3", "tier1", "간식 나눠먹기", "📍 Episode 3/10: Snack Sharing", "cafeteria", [
@@ -98,7 +108,12 @@ t1 = [
                   '"손 깨끗이 닦자!"라고 구동사 wipe off를 써서 챙겨주세요!', "Wipe your hands!",
                   "Clean and dry with the wet wipe! Ready for story time with clean paws!", "물티슈로 뽀송뽀송하게 다 닦았어! 깨끗한 손으로 동화 시간 준비 완료!",
                   '구동사 "wipe off"(닦아내다) 또는 wipe는 음식이나 물기를 닦을 때 부모님과 선생님이 아이들에게 매일 쓰는 대표 구동사입니다.',
-                  "손 깨끗이 닦자! (청결 필수 구동사)", "Rub dirt on pants.", "바지에 흙 문지르라는 오답이에요.", "Lick the table.", "식탁 핥으라는 오답이에요.")
+                  "손 깨끗이 닦자! (청결 필수 구동사)", "Rub dirt on pants.", "바지에 흙 문지르라는 오답이에요.", "Lick the table.", "식탁 핥으라는 오답이에요."),
+        make_turn(7, "Sammy", "🦊", "Look, the teacher is opening the big picture storybook on the carpet! Everyone is sitting down cross-legged!", "봐봐, 선생님이 카펫 위에서 커다란 그림책 펼치셨어! 애들 다 아빠 다리로 앉고 있어!",
+                  "\"얼른 가서 앉자!\"라고 구동사 sit down을 써서 말해보세요!", "Let's sit down!",
+                  "Right in the front row! The dinosaur picture book looks super exciting with pop-up wings!", "맨 앞줄에 쏙 앉았다! 팝업 날개 달린 공룡 그림책 진짜 완전 흥미진진해 보여!",
+                  "구동사 \"sit down\"은 바닥이나 의자에 \"자리를 잡고 앉다\"라는 뜻으로 교실과 가정에서 매일 사용하는 초특급 기본 구동사입니다.",
+                  "얼른 가서 앉자! (착석 필수 구동사)", "Stand on desk.", "책상 위에 서 있으라는 엉뚱한 말이에요.", "Run out the window.", "창문으로 뛰어나가자는 오답이에요.")
     ]),
 
     make_ep("t1_e4", "tier1", "레고 블록 꼭대기", "📍 Episode 4/10: LEGO Tower Top", "toybox", [
@@ -131,7 +146,12 @@ t1 = [
                   '"뚜껑 덮어!"라고 기본동사 put을 써서 뚜껑을 닫아보세요!', "Put the lid on!",
                   "Snap! It clicked tight! Our playroom floor is officially ten out of ten!", "딱! 꽉 닫혔다! 우리 놀이방 바닥 이제 공식적으로 10점 만점에 10점이야!",
                   '기본동사 "put"과 on이 만난 "Put ~ on"(뚜껑을 덮다, 옷을 입다)은 일상에서 가장 흔하게 쓰이는 초특급 기본 표현입니다.',
-                  "뚜껑 덮어! (뚜껑 닫기 필수 기본동사)", "Kick the toy bin.", "상자 발로 차라는 오답이에요.", "Chew plastic bricks.", "플라스틱 씹으라는 오답이에요.")
+                  "뚜껑 덮어! (뚜껑 닫기 필수 기본동사)", "Kick the toy bin.", "상자 발로 차라는 오답이에요.", "Chew plastic bricks.", "플라스틱 씹으라는 오답이에요."),
+        make_turn(7, "Leo", "🦁", "The playroom carpet is completely cleared and the toy bin is stacked! High five for being the best cleanup team!", "놀이방 카펫 싹 치워졌고 장난감 상자도 딱 쌓였어! 최고의 정리 팀 하이파이브!",
+                  "\"수고했어, 잘했어!\"라고 칭찬 표현 Good job을 건네보세요!", "Good job!",
+                  "Teamwork makes the dream work! Tomorrow let's build a giant pirate ship with the blue bricks!", "팀워크가 최고야! 내일은 파란 블록으로 거대한 해적선 만들자!",
+                  "\"Good job!\"은 친구가 노력했거나 놀이와 정리를 멋지게 마쳤을 때 서로를 격려하고 칭찬하는 가장 따뜻한 필수 표현입니다.",
+                  "잘했어, 최고야! (노력과 완료 칭찬 필수 표현)", "You failed completely.", "완전 실패했다는 악담이에요.", "I will mess it up.", "어지르겠다는 심술이에요.")
     ]),
 
     make_ep("t1_e5", "tier1", "크레파스 실수", "📍 Episode 5/10: Crayon Drop Oopsie", "tag", [
@@ -164,7 +184,12 @@ t1 = [
                   '"벽에 걸어두자!"라고 구동사 hang up을 써서 전시해보세요!', "Let's hang it up!",
                   "Pinning it to the bulletin board! Everyone walking down the hall will admire our art!", "게시판에 압정으로 콕 꽂았다! 복도 지나가는 모든 친구들이 우리 작품 보고 감탄할 거야!",
                   '구동사 "hang up"은 옷걸이에 옷을 걸거나 벽/게시판에 그림을 "걸어두다"라는 뜻으로 교실과 가정의 필수 구동사입니다.',
-                  "벽에 걸어두자! (전시 및 걸기 필수 구동사)", "Rip it into pieces.", "조각조각 찢으라는 악담이에요.", "Hide it under trash.", "쓰레기 밑에 숨기라는 오답이에요.")
+                  "벽에 걸어두자! (전시 및 걸기 필수 구동사)", "Rip it into pieces.", "조각조각 찢으라는 악담이에요.", "Hide it under trash.", "쓰레기 밑에 숨기라는 오답이에요."),
+        make_turn(7, "Penny", "🐧", "Everyone walking into the classroom is stopping to admire our smiling rainbow! Look at their happy faces!", "교실 들어오는 친구들마다 우리 무지개 그림 보고 멈춰서 감탄해! 애들 활짝 웃는 것 좀 봐!",
+                  "\"정말 뿌듯하다!\"라고 감정을 솔직하게 표현해보세요!", "I'm so proud!",
+                  "Me too! That rainbow cloud is the happiest artwork in our entire elementary school hall!", "나도! 저 무지개 구름 우리 초등학교 복도 통틀어서 제일 행복한 그림이야!",
+                  "자신이나 친구의 멋진 성과에 자부심과 뿌듯함을 느낄 때 미국 아이들이 \"I'm so proud!(정말 자랑스러워/뿌듯해!)\"를 외칩니다.",
+                  "정말 뿌듯해! (자긍심과 기쁨의 감정 표현)", "I hate this art.", "그림 싫다는 심술이에요.", "Erase the rainbow.", "무지개 지우라는 오답이에요.")
     ]),
 
     make_ep("t1_e6", "tier1", "미끄럼틀 양보", "📍 Episode 6/10: Slide Line Etiquette", "swing", [
@@ -197,7 +222,12 @@ t1 = [
                   '"같이 올라가자!"라고 구동사 go up을 써서 권해보세요!', "Let's go up!",
                   "Climbing step by step to the wooden castle! Double slide race next!", "나무 성으로 한 계단씩 올라가는 중! 다음엔 2인 연속 슬라이드 레이스다!",
                   '구동사 "go up"은 계단이나 사다리, 언덕을 "올라가다"라는 뜻으로 놀이터에서 친구와 뛰어놀 때 가장 많이 쓰는 구동사입니다.',
-                  "같이 올라가자! (상승과 이동 필수 구동사)", "Jump off the top.", "꼭대기에서 뛰어내리라는 위험한 말이에요.", "Sleep under the slide.", "미끄럼틀 밑에서 자라는 오답이에요.")
+                  "같이 올라가자! (상승과 이동 필수 구동사)", "Jump off the top.", "꼭대기에서 뛰어내리라는 위험한 말이에요.", "Sleep under the slide.", "미끄럼틀 밑에서 자라는 오답이에요."),
+        make_turn(7, "Sammy", "🦊", "We're standing side by side at the slide starting gate! Three, two, one, ready for the double rocket slide?", "우리 슬라이드 출발선에 나란히 섰어! 셋, 둘, 하나, 2인 연속 로켓 슬라이드 준비됐어?",
+                  "\"손잡이 꽉 잡아!\"라고 구동사 hold on을 써서 안전하게 당부해보세요!", "Hold on tight!",
+                  "Wheeeee! Flying down side by side like twin jet planes! Landed straight onto our sneakers!", "우와아아! 쌍둥이 제트기처럼 나란히 슝 내려왔다! 운동화로 완벽 착지!",
+                  "구동사 \"hold on\"은 손잡이나 난간을 \"꽉 붙잡다\"라는 뜻으로 놀이기구를 타거나 속도가 빠를 때 꼭 필요한 안전 표현입니다.",
+                  "손잡이 꽉 잡아! (안전 파지 필수 구동사)", "Let go of hands.", "손 놓으라는 위험한 말이에요.", "Close eyes and cry.", "눈 감고 울라는 오답이에요.")
     ]),
 
     make_ep("t1_e7", "tier1", "잃어버린 스티커", "📍 Episode 7/10: Lost Dinosaur Sticker", "toybox", [
@@ -230,7 +260,12 @@ t1 = [
                   '"꼭 쥐고 있어!"라고 구동사 hold on to를 써서 당부해보세요!', "Hold on to it!",
                   "Holding it tight in both paws! It's my good luck charm for the spelling quiz!", "두 손으로 꼭 쥐었어! 오늘 단어 퀴즈 행운의 부적으로 삼을 거야!",
                   '구동사 "hold on to"는 물건이나 손을 "놓치지 않고 꽉 쥐다/간직하다"라는 뜻으로 아이들이 물건을 지킬 때 매일 쓰는 표현입니다.',
-                  "꼭 쥐고 있어! (파지 및 간직 필수 구동사)", "Throw it in the toilet.", "변기에 버리라는 오답이에요.", "Cut it with scissors.", "가위로 자르라는 오답이에요.")
+                  "꼭 쥐고 있어! (파지 및 간직 필수 구동사)", "Throw it in the toilet.", "변기에 버리라는 오답이에요.", "Cut it with scissors.", "가위로 자르라는 오답이에요."),
+        make_turn(7, "Penny", "🐧", "The teacher is handing out the spelling quiz papers! My shiny gold T-rex sticker is shining on my desk!", "선생님이 단어 시험지 나눠주신다! 내 반짝이는 황금 티라노 스티커가 책상 위에서 빛나고 있어!",
+                  "\"시험 잘 봐, 행운을 빌어!\"라고 Good luck을 전해보세요!", "Good luck!",
+                  "Thank you! With your good luck wish and my lucky dinosaur, I'm scoring a hundred percent!", "고마워! 네 응원이랑 행운의 공룡 덕분에 오늘 백 점 맞을 것 같아!",
+                  "\"Good luck!\"은 시험, 경기, 도전 직전 친구에게 행운과 성공을 빌어줄 때 전 세계에서 가장 많이 쓰는 마법의 응원 문구입니다.",
+                  "행운을 빌어, 잘 봐! (시험 및 도전 응원 필수 표현)", "Fail the test.", "시험 망치라는 나쁜 말이에요.", "Tear the paper.", "시험지 찢으라는 오답이에요.")
     ]),
 
     make_ep("t1_e8", "tier1", "왕 비눗방울 불기", "📍 Episode 8/10: Giant Bubble Blast", "tag", [
@@ -263,7 +298,12 @@ t1 = [
                   '"비눗물 다시 채우자!"라고 구동사 fill it up을 써서 외쳐보세요!', "Fill it up!",
                   "Pouring the bubbly soap mixture to the brim! Round two of bubble rain begins!", "비눗물 찰랑찰랑하게 채웠다! 비눗방울 비 2라운드 시작!",
                   '구동사 "fill up"은 컵이나 물통, 그릇을 "가득 채우다"라는 뜻으로 음료나 놀이에서 매일 쓰는 최고빈도 구동사입니다.',
-                  "비눗물 다시 채우자! (채우기 필수 구동사)", "Drink all soap.", "비눗물 다 마시라는 위험한 오답이에요.", "Dump it on Leo's head.", "친구 머리에 쏟으라는 오답이에요.")
+                  "비눗물 다시 채우자! (채우기 필수 구동사)", "Drink all soap.", "비눗물 다 마시라는 위험한 오답이에요.", "Dump it on Leo's head.", "친구 머리에 쏟으라는 오답이에요."),
+        make_turn(7, "Leo", "🦁", "The plastic cup is brim-full with bubbly soap water and a gentle breeze is blowing! Ready for the bubble cannon?", "플라스틱 컵에 비눗물 가득 찼고 살랑살랑 바람 분다! 왕 비눗방울 대포 쏠 준비 됐어?",
+                  "\"힘껏 세게 불어!\"라고 기본동사 blow를 써서 응원해보세요!", "Blow hard!",
+                  "WHOA! A giant balloon-sized bubble floating right into the sunshine! That was magnificent!", "우와아! 풍선만 한 왕 비눗방울이 햇살 속으로 둥둥 떠간다! 완전 장관이다!",
+                  "기본동사 \"blow\"는 입으로 바람을 \"불다\"라는 뜻으로 비눗방울, 촛불, 풍선을 불 때 매일 쓰는 대표 기본동사입니다.",
+                  "힘껏 세게 불어! (호흡 및 발사 필수 기본동사)", "Inhale the soap.", "비눗물 들이마시라는 위험한 오답이에요.", "Break the wand.", "막대 부러뜨리라는 오답이에요.")
     ]),
 
     make_ep("t1_e9", "tier1", "종이비행기 날리기", "📍 Episode 9/10: Airplane Launch", "tag", [
@@ -296,7 +336,12 @@ t1 = [
                   '"가서 가져오자!"라고 기본동사 go와 get을 써서 달려가보세요!', "Go get it!",
                   "Sprinting to the bench! Snapped it up safely! Ready for the supersonic altitude test!", "벤치로 전력 질주! 안전하게 낚아챘다! 초음속 고도 테스트 준비 완료!",
                   '기본동사 "go"와 "get"이 결합된 "Go get it!"(가서 가져와/잡아와!)은 날아간 공이나 물건을 주우러 갈 때 아이들이 가장 먼저 외치는 구어체입니다.',
-                  "가서 가져오자! (회수 촉구 기본동사)", "Leave it in the rain.", "비 맞게 두라는 오답이에요.", "Burn the wings.", "날개 태우라는 위험한 오답이에요.")
+                  "가서 가져오자! (회수 촉구 기본동사)", "Leave it in the rain.", "비 맞게 두라는 오답이에요.", "Burn the wings.", "날개 태우라는 위험한 오답이에요."),
+        make_turn(7, "Sammy", "🦊", "We have our supersonic paper jet back in hand! Look at the playground trees waving in the breeze!", "종이 제트기 무사히 손에 되찾았다! 운동장 나뭇가지 바람에 흔들리는 것 좀 봐!",
+                  "\"한 번 더 날려보자!\"라고 기본동사 fly를 써서 신나게 외쳐보세요!", "Let's fly it again!",
+                  "Zoom! Up over the oak tree and gliding across the whole blue sky! Record officially broken!", "슝! 참나무 훌쩍 넘어서 푸른 하늘 가로질러 날아간다! 공식 신기록 달성!",
+                  "기본동사 \"fly\"는 비행기나 연 등을 \"날리다\"라는 뜻으로 \"Let's fly it again!\"처럼 놀이 현장에서 입에 달고 사는 표현입니다.",
+                  "한 번 더 날려보자! (비행 및 놀이 필수 기본동사)", "Rip wings off.", "날개 뜯으라는 심술이에요.", "Bury plane in dirt.", "흙에 묻으라는 오답이에요.")
     ]),
 
     make_ep("t1_e10", "tier1", "하교 작별 인사", "📍 Episode 10/10: After-School Farewell", "cafeteria", [
@@ -329,6 +374,11 @@ t1 = [
                   '"내일 또 보자!"라고 기본동사 catch를 써서 쿨하게 작별 인사를 건네보세요!', "Catch you tomorrow!",
                   "You bet! Bringing my new superhero comic book tomorrow morning! Peace out!", "당연하지! 내일 아침에 새 슈퍼히어로 만화책 가져올게! 잘 가!",
                   '기본동사 "catch"를 활용한 "Catch you tomorrow!"(내일 봐!)는 또래 아이들이 헤어질 때 쿨하고 친근하게 매일 쓰는 자연스러운 구어체입니다.',
-                  "내일 또 보자! (친근한 작별 기본동사)", "Never talk to me.", "말 걸지 말라는 절교 선언이에요.", "Stay in school all weekend.", "주말 내내 학교에 있으라는 오답이에요.")
+                  "내일 또 보자! (친근한 작별 기본동사)", "Never talk to me.", "말 걸지 말라는 절교 선언이에요.", "Stay in school all weekend.", "주말 내내 학교에 있으라는 오답이에요."),
+        make_turn(7, "Penny", "🐧", "I see my mom waving at the bus stop corner! Have a super yummy dinner and rest up at home!", "버스 정류장 모퉁이에서 우리 엄마 손 흔드신다! 집에서 맛있는 저녁 먹고 푹 쉬어!",
+                  "\"너도 좋은 저녁 보내!\"라고 기본동사 have를 써서 다정하게 인사해보세요!", "You have a good one!",
+                  "You too! Eating yummy mac and cheese tonight! See you on the yellow bus tomorrow morning!", "너도! 오늘 밤엔 맛난 맥앤치즈 먹을 거야! 내일 아침 노란 버스에서 봐!",
+                  "기본동사 \"have\"를 활용한 \"Have a good one!\"은 \"좋은 하루/저녁 보내!\"라는 뜻으로 미국인들이 헤어질 때 남녀노소 가장 친근하게 쓰는 대표 관용구입니다.",
+                  "너도 좋은 시간 보내! (친근한 작별 축원 기본동사)", "Sleep on bus all night.", "밤새 버스에서 자라는 오답이에요.", "Lose your backpack.", "가방 잃어버리라는 악담이에요.")
     ])
 ]

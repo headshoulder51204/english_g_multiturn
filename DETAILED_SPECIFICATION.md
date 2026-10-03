@@ -1,8 +1,8 @@
 # 📐 TalkieTown US - 세부 기술 및 기능 설계서 (Detailed Technical Specification)
 
-> **문서 버전**: v1.4 (기본동사 & 구동사 최고빈도 300턴 전면 확장: Tier 1: 6턴, Tier 2: 7턴, Tier 3: 8턴, Tier 4: 9턴 / 총 300턴)  
+> **문서 버전**: v1.5 (기본동사 & 구동사 최고빈도 340턴 전면 확장: Tier 1: 7턴, Tier 2: 8턴, Tier 3: 9턴, Tier 4: 10턴 / 총 340턴)  
 > **관련 문서**: [DESIGN_DRAFT.md](file:///C:/Users/tickl/PycharmProjects/english_game/DESIGN_DRAFT.md), [AGENTS.md](file:///C:/Users/tickl/PycharmProjects/english_game/AGENTS.md)  
-> **상태**: 4개 티어 40개 에피소드 및 300턴 FSM 상태 머신 구현 확정
+> **상태**: 4개 티어 40개 에피소드 및 340턴 FSM 상태 머신 구현 확정
 
 ---
 
@@ -31,7 +31,7 @@ flowchart TD
         end
 
         subgraph DataLayer ["Data & Curriculum Layer"]
-            ScenarioData["Dialogue Registry (Tier 1~4 JSON / 300 Turns)"]
+            ScenarioData["Dialogue Registry (Tier 1~4 JSON / 340 Turns)"]
             UserProgress["Local Progress & Streak Store"]
         end
     end
@@ -51,7 +51,7 @@ flowchart TD
 
 ## 2. 대화 커리큘럼 데이터 모델 및 JSON 스키마 (Data Model)
 
-각 에피소드는 연령 티어에 따라 6~9턴의 `DialogueTurn` 배열을 포함하며, 턴마다 화자 정보, 플레이어 발화 미션, 선택지, 그리고 미국 문화 팁이 포함됩니다. 특히 **원어민 최고빈도 기본동사(get, take, make, have, put, keep, give, let, go, come, hold, turn, run, call...)** 및 **생활 구동사(put on, put back, put away, get off, get in, get going, get in line, pick up, pick out, clean up, watch out, hold on, hold up, come on, get on, hang on, hang out, eat up, give up, give back, throw away, make sure, make room, hurry up, count on, turn off, turn up, fill up, back up, keep it up, keep running, pull up, hit up, check out, chill out, wrap up, calm down, try on, point out, head out, hit the road, head home, pull over, live it up, kick off...)** 가 대화 전반에 체계적으로 녹아있습니다.
+각 에피소드는 연령 티어에 따라 7~10턴의 `DialogueTurn` 배열을 포함하며, 턴마다 화자 정보, 플레이어 발화 미션, 선택지, 그리고 미국 문화 팁이 포함됩니다. 특히 **원어민 최고빈도 기본동사(get, take, make, have, put, keep, give, let, go, come, hold, turn, run, call...)** 및 **생활 구동사(put on, put back, put away, get off, get in, get going, get in line, pick up, pick out, clean up, watch out, hold on, hold up, come on, get on, hang on, hang out, eat up, give up, give back, throw away, make sure, make room, hurry up, count on, turn off, turn up, fill up, back up, keep it up, keep running, pull up, hit up, check out, chill out, wrap up, calm down, try on, point out, head out, hit the road, head home, pull over, live it up, kick off...)** 가 대화 전반에 체계적으로 녹아있습니다.
 
 ### 2.1 TypeScript 인터페이스 정의
 ```typescript
@@ -67,7 +67,7 @@ export interface ChoiceOption {
 
 /** 대화 단일 턴 스키마 */
 export interface DialogueTurn {
-  turnIndex: number;          // 턴 번호 (1, 2, 3, 4, 5, 6, 7, 8)
+  turnIndex: number;          // 턴 번호 (1 ~ 10)
   npcName: string;            // NPC 이름 (Penny, Leo, Sammy, Maya, Chloe, Jordan 등)
   npcAvatar: string;          // 이모지 (🦁, 🐧, 🦊, 🛹, 🎨, 🏀 등)
   npcEn: string;              // NPC 발화 영어
@@ -87,7 +87,7 @@ export interface DialogueEpisode {
   title: string;              // 한국어 제목 (예: "모래성 감탄")
   episode: string;            // 에피소드 라벨 (예: "📍 Episode 1/10: Sandcastle Masterpiece")
   artKey: string;             // SVG 아트워크 키 (sandcastle, cafeteria, swing 등)
-  turns: DialogueTurn[];      // Tier 1: 5턴, Tier 2: 6턴, Tier 3: 7턴, Tier 4: 8턴
+  turns: DialogueTurn[];      // Tier 1: 7턴, Tier 2: 8턴, Tier 3: 9턴, Tier 4: 10턴
 }
 ```
 

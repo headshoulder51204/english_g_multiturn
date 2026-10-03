@@ -1,4 +1,4 @@
-"""Tier 3 Scenarios: Ages 11-13 (10 episodes x 8 turns = 80 turns)."""
+"""Tier 3 Scenarios: Ages 11-13 (10 episodes x 9 turns = 90 turns)."""
 from scenarios_common import make_ep, make_turn
 
 t3 = [
@@ -42,7 +42,12 @@ t3 = [
                   '"이제 슬슬 나가자!"라고 구동사 head out을 써서 제안해보세요!', "Let's head out!",
                   "Grabbing my skateboard! Coasting down the sidewalk under the streetlights! Catch you tomorrow morning!", "스케이트보드 챙겼다! 가로등 불빛 아래 보도블록 타고 미끄러져 가자! 내일 아침에 봐!",
                   '구동사 "head out"은 모임이나 장소에서 자리를 털고 "출발하다/떠나다"라는 뜻으로 미국 10대들이 가장 쿨하게 쓰는 표현입니다.',
-                  "이제 슬슬 나가자! (출발 필수 구동사)", "Break the cafe window.", "카페 창문 깨라는 오답이에요.", "Sleep on boba floor.", "바닥에서 자자는 오답이에요.")
+                  "이제 슬슬 나가자! (출발 필수 구동사)", "Break the cafe window.", "카페 창문 깨라는 오답이에요.", "Sleep on boba floor.", "바닥에서 자자는 오답이에요."),
+        make_turn(9, "Maya", "🛹", "We're cruising on our skateboards past the community park under the buzzing streetlights! Stay safe on the road!", "가로등 켜진 공원 지나서 스케이트보드 타고 미끄러지는 중이야! 도로에서 차 조심해!",
+                  "\"집에 도착하면 문자해!\"라고 일상 필수 표현 Text me를 건네보세요!", "Text me when you get home!",
+                  "Will do! The moment my sneakers hit my bedroom floor! Today was an absolute ten out of ten! Catch you tomorrow!", "그럴게! 집에 도착해서 방바닥 밟자마자 바로 톡 날린다! 오늘 진짜 10점 만점에 10점이었어! 내일 봐!",
+                  "\"Text me when you get home!\"은 친구와 저녁에 헤어질 때 안전을 챙기며 건네는 가장 따뜻하고 대중적인 현대 원어민 필수 표현입니다.",
+                  "집에 도착하면 문자해! (귀가 확인 필수 배려 표현)", "Never contact me again.", "다신 연락하지 말라는 절교 선언이에요.", "Throw phone into river.", "폰 강에 버리라는 오답이에요.")
     ]),
 
     make_ep("t3_e2", "tier3", "스케이트보드 묘기 성공", "📍 Episode 2/10: Skatepark Kickflip Landing", "skatepark", [
@@ -85,7 +90,12 @@ t3 = [
                   '"신발 끈 다시 묶어!"라고 기본동사 tie를 써서 당부해보세요!', "Tie your shoes!",
                   "Double knot tied tight! Dropping into the halfpipe with zero tripping hazard! Watch this high air!", "두 번 꽉 묶었다! 걸려 넘어질 위험 0%로 하프파이프 진입! 이 높은 에어 기술 좀 봐!",
                   '기본동사 "tie"는 끈이나 매듭을 "묶다"라는 뜻으로 "Tie your shoes!"(신발 끈 묶어!)는 운동할 때 매일 쓰는 표현입니다.',
-                  "신발 끈 묶어! (매듭 묶기 필수 기본동사)", "Cut off shoelaces.", "신발 끈 자르라는 오답이에요.", "Skate without shoes on glass.", "유리 위에서 맨발로 타라는 오답이에요.")
+                  "신발 끈 묶어! (매듭 묶기 필수 기본동사)", "Cut off shoelaces.", "신발 끈 자르라는 오답이에요.", "Skate without shoes on glass.", "유리 위에서 맨발로 타라는 오답이에요."),
+        make_turn(9, "Jordan", "🏀", "Double knots are rock solid and urethane wheels are spinning fast! Ready to tackle the three-stair concrete ledge?", "신발 끈 짱짱하게 묶였고 우레탄 바퀴 쌩쌩 돌아간다! 3단 콘크리트 계단 턱 도전할 준비 됐어?",
+                  "\"한번 도전해봐, 기운 내!\"라고 구동사 go for it을 써서 북돋워보세요!", "Go for it!",
+                  "Dropping in with full speed... POP... CLEAN OLLIE DOWN THREE STAIRS! The whole skatepark is banging their boards!", "풀 스피드로 진입... 팝 튀기고... 3단 계단 클린 알리 착지! 온 스케이트파크 애들이 보드 바닥 치면서 환호해!",
+                  "구동사 \"go for it\"은 망설이거나 주저하는 친구에게 \"망설이지 말고 해봐/도전해봐!\"라고 용기를 불어넣을 때 쓰는 대표 구동사입니다.",
+                  "한번 도전해봐! 가보자! (도전과 용기 필수 구동사)", "Run away crying.", "울면서 도망치라는 패배자 오답이에요.", "Break board over knees.", "무릎으로 보드 부러뜨리라는 오답이에요.")
     ]),
 
     make_ep("t3_e3", "tier3", "과학 화산 실험 대성공", "📍 Episode 3/10: Volcano Chemistry Blast", "classroom", [
@@ -128,7 +138,12 @@ t3 = [
                   '"실험대 깨끗이 닦아내자!"라고 구동사 wipe down을 써서 청소해보세요!', "Let's wipe it down!",
                   "Paper towels soaked up all the red foam! Spotless lab bench! First prize for our volcano chemistry squad!", "키친타월이 빨간 거품 싹 흡수했어! 티끌 하나 없는 실험대! 우리 화산 화학 분대 1등이다!",
                   '구동사 "wipe down"은 책상이나 카운터의 액체를 걸레/티슈로 "싹 닦아내다"라는 뜻의 필수 청소 구동사입니다.',
-                  "실험대 깨끗이 닦아내자! (청소 및 닦기 필수 구동사)", "Lick up the red vinegar.", "식초 핥아 먹으라는 오답이에요.", "Pour vinegar on textbooks.", "교과서에 쏟으라는 오답이에요.")
+                  "실험대 깨끗이 닦아내자! (청소 및 닦기 필수 구동사)", "Lick up the red vinegar.", "식초 핥아 먹으라는 오답이에요.", "Pour vinegar on textbooks.", "교과서에 쏟으라는 오답이에요."),
+        make_turn(9, "Maya", "🛹", "Lab bench is wiped dry and the judges are walking toward our clay volcano with clipboards! Here they come!", "실험대 싹 닦았고 심사위원 선생님들이 클립보드 들고 우리 화산 쪽으로 오신다! 오신다 오셔!",
+                  "\"자연스럽게 평소처럼 굴어!\"라고 관용 표현 act natural을 써서 진정시켜보세요!", "Act natural!",
+                  "Standing tall with our science safety goggles! Smiling like we planned that double lava eruption all along! Guaranteed first place!", "보호 안경 쓰고 의젓하게 섰다! 용암 두 번 폭발하는 것도 다 계획된 것처럼 여유롭게 미소 짓자! 1등 확실하다!",
+                  "관용구 \"Act natural!\"(자연스럽게 행동해/티 내지 마)은 긴장되는 순간이나 당황스러운 상황에서 침착함을 유지하라고 당부할 때 매일 쓰는 표현입니다.",
+                  "자연스럽게 평소처럼 굴어! (침착과 평정심 필수 관용구)", "Scream and run out.", "소리 지르며 뛰쳐나가라는 오답이에요.", "Eat remaining baking soda.", "남은 베이킹소다 먹으라는 오답이에요.")
     ]),
 
     make_ep("t3_e4", "tier4", "빈티지 후드티 쇼핑", "📍 Episode 4/10: Mint Hoodie Thrift Hunting", "thrift", [
@@ -171,7 +186,12 @@ t3 = [
                   '"계산하러 가자!"라고 구동사 check out을 써서 계산대로 가보세요!', "Let's check out!",
                   "Tossing it on the counter! Ten bucks for a vintage brand masterpiece! Best thrift jackpot ever!", "카운터에 턱 올렸다! 빈티지 브랜드 명작이 단돈 10달러! 역대급 구제 잭팟이다!",
                   '구동사 "check out"은 매장 계산대에서 상품을 "결제하다/계산하다"라는 뜻으로 쇼핑할 때 무조건 쓰는 필수 구동사입니다.',
-                  "계산하러 가자! (계산 및 결제 필수 구동사)", "Sprint out without paying.", "도둑질하라는 위험한 오답이에요.", "Tear the hoodie hood.", "모자 찢으라는 오답이에요.")
+                  "계산하러 가자! (계산 및 결제 필수 구동사)", "Sprint out without paying.", "도둑질하라는 위험한 오답이에요.", "Tear the hoodie hood.", "모자 찢으라는 오답이에요."),
+        make_turn(9, "Jordan", "🏀", "The vintage cash register clicked open and the clerk gave us our wrapped mint hoodie in brown paper! Only fifteen bucks with student discount!", "빈티지 금전등록기 찰칵 열리고 점원분이 갈색 종이봉투에 싼 민트 후드티 건네주셨어! 학생 할인받아 단돈 15달러!",
+                  "\"완전 거저다, 대박 득템!\"라고 관용 표현 What a steal을 써서 감탄해보세요!", "What a steal!",
+                  "Straight up thrift store jackpot! Wearing this fresh retro drip to school first thing Monday morning!", "그야말로 구제 매장 잭팟이다! 월요일 아침 등교할 때 이 힙한 레트로 옷 당장 개시한다!",
+                  "관용구 \"What a steal!\"(완전 훔친 거나 다름없어!/완전 거저야!)은 좋은 물건을 믿기 힘들 만큼 저렴하게 샀을 때 미국인들이 연발하는 대표 감탄사입니다.",
+                  "완전 거저네, 대박 득템! (가성비 극찬 필수 관용구)", "You are an actual thief.", "실제 도둑이라는 오해 오답이에요.", "Throw shopping bag into fire.", "쇼핑백 불에 태우라는 오답이에요.")
     ]),
 
     make_ep("t3_e5", "tier3", "이어폰 명곡 공유", "📍 Episode 3/10: Earbud Beat Drop", "earbuds", [
@@ -214,7 +234,12 @@ t3 = [
                   '"이 부분 잘 들어봐!"라고 기본동사 listen을 써서 집중시켜보세요!', "Listen to this!",
                   "Whoa, that guitar riff literally gave me chills! Adding this track to my permanent favorites playlist!", "우와, 저 기타 리프 진짜 온몸에 전율 돋았어! 이 곡 평생 즐겨찾기 플리에 바로 저장!",
                   '기본동사 "listen"을 활용한 "Listen to this!"(이것 좀 들어봐!)는 좋은 음악이나 흥미로운 이야기를 들려줄 때 가장 먼저 외치는 구어체입니다.',
-                  "이 부분 잘 들어봐! (집중 경청 기본동사)", "Plug both ears tight.", "귀 꽉 틀어막으라는 오답이에요.", "Smash the earbuds.", "이어폰 부수라는 오답이에요.")
+                  "이 부분 잘 들어봐! (집중 경청 기본동사)", "Plug both ears tight.", "귀 꽉 틀어막으라는 오답이에요.", "Smash the earbuds.", "이어폰 부수라는 오답이에요."),
+        make_turn(9, "Maya", "🛹", "That guitar bridge solo gave us goosebumps! Everyone in the studio says our band mix is radio ready!", "기타 브릿지 솔로 진짜 소름 쫙 돋았어! 스튜디오의 모두가 우리 밴드 음원 라디오에 틀어도 될 수준이래!",
+                  "\"처음부터 한 번 더 맞춰보자!\"라고 관용 표현 take it from the top을 써서 제안해보세요!", "Take it from the top!",
+                  "Count of four! One, two, three, four! Bass drum driving the beat and synth roaring! Pure rock concert energy!", "셋, 넷 카운트! 하나, 둘, 셋, 넷! 베이스드럼 비트 찍고 신스 폭발한다! 완전 록 콘서트 바이브!",
+                  "관용구 \"Take it from the top!\"(처음부터 다시 가자/시작하자!)은 음악 합주, 연극 연습, 리허설에서 처음부터 다시 연주하자고 할 때 쓰는 필수 표현입니다.",
+                  "처음부터 다시 가보자! (합주 및 연습 필수 관용구)", "Delete all recorded tracks.", "녹음 파일 다 지우라는 오답이에요.", "Smash guitar into wall.", "기타 벽에 박살 내라는 오답이에요.")
     ]),
 
     make_ep("t3_e6", "tier3", "사물함 비밀번호 멘붕", "📍 Episode 6/10: Locker Combo Emergency", "lockers", [
@@ -257,7 +282,12 @@ t3 = [
                   '"떨어지지 않게 잡아!"라고 구동사 hold on to를 써서 챙겨보세요!', "Hold on to them!",
                   "Caught all three binders against my chest! Stacked neatly on the bottom shelf! Disaster averted!", "가슴으로 바인더 세 권 다 받아냈어! 아래 칸에 가지런히 정리 끝! 대참사 모면 성공!",
                   '구동사 "hold on to"는 떨어지거나 미끄러지는 물건을 "놓치지 않고 꽉 붙잡다"라는 뜻으로 위급한 순간마다 쓰입니다.',
-                  "떨어지지 않게 잡아! (추락 방지 필수 구동사)", "Kick binders down hallway.", "복도로 바인더 차버리라는 오답이에요.", "Shred the homework.", "숙제 파쇄하라는 오답이에요.")
+                  "떨어지지 않게 잡아! (추락 방지 필수 구동사)", "Kick binders down hallway.", "복도로 바인더 차버리라는 오답이에요.", "Shred the homework.", "숙제 파쇄하라는 오답이에요."),
+        make_turn(9, "Jordan", "🏀", "All three heavy algebra binders are safe in my arms and the classroom door is right ahead! Zero tardy points!", "무거운 대수학 바인더 세 권 품에 안전하게 안았고 교실 문 바로 앞이야! 지각 점수 0점 사수 완료!",
+                  "\"슬라이딩 세이프다!\"라고 안도하며 외쳐보세요!", "Safe by a second!",
+                  "Phew! Slid right into my seat as the final bell chimed! Perfect clutch save, best partner ever!", "휴! 마지막 종 울리는 순간 자리에 쏙 미끄러져 앉았다! 완벽한 클러치 세이브, 최고의 짝꿍 만세!",
+                  "\"Safe by a second!\" 또는 \"Made it in time!\"은 찰나의 차이로 위기나 지각을 아슬아슬하게 모면했을 때 안도하며 외치는 생생한 구어체입니다.",
+                  "1초 차이로 세이프! (극적 위기 모면 표현)", "Teacher gave us detention.", "선생님이 벌점 주셨다는 오답이에요.", "Tear algebra pages out.", "대수학 시험지 찢으라는 오답이에요.")
     ]),
 
     make_ep("t3_e7", "tier3", "급식 미스터리 고기", "📍 Episode 7/10: Mystery Meat Verdict", "cafeteria", [
@@ -300,7 +330,12 @@ t3 = [
                   '"대신 다른 거 먹으러 가자!"라고 기본동사 get을 써서 제안해보세요!', "Let's get that instead!",
                   "Swapping over to the grilled chicken wrap stand! Fresh lettuce, toasted tortilla, crisis officially resolved!", "구운 치킨랩 매대로 바로 갈아탔다! 신선한 양상추에 또띠아 구이, 위기 공식 종결!",
                   '기본동사 "get"을 활용한 "Let\'s get that instead"(대신 저거 먹자/사자)는 대안을 선택할 때 매일 쓰는 실전 표현입니다.',
-                  "대신 다른 거 먹으러 가자! (대안 선택 필수 기본동사)", "Eat napkins from dispenser.", "냅킨 씹어 먹자는 오답이에요.", "Starve until tomorrow.", "내일까지 굶자는 오답이에요.")
+                  "대신 다른 거 먹으러 가자! (대안 선택 필수 기본동사)", "Eat napkins from dispenser.", "냅킨 씹어 먹자는 오답이에요.", "Starve until tomorrow.", "내일까지 굶자는 오답이에요."),
+        make_turn(9, "Chloe", "🎨", "The grilled chicken wrap is sizzling hot and fresh lettuce is so crisp! But look at that churro cart by the exit!", "구운 치킨랩 지글지글 따끈하고 양상추 아삭해! 근데 출구 쪽에 츄러스 카트 좀 봐봐!",
+                  "\"나 한 입만 줘봐!\"라고 기본동사 give를 써서 한 입 달라고 해보세요!", "Give me a bite!",
+                  "Here, bite the crunchy cinnamon end! Sweet chocolate sauce oozing right out! Best lunch rescue ever!", "자, 바삭한 시나몬 끝부분 베어 물어봐! 달콤한 초코 소스 주르륵 흘러나온다! 역대 최고의 점심 구출 작전 성공!",
+                  "기본동사 \"give\"를 활용한 \"Give me a bite!\"(한 입만 줘봐!)는 친구의 맛있는 간식을 나눠 먹을 때 가장 친근하고 자연스럽게 쓰는 일상 구어체입니다.",
+                  "나 한 입만 줘봐! (음식 나눔 필수 기본동사)", "Steal the whole plate.", "접시째 훔치라는 도둑 오답이에요.", "Throw churro on ground.", "츄러스 땅에 버리라는 오답이에요.")
     ]),
 
     make_ep("t3_e8", "tier3", "방과 후 자전거 라이딩", "📍 Episode 8/10: Sunset Ridge Bike Climb", "sunset", [
@@ -343,7 +378,12 @@ t3 = [
                   '"길가로 자전거 바짝 세우자!"라고 구동사 pull over를 써서 비켜주세요!', "Let's pull over!",
                   "Bikes parked safe on the sidewalk curb! Siren zoomed past! Safety first on two wheels!", "자전거 인도 턱에 안전하게 정차 완료! 사이렌 쌩 지나갔다! 자전거는 안전이 제일이지!",
                   '구동사 "pull over"는 자전거, 킥보드, 자동차를 도로변이나 갓길에 "정차하다/차를 대다"라는 뜻의 필수 운행 구동사입니다.',
-                  "길가로 바짝 세우자! (갓길 정차 필수 구동사)", "Pedal directly into siren.", "사이렌으로 돌진하라는 위험한 오답이에요.", "Throw bike into river.", "자전거 강에 던지라는 오답이에요.")
+                  "길가로 바짝 세우자! (갓길 정차 필수 구동사)", "Pedal directly into siren.", "사이렌으로 돌진하라는 위험한 오답이에요.", "Throw bike into river.", "자전거 강에 던지라는 오답이에요."),
+        make_turn(9, "Jordan", "🏀", "The sirens faded into the distance and the dusk horizon is glowing deep purple! Streetlights are buzzing alive!", "사이렌 소리 저 멀리 사라졌고 노을 지평선이 짙은 보랏빛으로 물들고 있어! 가로등이 징 켜진다!",
+                  "\"오늘 진짜 끝내주는 라이딩이었어!\"라고 감탄해보세요!", "What a ride!",
+                  "Coasting down the quiet neighborhood hills with the cool twilight breeze! Definitely repeating this bike route next weekend!", "시원한 초저녁 바람 맞으며 조용한 동네 언덕길 미끄러져 내려가기! 다음 주말에 이 코스 무조건 또 오자!",
+                  "\"What a [noun]!\" 패턴의 \"What a ride!\"(정말 끝내주는 라이딩/여정이었어!)는 멋진 경험이나 활동을 마치고 벅찬 감동을 표할 때 입버릇처럼 쓰는 대표적 찬사입니다.",
+                  "정말 끝내주는 라이딩이었어! (경험 극찬 필수 감탄사)", "I hate riding bicycles.", "자전거 타기 싫다는 투덜거림이에요.", "Crash into parked car.", "주차된 차에 박으라는 오답이에요.")
     ]),
 
     make_ep("t3_e9", "tier3", "시험 전날 스터디 그룹", "📍 Episode 9/10: Pre-Exam Flashcard Sprint", "library", [
@@ -386,7 +426,12 @@ t3 = [
                   '"푹 자둬!"라고 기본동사 get을 써서 숙면을 권해보세요!', "Get some sleep!",
                   "Closing laptop and setting alarm for 7 AM sharp! We're gonna ace this test tomorrow! Good night!", "노트북 덮고 알람 아침 7시 정각 맞춰놨어! 내일 시험 만점 가자! 잘 자!",
                   '기본동사 "get"과 sleep이 결합한 "Get some sleep!"(푹 자, 수면 좀 취해!)은 밤늦게 헤어질 때 건네는 가장 대중적인 인사말입니다.',
-                  "푹 자둬! (숙면 권유 기본동사)", "Stare at the ceiling all night.", "밤새 천장 보라는 오답이에요.", "Rip textbooks into confetti.", "교과서 찢으라는 오답이에요.")
+                  "푹 자둬! (숙면 권유 기본동사)", "Stare at the ceiling all night.", "밤새 천장 보라는 오답이에요.", "Rip textbooks into confetti.", "교과서 찢으라는 오답이에요."),
+        make_turn(9, "Maya", "🛹", "Our laptop is closed, notes are filed away, and our brains are fully locked and loaded for the history exam tomorrow!", "노트북 닫았고 필기 노트 정리 끝났고 내일 역사 시험 볼 뇌 장전 100% 완료! 이제 자자!",
+                  "\"오늘 밤은 여기까지 하자!\"라고 관용 표현 call it a night을 써서 마무리해보세요!", "Let's call it a night!",
+                  "Tucking in under the blankets! Alarm set for 7 AM sharp! Tomorrow morning we walk into class like champions! Good night!", "이불 덮고 쏙 들어간다! 알람 아침 7시 정각 맞춰뒀어! 내일 아침에 챔피언처럼 교실 당당하게 걸어가자! 잘 자!",
+                  "관용구 \"Call it a night\"(오늘 밤은 이쯤에서 마무리하다/자러 가다)은 밤늦게까지 하던 일이나 공부, 모임을 끝낼 때 미국인들이 1위로 쓰는 필수 관용구입니다.",
+                  "오늘 밤은 여기까지 하자! (하루 마감 대표 관용구)", "Study until 5 AM without sleep.", "잠 안 자고 새벽 5시까지 공부하라는 무리수예요.", "Burn history textbooks.", "교과서 불태우자는 오답이에요.")
     ]),
 
     make_ep("t3_e10", "tier3", "주말 캠핑 불멍", "📍 Episode 10/10: Fireside S'mores & Lore", "campfire", [
@@ -429,6 +474,11 @@ t3 = [
                   '"텐트 지퍼 꼭 잠가!"라고 구동사 zip up을 써서 따뜻하게 봉인해보세요!', "Zip it up!",
                   "Zipped all the way down! Cozy, warm, and zero mosquitoes! Best night under the pine ridge stars!", "끝까지 지퍼 꽉 잠갔어! 아늑하고 따뜻하고 모기 0마리! 솔잎 능선 별빛 아래 최고의 밤이다!",
                   '구동사 "zip up"은 텐트, 재킷, 가방의 지퍼를 "끝까지 잠그다"라는 뜻의 초특급 생활 구동사입니다.',
-                  "텐트 지퍼 꼭 잠가! (지퍼 잠그기 필수 구동사)", "Cut open the tent roof.", "텐트 지붕 찢으라는 오답이에요.", "Sleep out in the rain.", "비 맞으며 자라는 오답이에요.")
+                  "텐트 지퍼 꼭 잠가! (지퍼 잠그기 필수 구동사)", "Cut open the tent roof.", "텐트 지붕 찢으라는 오답이에요.", "Sleep out in the rain.", "비 맞으며 자라는 오답이에요."),
+        make_turn(9, "Chloe", "🎨", "The sleeping bags are warm, the nylon tent is zipped tight, and the crickets are singing under the starry night sky!", "침낭 폭신 따끈하고 텐트 지퍼 꽉 잠겼고 별빛 가득한 밤하늘 아래 귀뚜라미 풀벌레 소리 들려!",
+                  "\"좋은 꿈 꿔!\"라고 다정하게 밤 인사를 건네보세요!", "Sweet dreams!",
+                  "Good night! Waking up at sunrise for flapjacks and campfire hot cocoa! Best camping weekend of the year!", "잘 자! 내일 일출에 일어나서 팬케이크랑 캠핑 핫초코 먹자! 올해 최고의 캠핑 주말이야!",
+                  "\"Sweet dreams!\"(좋은 꿈 꿔!, 잘 자!)는 밤에 잠들기 직전 가족이나 친구에게 건네는 가장 따뜻하고 대중적인 취침 인사말입니다.",
+                  "좋은 꿈 꿔! 잘 자! (다정한 취침 인사)", "Nightmares come tonight.", "악몽 꾸라는 저주 오답이에요.", "Scream loudly in tent.", "텐트에서 고함지르라는 오답이에요.")
     ])
 ]

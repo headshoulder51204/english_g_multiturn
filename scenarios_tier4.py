@@ -1,4 +1,4 @@
-"""Tier 4 Scenarios: Ages 14-16 (10 episodes x 9 turns = 90 turns)."""
+"""Tier 4 Scenarios: Ages 14-16 (10 episodes x 10 turns = 100 turns)."""
 from scenarios_common import make_ep, make_turn
 
 t4 = [
@@ -47,7 +47,12 @@ t4 = [
                   '"내일 봐!"라고 구동사 catch you later를 써서 쿨하게 작별 인사를 건네보세요!', "Catch you later!",
                   "Catch you at noon by the cafeteria vending machines! Have that pizza roll appetite ready! Peace out!", "내일 정오에 급식실 자판기 앞에서 만나! 피자롤 먹을 위장 비워둬라! 피스 아웃!",
                   '구동사 "catch [someone] later"(이따 봐, 나중에 봐)는 헤어질 때 미국 10대들이 가장 쿨하고 친근하게 쓰는 대표 작별 구동사입니다.',
-                  "내일 봐! (쿨한 작별 필수 구동사)", "Lock me in gym forever.", "체육관에 평생 가두라는 오답이에요.", "Burn basketball shoes.", "농구화 태우라는 오답이에요.")
+                  "내일 봐! (쿨한 작별 필수 구동사)", "Lock me in gym forever.", "체육관에 평생 가두라는 오답이에요.", "Burn basketball shoes.", "농구화 태우라는 오답이에요."),
+        make_turn(10, "Jordan", "🏀", "Walking out into the sunset breeze outside the athletic wing! Don't you dare forget about those pepperoni pizza rolls at noon tomorrow!", "체육관 밖으로 나오니 시원한 노을 바람 분다! 내일 정오에 페퍼로니 피자롤 사주기로 한 거 절대 잊지 마라!",
+                  "\"내가 언제 약속 어긴 적 있어?\"라고 관용 표현 You have my word를 써서 확답해보세요!", "You have my word!",
+                  "Bet! Vending machine plaza at twelve sharp! Sleep well tonight, free throw champion!", "콜! 12시 정각에 자판기 광장에서 보자! 오늘 밤 푹 자둬라, 자유투 챔피언!",
+                  "관용구 \"You have my word!\"(내 말 믿어, 약속할게/내가 보증해!)는 신뢰와 약속을 굳게 다짐할 때 격식과 캐주얼 모두에서 쓰이는 무게감 있는 표현입니다.",
+                  "내 말 믿어, 약속해! (약속과 보증 필수 관용구)", "I lie about everything.", "다 거짓말이라는 오답이에요.", "Lose all your money.", "돈 다 날리라는 악담이에요.")
     ]),
 
     make_ep("t4_e2", "tier4", "방과 후 버블티 번개", "📍 Episode 2/10: After-School Boba Cravings", "bubbleTea", [
@@ -95,7 +100,12 @@ t4 = [
                   '"이제 출발하자!"라고 구동사 hit the road를 써서 길을 나서보세요!', "Let's hit the road!",
                   "Skateboards down on asphalt! Cruising to the train station in style! See you tomorrow morning!", "아스팔트에 스케이트보드 내렸다! 간지나게 지하철역까지 슝 크루징 가자! 내일 아침에 봐!",
                   '구동사 "hit the road"는 자리를 털고 길을 나설 때 "이제 출발하자/떠나자"라는 뜻으로 쓰이는 대표적인 미국 관용구입니다.',
-                  "이제 출발하자! (출발 필수 구동사)", "Pour boba on sidewalk.", "인도에 음료 쏟으라는 오답이에요.", "Sleep under the table.", "식탁 밑에서 자자는 오답이에요.")
+                  "이제 출발하자! (출발 필수 구동사)", "Pour boba on sidewalk.", "인도에 음료 쏟으라는 오답이에요.", "Sleep under the table.", "식탁 밑에서 자자는 오답이에요."),
+        make_turn(10, "Chloe", "🎨", "The subway turnstiles are clicking and the downtown streetlights are buzzing alive! Boba pearls fully digested!", "지하철 개찰구 찰칵 돌아가고 시내 가로등 불 켜진다! 버블티 펄 뱃속에서 소화 완료!",
+                  "\"오늘 같이 놀아서 진짜 재밌었어!\"라고 감사의 마음을 나눠보세요!", "I had a blast!",
+                  "Me too! Let's do this again next Friday after AP Chem! Text me when your train pulls into your station!", "나도! 다음 주 금요일 AP 화학 끝나고 또 뭉치자! 전철 역 도착하면 톡해!",
+                  "관용구 \"I had a blast!\"(진짜 시간 가는 줄 모르게 신나게 놀았어/대박 재밌었어!)는 만남이나 파티를 마치고 헤어질 때 건네는 최고의 감사 찬사입니다.",
+                  "진짜 대박 재밌었어! (최고의 만남 자축)", "I was miserable.", "비참했다는 최악의 오답이에요.", "Break the subway gate.", "개찰구 부수라는 오답이에요.")
     ]),
 
     make_ep("t4_e3", "tier4", "금요일 풋볼 경기 열기", "📍 Episode 3/10: Friday Night Lights Spirit", "football", [
@@ -143,7 +153,12 @@ t4 = [
                   '"골 넣어라, 가보자!"라고 구동사 go for it을 써서 힘차게 외쳐보세요!', "Go for it!",
                   "The kick is UP... AND IT'S GOOD! IT SPLIT THE UPRIGHTS! FRIDAY NIGHT VICTORY!", "킥 떴다... 들어갔다! 골대 정중앙 갈랐어! 금요일 밤 미식축구 대역전 우승!",
                   '구동사 "go for it"(부딪쳐봐! 가보자! 해봐!)은 결정적인 승부처나 도전의 순간에 누구나 외치는 최고의 응원 구호입니다.',
-                  "골 넣어라, 가보자! (결정적 도전과 응원 필수 구동사)", "Tackle the referee.", "심판 태클하라는 반칙 오답이에요.", "Run away from stadium.", "경기장에서 도망치라는 오답이에요.")
+                  "골 넣어라, 가보자! (결정적 도전과 응원 필수 구동사)", "Tackle the referee.", "심판 태클하라는 반칙 오답이에요.", "Run away from stadium.", "경기장에서 도망치라는 오답이에요."),
+        make_turn(10, "Jordan", "🏀", "The stadium crowd rushed the goalposts! The marching band is playing the victory anthem under the bright stadium lights!", "관중들이 골대로 쏟아져 들어왔어! 조명탑 불빛 아래서 마칭 밴드가 승리의 응원가를 연주하고 있어!",
+                  "\"오늘 밤 절대 못 잊을 거야!\"라고 벅찬 감동을 외쳐보세요!", "Unforgettable night!",
+                  "History was made on this turf tonight! Regional championship rings coming our way! What a game!", "오늘 밤 이 잔디밭에서 역사가 쓰였다! 지역 챔피언십 우승 반지 우리 거다! 진짜 명경기였다!",
+                  "\"Unforgettable [event]!\"는 일생일대의 역사적 순간이나 감동적인 경험을 영원히 기억하고 싶을 때 쓰는 명품 감탄사입니다.",
+                  "절대 잊지 못할 밤이야! (역사적 순간 감탄)", "Forget tonight immediately.", "당장 잊으라는 김빠지는 오답이에요.", "I hate football.", "풋볼 싫다는 딴청이에요.")
     ]),
 
     make_ep("t4_e4", "tier4", "복도 꿀잼 드립 대잔치", "📍 Episode 4/10: Hallway Meme Banter", "teenLocker", [
@@ -191,7 +206,12 @@ t4 = [
                   '"사물함 얼른 열어봐!"라고 구동사 open up을 써서 열어보세요!', "Open it up!",
                   "Twirled the dial and popped the door! Grabbed the neon sneakers! Safe from the tardy sweep!", "다이얼 돌려서 문 툭 열었다! 네온 운동화 낚아챘어! 지각 단속 완벽 회피 성공!",
                   '구동사 "open up"은 문, 상자, 사물함 등을 "활짝 열다"라는 뜻으로 일상에서 가장 흔하게 쓰이는 기본 구동사입니다.',
-                  "사물함 얼른 열어! (개방 필수 구동사)", "Kick the locker door off.", "문짝 발로 차서 뜯으라는 오답이에요.", "Swallow locker padlock.", "자물쇠 삼키라는 엉뚱한 오답이에요.")
+                  "사물함 얼른 열어! (개방 필수 구동사)", "Kick the locker door off.", "문짝 발로 차서 뜯으라는 오답이에요.", "Swallow locker padlock.", "자물쇠 삼키라는 엉뚱한 오답이에요."),
+        make_turn(10, "Chloe", "🎨", "The tardy bell stopped ringing and the teacher turned to the whiteboard! We made it into our seats with five seconds to spare!", "지각 종 멈췄고 선생님이 칠판으로 돌아서셨어! 우리 5초 남기고 자리에 무사히 착석 완료!",
+                  "\"진짜 아슬아슬했다!\"라고 가슴을 쓸어내리며 속삭여보세요!", "Talk about close!",
+                  "Phew! Sliding into our desks ninja style! Now let's try not to crack up remembering that cat recorder video!", "휴! 닌자처럼 자리로 미끄러져 들어왔다! 이제 수업 중에 그 고양이 춤 영상 생각나서 웃참 실패하지 않게 조심하자!",
+                  "관용구 \"Talk about [adjective]!\"는 \"정말이지 ~했네! 진짜로 ~하구먼!\"이라며 상황의 극단성(아슬아슬함, 대단함)을 강조할 때 쓰는 구어체입니다.",
+                  "진짜 간발의 차였어! (위기 모면 안도 표현)", "We were caught red-handed.", "현행범으로 잡혔다는 오답이에요.", "Scream during math lecture.", "수학 시간에 소리 지르라는 오답이에요.")
     ]),
 
     make_ep("t4_e5", "tier4", "틱톡 댄스 바이럴 영상", "📍 Episode 5/10: TikTok Dance Viral Take", "dance", [
@@ -239,7 +259,12 @@ t4 = [
                   '"영상 온라인에 올려보자!"라고 구동사 put it up을 써서 게시해보세요!', "Put it up!",
                   "Tapped post! 500 likes in two minutes already! The algorithm is definitely pushing us to the For You page!", "발행 탭 쾅! 2분 만에 좋아요 500개 돌파! 알고리즘이 우리 추천 피드로 밀어주는 중이다!",
                   '구동사 "put up" 또는 post up은 소셜 미디어나 게시판에 영상/사진을 "게시하다/올리다"라는 뜻으로 매일 쓰입니다.',
-                  "영상 온라인에 올려보자! (게시 및 업로드 필수 구동사)", "Delete your phone account.", "계정 삭제하라는 오답이에요.", "Smash smartphone camera.", "카메라 부수라는 오답이에요.")
+                  "영상 온라인에 올려보자! (게시 및 업로드 필수 구동사)", "Delete your phone account.", "계정 삭제하라는 오답이에요.", "Smash smartphone camera.", "카메라 부수라는 오답이에요."),
+        make_turn(10, "Jordan", "🏀", "The dance challenge video just crossed 10,000 likes on the app! Even the varsity cheer captain left a fire comment!", "댄스 챌린지 영상 1만 좋아요 돌파했어! 심지어 치어리더 주장도 불꽃 댓글 달았어!",
+                  "\"우리 완전 대박 터졌어!\"라고 흥분을 감추지 못하고 외쳐보세요!", "We blew up!",
+                  "Overnight internet sensation! High five! Tomorrow during free period we film part two!", "하룻밤 만에 인터넷 스타 등극! 하이파이브! 내일 공강 시간에 2탄 찍는 거다!",
+                  "속어 \"blow up\"은 소셜 미디어나 대중 사이에서 \"조회수/인기가 폭발적으로 터지다\"라는 뜻으로 Z세대가 가장 열광하는 표현입니다.",
+                  "우리 완전 떡상 폭발했어! (바이럴 대박 환호)", "The bomb exploded.", "폭탄 터졌다는 엉뚱한 직역이에요.", "Delete the video now.", "영상 지우라는 오답이에요.")
     ]),
 
     make_ep("t4_e6", "tier4", "기말고사 끝 해방", "📍 Episode 6/10: Finals Freedom Countdown", "classroom", [
@@ -287,7 +312,12 @@ t4 = [
                   '"신나게 즐기자!"라고 구동사 live it up을 써서 환호해보세요!', "Let's live it up!",
                   "Beach trips, late night movies, and zero algebra homework for three whole months! Summer mode ACTIVATED!", "해변 드라이브에 심야 영화, 3달 내내 대수학 숙제 제로! 여름 모드 공식 가동!",
                   '구동사 "live it up"(인생을 맘껏 즐기다/화끈하게 놀다)은 방학이나 휴일, 축제를 맞이할 때 청소년들이 가장 설레며 외치는 표현입니다.',
-                  "신나게 즐기자! (만끽과 향유 필수 구동사)", "Lock yourself in library.", "도서관에 스스로 갇히라는 오답이에요.", "Study for 100 hours straight.", "100시간 공부하라는 오답이에요.")
+                  "신나게 즐기자! (만끽과 향유 필수 구동사)", "Lock yourself in library.", "도서관에 스스로 갇히라는 오답이에요.", "Study for 100 hours straight.", "100시간 공부하라는 오답이에요."),
+        make_turn(10, "Chloe", "🎨", "The final dismissal bell echoed across the campus! Students are throwing notebook pages into the air outside the glass doors!", "마지막 하교 종소리가 캠퍼스 전체에 울려 퍼졌어! 유리문 밖에서 애들이 공책 종이 하늘로 던지고 있어!",
+                  "\"우리 진짜 자유다!\"라고 양팔을 벌려 환호해보세요!", "We're finally free!",
+                  "No more study guides, no more alarms, no more pop quizzes! Hello 90 days of sunshine and beach sand!", "공부 요약본 안녕, 알람 시계 안녕, 쪽지시험 안녕! 90일간의 눈부신 햇살과 해변 모래사장아 반갑다!",
+                  "\"We're finally free!\"(드디어 자유다!/마침내 해방이다!)는 길고 고된 학기나 시험이 끝나고 진정한 방학을 만끽할 때 누구나 외치는 구호입니다.",
+                  "우리 드디어 자유야! (시험 끝 해방의 환호)", "Give us ten more finals.", "시험 10개 더 달라는 오답이에요.", "Cry alone in closet.", "벽장에서 혼자 울라는 오답이에요.")
     ]),
 
     make_ep("t4_e7", "tier4", "관중석 비밀 고민 상담", "📍 Episode 7/10: Bleacher Deep Talk", "football", [
@@ -335,7 +365,12 @@ t4 = [
                   '"언제든 나한테 기대도 돼!"라고 구동사 count on me를 써서 든든한 버팀목이 되어주세요!', "You can count on me!",
                   "I appreciate that more than you know! Best friends through everything, no cap! High five!", "진짜 말로 다 못 할 만큼 고마워! 어떤 시련이 와도 우린 찐친이야, 레알! 하이파이브!",
                   '구동사 "count on ~"은 누군가를 "믿다/의지하다"라는 뜻으로 "You can count on me!"는 신뢰를 약속하는 가장 따뜻한 구어체입니다.',
-                  "언제든 나한테 기대도 돼! (신뢰와 지지 필수 구동사)", "Betray your secrets immediately.", "비밀 배신하라는 악행이에요.", "Tell everyone your private drama.", "소문내라는 나쁜 말이에요.")
+                  "언제든 나한테 기대도 돼! (신뢰와 지지 필수 구동사)", "Betray your secrets immediately.", "비밀 배신하라는 악행이에요.", "Tell everyone your private drama.", "소문내라는 나쁜 말이에요."),
+        make_turn(10, "Jordan", "🏀", "The stadium floodlights clicked off one by one, leaving only the stars above the empty bleachers! We've got each other's backs.", "경기장 조명탑 불이 하나씩 꺼지고 텅 빈 관중석 위로 별들만 남았어! 우린 서로의 든든한 지원군이야.",
+                  "\"우린 최고의 팀이야.\"라고 진심 어린 우정을 확인해보세요!", "Best team ever.",
+                  "Brothers for life! Sunrise stairs workout tomorrow morning at six! Go get some rest, brother!", "평생 가는 형제지! 내일 아침 6시에 일출 보며 계단 달리기 뛰자! 얼른 들어가서 푹 쉬어!",
+                  "\"Best team ever!\"는 가장 힘든 순간을 함께 나누고 이겨낸 동료나 친구에게 건네는 가장 끈끈하고 묵직한 찬사입니다.",
+                  "우리가 최고의 팀이야. (진한 우정과 신뢰 확인)", "I will abandon you.", "버리겠다는 배신 오답이에요.", "Never speak again.", "다신 말하지 말자는 오답이에요.")
     ]),
 
     make_ep("t4_e8", "tier4", "콘서트 티켓팅 성공", "📍 Episode 8/10: Front Row Ticket Drop", "mall", [
@@ -383,7 +418,12 @@ t4 = [
                   '"티켓 잘 챙겨둬!"라고 구동사 hold on to를 써서 당부해보세요!', "Hold on to them!",
                   "Saved to cloud and pinned to favorites! Friday night stadium lights, front row center, here we come!", "클라우드 저장에 즐겨찾기 핀 고정 완료! 금요일 밤 경기장 조명탑 맨 앞줄 한가운데, 우리가 간다!",
                   '구동사 "hold on to ~"는 가치 있는 티켓이나 물건을 "잃어버리지 않게 잘 간직하다"라는 뜻으로 매일 쓰입니다.',
-                  "티켓 잘 챙겨둬! (소중한 보관 필수 구동사)", "Post barcodes publicly online.", "바코드 온라인 유출하라는 오답이에요.", "Delete wallet app.", "지갑 앱 삭제하라는 오답이에요.")
+                  "티켓 잘 챙겨둬! (소중한 보관 필수 구동사)", "Post barcodes publicly online.", "바코드 온라인 유출하라는 오답이에요.", "Delete wallet app.", "지갑 앱 삭제하라는 오답이에요."),
+        make_turn(10, "Chloe", "🎨", "The digital tickets are locked in Apple Wallet, emergency paper backups printed, and outfits coordinated! Friday night arena concert ready!", "디지털 티켓 애플 지갑에 락 걸어뒀고 비상용 종이 출력 완료에 콘서트 룩 코디까지 끝! 금요일 밤 아레나 콘서트 준비 완료!",
+                  "\"진짜 완전 기대돼!\"라고 설레는 마음을 표현해보세요!", "Beyond excited!",
+                  "Front row barricade center, screaming the lyrics to every single anthem under the lasers! It's gonna be historical!", "펜스 맨 앞줄 정중앙에서 레이저 맞으며 모든 명곡 전곡 떼창하기! 역사에 남을 밤이 될 거야!",
+                  "\"Beyond excited!\"(단순히 신나는 수준을 넘어섰어!/완전 설레서 미치겠어!)는 기대감의 극치를 표현할 때 원어민들이 즐겨 쓰는 표현입니다.",
+                  "완전 기대돼서 미칠 것 같아! (설렘 극치 필수 표현)", "I dread going there.", "가기 두렵다는 김빠지는 오답이에요.", "Burn the tickets.", "티켓 불태우자는 오답이에요.")
     ]),
 
     make_ep("t4_e9", "tier4", "빈티지 패션 칭찬", "📍 Episode 9/10: Flea Market Vintage Glow-Up", "teenLocker", [
@@ -431,7 +471,12 @@ t4 = [
                   '"당장 갈아입어!"라고 구동사 change into it을 써서 권해보세요!', "Change into it!",
                   "Denim on, sleeves cuffed once! Walking down the avenue looking like an album cover! Thrift king status!", "청자켓 입고 소매 딱 한 단 접었다! 대로변 걸어가는데 완전 앨범 자켓 모델 간지! 구제 패션 킹 인정!",
                   '구동사 "change into ~"는 새 옷이나 편한 옷으로 "갈아입다"라는 뜻으로 쇼핑 후나 외출 시 가장 자주 쓰이는 구동사입니다.',
-                  "당장 갈아입어! (환복 필수 구동사)", "Cut the denim sleeves off.", "소매 가위로 자르라는 오답이에요.", "Throw jacket in puddle.", "웅덩이에 버리라는 오답이에요.")
+                  "당장 갈아입어! (환복 필수 구동사)", "Cut the denim sleeves off.", "소매 가위로 자르라는 오답이에요.", "Throw jacket in puddle.", "웅덩이에 버리라는 오답이에요."),
+        make_turn(10, "Chloe", "🎨", "We walked out of the flea market carrying our brown paper bags with the vintage denim and suede fringe jackets! The street style photographers are turning heads!", "빈티지 청자켓이랑 스웨이드 재킷 종이봉투에 챙겨서 벼룩시장 나왔어! 스트릿 패션 사진작가들이 돌아보네!",
+                  "\"우리 핏 완전 미쳤다!\"라고 쿨하게 자부심을 드러내보세요!", "Serving pure looks!",
+                  "Street fashion royalty! Tomorrow let's grab coffee downtown in our new retro outfits! Catch you later, fashion icon!", "스트릿 패션의 왕족 등극! 내일 새 레트로 옷 입고 시내에서 커피 한잔하자! 이따 봐, 패션 아이콘!",
+                  "슬랭 \"Serving looks!\"는 자신의 패션과 스타일이 압도적으로 멋져 사람들의 시선을 사로잡을 때 쓰는 최신 유행어입니다.",
+                  "우리 핏 완전 시선 강탈이야! (패션 자부심 극찬)", "We look like garbage.", "쓰레기 같다는 자폭 오답이에요.", "Hide from cameras.", "카메라에서 숨으라는 오답이에요.")
     ]),
 
     make_ep("t4_e10", "tier4", "방학 카운트다운", "📍 Episode 10/10: Summer Break Countdown", "teenLocker", [
@@ -479,6 +524,11 @@ t4 = [
                   '"여름방학 신나게 시작해보자!"라고 구동사 kick off를 써서 환호해보세요!', "Let's kick it off!",
                   "Backpacks in the air! Sunlight on our faces! Have the most legendary summer vacation of your life! WE DID IT!", "가방 하늘로 던져! 얼굴에 쏟아지는 햇살! 인생에서 가장 레전드인 여름방학 보내자! 우리가 해냈다!",
                   '구동사 "kick off"는 축제, 방학, 새 시즌을 "신나게 시작하다/개막하다"라는 뜻으로 미국인들이 입버릇처럼 외치는 대표적 구동사입니다.',
-                  "여름방학 신나게 시작해보자! (화려한 시작 필수 구동사)", "Stay in school all July.", "7월 내내 학교에 남으라는 오답이에요.", "Cry in the empty cafeteria.", "빈 식당에서 울라는 오답이에요.")
+                  "여름방학 신나게 시작해보자! (화려한 시작 필수 구동사)", "Stay in school all July.", "7월 내내 학교에 남으라는 오답이에요.", "Cry in the empty cafeteria.", "빈 식당에서 울라는 오답이에요."),
+        make_turn(10, "Jordan", "🏀", "The convertible trunk is shut, the s'mores kit is packed, and the coastal highway sunset is painting the ocean pink! Summer starts now!", "오픈카 트렁크 닫았고 스모어 키트 실었고 해안 도로 노을이 바다를 분홍빛으로 물들이고 있어! 여름이 지금 시작된다!",
+                  "\"이보다 더 좋을 순 없어!\"라고 최고의 순간을 만끽해보세요!", "Couldn't be better!",
+                  "Bonfire crackling, music blasting, best friends by our side! Welcome to the greatest summer vacation of our lives!", "모닥불 타닥타닥 타고, 음악 빵빵하게 울리고, 곁에는 찐친들! 우리 인생 최고의 여름방학에 온 걸 환영한다!",
+                  "관용구 \"Couldn't be better!\"(이보다 더 좋을 순 없어!/더 바랄 게 없이 완벽해!)는 더할 나위 없이 완벽하고 행복한 순간에 내뱉는 최고의 관용구입니다.",
+                  "이보다 더 좋을 순 없어! (완벽한 행복 찬사)", "Life is terrible.", "인생 끔찍하다는 악담이에요.", "Drive car off cliff.", "절벽으로 차 몰라는 위험한 오답이에요.")
     ])
 ]

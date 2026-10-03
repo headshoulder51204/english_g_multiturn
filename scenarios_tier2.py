@@ -1,4 +1,4 @@
-"""Tier 2 Scenarios: Ages 9-10 (10 episodes x 7 turns = 70 turns)."""
+"""Tier 2 Scenarios: Ages 9-10 (10 episodes x 8 turns = 80 turns)."""
 from scenarios_common import make_ep, make_turn
 
 t2 = [
@@ -37,7 +37,12 @@ t2 = [
                   '"겉옷 챙겨!"라고 기본동사 grab을 써서 외쳐보세요!', "Grab your jacket!",
                   "Zipped up and sprinting! We made it through the gym double doors with ten seconds to spare!", "지퍼 올리고 전력 질주! 10초 남기고 체육관 문 통과 세이프다!",
                   '기본동사 "grab"은 바쁘거나 급할 때 물건을 "재빨리 챙기다/집다"라는 뜻으로 미국 아이들과 어른들이 매일 쓰는 대표적 기본동사입니다.',
-                  "겉옷 챙겨! (소지품 수거 필수 기본동사)", "Leave jacket in the dirt.", "흙에 버려두라는 오답이에요.", "Tear the zipper off.", "지퍼 찢으라는 오답이에요.")
+                  "겉옷 챙겨! (소지품 수거 필수 기본동사)", "Leave jacket in the dirt.", "흙에 버려두라는 오답이에요.", "Tear the zipper off.", "지퍼 찢으라는 오답이에요."),
+        make_turn(8, "Leo", "🦁", "We zipped through the double doors just before Mr. Harris closed them! What class do we have next?", "해리스 선생님이 닫으시기 직전에 문 통과 세이프했다! 우리 다음 시간 무슨 수업이지?",
+                  "\"얼른 교실 들어가자!\"라고 구동사 head in을 써서 말해보세요!", "Let's head in!",
+                  "Math class time! But our tire swing whirlpool spin was totally worth it! High five!", "수학 시간이다! 그래도 우리 타이어 그네 회오리 스핀 탄 건 진짜 가치 있었어! 하이파이브!",
+                  "구동사 \"head in\"은 밖에서 실내나 교실로 \"안으로 들어가다\"라는 뜻으로 쉬는 시간 끝나고 교실로 복귀할 때 매일 쓰는 표현입니다.",
+                  "얼른 안으로 들어가자! (입장 및 복귀 필수 구동사)", "Run outside forever.", "평생 밖에서 뛰자는 오답이에요.", "Break classroom clock.", "교실 시계 부수자는 오답이에요.")
     ]),
 
     make_ep("t2_e2", "tier2", "급식실 자리 맡기", "📍 Episode 2/10: Cafeteria Seat Rescue", "cafeteria", [
@@ -75,7 +80,12 @@ t2 = [
                   '"줄 서러 가자!"라고 구동사 get in line을 써서 제안해보세요!', "Let's get in line!",
                   "Standing quietly behind Maya! Fourth grade is officially the best-behaved table today!", "마야 뒤에 얌전히 섰어! 오늘 4학년이 공식적으로 가장 모범 테이블이야!",
                   '구동사 "get in line"(줄을 서다)은 학교나 식당, 놀이공원에서 차례를 지킬 때 매일 쓰는 최고빈도 구동사입니다.',
-                  "줄 서러 가자! (줄서기 필수 구동사)", "Cut in front of everyone.", "새치기하라는 나쁜 오답이에요.", "Hide under the table.", "식탁 밑에 숨자는 오답이에요.")
+                  "줄 서러 가자! (줄서기 필수 구동사)", "Cut in front of everyone.", "새치기하라는 나쁜 오답이에요.", "Hide under the table.", "식탁 밑에 숨자는 오답이에요."),
+        make_turn(8, "Penny", "🐧", "Our class is lined up two by two by the cafeteria double doors! Look, the playground recess ball bin is waiting outside!", "우리 반 급식실 문 앞에 두 줄로 얌전히 섰어! 봐봐, 운동장 쉬는 시간 공 바구니가 밖에서 기다려!",
+                  "\"얼른 밖으로 나가자!\"라고 구동사 head out을 써서 말해보세요!", "Let's head out!",
+                  "Recess sprint! Grabbing the four-square ball before the fifth graders take the court!", "쉬는 시간 달리기 시작! 5학년 형들이 코트 차지하기 전에 포스퀘어 공 얼른 잡자!",
+                  "구동사 \"head out\"은 실내에서 밖으로 \"출발하다/나가다\"라는 뜻으로 운동장이나 바깥으로 나갈 때 매일 쓰는 대표 표현입니다.",
+                  "얼른 밖으로 나가자! (외출 및 이동 필수 구동사)", "Lock cafeteria doors.", "급식실 문 잠그라는 오답이에요.", "Lie on food floor.", "음식 바닥에 눕자는 오답이에요.")
     ]),
 
     make_ep("t2_e3", "tier2", "피구 경기 작전", "📍 Episode 3/10: Dodgeball Tactics", "tag", [
@@ -113,7 +123,12 @@ t2 = [
                   '"계속 이렇게 잘해보자!"라고 구동사 keep it up을 써서 팀원을 응원해보세요!', "Keep it up!",
                   "Focus locked! He throws... DODGED! Ball caught! WE WON THE DODGEBALL TOURNAMENT!", "집중력 풀가동! 걔가 던진다... 피했다! 공 낚아챘다! 우리가 피구 토너먼트 우승했어!",
                   '구동사 "keep it up"(지금처럼 계속 잘해라/유지해라)은 스포츠 경기나 시험공부 중인 친구를 북돋울 때 전 세계에서 가장 많이 쓰는 격려 표현입니다.',
-                  "계속 이렇게 잘해보자! (격려와 지속 필수 구동사)", "Give up right now.", "지금 당장 포기하라는 패배주의 오답이에요.", "Throw ball at the referee.", "심판에게 공 던지라는 반칙 오답이에요.")
+                  "계속 이렇게 잘해보자! (격려와 지속 필수 구동사)", "Give up right now.", "지금 당장 포기하라는 패배주의 오답이에요.", "Throw ball at the referee.", "심판에게 공 던지라는 반칙 오답이에요."),
+        make_turn(8, "Leo", "🦁", "The referee handed us the golden dodgeball tournament trophy! The whole gymnasium is applauding!", "심판 선생님이 우리한테 황금 피구 토너먼트 트로피 건네주셨어! 온 체육관이 박수치고 있어!",
+                  "\"우리가 해냈어!\"라고 기본동사 make를 써서 기쁨을 만끽해보세요!", "We made it!",
+                  "Champion energy! Placing the golden trophy right in the front display case! Best dodgeball squad in history!", "우승자 바이브! 황금 트로피 중앙 진열장에 딱 올려놓자! 역사상 최고의 피구 팀 만세!",
+                  "기본동사 \"make\"를 활용한 \"We made it!\"(우리가 해냈다!/해내고야 말았다!)은 힘든 승부나 목표를 달성했을 때 터져 나오는 최고의 환호입니다.",
+                  "우리가 해냈어! (성공과 달성 필수 기본동사)", "Throw trophy out.", "트로피 버리라는 악담이에요.", "Cry sadly.", "슬프게 울라는 엉뚱한 말이에요.")
     ]),
 
     make_ep("t2_e4", "tier2", "만화책 스포 방어", "📍 Episode 4/10: Comic Spoiler Shield", "comic", [
@@ -151,7 +166,12 @@ t2 = [
                   '"나한테 말해주지 마!"라고 기본동사 tell을 써서 스포일러를 방어해보세요!', "Don't tell me!",
                   "Zipping my lips! You have to read the giant battle scene yourself tonight! No spoilers, promise!", "입술 지퍼 꽉 잠갔다! 오늘 밤에 거대 전투 씬 직접 봐야 해! 스포 절대 안 해, 약속!",
                   '기본동사 "tell"을 활용한 "Don\'t tell me!"(말하지 마! 스포하지 마!)는 영화나 책의 결말을 듣기 싫을 때 미국인들이 입버릇처럼 외치는 표현입니다.',
-                  "나한테 말해주지 마! (스포일러 차단 기본동사)", "Tell me the whole ending.", "결말 다 말해달라는 반대말이에요.", "Rip page 88 out.", "88페이지 찢으라는 악행이에요.")
+                  "나한테 말해주지 마! (스포일러 차단 기본동사)", "Tell me the whole ending.", "결말 다 말해달라는 반대말이에요.", "Rip page 88 out.", "88페이지 찢으라는 악행이에요."),
+        make_turn(8, "Sammy", "🦊", "I'm handing you Volume 5 inside the protective plastic sleeve! Don't bend the corners!", "투명 비닐 슬리브에 넣어서 5권 넘겨준다! 책 모서리 절대 구기지 마라!",
+                  "\"소중하게 잘 다룰게!\"라고 기본동사 take를 써서 약속해보세요!", "I'll take good care of it!",
+                  "Awesome! Reading it under my blanket tonight with a flashlight! No spoilers until tomorrow morning!", "나이스! 오늘 밤에 손전등 켜고 이불 밑에서 읽을게! 내일 아침까지 스포 절대 금지!",
+                  "기본동사 \"take\"를 활용한 \"Take good care of ~\"(~을 소중히 잘 다루다/보살피다)는 빌린 물건을 아끼겠다고 안심시키는 가장 정중하고 믿음직한 표현입니다.",
+                  "소중하게 잘 다룰게! (관리와 신뢰 필수 기본동사)", "Drop book in toilet.", "변기에 책 빠뜨리겠다는 끔찍한 오답이에요.", "Tear cover off.", "표지 뜯겠다는 오답이에요.")
     ]),
 
     make_ep("t2_e5", "tier2", "쉬는 시간 1등 달리기", "📍 Episode 5/10: Recess 100m Sprint", "tag", [
@@ -189,7 +209,12 @@ t2 = [
                   '"절대 포기하지 마!"라고 구동사 give up을 써서 버텨보세요!', "Don't give up!",
                   "Pushed with everything I had! Touched the fence post first! We won the recess sprint championship!", "남은 힘 다 쥐어짜냈다! 울타리 기둥 먼저 찍었다! 우리가 쉬는 시간 달리기 챔피언이야!",
                   '구동사 "give up"은 "포기하다"라는 뜻으로, 부정어 Don\'t와 결합된 "Don\'t give up!"(포기하지 마!)은 역경과 승부에서 가장 감동적인 필수 표현입니다.',
-                  "절대 포기하지 마! (불굴의 용기 필수 구동사)", "Stop and lie down.", "누워서 포기하라는 오답이에요.", "Run backwards into the mud.", "진흙으로 뒷걸음질 치라는 오답이에요.")
+                  "절대 포기하지 마! (불굴의 용기 필수 구동사)", "Stop and lie down.", "누워서 포기하라는 오답이에요.", "Run backwards into the mud.", "진흙으로 뒷걸음질 치라는 오답이에요."),
+        make_turn(8, "Sammy", "🦊", "Sammy and I are catching our breath on the wooden bench! The recess bell just gave its final long ring!", "새미랑 나랑 나무 벤치에서 숨 고르는 중이야! 쉬는 시간 종이 마지막으로 길게 울렸어!",
+                  "\"수업 들어가자!\"라고 기본동사 get을 써서 말해보세요!", "Let's get back to class!",
+                  "Wiping the sweat off our foreheads! Sprint champion bragging rights secured for the whole week!", "이마 땀 훔치고 복귀! 일주일 내내 쉬는 시간 달리기 1등 자랑할 권리 획득 완료!",
+                  "기본동사 \"get\"을 활용한 \"Get back to ~\"(~로 돌아가다)는 쉬는 시간이 끝나고 교실이나 자리로 복귀할 때 교사와 학생 모두 매일 쓰는 표현입니다.",
+                  "교실로 돌아가자! (복귀 필수 기본동사)", "Run into the woods.", "숲으로 도망치자는 오답이에요.", "Skip all classes.", "수업 다 빼먹자는 오답이에요.")
     ]),
 
     make_ep("t2_e6", "tier2", "포켓몬 카드 교환", "📍 Episode 6/10: Legendary Card Trade", "toybox", [
@@ -227,7 +252,12 @@ t2 = [
                   '"한번 구경해보자!"라고 구동사 check out을 써서 말해보세요!', "Let's check it out!",
                   "Flipping to page one! Look at that 1999 gold-stamped thunderbolt card! Pure nostalgia!", "1페이지 펼친다! 저 1999년 황금 도장 찍힌 번개 카드 봐봐! 완전 감성 터진다!",
                   '구동사 "check out"은 물건이나 장면을 "확인하다/살펴보다/구경하다"라는 뜻으로 미국 10대와 초등생들이 매일 쓰는 구동사 1위입니다.',
-                  "한번 구경해보자! (탐색과 확인 필수 구동사)", "Throw binder in the trash.", "바인더 쓰레기통에 버리라는 오답이에요.", "Rip all cards in half.", "카드 반으로 찢으라는 오답이에요.")
+                  "한번 구경해보자! (탐색과 확인 필수 구동사)", "Throw binder in the trash.", "바인더 쓰레기통에 버리라는 오답이에요.", "Rip all cards in half.", "카드 반으로 찢으라는 오답이에요."),
+        make_turn(8, "Penny", "🐧", "Our Pokémon binder pages are completely filled with holographic cards! Look at that golden Mewtwo!", "포켓몬 바인더 페이지가 홀로그램 카드로 꽉 찼어! 저 황금 뮤츠 카드 좀 봐!",
+                  "\"완전 대박이다!\"라고 감탄 표현 That's incredible을 건네보세요!", "That's incredible!",
+                  "The shiny glitter reflects like diamonds! Our collection is officially the coolest in the fourth grade!", "반짝이가 다이아몬드처럼 빛난다! 우리 컬렉션 공식적으로 4학년 원탑이야!",
+                  "\"That's incredible!\"(진짜 대단하다!/믿기지 않을 정도로 멋져!)는 놀라운 수집품이나 성과를 보았을 때 감탄을 표현하는 최고급 찬사입니다.",
+                  "진짜 믿기지 않을 만큼 대단해! (극찬 필수 표현)", "It is total garbage.", "완전 쓰레기라는 악담이에요.", "Rip it into bits.", "조각조각 찢으라는 오답이에요.")
     ]),
 
     make_ep("t2_e7", "tier2", "깜빡한 숙제 위기", "📍 Episode 7/10: Homework Crunch Time", "classroom", [
@@ -265,7 +295,12 @@ t2 = [
                   '"맞았는지 꼭 확인해봐!"라고 구동사 make sure를 써서 점검해보세요!', "Make sure it's right!",
                   "Quick double check... Oops, 7 times 8 is 56, fixed it! Now it's 100% ready for an A-plus!", "초스피드 더블 체크... 앗 7 곱하기 8은 56이지, 고쳤다! 이제 A+ 받을 준비 100% 완료!",
                   '구동사 "make sure"는 "반드시 확인하다/확실하게 하다"라는 뜻으로 숙제나 준비물을 꼼꼼히 챙길 때 매일 쓰는 최고빈도 표현입니다.',
-                  "맞았는지 꼭 확인해봐! (점검과 확인 필수 구동사)", "Erase all your hard work.", "공부한 거 싹 지우라는 오답이에요.", "Draw graffiti on the test.", "시험지에 낙서하라는 오답이에요.")
+                  "맞았는지 꼭 확인해봐! (점검과 확인 필수 구동사)", "Erase all your hard work.", "공부한 거 싹 지우라는 오답이에요.", "Draw graffiti on the test.", "시험지에 낙서하라는 오답이에요."),
+        make_turn(8, "Leo", "🦁", "Mr. Davis stamped our science worksheet with a giant glowing gold star! No homework detention for us!", "데이비스 선생님이 우리 과학 시험지에 번쩍이는 황금 별 도장 쾅 찍어주셨어! 방과 후 깜지 벌칙 면제다!",
+                  "\"우리 정말 잘 풀었다!\"라고 구동사 work out을 써서 자축해보세요!", "It all worked out!",
+                  "Phew! Crunch time teamwork saved our grades! Tonight we can play video games completely stress-free!", "휴! 마감 직전 팀워크가 우리 점수 살렸다! 오늘 밤엔 걱정 없이 맘 편히 비디오 게임 할 수 있어!",
+                  "구동사 \"work out\"은 일이나 문제가 \"순조롭게 잘 풀리다/해결되다\"라는 뜻으로 위기를 극복했을 때 미국인들이 가장 안도하며 외치는 말입니다.",
+                  "결국 다 잘 풀렸어! (문제 해결 및 안도 필수 구동사)", "We failed horribly.", "끔찍하게 망했다는 오답이에요.", "Burn the classroom.", "교실 불태우자는 위험한 오답이에요.")
     ]),
 
     make_ep("t2_e8", "tier2", "아케이드 2인 협동", "📍 Episode 8/10: Arcade Co-op High Score", "arcade", [
@@ -303,7 +338,12 @@ t2 = [
                   '"동전 컵 챙겨!"라고 기본동사 take를 써서 챙겨보세요!', "Take the cup!",
                   "Grabbed the red token cup! Five silver tokens left for the racing simulator next weekend!", "빨간 토큰 컵 낚아챘다! 다음 주말 레이싱 시뮬레이터 탈 은색 토큰 다섯 개 남았어!",
                   '기본동사 "take"는 손으로 물건을 "챙기다/가져가다"라는 뜻으로 잊고 갈 뻔한 물건을 챙길 때 매일 쓰는 대표적 표현입니다.',
-                  "동전 컵 챙겨! (소지품 수거 필수 기본동사)", "Smash the token cup.", "컵 부수라는 오답이에요.", "Leave silver coins for strangers.", "남에게 코인 버리고 가라는 오답이에요.")
+                  "동전 컵 챙겨! (소지품 수거 필수 기본동사)", "Smash the token cup.", "컵 부수라는 오답이에요.", "Leave silver coins for strangers.", "남에게 코인 버리고 가라는 오답이에요."),
+        make_turn(8, "Sammy", "🦊", "We carried our giant plush prize bear out into the arcade parking lot! We still have fifteen minutes before our parents pick us up!", "대형 경품 인형 곰 안고 오락실 주차장으로 나왔어! 부모님 데리러 오실 때까지 아직 15분 남았어!",
+                  "\"여기 벤치에 앉아서 쉬자!\"라고 구동사 sit down을 써서 말해보세요!", "Let's sit down and relax!",
+                  "Lounging on the wooden bench under the neon signs with our giant fluffy bear! Best Saturday gaming session ever!", "네온사인 아래 푹신한 대형 곰 인형 껴안고 벤치에 널브러졌다! 역대 최고의 토요일 게임 데이!",
+                  "구동사 \"sit down\"과 relax가 결합된 표현은 놀이나 활동을 마치고 편안하게 쉴 때 자연스럽게 건네는 일상 표현입니다.",
+                  "앉아서 좀 쉬자! (휴식 및 착석 필수 구동사)", "Drop the bear in grease.", "곰 인형 기름에 빠뜨리라는 오답이에요.", "Walk on busy highway.", "고속도로로 걸어가자는 위험한 오답이에요.")
     ]),
 
     make_ep("t2_e9", "tier2", "생일 파티 초대", "📍 Episode 9/10: Laser Tag Birthday Invite", "tag", [
@@ -341,7 +381,12 @@ t2 = [
                   '"야광 팔찌 꼭 차고 올게!"라고 구동사 put on을 써서 화답해보세요!', "I'll put it on!",
                   "Glowing neon green in the dark labyrinth! The birthday countdown is officially on! See you Saturday!", "어두운 미로 속에서 네온 초록빛 뿜어내자! 생일 카운트다운 공식 시작! 토요일에 만나!",
                   '구동사 "put on"은 팔찌, 목걸이, 옷, 모자 등을 "착용하다"라는 의미의 필수 표현입니다.',
-                  "꼭 챙겨 차고 갈게! (착용 필수 구동사)", "Snap the glow sticks in half.", "야광봉 부러뜨리라는 오답이에요.", "Stay home in bed.", "집에 누워있겠다는 거절 오답이에요.")
+                  "꼭 챙겨 차고 갈게! (착용 필수 구동사)", "Snap the glow sticks in half.", "야광봉 부러뜨리라는 오답이에요.", "Stay home in bed.", "집에 누워있겠다는 거절 오답이에요."),
+        make_turn(8, "Penny", "🐧", "Laser tag arena reservation is locked for Saturday 2 PM! The countdown is officially ticking!", "토요일 오후 2시 레이저 태그 예약 완료! 공식 카운트다운 째깍째깍 돌아간다!",
+                  "\"토요일에 꼭 보자!\"라고 기본동사 see를 써서 작별 인사를 나눠보세요!", "See you on Saturday!",
+                  "Counting down every second until the neon blasters power up! Have an awesome rest of the week, bestie!", "네온 블래스터 전원 켜질 때까지 1초마다 세고 있을게! 남은 한 주도 최고로 보내 절친아!",
+                  "기본동사 \"see\"를 활용한 \"See you on [Day]!\"는 특정 요일에 약속된 친구와 헤어질 때 건네는 가장 대중적인 일상 인사입니다.",
+                  "토요일에 꼭 봐! (특정 요일 약속 작별 기본동사)", "Cancel the party right now.", "파티 당장 취소하라는 엉뚱한 말이에요.", "Never see you again.", "다신 보지 말자는 오답이에요.")
     ]),
 
     make_ep("t2_e10", "tier2", "비밀 아지트 규칙", "📍 Episode 10/10: Secret Treehouse Vault", "treehouse", [
@@ -379,6 +424,11 @@ t2 = [
                   '"이제 집에 가자!"라고 구동사 head home을 써서 하산해보세요!', "Let's head home!",
                   "Riding our bikes before the streetlights turn bright! Mission Treehouse complete! Best secret agent squad ever!", "가로등 켜지기 전에 자전거 타고 슝 가자! 트리하우스 미션 완벽 종료! 최고 비밀 요원 팀 만세!",
                   '구동사 "head home" 또는 head out은 "집으로 향하다/귀가하다"라는 뜻으로 해 질 무렵 친구들과 헤어질 때 매일 쓰는 자연스러운 표현입니다.',
-                  "이제 집에 가자! (귀가 필수 구동사)", "Sleep on the wet grass.", "축축한 잔디에서 자자는 오답이에요.", "Cut down the oak tree.", "참나무 베어버리자는 위험한 오답이에요.")
+                  "이제 집에 가자! (귀가 필수 구동사)", "Sleep on the wet grass.", "축축한 잔디에서 자자는 오답이에요.", "Cut down the oak tree.", "참나무 베어버리자는 위험한 오답이에요."),
+        make_turn(8, "Leo", "🦁", "We made forty-five dollars from our secret club coin treasury! That's a whole lot of quarters and dollar bills!", "우리 비밀 클럽 코인 금고에서 45달러나 모였어! 동전이랑 달러 지폐 진짜 수북하다!",
+                  "\"반씩 똑같이 나누자!\"라고 기본동사 split을 써서 말해보세요!", "Let's split it!",
+                  "Twenty-two fifty each! Half goes to ice cream sundaes and half goes to secret treehouse supplies tomorrow!", "각자 22달러 50센트씩! 절반은 선데 아이스크림 사 먹고 절반은 내일 트리하우스 보급품 사자!",
+                  "기본동사 \"split\"은 비용, 음식, 수익을 \"반씩 나누다/더치페이하다\"라는 뜻으로 미국 아이들과 어른들이 일상에서 매일 쓰는 핵심 동사입니다.",
+                  "반반씩 똑같이 나누자! (분배 및 분할 필수 기본동사)", "Steal all the cash.", "돈 다 훔치라는 도둑 오답이에요.", "Burn the dollar bills.", "지폐 태우라는 위험한 오답이에요.")
     ])
 ]
