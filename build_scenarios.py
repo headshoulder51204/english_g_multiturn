@@ -1,5 +1,5 @@
 """Master Scenario Builder for TalkieTown US.
-Assembles all 4 tiers (40 episodes, 260 total multi-turns) into scenarios.js.
+Assembles all 4 tiers (40 episodes, 300 total multi-turns) into scenarios.js.
 """
 import json
 from scenarios_tier1 import t1
@@ -27,9 +27,9 @@ if hasattr(sys.stdout, 'reconfigure'):
     sys.stdout.reconfigure(encoding='utf-8')
 
 print("SUCCESS: Generated scenarios.js with:")
-print(f"  - Tier 1 (Ages 6-8):   {len(t1)} episodes, {sum(len(e['turns']) for e in t1)} turns (5 turns/ep)")
-print(f"  - Tier 2 (Ages 9-10):  {len(t2)} episodes, {sum(len(e['turns']) for e in t2)} turns (6 turns/ep)")
-print(f"  - Tier 3 (Ages 11-13): {len(t3)} episodes, {sum(len(e['turns']) for e in t3)} turns (7 turns/ep)")
-print(f"  - Tier 4 (Ages 14-16): {len(t4)} episodes, {sum(len(e['turns']) for e in t4)} turns (8 turns/ep)")
+print(f"  - Tier 1 (Ages 6-8):   {len(t1)} episodes, {sum(len(e['turns']) for e in t1)} turns (6 turns/ep)")
+print(f"  - Tier 2 (Ages 9-10):  {len(t2)} episodes, {sum(len(e['turns']) for e in t2)} turns (7 turns/ep)")
+print(f"  - Tier 3 (Ages 11-13): {len(t3)} episodes, {sum(len(e['turns']) for e in t3)} turns (8 turns/ep)")
+print(f"  - Tier 4 (Ages 14-16): {len(t4)} episodes, {sum(len(e['turns']) for e in t4)} turns (9 turns/ep)")
 print(f"  - Total: {total_eps} episodes, {total_turns} turns")
 
