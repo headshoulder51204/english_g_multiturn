@@ -1,4 +1,4 @@
-"""Tier 3 Scenarios: Ages 11-13 (10 episodes x 6 turns = 60 turns)."""
+"""Tier 3 Scenarios: Ages 11-13 (10 episodes x 7 turns = 70 turns)."""
 from scenarios_common import make_ep, make_turn
 
 t3 = [
@@ -32,7 +32,12 @@ t3 = [
                   '"방과 후에 같이 어울려 놀자!"라고 구동사 hang out을 써서 제안해보세요!', "Let's hang out after school!",
                   "Definitely! Boba, Uno tournaments, and good music all afternoon!", "무조건이지! 오후 내내 버블티 마시며 우노 보드게임 토너먼트 뜨자!",
                   '구동사 "hang out"은 친구들과 부담 없이 시간 보내며 어울려 놀 때 미국 10대들이 가장 기본적으로 쓰는 구동사입니다.',
-                  "방과 후에 같이 놀자! (친구 어울림 대표 구동사)", "Let's fight outside.", "밖에서 싸우자는 엉뚱한 말이에요.", "Never talk again.", "다신 말하지 말라는 절교예요.")
+                  "방과 후에 같이 놀자! (친구 어울림 대표 구동사)", "Let's fight outside.", "밖에서 싸우자는 엉뚱한 말이에요.", "Never talk again.", "다신 말하지 말라는 절교예요."),
+        make_turn(7, "Maya", "🛹", "We're standing in front of the neon counter! The boba menu has forty different drinks!", "네온 카운터 앞에 섰어! 버블티 메뉴에 음료만 40가지나 있어!",
+                  '"마음에 드는 거 하나 골라봐!"라고 구동사 pick out을 써서 말해보세요!', "Pick one out!",
+                  "Taro milk tea with double brown sugar pearls! Ordering two right now!", "타로 밀크티에 흑당 펄 두 배 추가! 지금 바로 두 잔 주문 들어간다!",
+                  '구동사 "pick out"은 여러 선택지 중에서 마음에 드는 것을 "고르다/선택하다"라는 뜻으로 쇼핑과 주문 시 매일 쓰입니다.',
+                  "하나 골라봐! (선택과 결정의 필수 구동사)", "Spill the tea.", "차 엎지르라는 오답이에요.", "Drink tap water.", "수돗물 마시자는 오답이에요.")
     ]),
 
     make_ep("t3_e2", "tier3", "스케이트보드 묘기 성공", "📍 Episode 2/10: Skatepark Kickflip Landing", "skatepark", [
@@ -65,7 +70,12 @@ t3 = [
                   '"이따가 메시지로 연락해!"라고 구동사 hit up을 써서 작별해보세요!', "Hit me up later!",
                   "For sure! I'll drop the slow-mo kickflip video in our group chat! Peace out!", "당연하지! 우리 단톡방에 슬로모션 킥플립 영상 올릴게! 안녕!",
                   '구동사 "hit up"은 전화, 문자, SNS 등으로 "나한테 연락해"라고 쿨하게 말할 때 쓰는 대중적인 구어체입니다.',
-                  "이따가 연락해! (쿨한 연락 요청 구동사)", "Punch me in face.", "얼굴 때리라는 무서운 오역이에요.", "Block my number.", "차단하라는 엉뚱한 말이에요.")
+                  "이따가 연락해! (쿨한 연락 요청 구동사)", "Punch me in face.", "얼굴 때리라는 무서운 오역이에요.", "Block my number.", "차단하라는 엉뚱한 말이에요."),
+        make_turn(7, "Jordan", "🏀", "You almost stuck the landing on your first attempt! The board slid over near the curb!", "첫 시도에 거의 착지할 뻔했잖아! 보드가 저기 연석 쪽으로 미끄러져 굴러갔어!",
+                  '"얼른 가서 가져오자!"라고 기본동사 go and get을 써서 말해보세요!', "Let's go get it!",
+                  "Board retrieved! Set your feet again! You're landing this kickflip today for sure!", "보드 회수 완료! 발 다시 세팅해 봐! 오늘 너 이 킥플립 무조건 성공한다!",
+                  '기본동사 결합 "go get [something]"은 "얼른 가서 가져오다/잡아오다"라는 뜻으로 미국 10대들이 행동을 재촉할 때 매일 쓰는 표현입니다.',
+                  "얼른 가서 가져오자! (신속한 회수의 기본동사 콤보)", "Leave board on street.", "길에 보드 버리라는 오답이에요.", "Kick it into traffic.", "차도로 차라는 위험한 오답이에요.")
     ]),
 
     make_ep("t3_e3", "tier3", "과학 프로젝트 파트너", "📍 Episode 3/10: Volcano Chemistry Lab", "scienceLab", [
@@ -98,7 +108,12 @@ t3 = [
                   '"실험대 깨끗이 치우자!"라고 구동사 clean up을 써서 말해보세요!', "Let's clean up the lab!",
                   "Grabbing paper towels right now! Mr. Clark is gonna give us an easy A+!", "지금 페이퍼 타월 가져올게! 클라크 선생님이 무조건 A+ 주실 거야!",
                   '구동사 "clean up"은 과학 실험실이나 작업 공간을 원상태로 말끔히 정리정돈할 때 쓰는 기본 표현입니다.',
-                  "실험실 깨끗이 치우자! (공간 정리정돈 구동사)", "Leave the mess.", "어지럽힌 채 두라는 무책임한 말이에요.", "Pour it on floor.", "바닥에 쏟으라는 오답이에요.")
+                  "실험실 깨끗이 치우자! (공간 정리정돈 구동사)", "Leave the mess.", "어지럽힌 채 두라는 무책임한 말이에요.", "Pour it on floor.", "바닥에 쏟으라는 오답이에요."),
+        make_turn(7, "Maya", "🛹", "Look, the electronic scale under the volcano is still beeping on the side desk!", "저기 봐, 화산 모형 밑에 있던 전자저울이 옆 책상에서 아직 삑삑거리고 있어!",
+                  '"얼른 전원 꺼!"라고 구동사 turn off를 써서 말해보세요!', "Turn it off!",
+                  "Click! Powered down safely! Our lab station is officially cleared!", "딸깍! 안전하게 전원 차단 완료! 우리 실험대 공식 정리 끝!",
+                  '구동사 "turn off"는 컴퓨터, 전자기기, 조명, 기계 등을 "끄다/전원을 차단하다"라는 뜻의 최상위 빈도 구동사입니다.',
+                  "얼른 전원 꺼! (전원 차단 필수 구동사)", "Smash the screen.", "화면 부수라는 오답이에요.", "Pour water on battery.", "배터리에 물 붓자는 위험한 오답이에요.")
     ]),
 
     make_ep("t3_e4", "tier4_preview_or_t3", "쇼핑몰 후드티 쇼핑", "📍 Episode 4/10: Mint Green Hoodie Hunt", "mall", [
@@ -131,31 +146,36 @@ t3 = [
                   '"저기 한번 구경 가보자!"라고 구동사 check out을 써서 제안해보세요!', "Let's check it out!",
                   "Warm butter glaze and sweet iced lemonade! Best shopping finale ever!", "따끈한 버터 글레이즈에 시원한 레모네이드! 최고의 쇼핑 마무리 코스다!",
                   '구동사 "check out"은 새로운 장소나 음식, 볼거리를 "확인하다/구경하러 가다"라는 뜻의 만능 구동사입니다.',
-                  "저기 한번 구경 가보자! (탐색과 방문 필수 구동사)", "Run away from food.", "음식에서 도망치라는 딴소리예요.", "Close your nose.", "코 막으라는 엉뚱한 말이에요.")
+                  "저기 한번 구경 가보자! (탐색과 방문 필수 구동사)", "Run away from food.", "음식에서 도망치라는 딴소리예요.", "Close your nose.", "코 막으라는 엉뚱한 말이에요."),
+        make_turn(7, "Chloe", "🎨", "Look at the giant menu screen! The pretzel maker is pulling a fresh hot batch straight from the oven!", "대형 메뉴판 봐봐! 제빵사분이 오븐에서 갓 구운 따끈한 프레첼 한 판 막 꺼내셨어!",
+                  '"얼른 줄 서자!"라고 기본동사 get을 써서 말해보세요!', "Let's get in line!",
+                  "Stepping right behind the couple in front! Two warm pretzels coming right up!", "앞사람 바로 뒤에 섰다! 따끈따끈한 프레첼 두 개 금방 나오겠다!",
+                  '기본동사 "get"을 활용한 "get in line"(줄을 서다)은 매장이나 카페에서 줄을 설 때 가장 빈번하게 쓰는 생활 영어입니다.',
+                  "얼른 줄 서자! (대열 합류 필수 기본동사)", "Stand on table.", "식탁 위에 서라는 오답이에요.", "Throw pretzels away.", "프레첼 버리라는 오답이에요.")
     ]),
 
     make_ep("t3_e5", "tier3", "음악 플레이리스트 공유", "📍 Episode 5/10: Shared Headphone Jams", "teenLocker", [
         make_turn(1, "Jordan", "🏀", "Put in this earbud! Check out the synth bass drop on this track!", "이 이어폰 한쪽 꽂아봐! 이 곡 신스 베이스 드롭 터지는 것 좀 들어봐!",
                   '"이 노래 진짜 찢었다! 비트 미쳤어!"라고 감탄해보세요!', "This song slaps!",
-                  "Right? That 808 bass kick gives me goosebumps every single time!", "그치? 저 808 베이스 쿵쿵거릴 때마다 온몸에 소름 돋는다니까!",
-                  '음악이나 노래의 비트가 너무 좋을 때 "귀를 때린다, 찢었다"는 의미로 쓰는 대표 Z세대 슬랭입니다.',
-                  "이 노래 진짜 찢었다! (음악 극찬 슬랭)", "Slap my face.", "내 뺨 때리라는 무서운 오역이에요.", "I hate music.", "음악 싫다는 악담이에요."),
-        make_turn(2, "Jordan", "🏀", "I have an eighty-song playlist for our weekend road trips!", "우리 주말 드라이브 갈 때 들을 80곡짜리 플레이리스트 만들어뒀어!",
-                  '"재생목록 대기열에 바로 추가해!"라고 요청해보세요!', "Add it to queue.",
-                  "Added! It's playing right after this electric guitar solo!", "추가 완료! 이 일렉 기타 솔로 끝나자마자 바로 재생된다!",
-                  '스마트폰 음악 앱에서 다음에 들을 곡으로 예약 목록에 올릴 때 쓰는 표준 IT/일상 표현입니다.',
-                  "대기열에 추가해줘! (재생목록 추가)", "Delete all songs.", "곡 다 지우라는 테러예요.", "My ears are hurting.", "귀 아프다는 불평이에요."),
-        make_turn(3, "Jordan", "🏀", "The vocalist's falsetto notes are so smooth and effortless!", "보컬 가성 올라가는 거 진짜 부드럽고 자연스럽지 않아?",
-                  '"이 노래 부른 사람 누구야?"라고 가수를 물어보세요!', "Who sings this?",
-                  "It's an indie producer from Seattle! Only nineteen years old!", "시애틀 출신 인디 프로듀서야! 나이가 겨우 열아홉 살이래!",
-                  '흘러나오는 멋진 노래의 원곡자가 궁금할 때 가장 직관적으로 묻는 질문입니다.',
-                  "이거 누가 부른 거야? (가수 묻기)", "Who is talking?", "누가 말하냐는 엉뚱한 질문이에요.", "Sing louder please.", "더 크게 부르라는 주문이에요."),
-        make_turn(4, "Jordan", "🏀", "I downloaded their whole album last night and listened till 2 AM!", "나 어젯밤에 그 사람 앨범 전곡 다운받아서 새벽 2시까지 들었잖아!",
-                  '"하루 종일 무한 반복 중이야!"라고 공감해보세요!', "On repeat all day.",
-                  "Same here! My Spotify replay stats are gonna be completely dominated!", "나도 그래! 내 스포티파이 올해 결산 차트 이 노래가 다 먹을걸!",
-                  '마음에 드는 노래를 하루 종일 끊임없이 반복해서 들을 때 쓰는 일상 구어체입니다.',
-                  "하루 종일 무한 반복 중! (무한 스트리밍 공감)", "Stop repeating words.", "말 반복하지 말라는 엉뚱한 뜻이에요.", "Turn off radio.", "라디오 끄라는 말이에요."),
-        make_turn(5, "Jordan", "🏀", "Every track on this EP has zero skips, pure masterpiece!", "이 미니앨범 수록곡은 버릴 곡이 하나도 없어, 전곡이 명작이야!",
+                  "Told you! The producer layered three 808 kick drums in the chorus!", "내가 말했잖아! 프로듀서가 후렴구에 808 킥드럼 세 개나 얹어놨다니까!",
+                  '음악이나 비트가 온몸을 흔들 정도로 신나고 기가 막히게 좋을 때 쓰는 10대들의 대표 슬랭입니다.',
+                  "노래 진짜 찢었다! (비트 극찬)", "Stop the music.", "노래 끄라는 엉뚱한 말이에요.", "Earbuds hurt.", "귀 아프다는 불평이에요."),
+        make_turn(2, "Jordan", "🏀", "I've had this whole eleven-track indie album on loop since seven AM!", "나 아침 7시부터 이 11곡짜리 인디 앨범 전곡 무한 반복 재생 중이거든!",
+                  '"나 완전 공감해, 완전 인정!"이라고 맞장구쳐보세요!', "I feel you.",
+                  "Right? Track four has that guitar solo that gives me literal chills!", "그치? 4번 트랙 기타 솔로는 들을 때마다 진짜 소름 돋는다니까!",
+                  '상대방의 감정이나 열정에 깊이 공감하며 "네 마음 100% 이해해"라고 고개를 끄덕일 때 씁니다.',
+                  "완전 공감해! (깊은 감정적 공감)", "I touch your hand.", "손 만진다는 직역 오역이에요.", "Turn off the phone.", "폰 끄라는 딴소리예요."),
+        make_turn(3, "Jordan", "🏀", "What about the slow piano ballad on track six? Too slow or just right?", "6번 피아노 발라드 트랙은 어때? 너무 느려 아니면 딱 좋아?",
+                  '"완전 내 스타일이야, 취향 저격!"이라고 취향을 밝혀보세요!', "Totally my vibe.",
+                  "Same! Rainy day headphones-on bedroom mood right there!", "나도 그래! 비 오는 날 방에서 헤드폰 끼고 듣는 딱 그 감성이잖아!",
+                  '어떤 스타일이나 음악, 분위기가 자신의 감성에 완벽하게 부합할 때 쓰는 감각적인 표현입니다.',
+                  "완전 내 감성이야! (취향 저격)", "I have no vibes.", "감성 없다는 로봇 반응이에요.", "Piano is heavy.", "피아노 무겁다는 엉뚱한 말이에요."),
+        make_turn(4, "Jordan", "🏀", "Do you want me to AirDrop the master playlist link to your phone?", "내 마스터 플레이리스트 링크 에어드롭으로 너한테 쏴줄까?",
+                  '"제발 보내줘, 복 받을 거야!"라고 반색해보세요!', "Please do!",
+                  "AirDrop sent! Over two hundred underground gems ready to stream!", "에어드롭 전송 완료! 200곡 넘는 언더그라운드 숨은 명곡 스트리밍 준비 끝!",
+                  '상대방의 호의적인 제안에 기쁨을 표하며 정중하고 확실하게 부탁할 때 쓰는 간결한 표현입니다.',
+                  "제발 보내줘! (확실한 호의 수용)", "Refuse the transfer.", "전송 거절한다는 차가운 말이에요.", "I have no storage.", "용량 없다는 핑계예요."),
+        make_turn(5, "Jordan", "🏀", "Not a single skip track on that whole two-hour playlist!", "그 2시간짜리 플레이리스트에 스킵할 곡이 단 하나도 없어! 전곡이 명작이야!",
                   '"진짜 버릴 게 없는 순도 100% 명곡이다!"라고 극찬해보세요!', "Pure gold.",
                   "Shared the link to our group chat! Everyone needs this on their radar!", "우리 단톡방에 링크 쐈다! 애들 다 이 노래 들어야 해!",
                   '품질이나 완성도가 흠잡을 데 없이 뛰어난 작품이나 곡을 "순금 같다, 명작이다"라고 칭송하는 말입니다.',
@@ -164,7 +184,12 @@ t3 = [
                   '"얼른 충전기 꽂아!"라고 구동사 plug in을 써서 말해보세요!', "Plug it in!",
                   "Connected to the portable power bank! The music marathon keeps rolling uninterrupted!", "보조배터리에 연결 완료! 음악 마라톤은 끊김 없이 계속된다!",
                   '구동사 "plug in"은 전자기기나 충전기를 전원에 꽂아 연결할 때 전 세계에서 매일 쓰는 기본 구동사입니다.',
-                  "얼른 충전기 꽂아! (전원 연결 필수 구동사)", "Unplug everything.", "다 뽑으라는 반대말이에요.", "Throw phone away.", "폰 버리라는 극단적인 오답이에요.")
+                  "얼른 충전기 꽂아! (전원 연결 필수 구동사)", "Unplug everything.", "다 뽑으라는 반대말이에요.", "Throw phone away.", "폰 버리라는 극단적인 오답이에요."),
+        make_turn(7, "Jordan", "🏀", "Phone is charging fast, and the next track just came on! It's that brand new song everyone's talking about!", "폰 충전 빠르게 되고 있고 다음 곡 막 시작했어! 요즘 애들 다 이야기하는 그 신곡이잖아!",
+                  '"볼륨 좀 올려봐!"라고 구동사 turn up을 써서 말해보세요!', "Turn it up!",
+                  "Cranking up the volume slider! That bassline is vibrating through the whole floor!", "볼륨 슬라이더 확 올린다! 베이스라인이 바닥 전체를 울리고 있어!",
+                  '구동사 "turn up"은 소리, 음악, 밝기, 온도를 "높이다/올리다"라는 뜻으로 일상에서 가장 자주 쓰이는 필수 구동사입니다.',
+                  "볼륨 좀 키워봐! (음량 증폭 필수 구동사)", "Turn it off.", "끄라는 반대말이에요.", "Break the phone.", "폰 부수라는 오답이에요.")
     ]),
 
     make_ep("t3_e6", "tier3", "락커룸 사물함 자물쇠", "📍 Episode 6/10: Locker Combination Amnesia", "teenLocker", [
@@ -197,7 +222,12 @@ t3 = [
                   '"얼른 문 닫아!"라고 기본동사 shut을 써서 말해보세요!', "Shut it close!",
                   "Slammed and clicked shut! Hallway is clear, sprint to the gymnasium!", "쾅 닫히면서 잠겼다! 복도 비었다, 체육관으로 전력 질주!",
                   '기본동사 "shut"은 문이나 뚜껑을 빠르고 단단하게 닫을 때 직관적으로 쓰이는 핵심 동사입니다.',
-                  "얼른 딱 닫아! (문 단속 기본동사)", "Leave it open.", "열어두라는 위험한 말이에요.", "Break the hinges.", "경첩 부수라는 오답이에요.")
+                  "얼른 딱 닫아! (문 단속 기본동사)", "Leave it open.", "열어두라는 위험한 말이에요.", "Break the hinges.", "경첩 부수라는 오답이에요."),
+        make_turn(7, "Maya", "🛹", "The warning bell is ringing right above our ears! Gym teacher Mr. Harris is taking attendance in twenty seconds!", "경고 벨이 우리 귓가에 바로 울리고 있어! 체육 선생님이 20초 뒤에 출석 부르신대!",
+                  '"우리 늦지 않게 갈 수 있어!"라고 기본동사 make it을 써서 힘차게 외쳐보세요!', "We can make it!",
+                  "Slid across the gym floor right as he called our names! Perfect timing!", "선생님이 우리 이름 부르시는 순간 체육관 바닥 미끄러져 들어왔다! 타이밍 대박!",
+                  '기본동사 "make"를 활용한 "make it"은 시간 약속에 늦지 않게 도착하거나 난관을 극복해 낼 때("We can make it!") 가장 많이 쓰는 표현입니다.',
+                  "우리 시간 맞출 수 있어! (도착과 성취의 기본동사)", "We will fail.", "실패할 거라는 패배주의예요.", "Sleep in locker.", "사물함에서 자라는 엉뚱한 말이에요.")
     ]),
 
     make_ep("t3_e7", "tier3", "급식 메뉴 실망", "📍 Episode 7/10: Cafeteria Mystery Loaf", "cafeteria", [
@@ -230,7 +260,12 @@ t3 = [
                   '"얼른 뽑아먹자!"라고 기본동사 get을 써서 말해보세요!', "Let's go get some!",
                   "Dollar bills accepted! Crunchy chips dropped into the slot! Lunch is saved!", "지폐 투입 완료! 바삭한 칩이 슬롯으로 툭 떨어졌다! 점심 위기 탈출!",
                   '기본동사 "go"와 "get"이 결합한 "go get ~"은 음식이나 간식을 사러 가거나 가져올 때 가장 자연스럽게 쓰입니다.',
-                  "얼른 사 먹으러 가자! (간식 획득 기본동사)", "Drop the coins.", "동전 떨어뜨리라는 오답이에요.", "Starve until dinner.", "저녁까지 굶자는 포기예요.")
+                  "얼른 사 먹으러 가자! (간식 획득 기본동사)", "Drop the coins.", "동전 떨어뜨리라는 오답이에요.", "Starve until dinner.", "저녁까지 굶자는 포기예요."),
+        make_turn(7, "Chloe", "🎨", "We got two bags of barbecue potato chips and cold peach iced tea! The picnic table outside is open in the sunshine!", "바비큐 감자칩 두 봉지에 시원한 복숭아 아이스티 득템! 바깥 피크닉 테이블 햇살 아래 비어있어!",
+                  '"저기 가서 자리 잡고 앉자!"라고 기본동사 take a seat을 써서 제안해보세요!', "Let's take a seat!",
+                  "Cracking open the chips under the sun! Best outdoor lunch ever!", "햇살 아래서 감자칩 봉지 뜯기! 최고의 야외 점심이다!",
+                  '기본동사 "take"를 활용한 "Take a seat!"(자리에 앉다)은 정중하고 자연스럽게 앉을 자리를 권하거나 잡을 때 쓰는 필수 표현입니다.',
+                  "저기 자리 잡고 앉자! (착석과 휴식의 기본동사)", "Stand on table.", "식탁 위에 서라는 오답이에요.", "Throw chips away.", "감자칩 버리라는 오답이에요.")
     ]),
 
     make_ep("t3_e8", "tier3", "방과 후 자전거 라이딩", "📍 Episode 8/10: Sunset Ridge Bike Climb", "sunset", [
@@ -263,7 +298,12 @@ t3 = [
                   '"이제 자전거 타고 내려가자!"라고 구동사 head down을 써서 말해보세요!', "Let's head down!",
                   "Flipping bike headlights on! Coasting smooth down the asphalt all the way home!", "자전거 전조등 ON! 아스팔트 길 타고 집까지 시원하게 미끄러져 내려가자!",
                   '구동사 "head down"은 특정 방향(아래쪽, 남쪽, 시내 등)을 향해 "내려가다/출발하다"라는 이동 구동사입니다.',
-                  "이제 내려가자! (방향 이동 필수 구동사)", "Sleep on the hill.", "언덕에서 자라는 엉뚱한 말이에요.", "Crash the bicycle.", "자전거 박으라는 위험한 말이에요.")
+                  "이제 내려가자! (방향 이동 필수 구동사)", "Sleep on the hill.", "언덕에서 자라는 엉뚱한 말이에요.", "Crash the bicycle.", "자전거 박으라는 위험한 말이에요."),
+        make_turn(7, "Jordan", "🏀", "We coasted all the way down the smooth hill into the neighborhood! But look, my front tire is a bit soft!", "완만한 언덕 타고 동네까지 시원하게 미끄러져 내려왔어! 근데 앞바퀴 타이어 공기가 살짝 빠졌네!",
+                  '"공기 좀 가득 채우자!"라고 구동사 fill up을 써서 말해보세요!', "Let's fill it up!",
+                  "Pumping air with the hand pump! Tire is rock solid and ready to roll again!", "휴대용 펌프로 공기 주입 완료! 타이어 완전 짱짱해져서 다시 쌩쌩 달릴 수 있어!",
+                  '구동사 "fill up"은 공기, 연료, 물병 등을 "가득 채우다"라는 뜻으로 일상생활에서 매일 쓰이는 구동사입니다.',
+                  "공기 가득 채우자! (주입 및 충전 필수 구동사)", "Flatten the tire.", "타이어 펑크 내라는 오답이에요.", "Leave bike in bush.", "자전거 풀숲에 버리라는 오답이에요.")
     ]),
 
     make_ep("t3_e9", "tier3", "시험 전날 스터디 그룹", "📍 Episode 9/10: Pre-Exam Flashcard Sprint", "library", [
@@ -296,7 +336,12 @@ t3 = [
                   '"오늘은 이만 정리하자!"라고 구동사 wrap up을 써서 제안해보세요!', "Let's wrap it up!",
                   "Packing up highlighters! A good night of sleep is our final secret weapon for an A!", "형광펜 정리 끝! 오늘 밤 푹 자는 게 만점 받는 마지막 비밀 무기야!",
                   '구동사 "wrap up"은 공부나 회의, 프로젝트를 만족스럽게 "마무리짓다/끝마치다"라는 뜻의 핵심 구동사입니다.',
-                  "오늘은 이만 마무리하자! (학습 종료 필수 구동사)", "Study all night long.", "밤새우라는 무리한 말이에요.", "Rip the textbooks.", "교과서 찢으라는 나쁜 말이에요.")
+                  "오늘은 이만 마무리하자! (학습 종료 필수 구동사)", "Study all night long.", "밤새우라는 무리한 말이에요.", "Rip the textbooks.", "교과서 찢으라는 나쁜 말이에요."),
+        make_turn(7, "Maya", "🛹", "Everything is packed in our bags and our brains are fully prepped for the history test! Let's recharge!", "가방 정리 다 끝났고 우리 뇌도 역사 시험 준비 100% 완료됐어! 이제 재충전하자!",
+                  '"푹 자고 쉬어!"라고 기본동사 get을 써서 따뜻하게 인사해보세요!', "Get some rest!",
+                  "Eight hours of solid sleep tonight! We're gonna crush that history exam tomorrow morning!", "오늘 밤 8시간 꿀잠 자기! 내일 아침 역사 시험 완전 찢어버리자!",
+                  '기본동사 "get"을 활용한 "Get some rest!"(푹 쉬어, 휴식 취해)는 시험이나 큰일을 앞둔 친구를 격려하고 배려할 때 매일 쓰는 표현입니다.',
+                  "푹 자고 쉬어! (휴식 권유 필수 기본동사)", "Stay awake all night.", "밤새 깨어있으라는 오답이에요.", "Forget everything.", "다 까먹으라는 오답이에요.")
     ]),
 
     make_ep("t3_e10", "tier3", "주말 캠핑 불멍", "📍 Episode 10/10: Fireside S'mores & Lore", "campfire", [
@@ -329,6 +374,11 @@ t3 = [
                   '"불씨 완전히 꺼두자!"라고 구동사 put out을 써서 말해보세요!', "Put the fire out!",
                   "Pouring the water bucket over the embers! Hiss... completely extinguished and safe!", "숯불 위에 양동이 물 붓는 중! 치이익... 완전히 진화 완료, 안전해!",
                   '구동사 "put out"은 모닥불, 촛불, 담배 등의 불을 "끄다/진화하다"라는 뜻으로 캠핑과 안전에서 필수입니다.',
-                  "불씨 완전히 꺼둬! (소화 및 진화 필수 구동사)", "Pour gasoline.", "휘발유 부으라는 위험천만한 말이에요.", "Run away leaving fire.", "불 두고 도망치라는 범죄예요.")
+                  "불씨 완전히 꺼둬! (소화 및 진화 필수 구동사)", "Pour gasoline.", "휘발유 부으라는 위험천만한 말이에요.", "Run away leaving fire.", "불 두고 도망치라는 범죄예요."),
+        make_turn(7, "Chloe", "🎨", "The campfire is completely cold and dark! The stars above our tent are shining like diamonds!", "모닥불 완전 차갑고 어둡게 꺼졌어! 우리 텐트 위로 별들이 다이아몬드처럼 빛나!",
+                  '"텐트 안으로 들어가자!"라고 구동사 get in을 써서 말해보세요!', "Let's get in the tent!",
+                  "Zipping up the mesh flap! Slipping into cozy sleeping bags under the stars!", "모기장 지퍼 쓱 잠그기! 별빛 아래 포근한 침낭 속으로 쏙 들어왔어!",
+                  '구동사 "get in"은 방, 텐트, 자동차 등 안으로 "들어가다/타다"라는 뜻으로 하루에도 수십 번 쓰이는 최상위 빈도 구동사입니다.',
+                  "텐트 안으로 들어가자! (진입 및 탑승 필수 구동사)", "Sleep in campfire ashes.", "재 속에서 자라는 위험한 오답이에요.", "Tear down tent.", "텐트 찢으라는 오답이에요.")
     ])
 ]

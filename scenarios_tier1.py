@@ -1,4 +1,4 @@
-"""Tier 1 Scenarios: Ages 6-8 (10 episodes x 4 turns = 40 turns)."""
+"""Tier 1 Scenarios: Ages 6-8 (10 episodes x 5 turns = 50 turns)."""
 from scenarios_common import make_ep, make_turn
 
 t1 = [
@@ -22,7 +22,12 @@ t1 = [
                   '"장난감 치우자!"라고 구동사 clean up을 써서 말해보세요!', "Let's clean up!",
                   "Good idea! Let's put all the buckets in my beach bag! Done!", "좋은 생각이야! 양동이들 내 비치백에 다 넣자! 끝!",
                   '구동사 "clean up"은 놀이나 식사 후에 주변을 깨끗하게 정리할 때 아이들이 매일 쓰는 필수 표현입니다.',
-                  "깨끗이 치우자! (정리정돈 필수 구동사)", "Break the castle.", "모래성 부수자는 엉뚱한 말이에요.", "Eat sand.", "모래 먹자는 이상한 말이에요.")
+                  "깨끗이 치우자! (정리정돈 필수 구동사)", "Break the castle.", "모래성 부수자는 엉뚱한 말이에요.", "Eat sand.", "모래 먹자는 이상한 말이에요."),
+        make_turn(5, "Penny", "🐧", "The sand is burning hot like a cookie oven! Don't step on it barefoot!", "모래가 쿠키 오븐처럼 엄청 뜨거워! 맨발로 밟지 마!",
+                  '"샌들 신어!"라고 구동사 put on을 써서 외쳐보세요!', "Put on your sandals!",
+                  "Strap on tight! Now my toes are safe from the scorching sand!", "스트랩 꽉 잠갔다! 이제 발가락 안 데이고 안전해!",
+                  '구동사 "put on"은 신발, 모자, 안경, 겉옷 등을 "착용하다/신다"라는 뜻으로 유초등 아이들이 매일 쓰는 초특급 필수 구동사입니다.',
+                  "샌들 신어! (의류 및 신발 착용 필수 구동사)", "Eat your sandals.", "샌들 먹으라는 엉뚱한 말이에요.", "Throw sandals away.", "샌들 버리라는 나쁜 말이에요.")
     ]),
 
     make_ep("t1_e2", "tier1", "놀이터 술래잡기", "📍 Episode 2/10: Playground Tag", "tag", [
@@ -45,7 +50,12 @@ t1 = [
                   '"발밑 조심해!"라고 구동사 watch out을 써서 외쳐보세요!', "Watch out!",
                   "Phew, you warned him just in time! He hopped right over it!", "휴, 네가 딱 맞춰 경고해줬어! 폴짝 뛰어넘었다!",
                   '구동사 "Watch out!"은 장애물이나 위험이 닥쳤을 때 "조심해!"라고 즉시 외치는 가장 기본적이고 긴박한 표현입니다.',
-                  "조심해! (위험 경고 필수 구동사)", "Fall down hard.", "세게 넘어지라는 악담이에요.", "Sleep on grass.", "잔디에서 자라는 엉뚱한 말이에요.")
+                  "조심해! (위험 경고 필수 구동사)", "Fall down hard.", "세게 넘어지라는 악담이에요.", "Sleep on grass.", "잔디에서 자라는 엉뚱한 말이에요."),
+        make_turn(5, "Leo", "🦁", "Sammy is turning around the monkey bars and zooming straight at us! Don't stop!", "새미가 구름사다리 돌아서 우리 쪽으로 직진해 온다! 멈추지 마!",
+                  '"계속 뛰어!"라고 기본동사 keep을 써서 응원해보세요!', "Keep running!",
+                  "I'm running as fast as a cheetah! Sammy can't catch us now!", "나 치타처럼 빠르게 달리는 중! 새미 이제 우리 절대 못 잡아!",
+                  '기본동사 "keep" 뒤에 ~ing를 붙인 "Keep running!"(계속 뛰어!), "Keep going!"(계속 가!)는 멈추지 않고 지속할 때 입버릇처럼 쓰는 대표적 표현입니다.',
+                  "계속 뛰어! (지속과 격려의 기본동사)", "Stop and sleep.", "자라는 엉뚱한 말이에요.", "Fall on grass.", "넘어지라는 악담이에요.")
     ]),
 
     make_ep("t1_e3", "tier1", "간식 나눠먹기", "📍 Episode 3/10: Snack Sharing", "cafeteria", [
@@ -68,7 +78,12 @@ t1 = [
                   '"하나 집어봐!"라고 기본동사 take를 써서 골라보세요!', "Take one!",
                   "I'll take the purple grape bear! Om nom nom, so juicy!", "난 보라색 포도 곰 젤리 먹을래! 냠냠 완전 즙 터진다!",
                   '기본동사 "take"는 손으로 물건을 집거나 선택할 때 "Take one(하나 골라봐/집어봐)"처럼 매일 쓰이는 핵심 동사입니다.',
-                  "하나 골라봐! (선택을 권하는 기본동사)", "Throw it away.", "버리라는 나쁜 말이에요.", "Hide the food.", "음식 숨기라는 엉뚱한 말이에요.")
+                  "하나 골라봐! (선택을 권하는 기본동사)", "Throw it away.", "버리라는 나쁜 말이에요.", "Hide the food.", "음식 숨기라는 엉뚱한 말이에요."),
+        make_turn(5, "Sammy", "🦊", "Wait, the snack bell is ringing! Zipper your pocket so your gummy bear doesn't tumble out!", "잠깐, 간식 시간 끝나는 종 쳐! 곰 젤리 안 떨어지게 주머니에 얼른 넣어!",
+                  '"가방에 잘 챙겨 넣어둘게!"라고 구동사 put away를 써서 말해보세요!', "I'll put it away!",
+                  "Safe inside your pocket zipper! Snack mission complete!", "주머니 지퍼 안에 쏙 안전하게 보관 완료! 간식 미션 성공!",
+                  '구동사 "put away"는 물건, 간식, 장난감을 가방이나 원래 자리에 "정리하여 넣어두다"라는 뜻의 일상 필수 구동사입니다.',
+                  "가방에 잘 넣어둘게! (정리 및 보관 필수 구동사)", "Drop it in mud.", "진흙에 떨어뜨리라는 오답이에요.", "Throw at teacher.", "선생님께 던지라는 오답이에요.")
     ]),
 
     make_ep("t1_e4", "tier1", "레고 블록 꼭대기", "📍 Episode 4/10: LEGO Tower Top", "toybox", [
@@ -91,7 +106,12 @@ t1 = [
                   '"잠깐 기다려봐!"라고 구동사 hold on을 써서 진정시켜보세요!', "Hold on!",
                   "Phew, I steady it with both hands! The tower is standing strong!", "휴, 두 손으로 중심 잡았어! 탑이 튼튼하게 서 있다!",
                   '구동사 "Hold on!"은 "잠깐만!", "기다려 봐!"라는 뜻으로 급하거나 위험한 순간 멈추라고 할 때 입버릇처럼 쓰입니다.',
-                  "잠깐만 기다려! (순간을 멈추는 필수 구동사)", "Smash it down.", "부숴버리라는 심술궂은 말이에요.", "I am crying.", "울고 있다는 딴소리예요.")
+                  "잠깐만 기다려! (순간을 멈추는 필수 구동사)", "Smash it down.", "부숴버리라는 심술궂은 말이에요.", "I am crying.", "울고 있다는 딴소리예요."),
+        make_turn(5, "Leo", "🦁", "The warning whistle blew! We have fifty extra yellow bricks scattered on the blue carpet!", "정리 호루라기 불렸다! 파란 카펫에 노란 블록 50개 흩어져 있어!",
+                  '"원래 상자에 다시 넣어두자!"라고 구동사 put back을 써서 제안해보세요!', "Let's put them back!",
+                  "Scooping them into the red tub! The carpet is squeaky clean!", "빨간 통에 다 쓸어 담았어! 카펫 완전 반짝반짝 깨끗하다!",
+                  '구동사 "put back"은 썼던 물건이나 장난감을 "원래 자리에 되돌려놓다"라는 뜻으로 학교와 가정에서 매일 쓰는 최고빈도 표현입니다.',
+                  "원래 자리에 되돌려놓자! (제자리 정리 필수 구동사)", "Smash the box.", "상자 부수라는 오답이에요.", "Hide them forever.", "영원히 숨기라는 오답이에요.")
     ]),
 
     make_ep("t1_e5", "tier1", "크레파스 실수", "📍 Episode 5/10: Crayon Drop Oopsie", "tag", [
@@ -114,7 +134,12 @@ t1 = [
                   '"내가 주워올릴게!"라고 구동사 pick up을 써서 말해보세요!', "I'll pick it up!",
                   "You got it! Thank you for picking it up so fast!", "네가 해냈네! 얼른 주워줘서 진짜 고마워!",
                   '구동사 "pick up"은 바닥에 떨어진 물건을 손으로 "집어 올리다"라는 뜻으로 일상생활에서 매일 사용합니다.',
-                  "내가 주워올릴게! (물건 줍기 필수 구동사)", "Kick it far.", "멀리 차라는 나쁜 말이에요.", "Leave it dirty.", "더럽게 두라는 오답이에요.")
+                  "내가 주워올릴게! (물건 줍기 필수 구동사)", "Kick it far.", "멀리 차라는 나쁜 말이에요.", "Leave it dirty.", "더럽게 두라는 오답이에요."),
+        make_turn(5, "Penny", "🐧", "I drew the sun and the rainbow arch! Can you draw the little smiling cloud with your blue marker?", "내가 해님이랑 무지개 아치 그렸어! 네가 파란색 매직으로 웃는 구름 그려볼래?",
+                  '"한번 해볼게!"라고 기본동사 give를 써서 씩씩하게 말해보세요!', "I'll give it a try!",
+                  "Whoa, that cloud has the cutest smile ever! Our drawing is a masterpiece!", "우와, 저 구름 미소 진짜 세상에서 제일 귀엽다! 우리 그림 완전 명작이야!",
+                  '기본동사 "give"를 활용한 "Give it a try!"(한번 해보다/시도하다)는 자신 있게 도전하거나 권할 때 원어민들이 가장 많이 쓰는 표현입니다.',
+                  "한번 해볼게! (도전과 시도의 기본동사)", "I destroy drawing.", "그림 찢는다는 오답이에요.", "Color is illegal.", "색칠은 불법이라는 오답이에요.")
     ]),
 
     make_ep("t1_e6", "tier1", "미끄럼틀 양보", "📍 Episode 6/10: Slide Line Etiquette", "swing", [
@@ -137,7 +162,12 @@ t1 = [
                   '"빨리 와!"라고 재촉하며 구동사 come on을 써서 외쳐보세요!', "Come on!",
                   "Running to the ladder right now! Let's slide down together again!", "지금 사다리로 뛰어가는 중! 우리 같이 한 번 더 슝 내려가자!",
                   '구동사 "Come on!"은 "빨리 와!", "어서!", "힘내!"처럼 친구를 부르거나 재촉할 때 전 세계에서 가장 많이 쓰는 구동사입니다.',
-                  "빨리 와, 어서! (재촉과 활기의 구동사)", "Go away.", "저리 가라는 차가운 말이에요.", "Stop playing.", "놀지 말라는 김빠지는 소리예요.")
+                  "빨리 와, 어서! (재촉과 활기의 구동사)", "Go away.", "저리 가라는 차가운 말이에요.", "Stop playing.", "놀지 말라는 김빠지는 소리예요."),
+        make_turn(5, "Sammy", "🦊", "We're standing side by side at the very top of the slide tunnel! The slide is clear!", "우리 미끄럼틀 터널 꼭대기에 나란히 섰어! 아래 미끄럼틀 비었다!",
+                  '"너 먼저 타!"라고 구동사 go ahead를 써서 양보해보세요!', "Go ahead!",
+                  "Wheee! Zooming down like a rocket ship! Now your turn to zoom!", "우와아! 로켓처럼 슝 내려간다! 이제 네가 슝 내려올 차례야!",
+                  '구동사 "Go ahead!"는 "먼저 해!", "어서 가!"라는 뜻으로 줄서기나 놀이에서 양보하고 배려할 때 미국에서 1위로 쓰이는 구동사입니다.',
+                  "너 먼저 타! 어서 가! (배려와 양보의 필수 구동사)", "Push me down hard.", "세게 밀라는 위험한 오답이에요.", "Sit here all day.", "하루 종일 앉아있자는 오답이에요.")
     ]),
 
     make_ep("t1_e7", "tier1", "잃어버린 스티커", "📍 Episode 7/10: Lost Dinosaur Sticker", "toybox", [
@@ -160,7 +190,12 @@ t1 = [
                   '"소중히 잘 보관해!"라고 기본동사 keep을 써서 조언해보세요!', "Keep it safe!",
                   "Putting it inside my secret pocket zipper! It's safe now!", "내 비밀 주머니 지퍼 안에 쏙 넣었어! 이제 절대 안 잃어버려!",
                   '기본동사 "keep"은 어떤 상태를 그대로 유지하거나 소중한 물건을 지킬 때 "Keep it safe(안전하게 잘 둬)"로 쓰입니다.',
-                  "안전하게 잘 보관해! (상태 유지 기본동사)", "Throw it out.", "버리라는 이상한 말이에요.", "Lose it again.", "다시 잃어버리라는 악담이에요.")
+                  "안전하게 잘 보관해! (상태 유지 기본동사)", "Throw it out.", "버리라는 이상한 말이에요.", "Lose it again.", "다시 잃어버리라는 악담이에요."),
+        make_turn(5, "Penny", "🐧", "I have a shiny silver astronaut sticker sheet in my desk drawer! Wanna see?", "내 책상 서랍에 반짝이는 은색 우주비행사 스티커 시트도 있어! 볼래?",
+                  '"한번 봐보자!"라고 기본동사 take를 써서 말해보세요!', "Let's take a look!",
+                  "Look at the glowing helmet stickers! Pick your favorite one to keep!", "빛나는 헬멧 스티커 봐봐! 마음에 드는 거 하나 골라서 가져!",
+                  '기본동사 "take"와 look이 합쳐진 "Take a look!"(한번 봐봐!)은 무언가를 살펴보고 구경할 때 매일 쓰는 필수 관용 표현입니다.',
+                  "한번 봐보자! (탐색과 확인의 기본동사)", "Close your eyes tight.", "눈 꼭 감으라는 오답이에요.", "Tear the sticker book.", "스티커북 찢으라는 오답이에요.")
     ]),
 
     make_ep("t1_e8", "tier1", "왕 비눗방울 불기", "📍 Episode 8/10: Giant Bubble Blast", "tag", [
@@ -183,7 +218,12 @@ t1 = [
                   '"얼른 가서 잡아!"라고 기본동사 go와 get을 써서 외쳐보세요!', "Go get it!",
                   "I'm running after it! POP! Bubble splash right on my nose!", "내가 뒤쫓아 뛰어간다! 톡! 내 코끝에서 퐁 터졌어!",
                   '기본동사 "go"와 "get"이 결합한 "Go get it!"은 목표를 향해 "얼른 가서 잡아라/가져와라!"라고 신나게 뛸 때 쓰는 표현입니다.',
-                  "얼른 가서 잡아! (행동 촉구 기본동사 콤보)", "Look away.", "딴 데 보라는 오답이에요.", "Sit down.", "주저앉으라는 김빠지는 말이에요.")
+                  "얼른 가서 잡아! (행동 촉구 기본동사 콤보)", "Look away.", "딴 데 보라는 오답이에요.", "Sit down.", "주저앉으라는 김빠지는 말이에요."),
+        make_turn(5, "Leo", "🦁", "Look at that monster bubble! It's drifting slowly towards the sandbox! Can you catch it?", "저 괴물 비눗방울 좀 봐! 모래사장 쪽으로 살살 떠가고 있어! 잡을 수 있어?",
+                  '"이것 좀 봐봐!"라고 구동사 check out을 써서 가리켜보세요!', "Check that out!",
+                  "Whoa, it reflects the whole playground! POP! Splash of soap water!", "우와, 비눗방울에 운동장 전체가 비쳐! 퐁! 비눗물이 톡 튀었어!",
+                  '구동사 "check out"은 눈앞의 신기한 것이나 물건을 "확인해보다/봐봐!"라고 주의를 끌 때 원어민들이 매일 쓰는 구동사입니다.',
+                  "이것 좀 봐봐! (주목과 확인의 필수 구동사)", "Don't look at it.", "보지 말라는 오답이에요.", "Blow black smoke.", "검은 연기 불라는 오답이에요.")
     ]),
 
     make_ep("t1_e9", "tier1", "종이비행기 날리기", "📍 Episode 9/10: Airplane Launch", "tag", [
@@ -206,7 +246,12 @@ t1 = [
                   '"얼른 주우러 가자!"라고 구동사 pick up을 써서 말해보세요!', "Let's pick it up!",
                   "Got it! Not a single bend on the wings! Launch number two ready!", "찾았다! 날개 하나도 안 구겨졌어! 2차 발사 준비 완료!",
                   '구동사 "pick up"은 날아간 종이비행기나 장난감을 다시 집어 들 때 가장 많이 쓰는 기본 구동사입니다.',
-                  "얼른 주우러 가자! (물건 회수 필수 구동사)", "Step on it.", "밟아 뭉개라는 나쁜 말이에요.", "Burn the paper.", "종이 태우라는 위험한 말이에요.")
+                  "얼른 주우러 가자! (물건 회수 필수 구동사)", "Step on it.", "밟아 뭉개라는 나쁜 말이에요.", "Burn the paper.", "종이 태우라는 위험한 말이에요."),
+        make_turn(5, "Sammy", "🦊", "If we fold the back wings upward like flaps, do you think it'll do a loop?", "뒷날개를 플랩처럼 위로 살짝 접으면 공중제비 돌 수 있을까?",
+                  '"한번 시도해보자!"라고 기본동사 give를 써서 격려해보세요!', "Give it a shot!",
+                  "It did a complete three-sixty loop in the air! That was epic!", "공중에서 360도 완벽하게 한 바퀴 돌았어! 완전 레전드다!",
+                  '기본동사 "give"를 활용한 "Give it a shot!"(한번 해봐/시도해봐)은 "Give it a try"와 함께 시도를 북돋우는 최상위 빈도 표현입니다.',
+                  "한번 시도해보자! (도전 권유 기본동사)", "Throw it in the trash.", "쓰레기통에 버리라는 오답이에요.", "Never fold paper.", "종이 접지 말라는 오답이에요.")
     ]),
 
     make_ep("t1_e10", "tier1", "하교 작별 인사", "📍 Episode 10/10: After-School Farewell", "cafeteria", [
@@ -229,6 +274,11 @@ t1 = [
                   '"얼른 버스 타!"라고 구동사 get on을 써서 말해보세요!', "Get on!",
                   "Climbing the steps! Save me a seat tomorrow morning! Bye!", "계단 올라탄다! 내일 아침에도 창가 자리 맡아줘! 안녕!",
                   '구동사 "Get on"은 버스나 기차 등 대형 교통수단에 탑승할 때 "얼른 타!"라는 의미로 쓰이는 필수 구동사입니다.',
-                  "얼른 올라타! (교통수단 탑승 구동사)", "Fall off.", "떨어지라는 악담이에요.", "Sleep outside.", "밖에서 자라는 엉뚱한 말이에요.")
+                  "얼른 올라타! (교통수단 탑승 구동사)", "Fall off.", "떨어지라는 악담이에요.", "Sleep outside.", "밖에서 자라는 엉뚱한 말이에요."),
+        make_turn(5, "Penny", "🐧", "The bus driver is closing the door and shifting into drive! Wave bye-bye!", "버스 기사님이 문 닫으시고 출발 기어 넣으신다! 창밖으로 손 흔들어!",
+                  '"몸조심하고 잘 가!"라고 기본동사 take를 써서 다정하게 인사해보세요!', "Take care!",
+                  "You too! Have a great afternoon and see you tomorrow morning!", "너도! 즐거운 오후 보내고 내일 아침에 보자!",
+                  '기본동사 "take"를 사용한 "Take care!"(잘 지내, 몸조심해!)는 헤어질 때 따뜻한 정을 담아 건네는 가장 대중적인 원어민 작별 인사입니다.',
+                  "몸조심하고 잘 가! (따뜻한 작별 기본동사)", "Fall off the bus.", "버스에서 떨어지라는 오답이에요.", "Forget my name.", "이름 까먹으라는 오답이에요.")
     ])
 ]

@@ -1,4 +1,4 @@
-"""Tier 2 Scenarios: Ages 9-10 (10 episodes x 5 turns = 50 turns)."""
+"""Tier 2 Scenarios: Ages 9-10 (10 episodes x 6 turns = 60 turns)."""
 from scenarios_common import make_ep, make_turn
 
 t2 = [
@@ -27,7 +27,12 @@ t2 = [
                   '"손잡이 꽉 잡아!"라고 구동사 hang on을 써서 외쳐보세요!', "Hang on tight!",
                   "Holding on with both hands! Wheeeeee, we're flying through the clouds!", "두 손으로 꽉 잡았어! 우와아아 우리 구름 속을 나는 것 같아!",
                   '구동사 "Hang on"은 손으로 무언가를 꽉 붙잡거나, 잠깐 멈춰 기다릴 때 "Hang on tight!(꽉 잡아!)"로 일상에서 쓰입니다.',
-                  "손잡이 꽉 잡아! (안전 필수 구동사)", "Let go now.", "손 놓으라는 위험한 말이에요.", "Close your eyes.", "눈 감으라는 엉뚱한 말이에요.")
+                  "손잡이 꽉 잡아! (안전 필수 구동사)", "Let go now.", "손 놓으라는 위험한 말이에요.", "Close your eyes.", "눈 감으라는 엉뚱한 말이에요."),
+        make_turn(6, "Leo", "🦁", "The warning whistle blew! Our feet are wobbling, let's step down onto the grass!", "마무리 호루라기 불렸다! 다리 후들거리는데, 잔디밭으로 얼른 발 내리자!",
+                  '"그네에서 조심히 내려!"라고 구동사 get off를 써서 말해보세요!', "Get off carefully!",
+                  "Stuck the landing without falling! That was the greatest spin of fourth grade!", "안 넘어지고 착지 성공! 4학년 최고의 그네 스핀이었다!",
+                  '구동사 "get off"는 그네, 놀이기구, 자전거, 버스 등에서 "내리다"라고 할 때 매일 쓰는 필수 구동사입니다.',
+                  "조심히 내려와! (하차 및 착지 필수 구동사)", "Jump on high roof.", "높은 지붕 위로 뛰라는 오답이에요.", "Spin for ten hours.", "10시간 동안 돌라는 오답이에요.")
     ]),
 
     make_ep("t2_e2", "tier2", "급식실 자리 맡기", "📍 Episode 2/10: Cafeteria Seat Rescue", "cafeteria", [
@@ -55,7 +60,12 @@ t2 = [
                   '"얼른 맛있게 다 먹자!"라고 구동사 eat up을 써서 말해보세요!', "Eat up!",
                   "Mmm, this garlic crust is amazing! Best Friday lunch ever!", "음, 이 마늘 도우 진짜 환상적이다! 역대 최고의 금요일 점심이야!",
                   '구동사 "Eat up"은 남김없이 "맛있게 다 먹어!"라고 권할 때 미국인들이 가장 친근하게 쓰는 식사 구동사입니다.',
-                  "맛있게 다 먹자! (식사 권유 필수 구동사)", "Spit it out.", "뱉으라는 무례한 말이에요.", "Hide the food.", "음식 숨기라는 이상한 말이에요.")
+                  "맛있게 다 먹자! (식사 권유 필수 구동사)", "Spit it out.", "뱉으라는 무례한 말이에요.", "Hide the food.", "음식 숨기라는 이상한 말이에요."),
+        make_turn(6, "Penny", "🐧", "Empty trays and crumpled milk cartons! We need to dump our napkins before the hall monitor calls us!", "빈 식판이랑 찌그러진 우유갑! 복도 지도 선생님 부르시기 전에 냅킨 쓰레기통에 버려야 해!",
+                  '"쓰레기 버리자!"라고 구동사 throw away를 써서 말해보세요!', "Let's throw it away!",
+                  "Trash in the bin, trays on the conveyor belt! Flawless lunch routine!", "쓰레기는 쓰레기통에, 식판은 퇴식구에 쏙! 완벽한 점심 정리 완료!",
+                  '구동사 "throw away"는 쓰레기나 필요 없는 물건을 "버리다"라고 할 때 전 세계 원어민들이 가장 많이 쓰는 구동사입니다.',
+                  "쓰레기 버리자! (폐기 및 정리 필수 구동사)", "Eat the napkins.", "냅킨 먹으라는 오답이에요.", "Leave garbage on table.", "식탁에 쓰레기 버려두라는 오답이에요.")
     ]),
 
     make_ep("t2_e3", "tier2", "피구 경기 작전", "📍 Episode 3/10: Dodgeball Showdown", "basketball", [
@@ -83,7 +93,12 @@ t2 = [
                   '"절대 포기하지 마!"라고 구동사 give up을 써서 용기를 북돋워주세요!', "Don't give up!",
                   "You're right! We've got this! Let's watch the red ball and dodge together!", "네 말이 맞아! 우리 할 수 있어! 빨간 공 잘 보면서 같이 피하자!",
                   '구동사 "give up"은 포기하다라는 뜻으로, "Don\'t give up!(절대 포기하지 마!)"은 스포츠와 일상에서 가장 힘이 되는 응원 구호입니다.',
-                  "절대 포기하지 마! (용기 충전 대표 구동사)", "Give up now.", "지금 포기하라는 패배자 말이에요.", "Go home alone.", "혼자 집 가라는 딴소리예요.")
+                  "절대 포기하지 마! (용기 충전 대표 구동사)", "Give up now.", "지금 포기하라는 패배자 말이에요.", "Go home alone.", "혼자 집 가라는 딴소리예요."),
+        make_turn(6, "Sammy", "🦊", "The captain handed us the red championship pennant! Hold it up high for the team photo!", "주장이 우리한테 빨간 우승 깃발 건네줬어! 단체 사진 찍게 높이 들어 올려!",
+                  '"높이 치켜들어!"라고 구동사 hold up을 써서 환호해보세요!', "Hold it up high!",
+                  "Red Team Dodgeball Champions! Everyone is cheering in the stands!", "빨간 팀 피구 챔피언! 관중석에서 다들 환호하고 있어!",
+                  '구동사 "hold up"은 깃발, 트로피, 손을 "위로 치켜들다/들어 올리다"라는 뜻으로 승리나 발표 순간에 매일 쓰입니다.',
+                  "높이 치켜들어! (치켜들기 및 게양 구동사)", "Drop it in mud.", "진흙에 떨어뜨리라는 오답이에요.", "Tear the flag.", "깃발 찢으라는 오답이에요.")
     ]),
 
     make_ep("t2_e4", "tier2", "만화책 스포일러 방어", "📍 Episode 4/10: Comic Spoiler Shield", "library", [
@@ -111,7 +126,12 @@ t2 = [
                   '"고마워, 잘 챙겨둘게!"라고 구동사 put away를 써서 말해보세요!', "I'll put it away!",
                   "Take good care of it! We'll talk all about the epic battle at recess tomorrow!", "소중히 잘 읽어줘! 내일 쉬는 시간에 대결 장면 이야기 폭풍 수다 떨자!",
                   '구동사 "put away"는 책이나 물건을 제자리나 가방에 "정리하여 넣어두다/챙기다"라는 뜻의 핵심 구동사입니다.',
-                  "가방에 잘 넣어둘게! (정리 및 보관 구동사)", "Tear the pages.", "책 찢으라는 나쁜 말이에요.", "Throw it away.", "버리라는 무례한 말이에요.")
+                  "가방에 잘 넣어둘게! (정리 및 보관 구동사)", "Tear the pages.", "책 찢으라는 나쁜 말이에요.", "Throw it away.", "버리라는 무례한 말이에요."),
+        make_turn(6, "Leo", "🦁", "You're gonna flip out when the dragon transforms! Make sure to read chapter eight tonight!", "용이 변신할 때 너 진짜 턱 빠질걸! 오늘 밤에 8장 꼭 읽어봐!",
+                  '"꼭 확인할게!"라고 기본동사 make sure를 써서 약속해보세요!', "I'll make sure to!",
+                  "Awesome! Tomorrow morning at the lockers, we discuss the secret ending!", "좋았어! 내일 아침 사물함 앞에서 비밀 결말 토론하는 거다!",
+                  '기본동사 표현 "make sure to ~"(꼭 ~하다, 확인하다)는 약속이나 중요한 행동을 반드시 챙기겠다고 다짐할 때 쓰는 필수 표현입니다.',
+                  "꼭 확인할게! (확인과 다짐의 기본동사)", "I'll never read it.", "절대 안 읽겠다는 오답이에요.", "Lose the book.", "책 잃어버리겠다는 오답이에요.")
     ]),
 
     make_ep("t2_e5", "tier2", "쉬는 시간 달리기 대결", "📍 Episode 5/10: Recess Sprint Showdown", "playground", [
@@ -139,7 +159,12 @@ t2 = [
                   '"숨 좀 돌리자!"라고 기본동사 take를 써서 제안해보세요!', "Let's take a breath!",
                   "Phew, yes! Deep breaths in and out... My lungs are finally calming down!", "휴 맞아! 숨 깊이 들이쉬고 내쉬고... 숨 이제 좀 찬찬히 가라앉는다!",
                   '기본동사 "take"와 명사가 결합하여 "Take a breath(숨을 고르다/쉬다)"처럼 신체 회복을 표현할 때 자연스럽게 쓰입니다.',
-                  "숨 좀 고르자! (호흡 회복 기본동사)", "Run another mile.", "1마일 더 뛰라는 끔찍한 말이에요.", "Stop breathing.", "숨 멈추라는 위험한 말이에요.")
+                  "숨 좀 고르자! (호흡 회복 기본동사)", "Run another mile.", "1마일 더 뛰라는 끔찍한 말이에요.", "Stop breathing.", "숨 멈추라는 위험한 말이에요."),
+        make_turn(6, "Sammy", "🦊", "The hallway doors are closing in thirty seconds! Mrs. Jenkins hates late arrivals!", "복도 문 30초 뒤에 닫혀! 젠킨스 선생님 지각하는 거 엄청 싫어하셔!",
+                  '"서두르자!"라고 구동사 hurry up을 써서 외쳐보세요!', "Hurry up!",
+                  "Dashing down the hall! Slid into our desks just before the final chime! Safe!", "복도 질주! 마지막 종 치기 직전에 책상으로 쏙 들어왔다! 세이프!",
+                  '구동사 "Hurry up!"은 "서둘러!", "빨리빨리!"라는 뜻으로 시간을 다투는 긴박한 상황에서 가장 흔하게 쓰이는 구동사입니다.',
+                  "서두르자! (긴박한 속도 촉구 필수 구동사)", "Walk backwards slowly.", "천천히 뒷걸음질 치라는 오답이에요.", "Sleep on floor.", "바닥에서 자라는 오답이에요.")
     ]),
 
     make_ep("t2_e6", "tier2", "포켓몬 카드 교환", "📍 Episode 6/10: Trading Card Bargain", "teenLocker", [
@@ -167,7 +192,12 @@ t2 = [
                   '"소중히 잘 간직해!"라고 기본동사 keep을 써서 격려해보세요!', "Keep it safe!",
                   "Locked with double sleeves! It's never getting scratched! Thanks for the trade!", "이중 슬리브 장착 완료! 흠집 절대 안 나게 할게! 교환해줘서 고마워!",
                   '기본동사 "keep"은 "상태를 유지하다, 간직하다"라는 뜻으로, "Keep it safe(안전하게 잘 간직해)"는 카드를 넘겨줄 때 멋진 당부 표현입니다.',
-                  "소중히 잘 간직해! (보관 당부 기본동사)", "Drop on ground.", "바닥에 떨어뜨리라는 오답이에요.", "Fold in half.", "반으로 접으라는 악담이에요.")
+                  "소중히 잘 간직해! (보관 당부 기본동사)", "Drop on ground.", "바닥에 떨어뜨리라는 오답이에요.", "Fold in half.", "반으로 접으라는 악담이에요."),
+        make_turn(6, "Penny", "🐧", "If you ever find another psychic lightning card, you promise to bring it to school for me?", "너 혹시 번개 사이킥 카드 또 뽑으면, 나한테 학교로 가져와 줄 거라고 약속할래?",
+                  '"나만 믿어!"라고 구동사 count on을 써서 든든하게 답해보세요!', "You can count on me!",
+                  "Best trading partner ever! Our dual binders are gonna dominate the tournament!", "최고의 카드 거래 파트너! 우리 앨범 둘이 토너먼트 다 씹어먹겠다!",
+                  '구동사 "count on [someone]"은 상대방을 "믿다/의지하다"라는 뜻으로, "You can count on me!(나만 믿어!)"는 두터운 신뢰를 전하는 명대사입니다.',
+                  "나만 믿어! (신뢰와 약속의 필수 구동사)", "Count to one million.", "100만까지 세라는 오답이에요.", "Steal your cards.", "카드 훔치겠다는 오답이에요.")
     ]),
 
     make_ep("t2_e7", "tier2", "숙제 깜빡했을 때", "📍 Episode 7/10: Forgotten Homework Crisis", "classroom", [
@@ -195,7 +225,12 @@ t2 = [
                   '"위기 잘 넘겼다!"라고 구동사 get through를 써서 기뻐해보세요!', "We got through it!",
                   "High five! That was the closest homework close-call of the entire year!", "하이파이브! 올해 과제 제출 중에 진짜 역대급으로 심장 쫄깃했어!",
                   '구동사 "get through"는 힘든 고비나 위기 상황을 "무사히 통과하다/이겨내다"라는 뜻으로 널리 쓰입니다.',
-                  "위기 잘 넘겼다! (난관 극복 구동사)", "We got arrested.", "체포되었다는 엉뚱한 오역이에요.", "Give me homework.", "숙제 더 달라는 망언이에요.")
+                  "위기 잘 넘겼다! (난관 극복 구동사)", "We got arrested.", "체포되었다는 엉뚱한 오역이에요.", "Give me homework.", "숙제 더 달라는 망언이에요."),
+        make_turn(6, "Leo", "🦁", "Phew, disaster averted! You still have my lucky green mechanical pencil in your hand!", "휴, 재앙을 피했다! 너 손에 아직 내 행운의 초록색 샤프 들려있어!",
+                  '"얼른 돌려줄게!"라고 구동사 give back을 써서 말해보세요!', "I'll give it back!",
+                  "Thanks, buddy! That pencil has aced every science quiz this semester!", "고마워 친구야! 그 샤프가 이번 학기 과학 퀴즈 다 백점 맞게 해준 거거든!",
+                  '구동사 "give back"은 빌린 물건을 "돌려주다/반납하다"라는 뜻으로 교실과 일상에서 물건을 주고받을 때 필수 구동사입니다.',
+                  "얼른 돌려줄게! (물건 반납 필수 구동사)", "Snap pencil in two.", "샤프 부러뜨리라는 오답이에요.", "Keep it forever.", "영원히 안 돌려준다는 오답이에요.")
     ]),
 
     make_ep("t2_e8", "tier2", "게임 오버 후 재도전", "📍 Episode 8/10: Arcade Boss Battle", "toybox", [
@@ -223,7 +258,12 @@ t2 = [
                   '"티켓 다 챙겨!"라고 구동사 pick up을 써서 말해보세요!', "Pick them up!",
                   "Rolling them into a giant ball! We have enough tickets for the giant plush bear!", "왕공처럼 돌돌 마는 중! 대형 곰 인형 바꿀 만큼 티켓 충분해!",
                   '구동사 "pick up"은 쏟아져 나온 티켓이나 물건을 바닥에서 "주워 담다/챙기다"라는 의미로 쓰입니다.',
-                  "얼른 다 챙겨! (물건 수거 구동사)", "Burn the tickets.", "티켓 태우라는 이상한 말이에요.", "Leave them behind.", "버려두고 가자는 손해예요.")
+                  "얼른 다 챙겨! (물건 수거 구동사)", "Burn the tickets.", "티켓 태우라는 이상한 말이에요.", "Leave them behind.", "버려두고 가자는 손해예요."),
+        make_turn(6, "Sammy", "🦊", "We carried the giant tickets to the prize counter! The clerk is pulling down the giant plush bear!", "경품 카운터로 티켓 다 들고 왔어! 점원분이 대형 곰 인형 내려주시는 중이야!",
+                  '"한번 꼭 안아봐!"라고 기본동사 hold를 써서 건네보세요!', "Hold it tight!",
+                  "It's as big as my entire body and so fluffy! Arcade champions of the world!", "내 몸채만 하고 완전 폭신폭신해! 우리가 오락실 세계 챔피언이다!",
+                  '기본동사 "hold"는 물건이나 손을 "꼭 잡다/안다"라는 뜻으로 "Hold it tight!(꼭 쥐어봐/안아봐!)"는 일상에서 매일 쓰입니다.',
+                  "꼭 안아봐! 꽉 쥐어봐! (포옹과 그립의 기본동사)", "Rip the bear ears.", "귀 찢으라는 오답이에요.", "Throw in trash.", "버리라는 오답이에요.")
     ]),
 
     make_ep("t2_e9", "tier2", "생일 파티 초대", "📍 Episode 9/10: Laser Tag Birthday Invite", "tag", [
@@ -251,7 +291,12 @@ t2 = [
                   '"편한 신발 신고 갈게!"라고 구동사 put on을 써서 답해보세요!', "I'll put them on!",
                   "Perfect! Dark clothes, fast sneakers, laser blasters ready to fire! See ya Saturday!", "완벽해! 어두운 옷에 빠른 신발, 레이저 총 발사 준비 완료! 토요일에 보자!",
                   '구동사 "put on"은 옷, 신발, 모자, 안경 등을 "착용하다/신다"라는 뜻으로 일상에서 가장 자주 쓰이는 핵심 구동사입니다.',
-                  "꼭 챙겨 신을게! (의류 착용 필수 구동사)", "Take off shoes.", "신발 벗으라는 오답이에요.", "Throw sneakers.", "신발 던지라는 엉뚱한 말이에요.")
+                  "꼭 챙겨 신을게! (의류 착용 필수 구동사)", "Take off shoes.", "신발 벗으라는 오답이에요.", "Throw sneakers.", "신발 던지라는 엉뚱한 말이에요."),
+        make_turn(6, "Penny", "🐧", "My mom said she can pick you up from your driveway at 1:30 PM if you need a ride!", "우리 엄마가 너 차 필요하면 1시 30분에 집 앞마당으로 데리러 갈 수 있대!",
+                  '"나 태우러 와줘!"라고 구동사 pick up을 써서 부탁해보세요!', "Please pick me up!",
+                  "Locked in! We'll honk twice outside your house at one-thirty sharp! Laser tag time!", "일정 픽스! 1시 30분 정각에 집 앞에서 빵빵 두 번 울릴게! 레이저 태그 가보자!",
+                  '구동사 "pick [someone] up"은 자동차로 사람을 "데리러 가다/태우다"라는 뜻의 초특급 생활 구동사입니다.',
+                  "나 태우러 와줘! (차량 픽업 필수 구동사)", "Leave me alone.", "내버려 두라는 오답이에요.", "Forget my house.", "집 까먹으라는 오답이에요.")
     ]),
 
     make_ep("t2_e10", "tier2", "비밀 아지트 규칙", "📍 Episode 10/10: Secret Treehouse Vault", "treehouse", [
@@ -279,6 +324,11 @@ t2 = [
                   '"이제 사다리 타고 내려가자!"라고 구동사 climb down을 써서 말해보세요!', "Let's climb down!",
                   "Ladder cleared! Trapdoor locked! Meeting back at Headquarters tomorrow at recess!", "사다리 통과! 뚜껑문 시건 완료! 내일 쉬는 시간에 비밀 본부에서 다시 집합!",
                   '구동사 "climb down"은 나무나 사다리 높은 곳에서 "조심조심 기어내려오다"라는 뜻의 동작 구동사입니다.',
-                  "조심해서 내려가자! (하강 동작 구동사)", "Jump out window.", "창문으로 뛰어내리라는 위험한 말이에요.", "Sleep in tree.", "나무에서 자라는 엉뚱한 말이에요.")
+                  "조심해서 내려가자! (하강 동작 구동사)", "Jump out window.", "창문으로 뛰어내리라는 위험한 말이에요.", "Sleep in tree.", "나무에서 자라는 엉뚱한 말이에요."),
+        make_turn(6, "Leo", "🦁", "Both of our sneakers touched the grass! But look up, the wooden rope ladder is still hanging!", "우리 둘 다 잔디밭에 발 닿았어! 근데 위를 봐, 나무 밧줄 사다리가 아직 매달려 있어!",
+                  '"사다리 끌어올려!"라고 구동사 pull up을 써서 아지트를 숨겨보세요!', "Pull it up!",
+                  "Rope coiled inside the trapdoor! The treehouse is totally invisible to intruders!", "밧줄 뚜껑문 안으로 돌돌 말아 넣었어! 이제 침입자 눈엔 오두막 절대 안 보여!",
+                  '구동사 "pull up"은 아래에 늘어진 줄이나 물건을 "끌어올리다/당겨 올리다"라는 뜻의 핵심 동작 구동사입니다.',
+                  "사다리 끌어올려! (견인 및 인양 필수 구동사)", "Cut the rope.", "줄 자르라는 오답이에요.", "Burn the tree.", "나무 태우라는 위험한 오답이에요.")
     ])
 ]
