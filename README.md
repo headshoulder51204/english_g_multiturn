@@ -36,14 +36,14 @@
 - **크로미움 GC 조기 수거 방지**: 긴 문장도 중간 끊김 없이 매끄럽게 끝까지 재생.
 - **2단계 발음 속도 토글**: 상단 `[🐰 Normal (0.92x)]` ↔ `[🐢 Slow (0.72x)]` 버튼을 통해 영어가 서툰 저학년 아동도 또렷하게 청취 가능.
 
-### 🚀 5. 4개 연령대별 40개 멀티턴(Multi-turn) 에피소드 & 최고빈도 기본동사·구동사 커리큘럼 (총 340턴)
-- **실전 회화의 핵심, 원어민 필수 기본동사 & 구동사 최고빈도 전면 탑재**: 모든 에피소드에 걸쳐 미국 원어민들이 매일 쓰는 핵심 기본동사(`get`, `take`, `have`, `make`, `put`, `keep`, `give`, `let`, `go`, `come`, `turn`, `run`, `hold`, `call` 등)와 최고빈도 생활 구동사(`put on`, `put back`, `put away`, `get off`, `get in`, `get going`, `get in line`, `pick up`, `pick out`, `clean up`, `watch out`, `hold on`, `hold up`, `come on`, `get on`, `hang on`, `hang out`, `eat up`, `give up`, `give back`, `throw away`, `make sure`, `make room`, `hurry up`, `count on`, `turn off`, `turn up`, `fill up`, `back up`, `keep it up`, `keep running`, `pull up`, `hit up`, `check out`, `chill out`, `wrap up`, `calm down`, `try on`, `point out`, `head out`, `hit the road`, `head home`, `pull over`, `live it up`, `kick off`, `zip up` 등)를 유기적으로 녹여냈습니다.
+### 🚀 5. 4개 연령대별 40개 멀티턴(Multi-turn) 에피소드 & 최고빈도 기본동사·구동사 커리큘럼 (총 460턴)
+- **실전 회화의 핵심, 원어민 필수 기본동사 & 구동사 최고빈도 전면 탑재**: 모든 에피소드에 걸쳐 미국 원어민들이 매일 쓰는 핵심 기본동사(`get`, `take`, `have`, `make`, `put`, `keep`, `give`, `let`, `go`, `come`, `turn`, `run`, `hold`, `call`, `look`, `see`, `stand`, `leave`, `bring`, `pass`, `catch`, `try` 등)와 최고빈도 생활 구동사(`put on`, `put back`, `put away`, `put up`, `put out`, `get off`, `get in`, `get going`, `get in line`, `pick up`, `pick out`, `clean up`, `watch out`, `hold on`, `hold up`, `come on`, `come down`, `get on`, `hang on`, `hang out`, `eat up`, `give up`, `give back`, `throw away`, `make sure`, `make room`, `make up`, `hurry up`, `count on`, `count in`, `count down`, `turn off`, `turn up`, `fill up`, `back up`, `keep it up`, `keep running`, `pull up`, `pull off`, `hit up`, `check out`, `chill out`, `wrap up`, `calm down`, `try on`, `point out`, `head out`, `hit the road`, `head home`, `pull over`, `live it up`, `kick off`, `zip up`, `slow down`, `dig in`, `step up`, `lock in`, `post up`, `soak in`, `beat up`, `talk down` 등)를 유기적으로 녹여냈습니다.
 - **연령대 발달 단계별 차등 확장 연속 티키타카**: 단발성 퀴즈가 아닌 기승전결이 살아있는 실전 스토리라인으로 대화가 이어집니다 (상황 진입 ➔ 플레이어 발화 ➔ NPC 반응 대사 & TTS ➔ 전개/협상 ➔ 기본동사/구동사 액션 ➔ 마무리 티키타카 ➔ 에피소드 클리어).
-- **Tier 1 (만 6~8세 / 저학년 10개 에피소드, 70턴 / 에피소드당 7턴)**: 모래성 감탄, 놀이터 술래잡기, 간식 나누기, 블록 탑, 크레파스 실수, 미끄럼틀 양보, 잃어버린 스티커, 왕 비눗방울, 종이비행기 날리기, 하교 작별 인사.
-- **Tier 2 (만 9~10세 / 중학년 10개 에피소드, 80턴 / 에피소드당 8턴)**: 타이어 그네 찜, 급식실 자리 맡기, 피구 경기 작전, 만화책 스포 방어, 쉬는 시간 달리기, 포켓몬 카드 교환, 깜빡한 숙제 위기, 아케이드 재도전, 레이저 태그 생일 파티, 비밀 아지트 규칙.
-- **Tier 3 (만 11~13세 / 고학년 10개 에피소드, 90턴 / 에피소드당 9턴)**: 방과 후 버블티, 스케이트보드 킥플립, 화산 과학 실험, 민트 후드티 쇼핑, 이어폰 명곡 공유, 사물함 비번 까먹음, 급식 미스터리 고기, 노을 자전거 라이딩, 시험 전날 벼락치기, 캠핑 불멍 스모어.
-- **Tier 4 (만 14~16세 / 청소년 하이틴 10개 에피소드, 100턴 / 에피소드당 10턴)**: 락커룸 농구 내기, 방과 후 썰 풀기, 금요일 풋볼 경기, 복도 드립 대잔치, 틱톡 댄스 바이럴, 기말고사 끝 해방, 관중석 비밀 고민, 콘서트 맨 앞줄 티켓팅, 빈티지 룩 꿀득템, 방학 카운트다운.
-- 총 **40개 에피소드, 340개의 연속 발화 턴**이 모듈러 데이터베이스(`scenarios.js`)로 완벽 구축.
+- **Tier 1 (만 6~8세 / 저학년 10개 에피소드, 100턴 / 에피소드당 10턴)**: 모래성 감탄, 놀이터 술래잡기, 간식 나누기, 블록 탑, 크레파스 실수, 미끄럼틀 양보, 잃어버린 스티커, 왕 비눗방울, 종이비행기 날리기, 하교 작별 인사.
+- **Tier 2 (만 9~10세 / 중학년 10개 에피소드, 110턴 / 에피소드당 11턴)**: 타이어 그네 찜, 급식실 자리 맡기, 피구 경기 작전, 만화책 스포 방어, 쉬는 시간 달리기, 포켓몬 카드 교환, 깜빡한 숙제 위기, 아케이드 재도전, 레이저 태그 생일 파티, 비밀 아지트 규칙.
+- **Tier 3 (만 11~13세 / 고학년 10개 에피소드, 120턴 / 에피소드당 12턴)**: 방과 후 버블티, 스케이트보드 킥플립, 화산 과학 실험, 민트 후드티 쇼핑, 이어폰 명곡 공유, 사물함 비번 까먹음, 급식 미스터리 고기, 노을 자전거 라이딩, 시험 전날 벼락치기, 캠핑 불멍 스모어.
+- **Tier 4 (만 14~16세 / 청소년 하이틴 10개 에피소드, 130턴 / 에피소드당 13턴)**: 락커룸 농구 내기, 방과 후 썰 풀기, 금요일 풋볼 경기, 복도 드립 대잔치, 틱톡 댄스 바이럴, 기말고사 끝 해방, 관중석 비밀 고민, 콘서트 맨 앞줄 티켓팅, 빈티지 룩 꿀득템, 방학 카운트다운.
+- 총 **40개 에피소드, 460개의 연속 발화 턴**이 모듈러 데이터베이스(`scenarios.js`)로 완벽 구축.
 
 ### 🏆 6. 티어 정복 축하 모달 (Level Master Trophy)
 - 각 연령대의 10개 에피소드를 모두 정복하면 누적 별점과 최고 콤보(Streak)를 집계하는 축하 팝업이 노출되며, 자동으로 다음 연령대 레벨로 원클릭 도전 가능.

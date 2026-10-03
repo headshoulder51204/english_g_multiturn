@@ -209,6 +209,93 @@ window.SCENARIOS = {
               "tip": "간식 먹지 말라는 오답이에요."
             }
           ]
+        },
+        {
+          "turnIndex": 8,
+          "npcName": "Penny",
+          "npcAvatar": "🐧",
+          "npcEn": "The waves are washing up near our castle moat! Let's build a wall!",
+          "npcKr": "파도가 우리 모래성 해자 근처까지 밀려오고 있어! 방파제를 쌓자!",
+          "mission": "\"잠깐 기다려!\"라고 기본동사 hold를 써서 외쳐보세요!",
+          "target": "Hold on!",
+          "npcReactionEn": "Digging a deep trench right now! The water won't reach our fortress!",
+          "npcReactionKr": "지금 깊은 도랑 파는 중이야! 바닷물이 성채에 닿지 못할 거야!",
+          "culturalTip": "기본동사 \"hold\"를 활용한 구동사 표현 \"Hold on!\"은 \"잠깐 기다려!\"라는 뜻으로 다급한 상황에서 친구의 행동을 멈추게 할 때 자주 씁니다.",
+          "options": [
+            {
+              "text": "Hold on!",
+              "isCorrect": true,
+              "tip": "잠깐 기다려! (제지 및 대기 기본동사)"
+            },
+            {
+              "text": "Run into deep water.",
+              "isCorrect": false,
+              "tip": "깊은 물로 뛰어들라는 위험한 오답이에요."
+            },
+            {
+              "text": "Destroy the castle now.",
+              "isCorrect": false,
+              "tip": "모래성을 지금 부수라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 9,
+          "npcName": "Penny",
+          "npcAvatar": "🐧",
+          "npcEn": "Good idea, I'll scoop up more wet sand with my bucket!",
+          "npcKr": "좋은 생각이야, 내가 양동이로 젖은 모래 더 퍼 올게!",
+          "mission": "\"그거 나 줘!\"라고 기본동사 give를 써서 요청해보세요!",
+          "target": "Give me that!",
+          "npcReactionEn": "Here is the blue shovel! Let's pack the wet sand super tight!",
+          "npcReactionKr": "여기 파란 삽 받아! 젖은 모래 아주 단단하게 다지자!",
+          "culturalTip": "기본동사 \"give\"는 물건을 건네달라고 할 때 \"Give me that!\"처럼 직접적이고 분명하게 쓰는 기초 구어체입니다.",
+          "options": [
+            {
+              "text": "Give me that!",
+              "isCorrect": true,
+              "tip": "그거 나 줘! (전달 요청 기본동사)"
+            },
+            {
+              "text": "Throw it in the ocean.",
+              "isCorrect": false,
+              "tip": "바다에 버리라는 오답이에요."
+            },
+            {
+              "text": "Hide under towel.",
+              "isCorrect": false,
+              "tip": "수건 밑에 숨으라는 엉뚱한 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Penny",
+          "npcAvatar": "🐧",
+          "npcEn": "The sun is setting, time to pack our buckets and towels!",
+          "npcKr": "해 넘어간다, 이제 양동이랑 수건 챙길 시간이야!",
+          "mission": "\"주변 정리하자!\"라고 구동사 clean up을 써서 말해보세요!",
+          "target": "Let's clean up!",
+          "npcReactionEn": "All sand tools packed neatly in the mesh bag! Best beach day ever!",
+          "npcReactionKr": "모래놀이 도구 그물 가방에 깔끔하게 다 담았다! 최고로 신난 해변 날이었어!",
+          "culturalTip": "구동사 \"clean up\"은 놀이를 마치고 주변을 \"정리하다, 치우다\"라는 뜻으로 아이들이 일상에서 매일 쓰는 핵심 표현입니다.",
+          "options": [
+            {
+              "text": "Let's clean up!",
+              "isCorrect": true,
+              "tip": "주변 정리하자! (정리정돈 필수 구동사)"
+            },
+            {
+              "text": "Leave everything behind.",
+              "isCorrect": false,
+              "tip": "다 버려두고 가라는 무책임한 오답이에요."
+            },
+            {
+              "text": "Sleep on the beach.",
+              "isCorrect": false,
+              "tip": "해변에서 자라는 엉뚱한 오답이에요."
+            }
+          ]
         }
       ]
     },
@@ -419,6 +506,93 @@ window.SCENARIOS = {
               "text": "Run ten more laps thirsty.",
               "isCorrect": false,
               "tip": "목마른 채로 열 바퀴 더 뛰자는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 8,
+          "npcName": "Leo",
+          "npcAvatar": "🦁",
+          "npcEn": "I see Sammy running over to the slide! Let's chase him!",
+          "npcKr": "새미가 미끄럼틀 쪽으로 뛰어가는 게 보여! 쫓아가자!",
+          "mission": "\"빨리 달려!\"라고 기본동사 run을 써서 외쳐보세요!",
+          "target": "Run fast!",
+          "npcReactionEn": "I'm sprinting with all my turbo speed! Sammy won't escape!",
+          "npcReactionKr": "나 터보 속도로 전력 질주하는 중이야! 새미는 못 빠져나갈걸!",
+          "culturalTip": "기본동사 \"run\"은 달리기 놀이에서 \"Run fast!\"(빨리 달려!)처럼 응원하거나 재촉할 때 입에 달고 사는 표현입니다.",
+          "options": [
+            {
+              "text": "Run fast!",
+              "isCorrect": true,
+              "tip": "빨리 달려! (질주 촉구 기본동사)"
+            },
+            {
+              "text": "Stop and take a nap.",
+              "isCorrect": false,
+              "tip": "멈춰서 낮잠 자라는 오답이에요."
+            },
+            {
+              "text": "Give up right now.",
+              "isCorrect": false,
+              "tip": "지금 당장 포기하라는 맥 빠지는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 9,
+          "npcName": "Leo",
+          "npcAvatar": "🦁",
+          "npcEn": "Oops, my sneaker laces came untied! Give me a second!",
+          "npcKr": "이런, 내 운동화 끈이 풀려버렸어! 잠깐만 시간 줘!",
+          "mission": "\"신발 끈 묶어!\"라고 기본동사 tie를 써서 말해보세요!",
+          "target": "Tie your shoes!",
+          "npcReactionEn": "Double knot tied tight! Now I can sprint without tripping!",
+          "npcReactionKr": "두 번 단단히 묶었다! 이제 발 안 걸리고 신나게 뛸 수 있어!",
+          "culturalTip": "기본동사 \"tie\"는 \"Tie your shoes!\"(신발 끈 묶어!)처럼 일상 안전과 복장 정돈에서 자주 쓰이는 유용한 기본 표현입니다.",
+          "options": [
+            {
+              "text": "Tie your shoes!",
+              "isCorrect": true,
+              "tip": "신발 끈 묶어! (착용 및 안전 기본동사)"
+            },
+            {
+              "text": "Throw away sneakers.",
+              "isCorrect": false,
+              "tip": "운동화 버리라는 황당한 오답이에요."
+            },
+            {
+              "text": "Run barefoot in mud.",
+              "isCorrect": false,
+              "tip": "맨발로 진흙탕 뛰라는 위험한 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Leo",
+          "npcAvatar": "🦁",
+          "npcEn": "Okay, all tied! Let's tag Sammy before the recess whistle blows!",
+          "npcKr": "좋아, 다 묶었어! 쉬는 시간 호루라기 불리기 전에 새미 잡자!",
+          "mission": "\"잡아라!\"라고 기본동사 get을 써서 신나게 외쳐보세요!",
+          "target": "Get him!",
+          "npcReactionEn": "TAG! Got you right on the backpack! We won tag round three!",
+          "npcReactionKr": "터치! 가방에 딱 태그했다! 술래잡기 3라운드 우리 승리!",
+          "culturalTip": "기본동사 \"get\"은 술래잡기나 스포츠에서 상대를 \"잡아라!\"라고 할 때 \"Get him!\"처럼 아주 흔하게 쓰는 표현입니다.",
+          "options": [
+            {
+              "text": "Get him!",
+              "isCorrect": true,
+              "tip": "잡아라! (추격 및 포획 기본동사)"
+            },
+            {
+              "text": "Walk backwards slowly.",
+              "isCorrect": false,
+              "tip": "뒤로 천천히 걸으라는 오답이에요."
+            },
+            {
+              "text": "Climb high fence.",
+              "isCorrect": false,
+              "tip": "높은 울타리 넘으라는 위험한 오답이에요."
             }
           ]
         }
@@ -633,6 +807,93 @@ window.SCENARIOS = {
               "tip": "창문으로 뛰어나가자는 오답이에요."
             }
           ]
+        },
+        {
+          "turnIndex": 8,
+          "npcName": "Sammy",
+          "npcAvatar": "🦊",
+          "npcEn": "I have some cheddar goldfish crackers in my snack pouch!",
+          "npcKr": "내 간식 주머니에 체다 고래밥 과자도 있어!",
+          "mission": "\"나도 좀 건네줘!\"라고 기본동사 pass를 써서 말해보세요!",
+          "target": "Pass me some!",
+          "npcReactionEn": "Here's a handful of crunchy fish! They taste super cheesy!",
+          "npcReactionKr": "바삭한 물고기 과자 한 줌 받아! 완전 치즈맛 가득해!",
+          "culturalTip": "기본동사 \"pass\"는 식탁이나 간식 자리에서 \"Pass me some!\"(나도 좀 건네줘!)처럼 음식을 나눌 때 정중하면서도 친근한 표현입니다.",
+          "options": [
+            {
+              "text": "Pass me some!",
+              "isCorrect": true,
+              "tip": "나도 좀 건네줘! (나눔 요청 기본동사)"
+            },
+            {
+              "text": "Drop them in dirt.",
+              "isCorrect": false,
+              "tip": "흙에 떨어뜨리라는 오답이에요."
+            },
+            {
+              "text": "Don't eat anything.",
+              "isCorrect": false,
+              "tip": "아무것도 먹지 말라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 9,
+          "npcName": "Sammy",
+          "npcAvatar": "🦊",
+          "npcEn": "Here you go! Be careful not to spill the crumbs on the carpet!",
+          "npcKr": "여기 받아! 카펫에 부스러기 안 흘리게 조심해!",
+          "mission": "\"내가 잡았어/알겠어!\"라고 기본동사 get의 과거형 got을 써서 말해보세요!",
+          "target": "I got it!",
+          "npcReactionEn": "Carefully cupped in both hands! No crumbs on the floor!",
+          "npcReactionKr": "두 손으로 얌전히 받았다! 바닥에 부스러기 하나도 안 흘렸어!",
+          "culturalTip": "구어 표현 \"I got it!\"은 물건을 \"잘 받았어\" 또는 \"알겠어, 내가 해결할게\"의 뜻으로 매우 자주 쓰이는 만능 표현입니다.",
+          "options": [
+            {
+              "text": "I got it!",
+              "isCorrect": true,
+              "tip": "내가 잘 받았어! (수령 및 확인 기본동사)"
+            },
+            {
+              "text": "I dropped it all.",
+              "isCorrect": false,
+              "tip": "다 쏟았다는 오답이에요."
+            },
+            {
+              "text": "I hate all snacks.",
+              "isCorrect": false,
+              "tip": "모든 간식 싫다는 억지예요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Sammy",
+          "npcAvatar": "🦊",
+          "npcEn": "The teacher says five minutes till storytime starts!",
+          "npcKr": "선생님이 5분 뒤에 동화책 시간 시작한대!",
+          "mission": "\"정리해서 치우자!\"라고 구동사 put away를 써서 말해보세요!",
+          "target": "Put them away!",
+          "npcReactionEn": "Zip lock sealed and tucked neatly into my cubby! Storytime ready!",
+          "npcReactionKr": "지퍼백 닫아서 사물함에 쏙 넣었다! 동화 들을 준비 완료!",
+          "culturalTip": "구동사 \"put away\"는 물건이나 간식을 제자리에 \"치우다, 넣어두다\"라는 뜻으로 교실이나 가정에서 필수적인 정리 표현입니다.",
+          "options": [
+            {
+              "text": "Put them away!",
+              "isCorrect": true,
+              "tip": "치워서 정리하자! (정리 및 보관 구동사)"
+            },
+            {
+              "text": "Scatter crumbs on floor.",
+              "isCorrect": false,
+              "tip": "바닥에 부스러기 흩뿌리라는 오답이에요."
+            },
+            {
+              "text": "Throw pouch at teacher.",
+              "isCorrect": false,
+              "tip": "선생님께 주머니 던지라는 무례한 오답이에요."
+            }
+          ]
         }
       ]
     },
@@ -843,6 +1104,93 @@ window.SCENARIOS = {
               "text": "I will mess it up.",
               "isCorrect": false,
               "tip": "어지르겠다는 심술이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 8,
+          "npcName": "Leo",
+          "npcAvatar": "🦁",
+          "npcEn": "Let's build a long drawbridge connecting the twin towers!",
+          "npcKr": "두 탑을 연결하는 긴 도개교 다리를 만들자!",
+          "mission": "\"튼튼하게 만들어!\"라고 기본동사 make를 써서 말해보세요!",
+          "target": "Make it strong!",
+          "npcReactionEn": "Interlocking double flat bricks underneath! It can hold heavy knights!",
+          "npcReactionKr": "아래쪽에 평평한 블록 두 겹으로 맞물렸다! 무거운 기사들도 버틸 수 있어!",
+          "culturalTip": "기본동사 \"make\"를 활용한 \"Make it strong!\"은 무언가를 만들 때 \"단단하고 튼튼하게 만들어!\"라는 뜻으로 자주 쓰입니다.",
+          "options": [
+            {
+              "text": "Make it strong!",
+              "isCorrect": true,
+              "tip": "튼튼하게 만들어! (제작 기본동사)"
+            },
+            {
+              "text": "Smash it down.",
+              "isCorrect": false,
+              "tip": "부수라는 심술궂은 오답이에요."
+            },
+            {
+              "text": "Throw pieces away.",
+              "isCorrect": false,
+              "tip": "블록 내다 버리라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 9,
+          "npcName": "Leo",
+          "npcAvatar": "🦁",
+          "npcEn": "Look, the golden dragon is standing guard on the drawbridge!",
+          "npcKr": "봐봐, 황금 드래곤이 다리 위에서 보초 서고 있어!",
+          "mission": "\"안전하게 지켜줘!\"라고 기본동사 keep을 써서 말해보세요!",
+          "target": "Keep it safe!",
+          "npcReactionEn": "The dragon will breathe fire if any goblins come close!",
+          "npcReactionKr": "고블린들이 다가오면 드래곤이 불을 뿜어낼 거야!",
+          "culturalTip": "기본동사 \"keep\"은 \"Keep it safe!\"(안전하게 지켜줘/보호해!)처럼 상태를 안전하게 유지시킬 때 쓰는 핵심 동사입니다.",
+          "options": [
+            {
+              "text": "Keep it safe!",
+              "isCorrect": true,
+              "tip": "안전하게 지켜줘! (유지 및 보호 기본동사)"
+            },
+            {
+              "text": "Break the wings.",
+              "isCorrect": false,
+              "tip": "날개 부러뜨리라는 오답이에요."
+            },
+            {
+              "text": "Hide it in socks.",
+              "isCorrect": false,
+              "tip": "양말에 숨기라는 엉뚱한 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Leo",
+          "npcAvatar": "🦁",
+          "npcEn": "Recess is ending! Time to pack the loose bricks into the yellow toy bin!",
+          "npcKr": "쉬는 시간 끝난다! 흩어진 블록들 노란 장난감 상자에 담을 시간이야!",
+          "mission": "\"바닥 블록 주워 담자!\"라고 구동사 pick up을 써서 말해보세요!",
+          "target": "Pick them up!",
+          "npcReactionEn": "All swept up into the bin! Our mega fortress stays safe on display!",
+          "npcReactionKr": "상자에 전부 주워 담았다! 우리 거대 요새는 전시대에 안전하게 남았어!",
+          "culturalTip": "구동사 \"pick up\"은 바닥에 떨어진 장난감이나 물건을 \"집어 올리다, 주워 담다\"라는 뜻으로 매일 쓰는 구동사입니다.",
+          "options": [
+            {
+              "text": "Pick them up!",
+              "isCorrect": true,
+              "tip": "바닥 블록 주워 담자! (정리 및 수거 구동사)"
+            },
+            {
+              "text": "Kick them under table.",
+              "isCorrect": false,
+              "tip": "탁자 밑으로 발로 차라는 오답이에요."
+            },
+            {
+              "text": "Leave them on floor.",
+              "isCorrect": false,
+              "tip": "바닥에 밟히게 두라는 위험한 오답이에요."
             }
           ]
         }
@@ -1057,6 +1405,93 @@ window.SCENARIOS = {
               "tip": "무지개 지우라는 오답이에요."
             }
           ]
+        },
+        {
+          "turnIndex": 8,
+          "npcName": "Penny",
+          "npcAvatar": "🐧",
+          "npcEn": "Don't worry, I have clear tape to fix your broken blue crayon!",
+          "npcKr": "걱정 마, 부러진 파란 크레파스 붙일 투명 테이프 있어!",
+          "mission": "\"정말 고마워!\"라고 진심 어린 감사를 표현해보세요!",
+          "target": "Thank you so much!",
+          "npcReactionEn": "A little tape wrapped round the middle makes it good as new!",
+          "npcReactionKr": "가운데에 테이프 뱅뱅 감아주니 새것처럼 튼튼해졌어!",
+          "culturalTip": "\"Thank you so much!\"는 도움을 준 친구에게 따뜻하고 진심 어린 감사를 전하는 가장 자연스럽고 좋은 인사입니다.",
+          "options": [
+            {
+              "text": "Thank you so much!",
+              "isCorrect": true,
+              "tip": "정말 고마워! (진심 어린 감사 표현)"
+            },
+            {
+              "text": "I don't like crayons.",
+              "isCorrect": false,
+              "tip": "크레파스 싫다는 오답이에요."
+            },
+            {
+              "text": "Give me lunch money.",
+              "isCorrect": false,
+              "tip": "급식비 달라는 엉뚱한 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 9,
+          "npcName": "Penny",
+          "npcAvatar": "🐧",
+          "npcEn": "Look, the tape holds it together! Now we can draw a giant whale!",
+          "npcKr": "봐, 테이프가 잘 잡아줘! 이제 거대한 고래를 그릴 수 있어!",
+          "mission": "\"한번 뽐내봐!\"라고 구동사 show off를 써서 말해보세요!",
+          "target": "Show it off!",
+          "npcReactionEn": "Look at the big water spout! Our whale takes up the whole paper!",
+          "npcReactionKr": "거대한 물줄기 좀 봐! 우리 고래가 도화지를 가득 채웠어!",
+          "culturalTip": "구동사 \"show off\"는 자신이 만든 멋진 작품이나 솜씨를 \"자랑하다, 뽐내다\"라는 뜻으로 긍정적으로 자주 쓰입니다.",
+          "options": [
+            {
+              "text": "Show it off!",
+              "isCorrect": true,
+              "tip": "한번 뽐내봐! (자랑 및 공개 구동사)"
+            },
+            {
+              "text": "Rip paper in half.",
+              "isCorrect": false,
+              "tip": "도화지 반으로 찢으라는 오답이에요."
+            },
+            {
+              "text": "Close your eyes.",
+              "isCorrect": false,
+              "tip": "눈 감으라는 엉뚱한 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Penny",
+          "npcAvatar": "🐧",
+          "npcEn": "Let's stick our finished drawing on the classroom art board with magnets!",
+          "npcKr": "완성된 그림 자석으로 교실 미술 게시판에 붙이자!",
+          "mission": "\"게시판에 붙이자!\"라고 구동사 put up을 써서 말해보세요!",
+          "target": "Put it up!",
+          "npcReactionEn": "Red magnets in all four corners! Everyone will admire our whale!",
+          "npcReactionKr": "네 모퉁이에 빨간 자석 착착! 모두가 우리 고래를 감탄할 거야!",
+          "culturalTip": "구동사 \"put up\"은 벽이나 게시판에 그림이나 포스터를 \"붙이다, 게시하다\"라는 뜻으로 쓰이는 유용한 표현입니다.",
+          "options": [
+            {
+              "text": "Put it up!",
+              "isCorrect": true,
+              "tip": "게시판에 붙이자! (게시 및 부착 구동사)"
+            },
+            {
+              "text": "Throw in garbage.",
+              "isCorrect": false,
+              "tip": "쓰레기통에 버리라는 오답이에요."
+            },
+            {
+              "text": "Hide behind door.",
+              "isCorrect": false,
+              "tip": "문 뒤에 숨기라는 오답이에요."
+            }
+          ]
         }
       ]
     },
@@ -1267,6 +1702,93 @@ window.SCENARIOS = {
               "text": "Close eyes and cry.",
               "isCorrect": false,
               "tip": "눈 감고 울라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 8,
+          "npcName": "Sammy",
+          "npcAvatar": "🦊",
+          "npcEn": "It's your turn to climb up the ladder steps! Go for it!",
+          "npcKr": "네가 사다리 계단 올라갈 차례야! 힘내서 타봐!",
+          "mission": "\"나 올라간다!\"라고 기본동사 go를 써서 씩씩하게 말해보세요!",
+          "target": "Here I go!",
+          "npcReactionEn": "Climbing up step by step! Slide down with hands up high!",
+          "npcReactionKr": "한 계단씩 차근차근 올라간다! 두 손 높이 들고 미끄러져 내려와!",
+          "culturalTip": "출발하거나 시도할 때 외치는 \"Here I go!\"(나 간다!/나 시작한다!)는 아이들이 가장 신나게 쓰는 구어 표현입니다.",
+          "options": [
+            {
+              "text": "Here I go!",
+              "isCorrect": true,
+              "tip": "나 올라간다! (출발 및 시동 기본동사)"
+            },
+            {
+              "text": "I will sleep here.",
+              "isCorrect": false,
+              "tip": "여기서 잘 거라는 오답이에요."
+            },
+            {
+              "text": "No one can slide.",
+              "isCorrect": false,
+              "tip": "아무도 타지 말라는 억지예요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 9,
+          "npcName": "Sammy",
+          "npcAvatar": "🦊",
+          "npcEn": "Whoosh! That was lightning fast! Your turn again, Sammy!",
+          "npcKr": "슝! 번개처럼 빨랐어! 이제 새미 네 차례야!",
+          "mission": "\"얼른 내려와!\"라고 구동사 come down을 써서 불러보세요!",
+          "target": "Come on down!",
+          "npcReactionEn": "Zooming down the spiral twist! Wheee, my tummy tickles!",
+          "npcReactionKr": "나선형 커브 슝 타고 내려오는 중! 우와, 배가 간질간질해!",
+          "culturalTip": "구동사 \"come down\"에 친근한 재촉을 담은 \"Come on down!\"은 \"어서 내려와!\"라고 부를 때 쓰는 대표적인 구동사입니다.",
+          "options": [
+            {
+              "text": "Come on down!",
+              "isCorrect": true,
+              "tip": "얼른 내려와! (하강 권유 구동사)"
+            },
+            {
+              "text": "Stay up there forever.",
+              "isCorrect": false,
+              "tip": "평생 거기 있으라는 오답이에요."
+            },
+            {
+              "text": "Jump off the top.",
+              "isCorrect": false,
+              "tip": "꼭대기에서 뛰어내리라는 위험한 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Sammy",
+          "npcAvatar": "🦊",
+          "npcEn": "The bell is ringing! Let's line up by the classroom door nicely!",
+          "npcKr": "종 친다! 교실 문 앞에 얌전하게 줄 서자!",
+          "mission": "\"줄 서자!\"라고 구동사 get in line을 써서 말해보세요!",
+          "target": "Get in line!",
+          "npcReactionEn": "Standing straight behind Penny! Recess team etiquette perfect!",
+          "npcReactionKr": "페니 뒤에 바르게 섰다! 쉬는 시간 팀 예절 완벽해!",
+          "culturalTip": "구동사 \"get in line\"은 학교나 놀이공원에서 \"줄을 서다\"라는 뜻으로 매일 수없이 듣고 쓰는 핵심 필수 표현입니다.",
+          "options": [
+            {
+              "text": "Get in line!",
+              "isCorrect": true,
+              "tip": "줄 서자! (줄서기 필수 구동사)"
+            },
+            {
+              "text": "Cut the line.",
+              "isCorrect": false,
+              "tip": "새치기하라는 나쁜 오답이에요."
+            },
+            {
+              "text": "Run away outside.",
+              "isCorrect": false,
+              "tip": "밖으로 도망치라는 오답이에요."
             }
           ]
         }
@@ -1481,6 +2003,93 @@ window.SCENARIOS = {
               "tip": "시험지 찢으라는 오답이에요."
             }
           ]
+        },
+        {
+          "turnIndex": 8,
+          "npcName": "Penny",
+          "npcAvatar": "🐧",
+          "npcEn": "I found it! The shiny T-Rex sticker was stuck under your pencil box!",
+          "npcKr": "찾았어! 반짝이는 티라노 스티커가 네 필통 밑에 붙어 있었어!",
+          "mission": "\"네가 찾았구나!\"라고 기본동사 find의 과거형 found를 써서 기뻐해보세요!",
+          "target": "You found it!",
+          "npcReactionEn": "Phew, safe and sound! Not bent or scratched at all!",
+          "npcReactionKr": "휴, 무사하다! 구겨지거나 긁힌 데 하나도 없어!",
+          "culturalTip": "기본동사 \"find\"의 과거형을 쓴 \"You found it!\"은 잃어버린 물건을 친구가 찾아줬을 때 기쁨을 터뜨리는 표현입니다.",
+          "options": [
+            {
+              "text": "You found it!",
+              "isCorrect": true,
+              "tip": "네가 찾았구나! (발견 기본동사)"
+            },
+            {
+              "text": "Throw it out.",
+              "isCorrect": false,
+              "tip": "버리라는 오답이에요."
+            },
+            {
+              "text": "I lost my shoes.",
+              "isCorrect": false,
+              "tip": "신발 잃어버렸다는 엉뚱한 말이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 9,
+          "npcName": "Penny",
+          "npcAvatar": "🐧",
+          "npcEn": "Stick it right on your notebook cover so it won't peel off again!",
+          "npcKr": "다시 안 떨어지게 네 공책 표지에 딱 붙여둬!",
+          "mission": "\"표지에 착 붙여!\"라고 구동사 stick on을 써서 말해보세요!",
+          "target": "Stick it on!",
+          "npcReactionEn": "Pressing it down firmly right next to the shiny rocket badge!",
+          "npcReactionKr": "반짝이는 로켓 배지 바로 옆에 꾹꾹 눌러 붙였어!",
+          "culturalTip": "구동사 \"stick on\"은 스티커나 라벨을 표면에 \"딱 붙이다\"라는 뜻으로 자주 쓰이는 일상 표현입니다.",
+          "options": [
+            {
+              "text": "Stick it on!",
+              "isCorrect": true,
+              "tip": "표지에 착 붙여! (부착 구동사)"
+            },
+            {
+              "text": "Eat the sticker.",
+              "isCorrect": false,
+              "tip": "스티커 먹으라는 위험한 오답이에요."
+            },
+            {
+              "text": "Stick on teacher's hair.",
+              "isCorrect": false,
+              "tip": "선생님 머리에 붙이라는 장난이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Penny",
+          "npcAvatar": "🐧",
+          "npcEn": "Now your notebook looks totally awesome! Let's get to work!",
+          "npcKr": "이제 네 공책 완전 멋지다! 공부 본격적으로 시작하자!",
+          "mission": "\"본격적으로 해보자!\"라고 기본동사 do를 써서 외쳐보세요!",
+          "target": "Let's do this!",
+          "npcReactionEn": "Opening to page twenty! Dinosaur power makes math super fun!",
+          "npcReactionKr": "20페이지 활짝 폈다! 공룡 파워로 수학도 완전 재밌겠어!",
+          "culturalTip": "어떤 과제나 놀이에 기합을 넣고 착수할 때 외치는 \"Let's do this!\"(본격적으로 해보자!/드가자!)는 만능 구어체입니다.",
+          "options": [
+            {
+              "text": "Let's do this!",
+              "isCorrect": true,
+              "tip": "본격적으로 해보자! (시작 및 도전 기본동사)"
+            },
+            {
+              "text": "Give up now.",
+              "isCorrect": false,
+              "tip": "포기하자는 맥 빠지는 오답이에요."
+            },
+            {
+              "text": "Go home early.",
+              "isCorrect": false,
+              "tip": "조퇴하자는 엉뚱한 오답이에요."
+            }
+          ]
         }
       ]
     },
@@ -1691,6 +2300,93 @@ window.SCENARIOS = {
               "text": "Break the wand.",
               "isCorrect": false,
               "tip": "막대 부러뜨리라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 8,
+          "npcName": "Leo",
+          "npcAvatar": "🦁",
+          "npcEn": "Whoa, that bubble is bigger than a soccer ball! Don't let it pop!",
+          "npcKr": "우와, 저 방울 축구공보다 더 커! 터지지 않게 해!",
+          "mission": "\"건드리지 마!\"라고 기본동사 touch를 써서 경고해보세요!",
+          "target": "Don't touch it!",
+          "npcReactionEn": "Carefully blowing underneath to keep it floating high up!",
+          "npcReactionKr": "더 높이 둥둥 뜨게 아래쪽에서 조심스럽게 바람 부는 중!",
+          "culturalTip": "기본동사 \"touch\"에 부정 명령을 붙인 \"Don't touch it!\"은 무언가를 \"건드리지 마!\"라고 주의를 줄 때 가장 명확한 표현입니다.",
+          "options": [
+            {
+              "text": "Don't touch it!",
+              "isCorrect": true,
+              "tip": "건드리지 마! (접촉 금지 기본동사)"
+            },
+            {
+              "text": "Pop it with needle.",
+              "isCorrect": false,
+              "tip": "바늘로 터뜨리라는 얄미운 오답이에요."
+            },
+            {
+              "text": "Eat the soap.",
+              "isCorrect": false,
+              "tip": "비누 먹으라는 위험한 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 9,
+          "npcName": "Leo",
+          "npcAvatar": "🦁",
+          "npcEn": "It's floating up toward the playground oak tree! Look at the shiny rainbow!",
+          "npcKr": "운동장 참나무 쪽으로 둥실둥실 떠올라! 반짝이는 무지개 좀 봐!",
+          "mission": "\"저것 좀 봐!\"라고 기본동사 look을 써서 가리켜보세요!",
+          "target": "Look at that!",
+          "npcReactionEn": "It's shimmering pink, blue, and gold in the afternoon sun!",
+          "npcReactionKr": "오후 햇살 받아서 분홍, 파랑, 금빛으로 찬란하게 반짝여!",
+          "culturalTip": "기본동사 \"look\"을 사용한 \"Look at that!\"은 신기하거나 멋진 광경을 가리키며 \"저것 좀 봐!\"라고 감탄할 때 쓰는 필수 표현입니다.",
+          "options": [
+            {
+              "text": "Look at that!",
+              "isCorrect": true,
+              "tip": "저것 좀 봐! (시선 유도 기본동사)"
+            },
+            {
+              "text": "Close both eyes.",
+              "isCorrect": false,
+              "tip": "눈 감으라는 오답이에요."
+            },
+            {
+              "text": "Cry loudly.",
+              "isCorrect": false,
+              "tip": "소리 내어 울라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Leo",
+          "npcAvatar": "🦁",
+          "npcEn": "Pop! It splashed softly! Let's dip the wand in the soap bottle again!",
+          "npcKr": "퐁! 부드럽게 터졌다! 비눗물 통에 막대 다시 푹 담그자!",
+          "mission": "\"비눗물에 푹 담가!\"라고 구동사 dip in을 써서 말해보세요!",
+          "target": "Dip it in!",
+          "npcReactionEn": "Wand soaked with thick soap solution! Giant double bubble incoming!",
+          "npcReactionKr": "막대에 진한 비눗물 듬뿍 묻혔다! 거대 쌍방울 날아간다!",
+          "culturalTip": "구동사 \"dip in\"은 액체나 소스에 무언가를 \"살짝 담그다, 푹 적시다\"라는 뜻으로 일상에서 널리 쓰입니다.",
+          "options": [
+            {
+              "text": "Dip it in!",
+              "isCorrect": true,
+              "tip": "비눗물에 푹 담가! (침지 구동사)"
+            },
+            {
+              "text": "Spill the bottle.",
+              "isCorrect": false,
+              "tip": "비눗물 쏟으라는 오답이에요."
+            },
+            {
+              "text": "Drink the soap.",
+              "isCorrect": false,
+              "tip": "비눗물 마시라는 위험한 오답이에요."
             }
           ]
         }
@@ -1905,6 +2601,93 @@ window.SCENARIOS = {
               "tip": "흙에 묻으라는 오답이에요."
             }
           ]
+        },
+        {
+          "turnIndex": 8,
+          "npcName": "Sammy",
+          "npcAvatar": "🦊",
+          "npcEn": "Let's crease the wingtips upward so it can glide longer in the wind!",
+          "npcKr": "바람 타고 더 오래 활공하게 날개 끝을 위로 접어 올리자!",
+          "mission": "\"날개 끝을 올려 접어!\"라고 구동사 turn up을 써서 말해보세요!",
+          "target": "Turn them up!",
+          "npcReactionEn": "Little winglets folded neat! Aerodynamics improved big time!",
+          "npcReactionKr": "작은 윙렛 깔끔하게 접었다! 공기역학 대폭 업그레이드 완료!",
+          "culturalTip": "구동사 \"turn up\"은 옷소매나 종이 끝을 \"위로 접어 올리다\"라는 뜻으로도 유용하게 쓰이는 구동사입니다.",
+          "options": [
+            {
+              "text": "Turn them up!",
+              "isCorrect": true,
+              "tip": "날개 끝을 위로 접어 올려! (방향 조절 구동사)"
+            },
+            {
+              "text": "Rip wings off.",
+              "isCorrect": false,
+              "tip": "날개 찢으라는 오답이에요."
+            },
+            {
+              "text": "Soak in water.",
+              "isCorrect": false,
+              "tip": "물에 적시라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 9,
+          "npcName": "Sammy",
+          "npcAvatar": "🦊",
+          "npcEn": "Ready, set, launch it straight into the breeze with all your strength!",
+          "npcKr": "준비, 시작, 온 힘을 다해서 맞바람 쪽으로 냅다 던져!",
+          "mission": "\"시원하게 날려보내!\"라고 기본동사 let과 go를 써서 외쳐보세요!",
+          "target": "Let it go!",
+          "npcReactionEn": "Soaring straight up into the blue sky and catching the thermal lift!",
+          "npcReactionKr": "푸른 하늘 위로 곧게 솟구치며 상승 기류 제대로 탔어!",
+          "culturalTip": "기본동사 \"let\"과 \"go\"가 합쳐진 \"Let it go!\"는 쥐고 있던 것을 \"놓아주다, 날려보내다\"라는 대표적인 표현입니다.",
+          "options": [
+            {
+              "text": "Let it go!",
+              "isCorrect": true,
+              "tip": "시원하게 날려보내! (방출 기본동사)"
+            },
+            {
+              "text": "Drop on foot.",
+              "isCorrect": false,
+              "tip": "발등에 떨어뜨리라는 오답이에요."
+            },
+            {
+              "text": "Eat the paper.",
+              "isCorrect": false,
+              "tip": "종이 먹으라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Sammy",
+          "npcAvatar": "🦊",
+          "npcEn": "It glided across the whole soccer field and landed right on the goal line!",
+          "npcKr": "축구장 전체를 활공해서 골라인 바로 위에 사뿐히 내렸어!",
+          "mission": "\"하이파이브!\"라고 신나게 손바닥을 부딪쳐보세요!",
+          "target": "High five!",
+          "npcReactionEn": "SLAP! Best flight of the week! We are master aviation engineers!",
+          "npcReactionKr": "짝! 이번 주 최고의 비행이었어! 우리는 최고의 항공 엔지니어들이야!",
+          "culturalTip": "\"High five!\"는 신나는 성공이나 팀워크를 축하할 때 미국 아이들이 매일 손바닥을 마주치며 외치는 기본 관용구입니다.",
+          "options": [
+            {
+              "text": "High five!",
+              "isCorrect": true,
+              "tip": "하이파이브! (축하 및 승리 관용 표현)"
+            },
+            {
+              "text": "Cry alone.",
+              "isCorrect": false,
+              "tip": "혼자 울라는 오답이에요."
+            },
+            {
+              "text": "Lose the plane.",
+              "isCorrect": false,
+              "tip": "비행기 잃어버리라는 오답이에요."
+            }
+          ]
         }
       ]
     },
@@ -2115,6 +2898,93 @@ window.SCENARIOS = {
               "text": "Lose your backpack.",
               "isCorrect": false,
               "tip": "가방 잃어버리라는 악담이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 8,
+          "npcName": "Penny",
+          "npcAvatar": "🐧",
+          "npcEn": "Don't leave your yellow math workbook behind on the bus seat!",
+          "npcKr": "버스 좌석에 노란 수학 워크북 두고 내리지 마!",
+          "mission": "\"꼭 챙겨가!\"라고 기본동사 take를 써서 말해보세요!",
+          "target": "Take it with you!",
+          "npcReactionEn": "Zipped inside the main backpack pocket! Nothing left behind!",
+          "npcReactionKr": "가방 큰 주머니 안에 쏙 넣었다! 아무것도 안 두고 내렸어!",
+          "culturalTip": "기본동사 \"take\"를 활용한 \"Take it with you!\"는 물건을 두고 내리지 않도록 \"챙겨가!\"라고 챙겨주는 표현입니다.",
+          "options": [
+            {
+              "text": "Take it with you!",
+              "isCorrect": true,
+              "tip": "꼭 챙겨가! (소지 및 동행 기본동사)"
+            },
+            {
+              "text": "Leave it forever.",
+              "isCorrect": false,
+              "tip": "영원히 버려두라는 오답이에요."
+            },
+            {
+              "text": "Tear pages out.",
+              "isCorrect": false,
+              "tip": "페이지 찢으라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 9,
+          "npcName": "Penny",
+          "npcAvatar": "🐧",
+          "npcEn": "My bus stop is coming up next! See you tomorrow morning at the station!",
+          "npcKr": "다음 정류장이 우리 집 앞이야! 내일 아침 정류장에서 또 봐!",
+          "mission": "\"좋은 저녁 보내!\"라고 기본동사 have를 써서 다정하게 인사해보세요!",
+          "target": "Have a good night!",
+          "npcReactionEn": "You too! Eating hot pizza tonight and watching cartoon movie!",
+          "npcReactionKr": "너도! 오늘 밤엔 따끈한 피자 먹고 만화 영화 볼 거야!",
+          "culturalTip": "기본동사 \"have\"를 쓴 \"Have a good night!\"은 저녁 무렵 헤어질 때 \"좋은 저녁/밤 보내!\"라고 건네는 다정한 인사입니다.",
+          "options": [
+            {
+              "text": "Have a good night!",
+              "isCorrect": true,
+              "tip": "좋은 저녁 보내! (작별 및 축원 기본동사)"
+            },
+            {
+              "text": "Don't ever wake up.",
+              "isCorrect": false,
+              "tip": "일어나지 말라는 악담이에요."
+            },
+            {
+              "text": "Forget your bag.",
+              "isCorrect": false,
+              "tip": "가방 잊으라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Penny",
+          "npcAvatar": "🐧",
+          "npcEn": "The yellow doors are folding open! Watch your step on the metal stairs!",
+          "npcKr": "노란 문이 덜컹 열린다! 쇠계단 발 디딜 때 발밑 조심해!",
+          "mission": "\"조심해서 내려!\"라고 구동사 get off를 써서 인사해보세요!",
+          "target": "Get off safely!",
+          "npcReactionEn": "Hopping onto the sidewalk! Waving goodbye through the bus window!",
+          "npcReactionKr": "인도로 사뿐히 내렸다! 버스 창문 너머로 손 흔들며 안녕!",
+          "culturalTip": "구동사 \"get off\"는 버스나 전철 등에서 \"내리다, 하차하다\"라는 뜻으로 일상에서 필수적으로 쓰이는 구동사입니다.",
+          "options": [
+            {
+              "text": "Get off safely!",
+              "isCorrect": true,
+              "tip": "조심해서 내려! (교통수단 하차 구동사)"
+            },
+            {
+              "text": "Jump off moving bus.",
+              "isCorrect": false,
+              "tip": "달리는 버스에서 뛰어내리라는 위험한 오답이에요."
+            },
+            {
+              "text": "Stay inside bus all night.",
+              "isCorrect": false,
+              "tip": "밤새 버스에 남으라는 오답이에요."
             }
           ]
         }
@@ -2360,6 +3230,93 @@ window.SCENARIOS = {
               "tip": "교실 시계 부수자는 오답이에요."
             }
           ]
+        },
+        {
+          "turnIndex": 9,
+          "npcName": "Leo",
+          "npcAvatar": "🦁",
+          "npcEn": "Hold onto the rubber chains firmly while I give you an underdog push!",
+          "npcKr": "내가 밑으로 쑥 밀어주는 언더독 밀기 할 동안 고무줄 단단히 잡아!",
+          "mission": "\"꽉 붙잡아!\"라고 기본동사 hold를 써서 외쳐보세요!",
+          "target": "Hold on tight!",
+          "npcReactionEn": "Pushing hard from behind! You are launching up toward the leaves!",
+          "npcReactionKr": "뒤에서 힘껏 밀어준다! 나뭇잎 쪽으로 붕 솟구쳐 오른다!",
+          "culturalTip": "기본동사 \"hold\"에 \"tight\"을 붙인 \"Hold on tight!\"은 그네나 놀이기구를 탈 때 \"꽉 잡아!\"라는 뜻으로 쓰이는 안전 필수 표현입니다.",
+          "options": [
+            {
+              "text": "Hold on tight!",
+              "isCorrect": true,
+              "tip": "꽉 붙잡아! (파지 기본동사)"
+            },
+            {
+              "text": "Let go of chains.",
+              "isCorrect": false,
+              "tip": "줄을 놓으라는 위험한 오답이에요."
+            },
+            {
+              "text": "Close your eyes and cry.",
+              "isCorrect": false,
+              "tip": "눈 감고 울라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Leo",
+          "npcAvatar": "🦁",
+          "npcEn": "You're flying high above the playground fence! Time to slow the swing down!",
+          "npcKr": "운동장 울타리 위까지 높이 날고 있어! 이제 그네 속도 좀 줄이자!",
+          "mission": "\"속도 좀 줄여!\"라고 구동사 slow down을 써서 말해보세요!",
+          "target": "Slow it down!",
+          "npcReactionEn": "Dragging sneakers in the wood chips gently to bring it to a stop!",
+          "npcReactionKr": "바닥 나무조각에 운동화 밑창 살살 대면서 멈추는 중!",
+          "culturalTip": "구동사 \"slow down\"은 속도가 너무 빠를 때 \"속도를 줄이다, 천천히 하다\"라는 뜻으로 자주 쓰이는 구동사입니다.",
+          "options": [
+            {
+              "text": "Slow it down!",
+              "isCorrect": true,
+              "tip": "속도 줄여! (감속 구동사)"
+            },
+            {
+              "text": "Jump off at peak.",
+              "isCorrect": false,
+              "tip": "정점에서 뛰어내리라는 위험천만한 오답이에요."
+            },
+            {
+              "text": "Spin faster forever.",
+              "isCorrect": false,
+              "tip": "영원히 더 돌라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Leo",
+          "npcAvatar": "🦁",
+          "npcEn": "Phew, safe landing on the wood chips! Let's grab our water bottles and head inside!",
+          "npcKr": "휴, 바닥에 안전하게 착지 완료! 물병 챙겨서 교실로 들어가자!",
+          "mission": "\"챙겨 들자!\"라고 구동사 pick up을 써서 말해보세요!",
+          "target": "Pick them up!",
+          "npcReactionEn": "Got both hydro bottles! Five-minute recess bell just rang!",
+          "npcReactionKr": "보온 물병 둘 다 챙겼다! 쉬는 시간 5분 전 종 딱 울렸어!",
+          "culturalTip": "구동사 \"pick up\"은 벤치나 바닥에 둔 물건을 \"집어 들다, 챙기다\"라는 뜻으로 일상에서 매일 쓰는 표현입니다.",
+          "options": [
+            {
+              "text": "Pick them up!",
+              "isCorrect": true,
+              "tip": "챙겨 들자! (수거 및 정리 구동사)"
+            },
+            {
+              "text": "Leave water behind.",
+              "isCorrect": false,
+              "tip": "물병 버려두라는 오답이에요."
+            },
+            {
+              "text": "Dump water on head.",
+              "isCorrect": false,
+              "tip": "머리에 물 쏟으라는 오답이에요."
+            }
+          ]
         }
       ]
     },
@@ -2599,6 +3556,93 @@ window.SCENARIOS = {
               "text": "Lie on food floor.",
               "isCorrect": false,
               "tip": "음식 바닥에 눕자는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 9,
+          "npcName": "Penny",
+          "npcAvatar": "🐧",
+          "npcEn": "The hot chicken tenders and baked mac and cheese smell heavenly today!",
+          "npcKr": "오늘 따끈한 치킨 텐더랑 맥앤치즈 냄새 완전 천국이다!",
+          "mission": "\"맛있게 먹자!\"라고 구동사 dig in을 써서 신나게 말해보세요!",
+          "target": "Dig in!",
+          "npcReactionEn": "Crispy tender dipped in honey mustard! Absolute school lunch perfection!",
+          "npcReactionKr": "허니 머스터드에 바삭한 텐더 콕 찍었다! 완벽한 학교 급식의 맛!",
+          "culturalTip": "구동사 \"dig in\"은 맛있는 음식을 앞에 두고 \"자, 맛있게 먹자!/덤벼들자!\"라는 뜻으로 원어민들이 즐겨 쓰는 구어체입니다.",
+          "options": [
+            {
+              "text": "Dig in!",
+              "isCorrect": true,
+              "tip": "맛있게 먹자! (식사 시작 필수 구동사)"
+            },
+            {
+              "text": "Throw tray away.",
+              "isCorrect": false,
+              "tip": "식판 버리라는 오답이에요."
+            },
+            {
+              "text": "Starve till dinner.",
+              "isCorrect": false,
+              "tip": "저녁까지 굶으라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Penny",
+          "npcAvatar": "🐧",
+          "npcEn": "I brought an extra bag of sour cream potato chips! Want to split it with me?",
+          "npcKr": "나 사워크림 감자칩 한 봉지 더 챙겨왔어! 나랑 반반 나눌래?",
+          "mission": "\"나 좀 먹을래!\"라고 기본동사 take를 써서 수락해보세요!",
+          "target": "I'll take some!",
+          "npcReactionEn": "Splitting the bag right down the middle! Enjoy the crunch!",
+          "npcReactionKr": "봉지 가운데 쫙 갈라서 반씩 나눴다! 바삭하게 즐겨!",
+          "culturalTip": "기본동사 \"take\"를 사용한 \"I'll take some!\"은 무언가를 권유받았을 때 \"나도 좀 받을게/먹을래!\"라고 흔쾌히 수락하는 표현입니다.",
+          "options": [
+            {
+              "text": "I'll take some!",
+              "isCorrect": true,
+              "tip": "나 좀 먹을래! (수락 기본동사)"
+            },
+            {
+              "text": "Step on the chips.",
+              "isCorrect": false,
+              "tip": "과자 밟으라는 오답이에요."
+            },
+            {
+              "text": "I despise chips.",
+              "isCorrect": false,
+              "tip": "과자 경멸한다는 어색한 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Penny",
+          "npcAvatar": "🐧",
+          "npcEn": "Lunch monitor says two minutes left! Scrape the paper trays into the trash bin!",
+          "npcKr": "급식 지도 선생님이 2분 남았대! 종이 식판 쓰레기통에 털어 넣자!",
+          "mission": "\"쓰레기통에 버리자!\"라고 구동사 throw away를 써서 말해보세요!",
+          "target": "Throw it away!",
+          "npcReactionEn": "Trays dumped and utensils stacked neatly in the wash tubs! Done!",
+          "npcReactionKr": "식판 비우고 수저는 세척 통에 착착 정리했다! 끝!",
+          "culturalTip": "구동사 \"throw away\"는 쓰레기나 다 쓴 식판을 \"버리다, 폐기하다\"라는 뜻으로 일상생활 필수 구동사입니다.",
+          "options": [
+            {
+              "text": "Throw it away!",
+              "isCorrect": true,
+              "tip": "쓰레기통에 버리자! (폐기 구동사)"
+            },
+            {
+              "text": "Leave mess on table.",
+              "isCorrect": false,
+              "tip": "식탁에 어지르고 가라는 오답이에요."
+            },
+            {
+              "text": "Hide tray under seat.",
+              "isCorrect": false,
+              "tip": "의자 밑에 숨기라는 오답이에요."
             }
           ]
         }
@@ -2842,6 +3886,93 @@ window.SCENARIOS = {
               "tip": "슬프게 울라는 엉뚱한 말이에요."
             }
           ]
+        },
+        {
+          "turnIndex": 9,
+          "npcName": "Leo",
+          "npcAvatar": "🦁",
+          "npcEn": "Watch your blind spot! Marcus is throwing a fast curveball straight at your knees!",
+          "npcKr": "사각지대 조심해! 마커스가 네 무릎 쪽으로 빠른 커브볼 던진다!",
+          "mission": "\"조심해/피해!\"라고 구동사 look out을 써서 긴박하게 외쳐보세요!",
+          "target": "Look out!",
+          "npcReactionEn": "Jumped right over the red ball! It sailed out of bounds!",
+          "npcReactionKr": "빨간 공 위로 가뿐하게 점프했다! 장외로 날아가 버렸어!",
+          "culturalTip": "구동사 \"look out\"은 날아오는 공이나 위험을 보고 \"조심해! 피해!\"라고 순간적으로 외칠 때 가장 직관적인 표현입니다.",
+          "options": [
+            {
+              "text": "Look out!",
+              "isCorrect": true,
+              "tip": "조심해/피해! (경계 필수 구동사)"
+            },
+            {
+              "text": "Stand like a statue.",
+              "isCorrect": false,
+              "tip": "동상처럼 서 있으라는 오답이에요."
+            },
+            {
+              "text": "Turn around and sleep.",
+              "isCorrect": false,
+              "tip": "뒤돌아 자라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Leo",
+          "npcAvatar": "🦁",
+          "npcEn": "Incredible dodge! Catch this rebound pass and aim for their last front defender!",
+          "npcKr": "엄청난 회피였어! 리바운드된 이 공 받아서 상대 전방 수비수를 노려!",
+          "mission": "\"이 공 받아!\"라고 기본동사 catch를 써서 패스해보세요!",
+          "target": "Catch this ball!",
+          "npcReactionEn": "Snagged it cleanly with two hands! Aiming straight for the sneakers!",
+          "npcReactionKr": "두 손으로 깔끔하게 낚아챘다! 상대 운동화 쪽으로 정조준!",
+          "culturalTip": "기본동사 \"catch\"는 구기 종목이나 놀이에서 \"이 공 잡아/받아!\"라고 패스할 때 가장 기본적인 동사입니다.",
+          "options": [
+            {
+              "text": "Catch this ball!",
+              "isCorrect": true,
+              "tip": "이 공 받아! (포구 기본동사)"
+            },
+            {
+              "text": "Kick it over fence.",
+              "isCorrect": false,
+              "tip": "울타리 밖으로 차버리라는 오답이에요."
+            },
+            {
+              "text": "Drop it in mud.",
+              "isCorrect": false,
+              "tip": "진흙에 던지라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Leo",
+          "npcAvatar": "🦁",
+          "npcEn": "Direct hit on sneakers! We cleared the other team and won the tournament!",
+          "npcKr": "운동장에 정확히 명중! 상대팀 전원 아웃시키고 토너먼트 우승했다!",
+          "mission": "\"해냈어/잘했어!\"라고 승리를 만끽하며 외쳐보세요!",
+          "target": "Way to go!",
+          "npcReactionEn": "Whole team high fiving! Best dodgeball comeback of fifth grade!",
+          "npcReactionKr": "팀 전체가 하이파이브! 5학년 최고의 피구 역전승이었어!",
+          "culturalTip": "\"Way to go!\"는 친구가 멋진 성과를 냈을 때 \"잘했어! 해냈구나!\"라고 축하해주는 가장 인기 있는 관용구입니다.",
+          "options": [
+            {
+              "text": "Way to go!",
+              "isCorrect": true,
+              "tip": "해냈어/잘했어! (대표 찬사 관용구)"
+            },
+            {
+              "text": "You failed completely.",
+              "isCorrect": false,
+              "tip": "완전히 실패했다는 엉뚱한 비난이에요."
+            },
+            {
+              "text": "Apologize to everyone.",
+              "isCorrect": false,
+              "tip": "모두에게 사과하라는 오답이에요."
+            }
+          ]
         }
       ]
     },
@@ -3081,6 +4212,93 @@ window.SCENARIOS = {
               "text": "Tear cover off.",
               "isCorrect": false,
               "tip": "표지 뜯겠다는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 9,
+          "npcName": "Sammy",
+          "npcAvatar": "🦊",
+          "npcEn": "Don't turn to page seventy-five! The secret traitor identity will be ruined!",
+          "npcKr": "75페이지 넘기지 마! 배신자 정체 스포일러 당해서 망쳐져!",
+          "mission": "\"책 덮어둬!\"라고 기본동사 keep을 써서 단호하게 말해보세요!",
+          "target": "Keep it shut!",
+          "npcReactionEn": "Bookmark placed firmly on chapter eight! No accidental peeking!",
+          "npcReactionKr": "8장에 책갈피 꽉 꽂았다! 실수로라도 엿보기 금지!",
+          "culturalTip": "기본동사 \"keep\"을 활용한 \"Keep it shut!\"은 책이나 입을 \"열지 말고 닫아둬!\"라는 뜻으로 쓰이는 유용한 표현입니다.",
+          "options": [
+            {
+              "text": "Keep it shut!",
+              "isCorrect": true,
+              "tip": "책 덮어둬! (차단 기본동사)"
+            },
+            {
+              "text": "Tear out the page.",
+              "isCorrect": false,
+              "tip": "페이지 찢으라는 오답이에요."
+            },
+            {
+              "text": "Tell me the whole ending.",
+              "isCorrect": false,
+              "tip": "결말 다 말하라는 스포일러 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Sammy",
+          "npcAvatar": "🦊",
+          "npcEn": "My lips are sealed! Just read chapter nine at your own pace without skipping!",
+          "npcKr": "내 입은 지퍼 채웠어! 건너뛰지 말고 9장을 차분히 읽어봐!",
+          "mission": "\"계속 읽어봐!\"라고 기본동사 keep을 써서 독서를 권유해보세요!",
+          "target": "Keep reading!",
+          "npcReactionEn": "Flipping to the epic rooftop battle page! The artwork is insane!",
+          "npcReactionKr": "지붕 위 결투 명장면으로 넘긴다! 작화가 완전 미쳤어!",
+          "culturalTip": "기본동사 \"keep\" 뒤에 -ing를 붙인 \"Keep reading!\"은 중단하지 말고 \"계속 읽어!\"라고 격려할 때 쓰는 패턴입니다.",
+          "options": [
+            {
+              "text": "Keep reading!",
+              "isCorrect": true,
+              "tip": "계속 읽어봐! (지속 기본동사)"
+            },
+            {
+              "text": "Burn the comic book.",
+              "isCorrect": false,
+              "tip": "만화책 태우라는 위험한 오답이에요."
+            },
+            {
+              "text": "Throw it out the window.",
+              "isCorrect": false,
+              "tip": "창밖으로 던지라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Sammy",
+          "npcAvatar": "🦊",
+          "npcEn": "No way! The masked ninja mentor was the cyber alien all along?! Insane twist!",
+          "npcKr": "말도 안 돼! 복면 닌자 스승이 처음부터 사이버 외계인이었다고?! 충격 반전!",
+          "mission": "\"내가 뭐랬어!\"라고 의기양양하게 외쳐보세요!",
+          "target": "I told you so!",
+          "npcReactionEn": "You called it from issue number one! Best comic series ever written!",
+          "npcReactionKr": "1권부터 네가 맞혔잖아! 역대 최고의 만화 시리즈야!",
+          "culturalTip": "\"I told you so!\"는 자신의 예측이 적중했을 때 \"내가 그럴 거라고 말했잖아!\"라고 으스대며 쓰는 필수 구어체입니다.",
+          "options": [
+            {
+              "text": "I told you so!",
+              "isCorrect": true,
+              "tip": "내가 뭐랬어! (예측 적중 필수 관용구)"
+            },
+            {
+              "text": "I knew nothing.",
+              "isCorrect": false,
+              "tip": "난 아무것도 몰랐다는 오답이에요."
+            },
+            {
+              "text": "It was boring.",
+              "isCorrect": false,
+              "tip": "지루했다는 엉뚱한 반응이에요."
             }
           ]
         }
@@ -3324,6 +4542,93 @@ window.SCENARIOS = {
               "tip": "수업 다 빼먹자는 오답이에요."
             }
           ]
+        },
+        {
+          "turnIndex": 9,
+          "npcName": "Sammy",
+          "npcAvatar": "🦊",
+          "npcEn": "Hands on your hips and breathe slowly! That was an Olympic-level dead heat sprint!",
+          "npcKr": "허리에 손 올리고 천천히 숨 쉬어! 올림픽 결승급 박빙 질주였어!",
+          "mission": "\"숨 좀 돌려!\"라고 기본동사 catch를 써서 말해보세요!",
+          "target": "Catch your breath!",
+          "npcReactionEn": "Inhaling deep and cooling down! Legs feel like jelly right now!",
+          "npcReactionKr": "깊게 숨 들이마시며 열 식히는 중! 다리가 후들후들 풀렸어!",
+          "culturalTip": "기본동사 \"catch\"를 활용한 관용구 \"Catch your breath!\"는 격렬한 운동 후 \"숨 가다듬어, 숨 좀 돌려!\"라는 뜻으로 쓰입니다.",
+          "options": [
+            {
+              "text": "Catch your breath!",
+              "isCorrect": true,
+              "tip": "숨 좀 돌려! (호흡 가다듬기 기본동사)"
+            },
+            {
+              "text": "Sprint another mile.",
+              "isCorrect": false,
+              "tip": "1마일 더 전력질주하라는 무리한 오답이에요."
+            },
+            {
+              "text": "Pass out on track.",
+              "isCorrect": false,
+              "tip": "트랙에 기절하라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Sammy",
+          "npcAvatar": "🦊",
+          "npcEn": "Look at the digital stopwatch display! Did we break the fifth-grade class record?",
+          "npcKr": "디지털 스톱워치 화면 봐봐! 우리 5학년 학년 기록 깬 거 맞아?",
+          "mission": "\"확인해봐!\"라고 구동사 check out을 써서 말해보세요!",
+          "target": "Check it out!",
+          "npcReactionEn": "Twelve point eight seconds flat! That beats the school record by two tenths!",
+          "npcReactionKr": "정확히 12.8초! 학교 기록을 0.2초나 단축해서 깼어!",
+          "culturalTip": "구동사 \"check out\"은 결과나 물건을 \"확인해보다, 살펴보다\"라는 뜻으로 구어에서 가장 흔하게 쓰이는 구동사입니다.",
+          "options": [
+            {
+              "text": "Check it out!",
+              "isCorrect": true,
+              "tip": "확인해봐! (조사 및 확인 구동사)"
+            },
+            {
+              "text": "Smash the stopwatch.",
+              "isCorrect": false,
+              "tip": "스톱워치 부수라는 오답이에요."
+            },
+            {
+              "text": "Forget the time.",
+              "isCorrect": false,
+              "tip": "시간 잊으라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Sammy",
+          "npcAvatar": "🦊",
+          "npcEn": "Twelve point eight seconds! We officially set the all-time elementary record!",
+          "npcKr": "12.8초! 우리가 초등학교 역대 최고 기록을 공식으로 갈아치웠어!",
+          "mission": "\"우리가 해냈어!\"라고 기본동사 do의 과거형 did를 써서 외쳐보세요!",
+          "target": "We did it!",
+          "npcReactionEn": "Both of our names going on the playground Wall of Fame plaque!",
+          "npcReactionKr": "우리 둘 이름이 운동장 명예의 전당 명판에 올라간다!",
+          "culturalTip": "기본동사 \"do\"의 과거형을 쓴 \"We did it!\"은 목표를 성취했을 때 \"우리가 해냈어!\"라고 다 함께 포효하는 만능 표현입니다.",
+          "options": [
+            {
+              "text": "We did it!",
+              "isCorrect": true,
+              "tip": "우리가 해냈어! (성공 기본동사)"
+            },
+            {
+              "text": "We lost miserably.",
+              "isCorrect": false,
+              "tip": "참패했다는 거짓 오답이에요."
+            },
+            {
+              "text": "Nobody cares.",
+              "isCorrect": false,
+              "tip": "아무도 신경 안 쓴다는 오답이에요."
+            }
+          ]
         }
       ]
     },
@@ -3563,6 +4868,93 @@ window.SCENARIOS = {
               "text": "Rip it into bits.",
               "isCorrect": false,
               "tip": "조각조각 찢으라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 9,
+          "npcName": "Penny",
+          "npcAvatar": "🐧",
+          "npcEn": "Slide this ultra-rare holographic card into the top loader protective sleeve!",
+          "npcKr": "이 초희귀 홀로그램 카드 탑로더 보호 슬리브에 쏙 넣어!",
+          "mission": "\"슬리브에 쏙 넣어!\"라고 구동사 put in을 써서 말해보세요!",
+          "target": "Put it in!",
+          "npcReactionEn": "Slid in smoothly! The plastic hard case keeps the corners mint!",
+          "npcReactionKr": "부드럽게 쏙 들어갔다! 단단한 플라스틱 케이스가 모서리를 완벽 보존해줘!",
+          "culturalTip": "구동사 \"put in\"은 물건을 케이스나 주머니 안에 \"넣다, 끼우다\"라는 뜻으로 일상생활에서 널리 쓰입니다.",
+          "options": [
+            {
+              "text": "Put it in!",
+              "isCorrect": true,
+              "tip": "보호 슬리브에 쏙 넣어! (삽입 구동사)"
+            },
+            {
+              "text": "Bend it in half.",
+              "isCorrect": false,
+              "tip": "반으로 접으라는 끔찍한 오답이에요."
+            },
+            {
+              "text": "Wash with water.",
+              "isCorrect": false,
+              "tip": "물로 씻으라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Penny",
+          "npcAvatar": "🐧",
+          "npcEn": "Do you have any stage-two electric type cards in your side trade pocket?",
+          "npcKr": "네 교환용 주머니에 2단계 번개 타입 카드 혹시 있어?",
+          "mission": "\"내가 확인해볼게!\"라고 기본동사 let과 check를 써서 말해보세요!",
+          "target": "Let me check!",
+          "npcReactionEn": "Flipping through the binder! Found a foil Jolteon in mint condition!",
+          "npcReactionKr": "바인더 촤르륵 넘겨보는 중! 완벽한 상태의 반짝이 쥬피썬더 찾았다!",
+          "culturalTip": "기본동사 \"let\"을 활용한 \"Let me check!\"은 \"내가 한번 확인해볼게!\"라고 답할 때 가장 자연스러운 회화 표현입니다.",
+          "options": [
+            {
+              "text": "Let me check!",
+              "isCorrect": true,
+              "tip": "내가 확인해볼게! (확인 허용 기본동사)"
+            },
+            {
+              "text": "I have zero cards.",
+              "isCorrect": false,
+              "tip": "카드 하나도 없다는 오답이에요."
+            },
+            {
+              "text": "Never show you.",
+              "isCorrect": false,
+              "tip": "절대 안 보여준다는 불친절한 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Penny",
+          "npcAvatar": "🐧",
+          "npcEn": "Trade confirmed! Both our competitive battle decks got way stronger today!",
+          "npcKr": "교환 완료! 오늘 우리 둘 배틀 덱 전력이 엄청나게 강해졌어!",
+          "mission": "\"거래 성립!\"이라고 흔쾌히 합의해보세요!",
+          "target": "It's a deal!",
+          "npcReactionEn": "Handshakes all around! Ready to dominate the Friday lunch tournament!",
+          "npcReactionKr": "서로 악수 완료! 금요일 점심 토너먼트 제패할 준비 끝났다!",
+          "culturalTip": "\"It's a deal!\"은 물건 교환이나 약속에서 \"거래 성립!/그렇게 하자!\"라고 합의할 때 쓰는 대표적인 관용구입니다.",
+          "options": [
+            {
+              "text": "It's a deal!",
+              "isCorrect": true,
+              "tip": "거래 성립! (거래 체결 관용구)"
+            },
+            {
+              "text": "Give it back now.",
+              "isCorrect": false,
+              "tip": "지금 당장 돌려달라는 떼쟁이 오답이에요."
+            },
+            {
+              "text": "I regret everything.",
+              "isCorrect": false,
+              "tip": "전부 후회한다는 오답이에요."
             }
           ]
         }
@@ -3806,6 +5198,93 @@ window.SCENARIOS = {
               "tip": "교실 불태우자는 위험한 오답이에요."
             }
           ]
+        },
+        {
+          "turnIndex": 9,
+          "npcName": "Leo",
+          "npcAvatar": "🦁",
+          "npcEn": "Double check the word problem on the bottom margin before turning it in!",
+          "npcKr": "제출하기 전에 맨 아래쪽 서술형 문제 다시 한번 확인해봐!",
+          "mission": "\"꼼꼼히 검토해봐!\"라고 구동사 look over를 써서 말해보세요!",
+          "target": "Look over it!",
+          "npcReactionEn": "Checking step two! Good catch, missed the negative sign on the fraction!",
+          "npcReactionKr": "2단계 확인 중! 잘 짚었다, 분수 앞에 마이너스 부호 빠뜨릴 뻔했어!",
+          "culturalTip": "구동사 \"look over\"는 서류, 시험지, 숙제 등을 \"훑어보다, 검토하다\"라는 뜻으로 학교생활 필수 구동사입니다.",
+          "options": [
+            {
+              "text": "Look over it!",
+              "isCorrect": true,
+              "tip": "꼼꼼히 검토해봐! (검토 구동사)"
+            },
+            {
+              "text": "Erase all your answers.",
+              "isCorrect": false,
+              "tip": "답 다 지우라는 망치는 오답이에요."
+            },
+            {
+              "text": "Scribble over the page.",
+              "isCorrect": false,
+              "tip": "낙서하라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Leo",
+          "npcAvatar": "🦁",
+          "npcEn": "Found a minus sign error in step three! Corrected to positive twenty-four!",
+          "npcKr": "3단계 부호 오류 찾았다! 양수 24로 깔끔하게 수정 완료!",
+          "mission": "\"정답을 맞혔어!\"라고 기본동사 get의 과거형 got을 써서 칭찬해보세요!",
+          "target": "You got it!",
+          "npcReactionEn": "The final equation balances out perfectly! Full points guaranteed!",
+          "npcReactionKr": "마지막 방정식 딱 맞아떨어졌다! 만점 보장이야!",
+          "culturalTip": "기본동사 \"get\"을 쓴 \"You got it!\"은 상대가 정답을 맞히거나 요점을 파악했을 때 \"맞았어! 그거야!\"라고 인정해주는 표현입니다.",
+          "options": [
+            {
+              "text": "You got it!",
+              "isCorrect": true,
+              "tip": "정답을 맞혔어! (해결 기본동사)"
+            },
+            {
+              "text": "Wrong again.",
+              "isCorrect": false,
+              "tip": "또 틀렸다는 오답이에요."
+            },
+            {
+              "text": "Math is impossible.",
+              "isCorrect": false,
+              "tip": "수학은 불가능하다는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Leo",
+          "npcAvatar": "🦁",
+          "npcEn": "The final bell is chiming and Mr. Davis is collecting everyone's papers at the podium!",
+          "npcKr": "수업 시작 종 울리고 데이비스 선생님이 교탁에서 학습지 걷으신다!",
+          "mission": "\"얼른 제출해!\"라고 구동사 hand in을 써서 말해보세요!",
+          "target": "Hand it in!",
+          "npcReactionEn": "Slid onto the top of the homework stack! Finished right down to the wire!",
+          "npcReactionKr": "숙제 더미 맨 위에 쏙 올려놓았다! 아슬아슬하게 시간 맞춰 완료!",
+          "culturalTip": "구동사 \"hand in\"은 과제나 서류를 선생님이나 담당자에게 \"제출하다\"라는 뜻으로 매일 쓰는 핵심 구동사입니다.",
+          "options": [
+            {
+              "text": "Hand it in!",
+              "isCorrect": true,
+              "tip": "얼른 제출해! (제출 구동사)"
+            },
+            {
+              "text": "Hide homework in desk.",
+              "isCorrect": false,
+              "tip": "책상에 숨겨두라는 오답이에요."
+            },
+            {
+              "text": "Rip up the worksheet.",
+              "isCorrect": false,
+              "tip": "학습지 찢으라는 오답이에요."
+            }
+          ]
         }
       ]
     },
@@ -4045,6 +5524,93 @@ window.SCENARIOS = {
               "text": "Walk on busy highway.",
               "isCorrect": false,
               "tip": "고속도로로 걸어가자는 위험한 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 9,
+          "npcName": "Sammy",
+          "npcAvatar": "🦊",
+          "npcEn": "The giant iron mecha is exposing its glowing weak spot on the right shoulder!",
+          "npcKr": "거대 철갑 메카가 오른쪽 어깨에 빛나는 약점을 드러내고 있어!",
+          "mission": "\"쓰러뜨려!\"라고 구동사 take down을 써서 외쳐보세요!",
+          "target": "Take him down!",
+          "npcReactionEn": "Locking missile targeting! Firing hyper blast right at the shoulder core!",
+          "npcReactionKr": "미사일 타깃 조준! 어깨 코어에 하이퍼 블래스트 정면 발사!",
+          "culturalTip": "구동사 \"take down\"은 적이나 보스를 \"쓰러뜨리다, 무너뜨리다\"라는 뜻으로 게임이나 스포츠에서 아주 자주 쓰입니다.",
+          "options": [
+            {
+              "text": "Take him down!",
+              "isCorrect": true,
+              "tip": "쓰러뜨려! (제압 구동사)"
+            },
+            {
+              "text": "Run away and hide.",
+              "isCorrect": false,
+              "tip": "도망쳐 숨으라는 오답이에요."
+            },
+            {
+              "text": "Shut off arcade machine.",
+              "isCorrect": false,
+              "tip": "게임기 끄라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Sammy",
+          "npcAvatar": "🦊",
+          "npcEn": "Overdrive meter is charged to maximum! Unleash the dual laser cannon blast!",
+          "npcKr": "오버드라이브 게이지 꽉 찼어! 이중 레이저 캐넌 일제히 퍼부어!",
+          "mission": "\"일제히 사격해!\"라고 구동사 fire away를 써서 명령해보세요!",
+          "target": "Fire away!",
+          "npcReactionEn": "Beams blazing across the screen! The boss armor is shattering to pieces!",
+          "npcReactionKr": "화면 가득 광선 발사! 보스 장갑이 산산조각 박살 나고 있어!",
+          "culturalTip": "구동사 \"fire away\"는 사격을 퍼붓거나, 질문 등을 \"시원하게 해봐!\"라고 할 때 쓰는 박진감 넘치는 표현입니다.",
+          "options": [
+            {
+              "text": "Fire away!",
+              "isCorrect": true,
+              "tip": "일제히 사격해! (발사 구동사)"
+            },
+            {
+              "text": "Drop your controller.",
+              "isCorrect": false,
+              "tip": "조종기 떨어뜨리라는 오답이에요."
+            },
+            {
+              "text": "Pause the game.",
+              "isCorrect": false,
+              "tip": "게임 일시정지하라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Sammy",
+          "npcAvatar": "🦊",
+          "npcEn": "VICTORY! All-time highest arcade co-op score! Input our champion initials!",
+          "npcKr": "승리! 아케이드 협동 역대 최고점 달성! 챔피언 이니셜 입력하자!",
+          "mission": "\"명예의 전당에 올려!\"라고 구동사 put on을 써서 말해보세요!",
+          "target": "Put it on!",
+          "npcReactionEn": "Typed 'A-A-A' on rank number one! Our name stays on the arcade forever!",
+          "npcReactionKr": "1위 자리에 'A-A-A' 입력 완료! 우리 이름이 오락실에 영원히 남아!",
+          "culturalTip": "구동사 \"put on\"은 이름이나 기록을 명단/화면에 \"올리다, 등록하다\"라는 뜻으로도 널리 활용됩니다.",
+          "options": [
+            {
+              "text": "Put it on!",
+              "isCorrect": true,
+              "tip": "명예의 전당에 올려! (등록 구동사)"
+            },
+            {
+              "text": "Erase the high score.",
+              "isCorrect": false,
+              "tip": "신기록 지우라는 오답이에요."
+            },
+            {
+              "text": "Unplug the power cord.",
+              "isCorrect": false,
+              "tip": "전원코드 뽑으라는 오답이에요."
             }
           ]
         }
@@ -4288,6 +5854,93 @@ window.SCENARIOS = {
               "tip": "다신 보지 말자는 오답이에요."
             }
           ]
+        },
+        {
+          "turnIndex": 9,
+          "npcName": "Penny",
+          "npcAvatar": "🐧",
+          "npcEn": "Tell your parents the laser tag birthday match begins at Saturday two PM sharp!",
+          "npcKr": "토요일 오후 2시 정각에 레이저 태그 생일전 시작한다고 부모님께 말씀드려!",
+          "mission": "\"부모님께 꼭 전할게!\"라고 기본동사 let과 know를 써서 말해보세요!",
+          "target": "I'll let them know!",
+          "npcReactionEn": "Told my mom already! She said she can drive our whole squad there!",
+          "npcReactionKr": "벌써 우리 엄마한테 말씀드렸어! 우리 멤버 전원 차로 태워주신대!",
+          "culturalTip": "기본동사 \"let\"과 \"know\"가 결합된 \"I'll let them know!\"는 \"내가 그분들께 알려드릴게!\"라는 아주 유용한 생활 표현입니다.",
+          "options": [
+            {
+              "text": "I'll let them know!",
+              "isCorrect": true,
+              "tip": "부모님께 꼭 전할게! (전달 기본동사)"
+            },
+            {
+              "text": "Keep it secret forever.",
+              "isCorrect": false,
+              "tip": "영원히 비밀로 하라는 오답이에요."
+            },
+            {
+              "text": "I won't tell anyone.",
+              "isCorrect": false,
+              "tip": "아무한테도 말 안 한다는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Penny",
+          "npcAvatar": "🐧",
+          "npcEn": "Wear dark running shoes and black clothes so you stay invisible in the glow arena!",
+          "npcKr": "야광 경기장에서 안 들키게 검은 옷이랑 어두운 러닝화 챙겨 입고 와!",
+          "mission": "\"어두운 옷 챙겨 입어!\"라고 구동사 put on을 써서 답해보세요!",
+          "target": "Put on dark clothes!",
+          "npcReactionEn": "Got my stealth black hoodie and sneakers ready by the bedroom door!",
+          "npcReactionKr": "방문 옆에 은신용 검은 후드티랑 운동화 딱 챙겨뒀어!",
+          "culturalTip": "구동사 \"put on\"은 옷이나 신발 등을 \"입다, 착용하다\"라는 뜻으로 의생활에서 가장 중요한 기본 구동사입니다.",
+          "options": [
+            {
+              "text": "Put on dark clothes!",
+              "isCorrect": true,
+              "tip": "어두운 옷 챙겨 입어! (착용 구동사)"
+            },
+            {
+              "text": "Wear glowing neon suit.",
+              "isCorrect": false,
+              "tip": "네온 발광 옷 입으라는 타깃되는 오답이에요."
+            },
+            {
+              "text": "Wear heavy snow boots.",
+              "isCorrect": false,
+              "tip": "무거운 방한부츠 신으라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Penny",
+          "npcAvatar": "🐧",
+          "npcEn": "Our whole friend squad is attending! It's going to be the most legendary birthday party!",
+          "npcKr": "우리 친구들 전원 다 온대! 올해 가장 전설적인 생일 파티가 될 거야!",
+          "mission": "\"나도 무조건 낄래!\"라고 구동사 count in을 써서 힘차게 외쳐보세요!",
+          "target": "Count me in!",
+          "npcReactionEn": "Registered for team Alpha! Laser blasters charged and ready for action!",
+          "npcReactionKr": "알파 팀으로 참가 등록 완료! 레이저 블래스터 충전하고 출격 대기 중!",
+          "culturalTip": "구동사 \"count in\"을 활용한 \"Count me in!\"은 모임이나 이벤트에 \"나도 꼭 끼워줘/무조건 참석할래!\"라는 대표적인 표현입니다.",
+          "options": [
+            {
+              "text": "Count me in!",
+              "isCorrect": true,
+              "tip": "나도 무조건 낄래! (참여 필수 구동사)"
+            },
+            {
+              "text": "Count me out forever.",
+              "isCorrect": false,
+              "tip": "난 영원히 빼달라는 오답이에요."
+            },
+            {
+              "text": "I dislike birthdays.",
+              "isCorrect": false,
+              "tip": "생일 파티 싫다는 오답이에요."
+            }
+          ]
         }
       ]
     },
@@ -4527,6 +6180,93 @@ window.SCENARIOS = {
               "text": "Burn the dollar bills.",
               "isCorrect": false,
               "tip": "지폐 태우라는 위험한 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 9,
+          "npcName": "Leo",
+          "npcAvatar": "🦁",
+          "npcEn": "Pull up the wooden rope ladder into the treehouse so nobody else can climb up!",
+          "npcKr": "아무도 못 올라오게 오두막 안으로 나무 줄사다리 위로 끌어올려!",
+          "mission": "\"사다리 위로 끌어올려!\"라고 구동사 pull up을 써서 말해보세요!",
+          "target": "Pull it up!",
+          "npcReactionEn": "Heaved the rope rungs up onto the deck! Our treehouse is completely secure!",
+          "npcReactionKr": "사다리 발판들 데크 위로 다 끌어올렸다! 우리 아지트 완전 철통 보안!",
+          "culturalTip": "구동사 \"pull up\"은 아래에 있는 사다리나 밧줄을 \"위로 끌어올리다\"라는 뜻으로 공간 보안이나 구조에서 자주 쓰입니다.",
+          "options": [
+            {
+              "text": "Pull it up!",
+              "isCorrect": true,
+              "tip": "사다리 위로 끌어올려! (인양 구동사)"
+            },
+            {
+              "text": "Cut the rope ladder.",
+              "isCorrect": false,
+              "tip": "사다리 줄 끊으라는 위험한 오답이에요."
+            },
+            {
+              "text": "Throw ladder at ground.",
+              "isCorrect": false,
+              "tip": "사다리 집어던지라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Leo",
+          "npcAvatar": "🦁",
+          "npcEn": "Remember our sacred clubhouse oath: whatever is said in the tree stays in the tree!",
+          "npcKr": "우리 아지트 신성한 맹세 기억하지: 나무 위에서 한 얘기는 나무에만 묻어둔다!",
+          "mission": "\"비밀 꼭 지키자!\"라고 기본동사 keep을 써서 약속해보세요!",
+          "target": "Keep it a secret!",
+          "npcReactionEn": "Clubhouse vault locked with our top-secret fingerprint code! Sealed tight!",
+          "npcReactionKr": "아지트 금고 특급 지문 코드로 잠갔다! 영구 봉인 완료!",
+          "culturalTip": "기본동사 \"keep\"을 쓴 \"Keep it a secret!\"은 \"비밀로 간직해, 비밀 지켜!\"라는 뜻으로 아이들이 약속할 때 가장 신뢰받는 표현입니다.",
+          "options": [
+            {
+              "text": "Keep it a secret!",
+              "isCorrect": true,
+              "tip": "비밀 꼭 지키자! (비밀 유지 기본동사)"
+            },
+            {
+              "text": "Post on school board.",
+              "isCorrect": false,
+              "tip": "학교 게시판에 다 알리라는 오답이에요."
+            },
+            {
+              "text": "Shout to entire town.",
+              "isCorrect": false,
+              "tip": "동네방네 소리치라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Leo",
+          "npcAvatar": "🦁",
+          "npcEn": "Look at the sunset streetlights turning on below! Time to pack flashlights and head home!",
+          "npcKr": "아래쪽 가로등 하나둘 켜지는 것 좀 봐! 손전등 챙겨서 집으로 내려가자!",
+          "mission": "\"조심해서 내려가자!\"라고 구동사 climb down을 써서 말해보세요!",
+          "target": "Let's climb down!",
+          "npcReactionEn": "Lowering the rope ladder and descending rung by rung! Safe on the grass!",
+          "npcReactionKr": "줄사다리 다시 내리고 한 칸씩 안전하게 내려오는 중! 잔디밭 무사 착지!",
+          "culturalTip": "구동사 \"climb down\"은 나무나 높은 곳에서 \"기어 내려오다, 조심해서 내려가다\"라는 뜻으로 쓰이는 유용한 표현입니다.",
+          "options": [
+            {
+              "text": "Let's climb down!",
+              "isCorrect": true,
+              "tip": "조심해서 내려가자! (하강 구동사)"
+            },
+            {
+              "text": "Jump off the roof.",
+              "isCorrect": false,
+              "tip": "지붕에서 뛰어내리라는 위험한 오답이에요."
+            },
+            {
+              "text": "Sleep on the branch.",
+              "isCorrect": false,
+              "tip": "나뭇가지에서 자라는 오답이에요."
             }
           ]
         }
@@ -4801,6 +6541,93 @@ window.SCENARIOS = {
               "tip": "폰 강에 버리라는 오답이에요."
             }
           ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Maya",
+          "npcAvatar": "🛹",
+          "npcEn": "Who's setting up the Catan hexagon tiles and distributing the resource cards?",
+          "npcKr": "누가 카탄 육각 타일 세팅하고 자원 카드 나눠줄래?",
+          "mission": "\"판 깔고 준비하자!\"라고 구동사 set up을 써서 말해보세요!",
+          "target": "Set it up!",
+          "npcReactionEn": "Shuffling the desert tile right into the center! Rolling for starting positions!",
+          "npcReactionKr": "사막 타일 정가운데 섞어 넣는 중! 선 플레이어 뽑기 주사위 굴리자!",
+          "culturalTip": "구동사 \"set up\"은 보드게임이나 장비를 \"설치하다, 판을 깔다\"라는 뜻으로 일상에서 널리 쓰입니다.",
+          "options": [
+            {
+              "text": "Set it up!",
+              "isCorrect": true,
+              "tip": "판 깔고 준비하자! (설치 및 세팅 구동사)"
+            },
+            {
+              "text": "Tear up the board.",
+              "isCorrect": false,
+              "tip": "보드판 찢으라는 오답이에요."
+            },
+            {
+              "text": "Throw dice out window.",
+              "isCorrect": false,
+              "tip": "주사위 창밖으로 던지라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Maya",
+          "npcAvatar": "🛹",
+          "npcEn": "I'll trade you two sheep and one brick for that scarce ore card! What do you say?",
+          "npcKr": "귀한 광물 카드 하나 주면 내가 양 두 마리랑 벽돌 하나 줄게! 어때?",
+          "mission": "\"협상해보자!\"라고 기본동사 make를 써서 답해보세요!",
+          "target": "Make a deal!",
+          "npcReactionEn": "Cards exchanged across the table! Now I can build my third city settlement!",
+          "npcReactionKr": "테이블 건너편으로 카드 교환 완료! 이제 내 세 번째 도시 건설할 수 있어!",
+          "culturalTip": "기본동사 \"make\"를 사용한 \"Make a deal!\"은 보드게임이나 생활 속에서 \"협상/합의를 성사시키자!\"라는 의미로 쓰입니다.",
+          "options": [
+            {
+              "text": "Make a deal!",
+              "isCorrect": true,
+              "tip": "협상해보자! (합의 도출 기본동사)"
+            },
+            {
+              "text": "Steal all cards.",
+              "isCorrect": false,
+              "tip": "카드 전부 훔치라는 비매너 오답이에요."
+            },
+            {
+              "text": "Flip the game table.",
+              "isCorrect": false,
+              "tip": "보드게임 판 뒤엎으라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 12,
+          "npcName": "Maya",
+          "npcAvatar": "🛹",
+          "npcEn": "Longest road secured and that's ten victory points for the clutch win! GG guys!",
+          "npcKr": "최장 경로 확보해서 승점 10점 역전승 달성! 좋은 경기였어 얘들아!",
+          "mission": "\"좋은 경기였어!\"라고 매너 있게 게임 인사를 건네보세요!",
+          "target": "Good game!",
+          "npcReactionEn": "Tapping knuckles across the table! Rematch after finishing our boba drinks!",
+          "npcReactionKr": "테이블 위로 주먹 콩 맞대기! 버블티 다 마시고 나서 리매치 한판 더!",
+          "culturalTip": "\"Good game!\"(또는 줄여서 GG)은 게임이나 스포츠가 끝난 뒤 상대를 존중하며 나누는 필수 스포츠맨십 인사입니다.",
+          "options": [
+            {
+              "text": "Good game!",
+              "isCorrect": true,
+              "tip": "좋은 경기였어! (필수 스포츠맨십 매너)"
+            },
+            {
+              "text": "You all are losers.",
+              "isCorrect": false,
+              "tip": "너희 다 패배자라는 무례한 오답이에요."
+            },
+            {
+              "text": "I refuse to play.",
+              "isCorrect": false,
+              "tip": "게임 안 하겠다는 오답이에요."
+            }
+          ]
         }
       ]
     },
@@ -5069,6 +6896,93 @@ window.SCENARIOS = {
               "text": "Break board over knees.",
               "isCorrect": false,
               "tip": "무릎으로 보드 부러뜨리라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "Don't lean too far forward on the tail, keep your balance centered over the bolts!",
+          "npcKr": "보드 꼬리 쪽으로 너무 쏠리지 말고 볼트 위 중앙에 균형 잘 잡아!",
+          "mission": "\"균형 잘 잡아!\"라고 기본동사 keep을 써서 조언해보세요!",
+          "target": "Keep your balance!",
+          "npcReactionEn": "Knees bent and shoulders squared over the center graphic! Center of gravity solid!",
+          "npcReactionKr": "무릎 굽히고 어깨를 중심 그래픽 위에 정렬했다! 무게중심 완벽 안정!",
+          "culturalTip": "기본동사 \"keep\"을 쓴 \"Keep your balance!\"는 스케이트나 자전거 탈 때 \"균형 잃지 마, 균형 잡아!\"라는 안전 필수 조언입니다.",
+          "options": [
+            {
+              "text": "Keep your balance!",
+              "isCorrect": true,
+              "tip": "균형 잘 잡아! (평형 유지 기본동사)"
+            },
+            {
+              "text": "Fall on your face.",
+              "isCorrect": false,
+              "tip": "얼굴로 넘어지라는 악담이에요."
+            },
+            {
+              "text": "Throw skateboard away.",
+              "isCorrect": false,
+              "tip": "스케이트보드 내던지라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "Flick the front ankle hard and wait for the black grip tape to rotate beneath you!",
+          "npcKr": "앞발목 스냅을 강하게 튕겨주고 발밑에서 검은 사포가 한 바퀴 돌 때까지 기다려!",
+          "mission": "\"착지 딱 성공시켜!\"라고 기본동사 stick을 써서 외쳐보세요!",
+          "target": "Stick the landing!",
+          "npcReactionEn": "Board snapped a full 360 rotation! Both sneakers stomped clean over the hardware!",
+          "npcReactionKr": "데크 360도 완벽 회전! 두 운동화 볼트 위로 깔끔하게 착지 쿵!",
+          "culturalTip": "기본동사 \"stick\"을 활용한 \"Stick the landing!\"은 체조, 스케이트 등에서 \"착지를 깔끔하게 딱 성공시키다\"라는 전문 구어 표현입니다.",
+          "options": [
+            {
+              "text": "Stick the landing!",
+              "isCorrect": true,
+              "tip": "착지 딱 성공시켜! (착지 완성 기본동사)"
+            },
+            {
+              "text": "Land on one toe.",
+              "isCorrect": false,
+              "tip": "한쪽 발가락으로 내리찍으라는 위험한 오답이에요."
+            },
+            {
+              "text": "Close eyes and hope.",
+              "isCorrect": false,
+              "tip": "눈 감고 기도하라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 12,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "Clean four-wheel stomp! The older skate crew by the half-pipe is cheering for you!",
+          "npcKr": "깔끔한 네 바퀴 착지 소리! 하프파이프 쪽 형아 스케이터 크루가 환호성 지른다!",
+          "mission": "\"제대로 본때를 보여줘!\"라고 자신감 넘치게 외쳐보세요!",
+          "target": "Show them how it's done!",
+          "npcReactionEn": "Cruising into the quarter pipe with style! Respect earned at the local park!",
+          "npcReactionKr": "쿼터파이프로 스타일리시하게 질주! 로컬 파크 형들한테 리스펙 제대로 받았다!",
+          "culturalTip": "구동사 \"show\"를 활용한 \"Show them how it's done!\"은 \"진짜 실력이 뭔지 제대로 보여줘!\"라는 의미의 강렬한 구어체 표현입니다.",
+          "options": [
+            {
+              "text": "Show them how it's done!",
+              "isCorrect": true,
+              "tip": "제대로 본때를 보여줘! (실력 과시 구동사/기본동사)"
+            },
+            {
+              "text": "Hide in shame.",
+              "isCorrect": false,
+              "tip": "부끄러워 숨으라는 오답이에요."
+            },
+            {
+              "text": "Cry from fear.",
+              "isCorrect": false,
+              "tip": "무서워서 울라는 오답이에요."
             }
           ]
         }
@@ -5341,6 +7255,93 @@ window.SCENARIOS = {
               "tip": "남은 베이킹소다 먹으라는 오답이에요."
             }
           ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Maya",
+          "npcAvatar": "🛹",
+          "npcEn": "The baking soda and red dye mixture is foaming up to the rim! Stand back!",
+          "npcKr": "베이킹소다랑 빨간 색소 혼합물이 입구까지 부글부글 끓어올라! 뒤로 물러서!",
+          "mission": "\"뒤로 물러서!\"라고 구동사 back up을 써서 안전을 확보해보세요!",
+          "target": "Back up!",
+          "npcReactionEn": "Taking three big steps away from the lab bench! Safety goggles secured tight!",
+          "npcReactionKr": "실험대에서 세 걸음 큼직하게 물러났다! 보안경 단단히 밀착 완료!",
+          "culturalTip": "구동사 \"back up\"은 위험한 상황이나 좁은 공간에서 \"뒤로 물러서다, 후퇴하다\"라는 뜻으로 긴급할 때 쓰는 핵심 표현입니다.",
+          "options": [
+            {
+              "text": "Back up!",
+              "isCorrect": true,
+              "tip": "뒤로 물러서! (후퇴 및 안전 확보 구동사)"
+            },
+            {
+              "text": "Put your nose in it.",
+              "isCorrect": false,
+              "tip": "화산 구멍에 코를 박으라는 위험한 오답이에요."
+            },
+            {
+              "text": "Drink the solution.",
+              "isCorrect": false,
+              "tip": "용액을 마시라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Maya",
+          "npcAvatar": "🛹",
+          "npcEn": "Quick, pour the vinegar beaker in right now before the foam bubbles subside!",
+          "npcKr": "얼른, 거품 가라앉기 전에 지금 당장 식초 비커를 안에다 부어!",
+          "mission": "\"안으로 콸콸 부어!\"라고 구동사 pour in을 써서 외쳐보세요!",
+          "target": "Pour it in!",
+          "npcReactionEn": "Glug glug glug! Direct chemical reaction! The volcanic neck is sizzling red!",
+          "npcReactionKr": "콸콸콸! 화학 반응 즉각 점화! 화산 분화구가 붉게 끓어오른다!",
+          "culturalTip": "구동사 \"pour in\"은 액체나 물질을 용기 안으로 \"붓다, 쏟아 넣다\"라는 뜻으로 실험이나 조리 시 필수 구동사입니다.",
+          "options": [
+            {
+              "text": "Pour it in!",
+              "isCorrect": true,
+              "tip": "안으로 콸콸 부어! (투입 구동사)"
+            },
+            {
+              "text": "Drop glass beaker.",
+              "isCorrect": false,
+              "tip": "유리 비커 떨어뜨려 깨라는 위험한 오답이에요."
+            },
+            {
+              "text": "Stir with fingers.",
+              "isCorrect": false,
+              "tip": "손가락으로 젓으라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 12,
+          "npcName": "Maya",
+          "npcAvatar": "🛹",
+          "npcEn": "Lava explosion everywhere! Grab paper towels and wipe down the lab counter before the teacher notices!",
+          "npcKr": "용암 사방으로 대폭발! 선생님 보시기 전에 키친타월로 실험대 싹 닦아!",
+          "mission": "\"카운터 싹 닦아내!\"라고 구동사 wipe down을 써서 말해보세요!",
+          "target": "Wipe it down!",
+          "npcReactionEn": "Red foam soaked up in three seconds flat! Lab counter shining spotless clean!",
+          "npcReactionKr": "붉은 거품 3초 만에 싹 흡수 완료! 실험실 조리대 티 하나 없이 반짝여!",
+          "culturalTip": "구동사 \"wipe down\"은 식탁이나 카운터의 액체, 먼지 등을 \"걸레나 행주로 싹 닦아내다\"라는 뜻으로 널리 쓰입니다.",
+          "options": [
+            {
+              "text": "Wipe it down!",
+              "isCorrect": true,
+              "tip": "카운터 싹 닦아내! (청소 구동사)"
+            },
+            {
+              "text": "Lick the countertop.",
+              "isCorrect": false,
+              "tip": "책상을 핥으라는 엉뚱한 오답이에요."
+            },
+            {
+              "text": "Run out of school.",
+              "isCorrect": false,
+              "tip": "학교 밖으로 탈주하라는 오답이에요."
+            }
+          ]
         }
       ]
     },
@@ -5609,6 +7610,93 @@ window.SCENARIOS = {
               "text": "Throw shopping bag into fire.",
               "isCorrect": false,
               "tip": "쇼핑백 불에 태우라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "Check the stitching on the cuffs and make sure the heavy brass zipper runs smooth!",
+          "npcKr": "소매 솔기 바느질 확인하고 묵직한 황동 지퍼 부드럽게 오르내리는지 봐봐!",
+          "mission": "\"꼼꼼히 살펴봐!\"라고 구동사 check out을 써서 말해보세요!",
+          "target": "Check it out!",
+          "npcReactionEn": "Zips like butter with zero snags! Double heavy-weight cotton fleece in pure mint condition!",
+          "npcReactionKr": "걸림 하나 없이 버터처럼 부드럽다! 두툼한 헤비웨이트 코튼에 완전 특A급 상태!",
+          "culturalTip": "구동사 \"check out\"은 옷, 물건, 소문 등을 \"꼼꼼히 확인해보다, 감상하다\"라는 뜻으로 일상 대화의 기본입니다.",
+          "options": [
+            {
+              "text": "Check it out!",
+              "isCorrect": true,
+              "tip": "꼼꼼히 살펴봐! (품질 확인 구동사)"
+            },
+            {
+              "text": "Tear the zipper off.",
+              "isCorrect": false,
+              "tip": "지퍼 뜯어버리라는 오답이에요."
+            },
+            {
+              "text": "Burn the sleeves.",
+              "isCorrect": false,
+              "tip": "소매 태우라는 위험한 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "Step into the fitting room mirror to see how the oversized boxy fit looks on you!",
+          "npcKr": "피팅룸 거울 앞에서 오버핏 박시 핏이 너한테 어떻게 어울리는지 확인해봐!",
+          "mission": "\"한번 입어봐!\"라고 구동사 try on을 써서 권유해보세요!",
+          "target": "Try it on!",
+          "npcReactionEn": "Pulling the hood over! Dropped shoulders and relaxed silhouette looks incredible!",
+          "npcReactionKr": "모자 푹 뒤집어썼다! 드롭 숄더에 여유로운 실루엣이 핏 완전 예술이야!",
+          "culturalTip": "구동사 \"try on\"은 옷이나 신발, 안경 등을 \"입어보다, 착용해보다\"라는 뜻으로 쇼핑 시 가장 중요한 표현입니다.",
+          "options": [
+            {
+              "text": "Try it on!",
+              "isCorrect": true,
+              "tip": "한번 입어봐! (착용 필수 구동사)"
+            },
+            {
+              "text": "Sleep in fitting room.",
+              "isCorrect": false,
+              "tip": "탈의실에서 자라는 오답이에요."
+            },
+            {
+              "text": "Throw hoodie on floor.",
+              "isCorrect": false,
+              "tip": "후드티 바닥에 던지라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 12,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "It fits perfectly with your cargo pants and retro sneakers! Total vintage streetwear drip!",
+          "npcKr": "네 카고 바지랑 레트로 스니커즈에 찰떡궁합이야! 완전 빈티지 스트리트 감성 그 자체!",
+          "mission": "\"사서 데려가자!\"라고 기본동사 take를 써서 구매를 결정해보세요!",
+          "target": "Take it home!",
+          "npcReactionEn": "Only twelve dollars at the cash register! Thrifting jackpot of the year!",
+          "npcReactionKr": "계산대에서 단돈 12달러! 올해 빈티지 쇼핑 최고 대박 건졌어!",
+          "culturalTip": "기본동사 \"take\"를 활용한 \"Take it home!\"은 쇼핑에서 마음에 쏙 드는 물건을 \"구매해서 집으로 데려가자!\"라는 뜻으로 쓰입니다.",
+          "options": [
+            {
+              "text": "Take it home!",
+              "isCorrect": true,
+              "tip": "사서 데려가자! (구매 및 소장 기본동사)"
+            },
+            {
+              "text": "Throw in garbage.",
+              "isCorrect": false,
+              "tip": "쓰레기통에 버리라는 오답이에요."
+            },
+            {
+              "text": "Leave without paying.",
+              "isCorrect": false,
+              "tip": "돈 안 내고 도망치라는 오답이에요."
             }
           ]
         }
@@ -5881,6 +7969,93 @@ window.SCENARIOS = {
               "tip": "기타 벽에 박살 내라는 오답이에요."
             }
           ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Maya",
+          "npcAvatar": "🛹",
+          "npcEn": "Wait for the heavy bass build-up right at the one-minute mark! Don't skip ahead!",
+          "npcKr": "정확히 1분 지점에 터지는 묵직한 베이스 빌드업 기다려봐! 건너뛰지 말고!",
+          "mission": "\"기대하고 기다려봐!\"라고 기본동사 wait를 써서 귀 기울여보세요!",
+          "target": "Wait for it!",
+          "npcReactionEn": "Synthesizer risers ascending slowly... heartbeat kick drums building tension...",
+          "npcReactionKr": "신디사이저 음 올라가면서... 심장 박동 킥드럼이 긴장감 쫙 끌어올린다...",
+          "culturalTip": "기본동사 \"wait\"를 쓴 \"Wait for it!\"은 하이라이트 직전에 \"기대해봐! 이제 곧 터진다!\"라고 주목을 유도할 때 쓰는 명표현입니다.",
+          "options": [
+            {
+              "text": "Wait for it!",
+              "isCorrect": true,
+              "tip": "기대하고 기다려봐! (기대 및 대기 기본동사)"
+            },
+            {
+              "text": "Rip out earbuds.",
+              "isCorrect": false,
+              "tip": "이어폰 귀에서 뽑아버리라는 오답이에요."
+            },
+            {
+              "text": "Mute the sound.",
+              "isCorrect": false,
+              "tip": "음소거하라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Maya",
+          "npcAvatar": "🛹",
+          "npcEn": "That 808 sub-bass drop was insane! Turn the master volume up two notches!",
+          "npcKr": "방금 808 서브 베이스 드롭 미쳤다! 마스터 볼륨 두 칸만 더 올려봐!",
+          "mission": "\"볼륨 더 올려!\"라고 구동사 turn up을 써서 흥을 돋워보세요!",
+          "target": "Turn it up!",
+          "npcReactionEn": "Clicking volume button! The sub-frequencies are rattling straight through our chests!",
+          "npcReactionKr": "볼륨 버튼 딸깍딸깍! 저음 주파수가 가슴을 쿵쾅쿵쾅 울려대!",
+          "culturalTip": "구동사 \"turn up\"은 소리, 온도, 화면 밝기 등을 \"높이다, 키우다\"라는 뜻으로 매일 쓰는 구동사입니다.",
+          "options": [
+            {
+              "text": "Turn it up!",
+              "isCorrect": true,
+              "tip": "볼륨 더 올려! (음량 조절 구동사)"
+            },
+            {
+              "text": "Break the phone.",
+              "isCorrect": false,
+              "tip": "휴대폰 부수라는 오답이에요."
+            },
+            {
+              "text": "Throw headphones.",
+              "isCorrect": false,
+              "tip": "헤드폰 집어던지라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 12,
+          "npcName": "Maya",
+          "npcAvatar": "🛹",
+          "npcEn": "Add this track straight to our collaborative study playlist on Spotify right now!",
+          "npcKr": "지금 당장 스포티파이 우리 공동 스터디 플레이리스트에 이 곡 추가해!",
+          "mission": "\"플레이리스트에 추가해!\"라고 기본동사 add를 써서 말해보세요!",
+          "target": "Add it to the playlist!",
+          "npcReactionEn": "Saved to track number one! This song is going on infinite repeat all afternoon!",
+          "npcReactionKr": "1번 트랙으로 저장 완료! 오늘 오후 내내 이 노래 무한 반복 재생 각이야!",
+          "culturalTip": "기본동사 \"add\"는 \"Add it to the playlist!\"처럼 음악이나 목록에 항목을 \"추가하다\"라고 할 때 가장 정확한 표현입니다.",
+          "options": [
+            {
+              "text": "Add it to the playlist!",
+              "isCorrect": true,
+              "tip": "플레이리스트에 추가해! (등록 기본동사)"
+            },
+            {
+              "text": "Delete all music.",
+              "isCorrect": false,
+              "tip": "음악 다 삭제하라는 오답이에요."
+            },
+            {
+              "text": "Block the artist.",
+              "isCorrect": false,
+              "tip": "아티스트 차단하라는 오답이에요."
+            }
+          ]
         }
       ]
     },
@@ -6149,6 +8324,93 @@ window.SCENARIOS = {
               "text": "Tear algebra pages out.",
               "isCorrect": false,
               "tip": "대수학 시험지 찢으라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "Turn the combination dial three times to the right to clear out the internal tumblers!",
+          "npcKr": "내부 톱니 번호 싹 지워지게 번호 다이얼 오른쪽으로 세 바퀴 휙휙 돌려!",
+          "mission": "\"자물쇠 초기화해!\"라고 기본동사 reset을 써서 말해보세요!",
+          "target": "Reset the lock!",
+          "npcReactionEn": "Spinning past zero three rotations! Tumblers cleared and ready for the exact numbers!",
+          "npcReactionKr": "0 지나서 세 바퀴 회전 완료! 톱니 초기화돼서 정확한 번호 맞출 준비 끝!",
+          "culturalTip": "기본동사 \"reset\"은 전자제품이나 자물쇠를 \"초기화하다, 리셋하다\"라는 뜻으로 일상에서 널리 쓰입니다.",
+          "options": [
+            {
+              "text": "Reset the lock!",
+              "isCorrect": true,
+              "tip": "자물쇠 초기화해! (재설정 기본동사)"
+            },
+            {
+              "text": "Smash with hammer.",
+              "isCorrect": false,
+              "tip": "망치로 부수라는 오답이에요."
+            },
+            {
+              "text": "Leave locker open forever.",
+              "isCorrect": false,
+              "tip": "사물함 영원히 열어두라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "Thirty-four, spin left past sixteen, then stop on eight! Pull the latch firmly!",
+          "npcKr": "34, 왼쪽으로 돌려 16 지나치고 8에 멈춰! 손잡이 걸쇠 힘껏 당겨!",
+          "mission": "\"힘껏 당겨 열어!\"라고 구동사 pull open을 써서 열어보세요!",
+          "target": "Pull it open!",
+          "npcReactionEn": "CLICK! The heavy metal mechanism popped right open! We conquered the combo!",
+          "npcReactionKr": "딸깍! 묵직한 쇠 걸쇠가 경쾌하게 딱 열렸다! 비밀번호 정복 완료!",
+          "culturalTip": "구동사 \"pull open\"은 문이나 서랍을 \"당겨서 열다\"라는 뜻으로 물리적 조작 시 직관적인 표현입니다.",
+          "options": [
+            {
+              "text": "Pull it open!",
+              "isCorrect": true,
+              "tip": "힘껏 당겨 열어! (개방 구동사)"
+            },
+            {
+              "text": "Weld it shut.",
+              "isCorrect": false,
+              "tip": "용접해버리라는 황당한 오답이에요."
+            },
+            {
+              "text": "Kick the metal door.",
+              "isCorrect": false,
+              "tip": "문 발로 차서 찌그러뜨리라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 12,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "Pop! It swung wide open! Grab your history binder and sprint to room two-fourteen!",
+          "npcKr": "활짝 열렸다! 역사 바인더 낚아채고 214호 교실로 전력 질주해!",
+          "mission": "\"짐 얼른 챙겨!\"라고 기본동사 grab을 써서 외쳐보세요!",
+          "target": "Grab your stuff!",
+          "npcReactionEn": "Binder and pencil case in hand! Squeaking sneakers down the hall right into class!",
+          "npcReactionKr": "바인더랑 필통 손에 쥐었다! 복도에서 운동화 삑삑 소리 내며 교실로 세이프!",
+          "culturalTip": "기본동사 \"grab\"을 쓴 \"Grab your stuff!\"는 급한 상황에서 \"네 물건/짐 얼른 챙겨!\"라고 재촉할 때 쓰는 만능 표현입니다.",
+          "options": [
+            {
+              "text": "Grab your stuff!",
+              "isCorrect": true,
+              "tip": "짐 얼른 챙겨! (소지품 수거 기본동사)"
+            },
+            {
+              "text": "Leave textbooks behind.",
+              "isCorrect": false,
+              "tip": "교과서 버려두고 가라는 오답이에요."
+            },
+            {
+              "text": "Sit in the locker.",
+              "isCorrect": false,
+              "tip": "사물함 안에 들어가 앉으라는 오답이에요."
             }
           ]
         }
@@ -6421,6 +8683,93 @@ window.SCENARIOS = {
               "tip": "츄러스 땅에 버리라는 오답이에요."
             }
           ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Chloe",
+          "npcAvatar": "🎨",
+          "npcEn": "Dip it generously in smoky barbecue sauce first so you can mask whatever flavor it is!",
+          "npcKr": "어떤 맛인지 가려지게 스모키 바비큐 소스에 푹 찍어봐 먼저!",
+          "mission": "\"소스에 푹 찍어!\"라고 구동사 dip in을 써서 말해보세요!",
+          "target": "Dip it in sauce!",
+          "npcReactionEn": "Fully drenched in sweet brown sauce! Smells ten times better already!",
+          "npcReactionKr": "달콤한 갈색 소스에 푹 담갔다! 벌써 냄새가 10배는 훨씬 좋아졌어!",
+          "culturalTip": "구동사 \"dip in\"은 음식에 소스나 드레싱을 \"푹 찍다\"라는 뜻으로 식사 자리 필수 표현입니다.",
+          "options": [
+            {
+              "text": "Dip it in sauce!",
+              "isCorrect": true,
+              "tip": "소스에 푹 찍어! (침지 구동사)"
+            },
+            {
+              "text": "Rub it in your eye.",
+              "isCorrect": false,
+              "tip": "눈에 비비라는 위험천만한 오답이에요."
+            },
+            {
+              "text": "Throw it at wall.",
+              "isCorrect": false,
+              "tip": "벽에 던져 붙이라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Chloe",
+          "npcAvatar": "🎨",
+          "npcEn": "Honestly... it just tastes like crispy overcooked chicken nuggets with extra black pepper!",
+          "npcKr": "솔직히 말해서... 그냥 후추 좀 많이 들어간 바삭하게 바짝 튀긴 치킨너겟 맛인데!",
+          "mission": "\"생각보다 꽤 괜찮은데!\"라고 안도하며 맛을 평가해보세요!",
+          "target": "Not bad at all!",
+          "npcReactionEn": "Actually pretty crunchy! Mystery solved, nobody is getting food poisoning today!",
+          "npcReactionKr": "실은 꽤 바삭하고 고소해! 미스터리 해결, 오늘 식중독 걸릴 일 없겠어!",
+          "culturalTip": "\"Not bad at all!\"은 우려했던 것과 달리 \"전혀 나쁘지 않아, 생각보다 꽤 괜찮아!\"라고 호평할 때 쓰는 필수 관용구입니다.",
+          "options": [
+            {
+              "text": "Not bad at all!",
+              "isCorrect": true,
+              "tip": "생각보다 꽤 괜찮은데! (평가 호평 관용구)"
+            },
+            {
+              "text": "It is pure poison.",
+              "isCorrect": false,
+              "tip": "극약이라는 과장된 오답이에요."
+            },
+            {
+              "text": "I refuse to swallow.",
+              "isCorrect": false,
+              "tip": "삼키길 거부한다는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 12,
+          "npcName": "Chloe",
+          "npcAvatar": "🎨",
+          "npcEn": "Phew, mystery solved! Let's polish off our apple slices and head to the outdoor bleachers!",
+          "npcKr": "휴, 수수께끼 해결! 사과 조각 다 먹어치우고 야외 스탠드로 나가자!",
+          "mission": "\"말끔하게 다 먹어치우자!\"라고 구동사 finish up을 써서 말해보세요!",
+          "target": "Finish it up!",
+          "npcReactionEn": "Trays emptied clean and returned to the window! Sunshine time on the bleachers!",
+          "npcReactionKr": "식판 깔끔히 비우고 반납 창구에 반납 완료! 스탠드에서 햇살 즐기자!",
+          "culturalTip": "구동사 \"finish up\"은 식사나 과제를 \"말끔하게 마무리하다, 다 해치우다\"라는 뜻으로 널리 쓰입니다.",
+          "options": [
+            {
+              "text": "Finish it up!",
+              "isCorrect": true,
+              "tip": "말끔하게 다 먹어치우자! (완료 및 마무리 구동사)"
+            },
+            {
+              "text": "Spit it on table.",
+              "isCorrect": false,
+              "tip": "식탁에 뱉으라는 무례한 오답이에요."
+            },
+            {
+              "text": "Hide apples in pocket.",
+              "isCorrect": false,
+              "tip": "사과 주머니에 쑤셔 넣으라는 오답이에요."
+            }
+          ]
         }
       ]
     },
@@ -6689,6 +9038,93 @@ window.SCENARIOS = {
               "text": "Crash into parked car.",
               "isCorrect": false,
               "tip": "주차된 차에 박으라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "Shift your bicycle gear down to the lowest cog for this steep uphill gravel incline!",
+          "npcKr": "이 가파른 오르막 자갈길 오르려면 자전거 기어를 최저단 톱니로 내려!",
+          "mission": "\"저단 기어로 내려!\"라고 구동사 gear down을 써서 대처해보세요!",
+          "target": "Gear down!",
+          "npcReactionEn": "Derailleur clicked into big gear thirty-four! Pedaling cadence smooth and light!",
+          "npcReactionKr": "드레일러 딸깍거리며 34T 큰 기어로 변속 완료! 페달링 케이던스 부드럽고 가벼워졌어!",
+          "culturalTip": "구동사 \"gear down\"은 기어를 낮추거나, 활동 수준을 \"낮추다, 속도를 줄이다\"라는 뜻으로 쓰입니다.",
+          "options": [
+            {
+              "text": "Gear down!",
+              "isCorrect": true,
+              "tip": "저단 기어로 내려! (기어 감속 구동사)"
+            },
+            {
+              "text": "Take off bicycle chain.",
+              "isCorrect": false,
+              "tip": "자전거 체인 빼버리라는 오답이에요."
+            },
+            {
+              "text": "Pedal backwards.",
+              "isCorrect": false,
+              "tip": "뒤로 페달 밟으라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "Almost at the scenic lookout peak! Keep pedaling steady, don't give up now!",
+          "npcKr": "전망대 정상 거의 다 왔어! 꾸준히 페달 밟아, 지금 포기하면 안 돼!",
+          "mission": "\"절대 포기하지 마!\"라고 구동사 give up을 써서 서로를 격려해보세요!",
+          "target": "Don't give up!",
+          "npcReactionEn": "Pushing through the burning in our quads! Five yards till the summit plateau!",
+          "npcReactionKr": "허벅지가 타들어 가는 걸 버텨내며 전진! 정상 고원까지 딱 5야드 남았다!",
+          "culturalTip": "구동사 \"give up\"에 부정 명령을 붙인 \"Don't give up!\"은 전 세계에서 가장 유명한 불굴의 응원 표현입니다.",
+          "options": [
+            {
+              "text": "Don't give up!",
+              "isCorrect": true,
+              "tip": "절대 포기하지 마! (인내 권유 필수 구동사)"
+            },
+            {
+              "text": "Roll down the cliff.",
+              "isCorrect": false,
+              "tip": "절벽 아래로 굴러떨어지라는 위험한 오답이에요."
+            },
+            {
+              "text": "Abandon bike in woods.",
+              "isCorrect": false,
+              "tip": "숲에 자전거 버리라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 12,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "Look at the golden sunset reflection spreading across the entire city horizon! Pure magic!",
+          "npcKr": "도시 전체 지평선 너머로 번지는 황금빛 노을 좀 봐! 완전 마법 같아!",
+          "mission": "\"눈과 마음에 온전히 담아둬!\"라고 구동사 take in을 써서 감탄해보세요!",
+          "target": "Take it all in!",
+          "npcReactionEn": "Leaning bikes against the timber railing! The whole valley glowing amber and purple!",
+          "npcReactionKr": "통나무 난간에 자전거 기대놓고 감상 중! 온 계곡이 호박빛과 보랏빛으로 물들었어!",
+          "culturalTip": "구동사 \"take in\"은 아름다운 풍경이나 분위기를 \"눈과 마음에 깊이 담아 음미하다\"라는 고급스러운 감성 표현입니다.",
+          "options": [
+            {
+              "text": "Take it all in!",
+              "isCorrect": true,
+              "tip": "눈과 마음에 온전히 담아둬! (감상 및 수용 구동사)"
+            },
+            {
+              "text": "Look at dirt only.",
+              "isCorrect": false,
+              "tip": "땅바닥 흙만 보라는 오답이에요."
+            },
+            {
+              "text": "Close eyes and complain.",
+              "isCorrect": false,
+              "tip": "눈 감고 불평하라는 오답이에요."
             }
           ]
         }
@@ -6961,6 +9397,93 @@ window.SCENARIOS = {
               "tip": "교과서 불태우자는 오답이에요."
             }
           ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Maya",
+          "npcAvatar": "🛹",
+          "npcEn": "Define the three branches of the US federal government without peeking at the back!",
+          "npcKr": "카드 뒷면 엿보지 말고 미국 연방 정부 3부의 정의를 직접 말해봐!",
+          "mission": "\"최선을 다해 답해봐!\"라고 기본동사 give를 써서 도전해보세요!",
+          "target": "Give it your best shot!",
+          "npcReactionEn": "Legislative writes laws, Executive enforces them, and Judicial interprets them in court!",
+          "npcReactionKr": "입법부는 법을 제정하고, 행정부는 집행하고, 사법부는 법원에서 해석한다!",
+          "culturalTip": "기본동사 \"give\"를 활용한 관용구 \"Give it your best shot!\"은 \"최선을 다해 시도해봐!\"라는 격려 표현입니다.",
+          "options": [
+            {
+              "text": "Give it your best shot!",
+              "isCorrect": true,
+              "tip": "최선을 다해 답해봐! (도전 및 시도 기본동사)"
+            },
+            {
+              "text": "Burn the flashcard.",
+              "isCorrect": false,
+              "tip": "카드 불태우라는 오답이에요."
+            },
+            {
+              "text": "Guess randomly with eyes shut.",
+              "isCorrect": false,
+              "tip": "눈 감고 찍으라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Maya",
+          "npcAvatar": "🛹",
+          "npcEn": "Legislative, Executive, and Judicial! Nailed every single check and balance power!",
+          "npcKr": "입법, 행정, 사법! 견제와 균형 권한까지 완벽하게 토씨 하나 안 틀리고 맞혔어!",
+          "mission": "\"완벽하게 맞혔어!\"라고 감탄하며 칭찬해보세요!",
+          "target": "You nailed it!",
+          "npcReactionEn": "All constitutional terms locked in memory! A-plus is basically guaranteed tomorrow!",
+          "npcReactionKr": "헌법 용어 전부 기억에 완벽 저장 완료! 내일 시험 A플러스 따놓은 당상이야!",
+          "culturalTip": "\"You nailed it!\"은 어떤 문제나 과제를 빈틈없이 완벽하게 성공시켰을 때 \"완벽히 해냈어! 대박!\"이라고 극찬하는 대표 관용구입니다.",
+          "options": [
+            {
+              "text": "You nailed it!",
+              "isCorrect": true,
+              "tip": "완벽하게 맞혔어! (완벽 달성 대표 관용구)"
+            },
+            {
+              "text": "Total failure.",
+              "isCorrect": false,
+              "tip": "완전 실패라는 오답이에요."
+            },
+            {
+              "text": "You know zero facts.",
+              "isCorrect": false,
+              "tip": "넌 아무것도 모른다는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 12,
+          "npcName": "Maya",
+          "npcAvatar": "🛹",
+          "npcEn": "We've reviewed fifty terms in forty minutes! Put the flashcards away and get some sleep tonight!",
+          "npcKr": "40분 만에 50개 용어 다 훑었어! 이제 플래시카드 정리해 넣고 오늘 밤 푹 자!",
+          "mission": "\"정리해서 치워두자!\"라고 구동사 put away를 써서 말해보세요!",
+          "target": "Put them away!",
+          "npcReactionEn": "Rubber band wrapped round the card stack! Time for a good night's rest!",
+          "npcReactionKr": "카드 뭉치 고무줄로 깔끔하게 묶었다! 이제 꿀잠 잘 시간이야!",
+          "culturalTip": "구동사 \"put away\"는 학습 도구나 공부 자료를 \"서랍이나 가방에 정리해 넣다\"라는 뜻으로 쓰입니다.",
+          "options": [
+            {
+              "text": "Put them away!",
+              "isCorrect": true,
+              "tip": "정리해서 치워두자! (보관 및 정리 구동사)"
+            },
+            {
+              "text": "Stay up all night.",
+              "isCorrect": false,
+              "tip": "밤새우라는 오답이에요."
+            },
+            {
+              "text": "Tear up all notes.",
+              "isCorrect": false,
+              "tip": "필기 다 찢으라는 오답이에요."
+            }
+          ]
         }
       ]
     },
@@ -7229,6 +9752,93 @@ window.SCENARIOS = {
               "text": "Scream loudly in tent.",
               "isCorrect": false,
               "tip": "텐트에서 고함지르라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 10,
+          "npcName": "Chloe",
+          "npcAvatar": "🎨",
+          "npcEn": "Hold your marshmallow steadily over the glowing red coals so it toasts golden brown!",
+          "npcKr": "마시멜로가 노릇노릇 갈색으로 구워지게 이글거리는 숯불 위에서 흔들리지 않게 들고 있어!",
+          "mission": "\"흔들리지 않게 잘 받쳐!\"라고 기본동사 hold를 써서 조언해보세요!",
+          "target": "Hold it steady!",
+          "npcReactionEn": "Rotating the skewer slowly! Outer shell caramelizing to gooey perfection without burning!",
+          "npcReactionKr": "꼬치 천천히 살살 돌리는 중! 겉은 캐러멜처럼 노릇하고 속은 촉촉하게 완벽 로스팅!",
+          "culturalTip": "기본동사 \"hold\"에 \"steady\"를 붙인 \"Hold it steady!\"는 손이나 물건을 \"흔들리지 않고 가만히 쥐고 있다\"라는 표현입니다.",
+          "options": [
+            {
+              "text": "Hold it steady!",
+              "isCorrect": true,
+              "tip": "흔들리지 않게 잘 받쳐! (파지 기본동사)"
+            },
+            {
+              "text": "Drop it in the flames.",
+              "isCorrect": false,
+              "tip": "불 속에 던져 태우라는 오답이에요."
+            },
+            {
+              "text": "Eat raw stick.",
+              "isCorrect": false,
+              "tip": "생 나뭇가지 씹어먹으라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Chloe",
+          "npcAvatar": "🎨",
+          "npcEn": "Squish the toasted gooey marshmallow right between the graham crackers and dark chocolate!",
+          "npcKr": "구운 쫀득한 마시멜로를 통밀 크래커랑 다크 초콜릿 사이에 넣고 꾹 눌러!",
+          "mission": "\"양쪽에서 꾹 눌러 합쳐!\"라고 구동사 squish together를 써서 말해보세요!",
+          "target": "Squish it together!",
+          "npcReactionEn": "Warm melted chocolate oozing out the sides! Ultimate campsite delicacy ready to eat!",
+          "npcReactionKr": "따뜻하게 녹아내린 초콜릿이 옆으로 꿀꺽! 궁극의 캠핑장 별미 완성!",
+          "culturalTip": "구동사 \"squish together\"는 부드러운 것을 양쪽에서 \"꾹 눌러서 하나로 합치다\"라는 생생한 시각적 구어체입니다.",
+          "options": [
+            {
+              "text": "Squish it together!",
+              "isCorrect": true,
+              "tip": "양쪽에서 꾹 눌러 합쳐! (결합 구동사)"
+            },
+            {
+              "text": "Throw cracker away.",
+              "isCorrect": false,
+              "tip": "크래커 내다 버리라는 오답이에요."
+            },
+            {
+              "text": "Lick hot coals.",
+              "isCorrect": false,
+              "tip": "뜨거운 숯 핥으라는 위험한 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 12,
+          "npcName": "Chloe",
+          "npcAvatar": "🎨",
+          "npcEn": "The campfire is dying down to ash! Douse the pit with river water before calling it a night!",
+          "npcKr": "캠프파이어 불꽃이 잦아들며 재가 되고 있어! 잠자리에 들기 전에 강물로 불을 확실히 꺼!",
+          "mission": "\"불 확실하게 꺼!\"라고 구동사 put out을 써서 말해보세요!",
+          "target": "Put it out!",
+          "npcReactionEn": "Hissing steam rising from the wet embers! Cold to the touch, forest safe and sound!",
+          "npcReactionKr": "젖은 숯에서 치이익 김이 피어오른다! 손대도 차갑고 숲도 안전 완벽!",
+          "culturalTip": "구동사 \"put out\"은 모닥불이나 담뱃불 등을 \"끄다, 진화하다\"라는 뜻으로 화재 예방의 필수 구동사입니다.",
+          "options": [
+            {
+              "text": "Put it out!",
+              "isCorrect": true,
+              "tip": "불 확실하게 꺼! (진화 구동사)"
+            },
+            {
+              "text": "Pour gasoline on it.",
+              "isCorrect": false,
+              "tip": "휘발유 부으라는 위험천만한 오답이에요."
+            },
+            {
+              "text": "Leave fire burning alone.",
+              "isCorrect": false,
+              "tip": "불 혼자 타게 두라는 위험한 오답이에요."
             }
           ]
         }
@@ -7532,6 +10142,93 @@ window.SCENARIOS = {
               "tip": "돈 다 날리라는 악담이에요."
             }
           ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "If you sink this clutch buzzer-beater from the charity stripe, the post-game smoothies are on me!",
+          "npcKr": "자유투 라인에서 이 승부처 버저비터 꽂아 넣으면, 경기 끝나고 스무디 내가 쏜다!",
+          "mission": "\"자유투 라인으로 올라서!\"라고 구동사 step up을 써서 결의를 다져보세요!",
+          "target": "Step up to the line!",
+          "npcReactionEn": "Toes aligned two inches behind the painted line! Deep breath, locking eyes on the back iron!",
+          "npcReactionKr": "라인 뒤 2인치에 발끝 맞추고 정렬! 심호흡 한번, 림 뒷바퀴에 시선 정조준!",
+          "culturalTip": "구동사 \"step up\"은 중요한 무대나 경기에서 \"당당히 앞으로 나서다, 올라서다\"라는 뜻으로 쓰이는 결단의 표현입니다.",
+          "options": [
+            {
+              "text": "Step up to the line!",
+              "isCorrect": true,
+              "tip": "자유투 라인으로 당당히 올라서! (진입 및 준비 구동사)"
+            },
+            {
+              "text": "Run out of gym.",
+              "isCorrect": false,
+              "tip": "체육관 밖으로 도망치라는 오답이에요."
+            },
+            {
+              "text": "Kick basketball away.",
+              "isCorrect": false,
+              "tip": "농구공 차버리라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 12,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "Bend your knees, follow through on your wrist snap, and let the high arc fly!",
+          "npcKr": "무릎 깊게 굽히고, 손목 스냅 끝까지 밀어주면서 높은 포물선을 날려!",
+          "mission": "\"슛 깔끔하게 꽂아 넣어!\"라고 구동사 knock down을 써서 응원해보세요!",
+          "target": "Knock it down!",
+          "npcReactionEn": "Ball released with perfect backwards rotation! Floating in high arc right on target!",
+          "npcReactionKr": "완벽한 백스핀 걸려서 릴리즈됐다! 높은 포물선 그리며 림으로 정확히 비행 중!",
+          "culturalTip": "구동사 \"knock down\"은 농구에서 슛을 \"깔끔하게 꽂아 넣다, 성공시키다\"라는 뜻으로 현지 선수들이 매일 쓰는 전문 구어체입니다.",
+          "options": [
+            {
+              "text": "Knock it down!",
+              "isCorrect": true,
+              "tip": "슛 깔끔하게 꽂아 넣어! (성공 구동사)"
+            },
+            {
+              "text": "Airball on purpose.",
+              "isCorrect": false,
+              "tip": "일부러 에어볼 날리라는 오답이에요."
+            },
+            {
+              "text": "Throw ball backwards.",
+              "isCorrect": false,
+              "tip": "뒤로 공 던지라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 13,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "SWISH! Nothing but nylon cord! Grab your gym duffel, strawberry mango smoothies are on my tab!",
+          "npcKr": "철썩! 림에 스치지도 않고 그물만 찰랑! 운동 가방 챙겨라, 딸기 망고 스무디 내가 계산한다!",
+          "mission": "\"자, 출발하자!\"라고 힘차게 외쳐보세요!",
+          "target": "Let's roll!",
+          "npcReactionEn": "Slapping gym bag over shoulder! Victory tastes ice cold and tropical sweet!",
+          "npcReactionKr": "체육관 가방 어깨에 둘러멨다! 승리의 맛은 시원하고 열대 과일처럼 달콤해!",
+          "culturalTip": "\"Let's roll!\"은 어떤 장소로 떠나거나 행동을 개시할 때 \"자, 출발하자!/드가자!\"라는 의미로 가장 멋지게 쓰는 구어체입니다.",
+          "options": [
+            {
+              "text": "Let's roll!",
+              "isCorrect": true,
+              "tip": "자, 출발하자! (출발 및 이동 대표 구어체)"
+            },
+            {
+              "text": "Sit on court and cry.",
+              "isCorrect": false,
+              "tip": "코트에 앉아 울라는 오답이에요."
+            },
+            {
+              "text": "Cancel smoothie plans.",
+              "isCorrect": false,
+              "tip": "스무디 약속 취소하라는 오답이에요."
+            }
+          ]
         }
       ]
     },
@@ -7829,6 +10526,93 @@ window.SCENARIOS = {
               "text": "Break the subway gate.",
               "isCorrect": false,
               "tip": "개찰구 부수라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Chloe",
+          "npcAvatar": "🎨",
+          "npcEn": "Should I get brown sugar boba milk tea or passion fruit green tea with lychee popping boba?",
+          "npcKr": "흑당 버블 밀크티 마실까, 아니면 리치 팝핑보바 넣은 패션프루트 녹차 마실까?",
+          "mission": "\"빨리 결정해!\"라고 구동사 make up을 써서 재촉해보세요!",
+          "target": "Make up your mind!",
+          "npcReactionEn": "Going with classic roasted oolong milk tea with honey boba pearls! Classic choice wins!",
+          "npcReactionKr": "허니 보바 펄 들어간 클래식 로스티드 우롱 밀크티로 결정! 역시 클래식이 최고야!",
+          "culturalTip": "구동사 \"make up one's mind\"는 망설이고 있을 때 \"마음을 정하다, 결정을 내리다\"라는 필수 구동사입니다.",
+          "options": [
+            {
+              "text": "Make up your mind!",
+              "isCorrect": true,
+              "tip": "빨리 결정해! (결정 필수 구동사)"
+            },
+            {
+              "text": "Order fifty drinks.",
+              "isCorrect": false,
+              "tip": "음료 50잔 주문하라는 오답이에요."
+            },
+            {
+              "text": "Never drink tea again.",
+              "isCorrect": false,
+              "tip": "평생 차 마시지 말라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 12,
+          "npcName": "Chloe",
+          "npcAvatar": "🎨",
+          "npcEn": "Fifty percent sweetness and light ice is the indisputable golden ratio every single time!",
+          "npcKr": "당도 50%에 얼음 적게는 매번 절대 실패할 수 없는 불변의 황금비율이지!",
+          "mission": "\"그 옵션으로 굳혀!\"라고 구동사 stick with를 써서 공감해보세요!",
+          "target": "Stick with that!",
+          "npcReactionEn": "Barista punching buttons on touch screen! Two large cups prepared fresh!",
+          "npcReactionKr": "바리스타가 터치스크린 착착 누르는 중! 라지 사이즈 두 잔 바로 제조 들어갔어!",
+          "culturalTip": "구동사 \"stick with\"는 좋은 선택이나 결정을 \"그대로 고수하다, 유지하다\"라는 뜻으로 널리 쓰입니다.",
+          "options": [
+            {
+              "text": "Stick with that!",
+              "isCorrect": true,
+              "tip": "그 옵션으로 굳혀! (고수 및 유지 구동사)"
+            },
+            {
+              "text": "Ask for zero liquid.",
+              "isCorrect": false,
+              "tip": "액체 없이 달라는 엉뚱한 오답이에요."
+            },
+            {
+              "text": "Pour salt inside.",
+              "isCorrect": false,
+              "tip": "소금 넣으라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 13,
+          "npcName": "Chloe",
+          "npcAvatar": "🎨",
+          "npcEn": "Punch the fat straw straight through the plastic film seal with one clean downward stab!",
+          "npcKr": "굵은 빨대로 비닐 밀봉 덮개 한 번에 깔끔하게 팍 찔러서 뚫어!",
+          "mission": "\"빨대로 구멍 딱 뚫어!\"라고 기본동사 poke를 써서 외쳐보세요!",
+          "target": "Poke a hole!",
+          "npcReactionEn": "POP! Direct clean pierce with zero spills! Chewy tapioca bliss in every sip!",
+          "npcReactionKr": "팡! 한 방울도 안 흘리고 깔끔 타공 성공! 한 모금마다 쫀득한 타피오카 극락!",
+          "culturalTip": "기본동사 \"poke\"를 활용한 \"Poke a hole!\"은 빨대나 뾰족한 도구로 \"구멍을 콕 뚫다\"라는 일상생활 표현입니다.",
+          "options": [
+            {
+              "text": "Poke a hole!",
+              "isCorrect": true,
+              "tip": "빨대로 구멍 딱 뚫어! (타공 기본동사)"
+            },
+            {
+              "text": "Bite off cup rim.",
+              "isCorrect": false,
+              "tip": "컵 테두리를 물어뜯으라는 오답이에요."
+            },
+            {
+              "text": "Squeeze cup till it bursts.",
+              "isCorrect": false,
+              "tip": "터질 때까지 컵 쥐어짜라는 오답이에요."
             }
           ]
         }
@@ -8130,6 +10914,93 @@ window.SCENARIOS = {
               "tip": "풋볼 싫다는 딴청이에요."
             }
           ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "Fourth down and inches on the opponent's ten-yard line with twenty seconds on the stadium clock!",
+          "npcKr": "경기 종료 20초 남기고 상대 10야드 지점에서 4th 다운 앤 인치 절체절명 순간!",
+          "mission": "\"전선 철통같이 지켜내!\"라고 기본동사 hold를 써서 응원해보세요!",
+          "target": "Hold the line!",
+          "npcReactionEn": "Offensive line digging cleats deep into the stadium turf! Wall of pure muscle!",
+          "npcReactionKr": "공격 라인맨들 경기장 인조잔디에 스파이크 깊숙이 박았다! 순수 근육의 철벽!",
+          "culturalTip": "기본동사 \"hold\"를 쓴 \"Hold the line!\"은 전선이나 방어선을 \"절대 밀리지 말고 사수해!\"라는 의미의 강렬한 관용구입니다.",
+          "options": [
+            {
+              "text": "Hold the line!",
+              "isCorrect": true,
+              "tip": "전선 철통같이 지켜내! (사수 기본동사)"
+            },
+            {
+              "text": "Give up touchdown.",
+              "isCorrect": false,
+              "tip": "터치다운 내주라는 패배주의 오답이에요."
+            },
+            {
+              "text": "Walk off the field.",
+              "isCorrect": false,
+              "tip": "경기장 그냥 나가버리라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 12,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "The quarterback fakes the handoff and rifles a touchdown strike into the back corner of the endzone!",
+          "npcKr": "쿼터백이 핸드오프 페이크 주고 엔드존 구석으로 터치다운 미사일 패스를 꽂아 넣었어!",
+          "mission": "\"정말 엄청난 플레이야!\"라고 터져 나오는 감탄을 외쳐보세요!",
+          "target": "What a play!",
+          "npcReactionEn": "Wide receiver drags two toes inside the white line! TOUCHDOWN officially confirmed!",
+          "npcReactionKr": "와이드 리시버가 흰 라인 안쪽에 양 발끝 끌며 포구 성공! 공식 터치다운 인정!",
+          "culturalTip": "\"What a play!\"는 스포츠 명장면이나 멋진 플레이를 목격했을 때 \"정말 말도 안 되게 멋진 플레이다!\"라고 외치는 관용구입니다.",
+          "options": [
+            {
+              "text": "What a play!",
+              "isCorrect": true,
+              "tip": "정말 엄청난 플레이야! (명장면 감탄 필수 관용구)"
+            },
+            {
+              "text": "That was terrible.",
+              "isCorrect": false,
+              "tip": "형편없었다는 억지 비난이에요."
+            },
+            {
+              "text": "Nobody is watching.",
+              "isCorrect": false,
+              "tip": "아무도 안 본다는 거짓말이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 13,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "Stadium bleachers are shaking, confetti raining down! Let's storm the field with the marching band!",
+          "npcKr": "스탠드가 흔들리고 꽃가루가 쏟아져! 마칭밴드랑 함께 그라운드로 다 쏟아져 나가자!",
+          "mission": "\"그라운드로 다 함께 쏟아져 나가자!\"라고 기본동사 rush를 써서 환호해보세요!",
+          "target": "Rush the field!",
+          "npcReactionEn": "Thousands of students sprinting onto the grass! State championship trophy coming home!",
+          "npcReactionKr": "수천 명의 학생들이 잔디밭으로 쏟아져 달린다! 주 챔피언십 트로피가 우리 학교로 온다!",
+          "culturalTip": "기본동사 \"rush\"를 활용한 \"Rush the field!\"는 대승을 거둔 후 관중들이 경기장으로 \"난입/돌진하여 축하하다\"라는 미국 스포츠 문화입니다.",
+          "options": [
+            {
+              "text": "Rush the field!",
+              "isCorrect": true,
+              "tip": "그라운드로 다 함께 쏟아져 나가자! (돌진 기본동사)"
+            },
+            {
+              "text": "Hide under bleachers.",
+              "isCorrect": false,
+              "tip": "관람석 밑에 숨으라는 오답이에요."
+            },
+            {
+              "text": "Go to bed immediately.",
+              "isCorrect": false,
+              "tip": "지금 당장 자러 가라는 오답이에요."
+            }
+          ]
         }
       ]
     },
@@ -8427,6 +11298,93 @@ window.SCENARIOS = {
               "text": "Scream during math lecture.",
               "isCorrect": false,
               "tip": "수학 시간에 소리 지르라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Chloe",
+          "npcAvatar": "🎨",
+          "npcEn": "Did you see that viral campus clip where the chemistry professor accidentally shared his cat screensaver?",
+          "npcKr": "화학 교수님이 줌 수업 중에 실수로 고양이 화면보호기 공유한 캠퍼스 떡상 영상 봤어?",
+          "mission": "\"그 영상 나한테도 보여줘!\"라고 기본동사 show를 써서 요청해보세요!",
+          "target": "Show me the clip!",
+          "npcReactionEn": "Pulling up the ten-second loop! Watch his eyes widen behind his glasses!",
+          "npcReactionKr": "10초짜리 루프 영상 띄우는 중! 안경 너머로 동공지진 일어나는 것 좀 봐봐!",
+          "culturalTip": "기본동사 \"show\"를 쓴 \"Show me the clip!\"은 재미있는 동영상이나 사진을 \"나한테도 좀 보여줘!\"라고 할 때 쓰는 표현입니다.",
+          "options": [
+            {
+              "text": "Show me the clip!",
+              "isCorrect": true,
+              "tip": "그 영상 나한테도 보여줘! (공개 기본동사)"
+            },
+            {
+              "text": "Delete the internet.",
+              "isCorrect": false,
+              "tip": "인터넷 삭제하라는 황당한 오답이에요."
+            },
+            {
+              "text": "Report to police.",
+              "isCorrect": false,
+              "tip": "경찰에 신고하라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 12,
+          "npcName": "Chloe",
+          "npcAvatar": "🎨",
+          "npcEn": "I'm crying tears of laughter right now, the completely deadpan look on his face was cinematic gold!",
+          "npcKr": "나 지금 웃겨서 눈물 나, 아무렇지 않은 척 무표정 짓는 얼굴이 완전 영화급 명장면이야!",
+          "mission": "\"진짜 숨 넘어가게 웃겨!\"라고 십대 특유의 격한 공감을 표현해보세요!",
+          "target": "I can't even!",
+          "npcReactionEn": "Doubled over clutching my stomach! Two million views and half a million reposts already!",
+          "npcReactionKr": "배 부여잡고 완전 포복절도 중! 벌써 조회수 200만에 리포스트 50만 개 돌파했어!",
+          "culturalTip": "\"I can't even!\"은 너무 어이없거나 웃겨서 \"말문이 막힌다, 진짜 숨 넘어가게 웃기다\"라는 최신 미국 십대 유행 슬랭입니다.",
+          "options": [
+            {
+              "text": "I can't even!",
+              "isCorrect": true,
+              "tip": "진짜 숨 넘어가게 웃겨! (십대 극찬 감탄 슬랭)"
+            },
+            {
+              "text": "I feel nothing.",
+              "isCorrect": false,
+              "tip": "아무 감정 없다는 무미건조한 오답이에요."
+            },
+            {
+              "text": "Ban all memes.",
+              "isCorrect": false,
+              "tip": "밈을 금지하라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 13,
+          "npcName": "Chloe",
+          "npcAvatar": "🎨",
+          "npcEn": "AirDrop that video straight to our group chat favorites before the fifth period bell chimes!",
+          "npcKr": "5교시 시작 종 울리기 전에 에어드롭으로 단톡방 즐겨찾기에 그 영상 전송해줘!",
+          "mission": "\"이쪽으로 전송해줘!\"라고 구동사 send over를 써서 말해보세요!",
+          "target": "Send it over!",
+          "npcReactionEn": "File shared instantly! Pinning that clip to the top of our homework squad chat!",
+          "npcReactionKr": "파일 즉시 전송 완료! 우리 과제 멤버 단톡방 맨 위에 영상 고정해뒀어!",
+          "culturalTip": "구동사 \"send over\"는 파일이나 메시지 등을 \"이쪽으로 보내주다, 전송하다\"라는 뜻으로 매일 쓰는 구동사입니다.",
+          "options": [
+            {
+              "text": "Send it over!",
+              "isCorrect": true,
+              "tip": "이쪽으로 전송해줘! (전송 구동사)"
+            },
+            {
+              "text": "Smash your phone.",
+              "isCorrect": false,
+              "tip": "휴대폰 박살 내라는 오답이에요."
+            },
+            {
+              "text": "Throw phone in trash.",
+              "isCorrect": false,
+              "tip": "휴대폰 버리라는 오답이에요."
             }
           ]
         }
@@ -8728,6 +11686,93 @@ window.SCENARIOS = {
               "tip": "영상 지우라는 오답이에요."
             }
           ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "Let's lock the tripod at chest height and set the camera timer for three seconds!",
+          "npcKr": "삼각대 가슴 높이로 단단히 고정하고 카메라 타이머 3초로 맞춰두자!",
+          "mission": "\"카메라 세팅해둬!\"라고 구동사 set up을 써서 말해보세요!",
+          "target": "Set up the camera!",
+          "npcReactionEn": "Tripod legs extended and leveled on the studio floor! 4K sixty frames enabled!",
+          "npcReactionKr": "삼각대 다리 펼쳐서 스튜디오 바닥에 수평 맞췄다! 4K 60프레임 설정 활성화!",
+          "culturalTip": "구동사 \"set up\"은 카메라나 장비를 촬영 위치에 \"설치하고 세팅하다\"라는 뜻으로 콘텐츠 제작 시 필수적입니다.",
+          "options": [
+            {
+              "text": "Set up the camera!",
+              "isCorrect": true,
+              "tip": "카메라 세팅해둬! (설치 및 준비 구동사)"
+            },
+            {
+              "text": "Drop camera on floor.",
+              "isCorrect": false,
+              "tip": "카메라 바닥에 떨구라는 오답이에요."
+            },
+            {
+              "text": "Cover lens with tape.",
+              "isCorrect": false,
+              "tip": "렌즈에 테이프 붙여 가리라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 12,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "Hit the bass beat on count three, sync the foot shuffle, and stay centered in frame!",
+          "npcKr": "3박자 카운트에 베이스 비트 딱 찍고, 발 셔플 칼각 맞추고, 화면 중앙 유지해!",
+          "mission": "\"동작 칼같이 딱 맞춰!\"라고 구동사 lock in을 써서 기합을 넣어보세요!",
+          "target": "Lock it in!",
+          "npcReactionEn": "One, two, three, DROP! Syncing every glide and arm pop with laser precision!",
+          "npcReactionKr": "하나, 둘, 셋, 드롭! 모든 글라이드랑 팔 팝핑을 레이저 정밀도로 칼군무 일치!",
+          "culturalTip": "구동사 \"lock in\"은 스포츠나 댄스 등에서 고도의 몰입으로 \"집중하다, 완벽히 고정시키다\"라는 인기 구어체입니다.",
+          "options": [
+            {
+              "text": "Lock it in!",
+              "isCorrect": true,
+              "tip": "동작 칼같이 딱 맞춰! (집중 및 고정 구동사)"
+            },
+            {
+              "text": "Trip on purpose.",
+              "isCorrect": false,
+              "tip": "일부러 발 걸려 넘어지라는 오답이에요."
+            },
+            {
+              "text": "Run away from screen.",
+              "isCorrect": false,
+              "tip": "화면 밖으로 도망치라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 13,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "Playback looks incredibly crisp and in sync! Caption it with the trending hashtag and publish!",
+          "npcKr": "모니터링 재생해 보니 완전 선명하고 칼군무 대박이야! 트렌딩 해시태그 달고 바로 올려!",
+          "mission": "\"영상 바로 업로드해!\"라고 구동사 post up을 써서 발행해보세요!",
+          "target": "Post it up!",
+          "npcReactionEn": "Published to the algorithm! Notifications blowing up with likes in under ten seconds!",
+          "npcReactionKr": "알고리즘 타고 발행 완료! 10초도 안 돼서 좋아요 알림 폭발하는 중!",
+          "culturalTip": "구동사 \"post up\"은 SNS나 인터넷 피드에 게시물이나 영상을 \"업로드하다, 게시하다\"라는 뜻으로 쓰입니다.",
+          "options": [
+            {
+              "text": "Post it up!",
+              "isCorrect": true,
+              "tip": "영상 바로 업로드해! (게시 구동사)"
+            },
+            {
+              "text": "Delete the masterpiece.",
+              "isCorrect": false,
+              "tip": "명작 삭제하라는 오답이에요."
+            },
+            {
+              "text": "Wait ten years.",
+              "isCorrect": false,
+              "tip": "10년 기다리라는 오답이에요."
+            }
+          ]
         }
       ]
     },
@@ -9025,6 +12070,93 @@ window.SCENARIOS = {
               "text": "Cry alone in closet.",
               "isCorrect": false,
               "tip": "벽장에서 혼자 울라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Chloe",
+          "npcAvatar": "🎨",
+          "npcEn": "Five minutes left on the AP Chemistry test clock! Double-check your stoichiometry molar calculations!",
+          "npcKr": "AP 화학 시험 종료 5분 전! 화학양론 몰수 계산한 거 다시 꼼꼼히 확인해봐!",
+          "mission": "\"다시 꼼꼼히 훑어봐!\"라고 구동사 look over를 써서 최종 점검해보세요!",
+          "target": "Look it over!",
+          "npcReactionEn": "Checked the gas constant value! Units cancel out clean, final answer confirmed!",
+          "npcReactionKr": "기체상수 값 재확인 완료! 단위 깔끔히 지워지고 최종 답 일치 확인!",
+          "culturalTip": "구동사 \"look over\"는 중요한 서류나 시험지 답안을 \"다시 한번 꼼꼼하게 훑어보다\"라는 뜻입니다.",
+          "options": [
+            {
+              "text": "Look it over!",
+              "isCorrect": true,
+              "tip": "다시 꼼꼼히 훑어봐! (재검토 구동사)"
+            },
+            {
+              "text": "Erase whole test.",
+              "isCorrect": false,
+              "tip": "시험지 다 지우라는 망치는 오답이에요."
+            },
+            {
+              "text": "Sleep on test booklet.",
+              "isCorrect": false,
+              "tip": "시험지에 엎드려 자라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 12,
+          "npcName": "Chloe",
+          "npcAvatar": "🎨",
+          "npcEn": "Pencils down everyone! Stack your bubble answer sheets neatly on the proctor's desk!",
+          "npcKr": "모두 연필 내려놓으세요! OMR 답안지 감독관 책상 위에 가지런히 제출하세요!",
+          "mission": "\"시험지 다 제출해!\"라고 구동사 turn in을 써서 말해보세요!",
+          "target": "Turn them in!",
+          "npcReactionEn": "Slide the scantron into the box! Handing in the final exam of junior year!",
+          "npcReactionKr": "OMR 카드를 제출함에 쏙 넣었다! 고 2의 마지막 기말고사 시험지 제출 완료!",
+          "culturalTip": "구동사 \"turn in\"은 시험지, 과제물, 분실물 등을 \"제출하다, 반납하다\"라는 뜻으로 학교 현장의 표준 구동사입니다.",
+          "options": [
+            {
+              "text": "Turn them in!",
+              "isCorrect": true,
+              "tip": "시험지 다 제출해! (제출 구동사)"
+            },
+            {
+              "text": "Eat the answer sheet.",
+              "isCorrect": false,
+              "tip": "답안지 먹어 치우라는 오답이에요."
+            },
+            {
+              "text": "Rip sheets to shreds.",
+              "isCorrect": false,
+              "tip": "답안지 갈기갈기 찢으라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 13,
+          "npcName": "Chloe",
+          "npcAvatar": "🎨",
+          "npcEn": "Step out into the blazing June sunshine! No more exams, textbooks, or late-night cramming for three months!",
+          "npcKr": "눈부신 6월 햇살 속으로 걸어 나가자! 석 달 동안 시험도, 교과서도, 새벽 벼락치기도 끝이야!",
+          "mission": "\"해방감을 온몸으로 만끽해!\"라고 구동사 soak in을 써서 환호해보세요!",
+          "target": "Soak it all in!",
+          "npcReactionEn": "Throwing arms wide open in the courtyard! Pure, unadulterated summer freedom!",
+          "npcReactionKr": "교정 한가운데서 두 팔 활짝 벌렸다! 순도 100% 완전무결한 여름방학의 자유!",
+          "culturalTip": "구동사 \"soak in\"은 따뜻한 햇살이나 승리의 쾌감, 해방감을 \"온몸으로 흠뻑 빨아들여 만끽하다\"라는 시적이고 멋진 표현입니다.",
+          "options": [
+            {
+              "text": "Soak it all in!",
+              "isCorrect": true,
+              "tip": "해방감을 온몸으로 만끽해! (흡수 및 향유 구동사)"
+            },
+            {
+              "text": "Cry for more tests.",
+              "isCorrect": false,
+              "tip": "시험 더 달라고 울라는 오답이에요."
+            },
+            {
+              "text": "Lock self in library.",
+              "isCorrect": false,
+              "tip": "도서관에 스스로 갇히라는 오답이에요."
             }
           ]
         }
@@ -9326,6 +12458,93 @@ window.SCENARIOS = {
               "tip": "다신 말하지 말자는 오답이에요."
             }
           ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "Honestly, trying to balance varsity captain duties, AP coursework, and college applications feels overwhelming.",
+          "npcKr": "솔직히 주장 역할에 AP 수업에 대입 준비까지 다 해내려니까 가끔 숨이 턱턱 막혀.",
+          "mission": "\"너무 자책하거나 몰아세우지 마!\"라고 구동사 beat up을 써서 다독여보세요!",
+          "target": "Don't beat yourself up!",
+          "npcReactionEn": "Thanks man, I really needed to hear that. I put way too much pressure on myself.",
+          "npcReactionKr": "고맙다 친구야, 진짜 그 말이 필요했어. 내가 내 자신을 너무 옥죄었나 봐.",
+          "culturalTip": "구동사 \"beat oneself up\"에 부정 명령을 붙인 \"Don't beat yourself up!\"은 \"자책하지 마, 너무 스스로를 괴롭히지 마\"라는 위로의 필수 표현입니다.",
+          "options": [
+            {
+              "text": "Don't beat yourself up!",
+              "isCorrect": true,
+              "tip": "너무 자책하거나 몰아세우지 마! (자책 방지 핵심 구동사)"
+            },
+            {
+              "text": "Drop out of everything.",
+              "isCorrect": false,
+              "tip": "전부 자퇴하라는 극단적 오답이에요."
+            },
+            {
+              "text": "Never sleep again.",
+              "isCorrect": false,
+              "tip": "잠을 아예 자지 말라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 12,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "Take it one assignment, one practice, and one game at a time. You don't have to carry the whole world alone.",
+          "npcKr": "과제 하나씩, 훈련 하나씩, 경기 하나씩 차근차근 해. 온 세상 짐을 혼자 다 짊어질 필요 없어.",
+          "mission": "\"마음 편하게 여유를 가져!\"라고 기본동사 take를 써서 조언해보세요!",
+          "target": "Take it easy!",
+          "npcReactionEn": "Exhaling slow on the bleacher planks. Taking a breath and resetting my mental baseline.",
+          "npcReactionKr": "스탠드 벤치에서 천천히 숨을 내쉰다. 한숨 돌리고 멘탈 기준선 다시 잡았어.",
+          "culturalTip": "기본동사 \"take\"를 활용한 \"Take it easy!\"는 서두르거나 긴장한 사람에게 \"마음 편하게 먹어, 여유를 가져!\"라는 대표적인 힐링 표현입니다.",
+          "options": [
+            {
+              "text": "Take it easy!",
+              "isCorrect": true,
+              "tip": "마음 편하게 여유를 가져! (안정 및 진정 기본동사)"
+            },
+            {
+              "text": "Panic 24/7.",
+              "isCorrect": false,
+              "tip": "24시간 내내 패닉에 빠지라는 오답이에요."
+            },
+            {
+              "text": "Scream at everyone.",
+              "isCorrect": false,
+              "tip": "모두에게 소리 지르라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 13,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "Thanks for always keeping it real and giving honest perspective. Having genuine teammates means everything.",
+          "npcKr": "항상 솔직하게 진심으로 대해주고 든든한 시각을 줘서 고마워. 진짜 동료가 있다는 게 전부야.",
+          "mission": "\"내가 항상 든든하게 받쳐줄게!\"라고 신뢰를 확인해보세요!",
+          "target": "I've got your back!",
+          "npcReactionEn": "Fist bump locked in tight! Brothers on the court and brothers for life off the court.",
+          "npcReactionKr": "단단하게 주먹 콩 맞대기! 코트 위에서도 브라더, 코트 밖에서도 평생 갈 의형제!",
+          "culturalTip": "\"I've got your back!\"은 \"내가 네 뒤를 봐줄게, 언제나 네 편에서 받쳐줄게\"라는 깊은 신뢰와 우정을 담은 최고의 관용구입니다.",
+          "options": [
+            {
+              "text": "I've got your back!",
+              "isCorrect": true,
+              "tip": "내가 항상 든든하게 받쳐줄게! (팀워크 및 의리 필수 관용구)"
+            },
+            {
+              "text": "You are totally alone.",
+              "isCorrect": false,
+              "tip": "넌 완전히 혼자라는 잔인한 오답이에요."
+            },
+            {
+              "text": "I never cared.",
+              "isCorrect": false,
+              "tip": "신경 쓴 적 없다는 매정한 오답이에요."
+            }
+          ]
         }
       ]
     },
@@ -9623,6 +12842,93 @@ window.SCENARIOS = {
               "text": "Burn the tickets.",
               "isCorrect": false,
               "tip": "티켓 불태우자는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Chloe",
+          "npcAvatar": "🎨",
+          "npcEn": "The digital queue refreshed and there are only four hundred people ahead of us in line!",
+          "npcKr": "대기열 새로고침 됐는데 우리 앞에 400명밖에 안 남았어!",
+          "mission": "\"화면 튕기지 않게 잘 지켜봐!\"라고 기본동사 keep을 써서 집중해보세요!",
+          "target": "Keep refreshing!",
+          "npcReactionEn": "Queue bar progressing at lightning speed! Loading seating arena map now!",
+          "npcReactionKr": "대기열 바가 번개 같은 속도로 차오른다! 경기장 좌석 맵 로딩 중!",
+          "culturalTip": "기본동사 \"keep\" 뒤에 -ing를 붙인 \"Keep refreshing!\"은 웹사이트나 큐에서 \"계속 주시하고 갱신해!\"라는 뜻입니다.",
+          "options": [
+            {
+              "text": "Keep refreshing!",
+              "isCorrect": true,
+              "tip": "화면 튕기지 않게 잘 지켜봐! (지속 기본동사)"
+            },
+            {
+              "text": "Close browser tab.",
+              "isCorrect": false,
+              "tip": "브라우저 탭 닫아버리라는 끔찍한 오답이에요."
+            },
+            {
+              "text": "Smash router with bat.",
+              "isCorrect": false,
+              "tip": "공유기 배트로 부수라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 12,
+          "npcName": "Chloe",
+          "npcAvatar": "🎨",
+          "npcEn": "Selected two floor pit tickets right by the extended runway! Enter the billing security code before the timer expires!",
+          "npcKr": "돌출 무대 바로 옆 스탠딩 플로어석 2장 선택 성공! 타이머 끝나기 전에 카드 보안코드 빨리 입력해!",
+          "mission": "\"지금 즉시 결제 진행해!\"라고 구동사 check out을 써서 마무리해보세요!",
+          "target": "Check out now!",
+          "npcReactionEn": "CVV three digits entered! Processing secure payment through bank server!",
+          "npcReactionKr": "CVV 3자리 입력 완료! 은행 보안 서버 통해 안전 결제 승인 처리 중!",
+          "culturalTip": "구동사 \"check out\"은 온라인 쇼핑몰이나 티켓팅 사이트에서 \"최종 결제하다\"라는 뜻으로 필수적인 구동사입니다.",
+          "options": [
+            {
+              "text": "Check out now!",
+              "isCorrect": true,
+              "tip": "지금 즉시 결제 진행해! (결제 필수 구동사)"
+            },
+            {
+              "text": "Cancel entire cart.",
+              "isCorrect": false,
+              "tip": "장바구니 전액 취소하라는 오답이에요."
+            },
+            {
+              "text": "Wait until tomorrow.",
+              "isCorrect": false,
+              "tip": "내일까지 기다리라는 매진 부르는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 13,
+          "npcName": "Chloe",
+          "npcAvatar": "🎨",
+          "npcEn": "Order confirmed! Barcodes delivered straight to Apple Wallet! We are officially front row center!",
+          "npcKr": "예매 확정 완료! 바코드 티켓 애플월렛에 바로 꽂혔어! 우리 공식 1열 정중앙 입성이다!",
+          "mission": "\"우리가 결국 해냈어!\"라고 감격에 겨워 외쳐보세요!",
+          "target": "We pulled it off!",
+          "npcReactionEn": "Screaming at the top of our lungs! Front row pit at the world tour concert!",
+          "npcReactionKr": "목청껏 환호성 지르는 중! 월드 투어 콘서트 1열 스탠딩 성공이라니!",
+          "culturalTip": "구동사 \"pull off\"는 불가능해 보이거나 치열한 경쟁을 뚫고 \"성공해내다, 성사시키다\"라는 뜻으로 최고의 기쁨을 표현할 때 씁니다.",
+          "options": [
+            {
+              "text": "We pulled it off!",
+              "isCorrect": true,
+              "tip": "우리가 결국 해냈어! (난관 돌파 성공 필수 구동사)"
+            },
+            {
+              "text": "We lost tickets.",
+              "isCorrect": false,
+              "tip": "표 잃어버렸다는 엉뚱한 말이에요."
+            },
+            {
+              "text": "Concert is cancelled.",
+              "isCorrect": false,
+              "tip": "콘서트 취소라는 거짓말이에요."
             }
           ]
         }
@@ -9924,6 +13230,93 @@ window.SCENARIOS = {
               "tip": "카메라에서 숨으라는 오답이에요."
             }
           ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Chloe",
+          "npcAvatar": "🎨",
+          "npcEn": "Look at this distressed oversized denim jacket with the genuine nineteen-nineties retro patch embroidery!",
+          "npcKr": "진짜 90년대 레트로 패치 자수 놓인 이 디스트레스드 오버핏 청재킷 좀 봐봐!",
+          "mission": "\"이것 좀 직접 봐봐!\"라고 구동사 check out을 써서 감탄해보세요!",
+          "target": "Check this out!",
+          "npcReactionEn": "Heavy authentic denim with worn collar detailing! True ninety vintage grail!",
+          "npcReactionKr": "카라 디테일까지 빈티지한 묵직한 오리지널 데님! 진짜 90년대 보물 레어템!",
+          "culturalTip": "구동사 \"check out\"을 활용한 \"Check this out!\"은 눈길을 사로잡는 멋진 물건을 보고 \"이것 좀 직접 봐봐!\"라고 권할 때 쓰는 표현입니다.",
+          "options": [
+            {
+              "text": "Check this out!",
+              "isCorrect": true,
+              "tip": "이것 좀 직접 봐봐! (확인 권유 구동사)"
+            },
+            {
+              "text": "Burn the jacket.",
+              "isCorrect": false,
+              "tip": "재킷 불태우라는 오답이에요."
+            },
+            {
+              "text": "Throw it in puddle.",
+              "isCorrect": false,
+              "tip": "웅덩이에 처박으라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 12,
+          "npcName": "Chloe",
+          "npcAvatar": "🎨",
+          "npcEn": "Ask the flea market vendor if they'll bundle the denim jacket and the retro wire sunglasses for twenty bucks!",
+          "npcKr": "벼룩시장 사장님한테 청재킷이랑 레트로 선글라스 묶어서 20달러에 주실 수 있는지 여쭤봐!",
+          "mission": "\"가격 좀 깎아달라고 흥정해봐!\"라고 구동사 talk down을 써서 말해보세요!",
+          "target": "Talk them down!",
+          "npcReactionEn": "Bargained with a polite smile! Vendor nodded yes with a friendly wink!",
+          "npcReactionKr": "다정한 미소로 흥정 시도! 사장님이 유쾌하게 윙크하시며 오케이 하셨어!",
+          "culturalTip": "구동사 \"talk down\"은 상대를 설득해 가격을 \"깎아내리다, 흥정하다\"라는 뜻으로 플리마켓에서 유용한 표현입니다.",
+          "options": [
+            {
+              "text": "Talk them down!",
+              "isCorrect": true,
+              "tip": "가격 좀 깎아달라고 흥정해봐! (가격 절충 구동사)"
+            },
+            {
+              "text": "Pay ten times price.",
+              "isCorrect": false,
+              "tip": "10배 바가지 쓰라는 오답이에요."
+            },
+            {
+              "text": "Run away with jacket.",
+              "isCorrect": false,
+              "tip": "재킷 들고 튀라는 범죄 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 13,
+          "npcName": "Chloe",
+          "npcAvatar": "🎨",
+          "npcEn": "Handshake deal accepted! Throw the oversized jacket on right now, the entire aesthetic is unmatched!",
+          "npcKr": "악수하며 거래 성립! 그 오버핏 재킷 지금 바로 걸쳐 입어봐, 분위기 완전 독보적이야!",
+          "mission": "\"당장 걸쳐 입어봐!\"라고 구동사 put on을 써서 멋을 뽐내보세요!",
+          "target": "Put it on!",
+          "npcReactionEn": "Sliding into the vintage jacket! The oversized drop shoulders complete the whole retro fit!",
+          "npcReactionKr": "빈티지 재킷 착용 완료! 오버사이즈 드롭 숄더가 전체 레트로 룩을 완벽하게 완성해줘!",
+          "culturalTip": "구동사 \"put on\"은 재킷이나 액세서리를 \"입다, 걸치다\"라는 뜻의 가장 기초적이면서도 필수적인 구동사입니다.",
+          "options": [
+            {
+              "text": "Put it on!",
+              "isCorrect": true,
+              "tip": "당장 걸쳐 입어봐! (착용 필수 구동사)"
+            },
+            {
+              "text": "Tear seams apart.",
+              "isCorrect": false,
+              "tip": "솔기 다 뜯으라는 오답이에요."
+            },
+            {
+              "text": "Hide it under trash.",
+              "isCorrect": false,
+              "tip": "쓰레기 밑에 감추라는 오답이에요."
+            }
+          ]
         }
       ]
     },
@@ -10221,6 +13614,93 @@ window.SCENARIOS = {
               "text": "Drive car off cliff.",
               "isCorrect": false,
               "tip": "절벽으로 차 몰라는 위험한 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 11,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "The final bell of the entire academic school year is going to chime in exactly sixty seconds!",
+          "npcKr": "이번 학년 전체의 마지막 종이 정확히 60초 뒤에 울린다!",
+          "mission": "\"다 함께 카운트다운 외쳐!\"라고 구동사 count down을 써서 환호해보세요!",
+          "target": "Count it down!",
+          "npcReactionEn": "Whole classroom chanting in unison! Hallway reverberating with pure excitement!",
+          "npcReactionKr": "반 아이들 전체가 한목소리로 외치는 중! 복도 전체가 설렘으로 쩌렁쩌렁 울려!",
+          "culturalTip": "구동사 \"count down\"은 중요한 순간을 앞두고 숫자를 거꾸로 세는 \"카운트다운을 하다\"라는 뜻입니다.",
+          "options": [
+            {
+              "text": "Count it down!",
+              "isCorrect": true,
+              "tip": "다 함께 카운트다운 외쳐! (카운트다운 구동사)"
+            },
+            {
+              "text": "Stop the clock forever.",
+              "isCorrect": false,
+              "tip": "시계 영원히 멈추라는 오답이에요."
+            },
+            {
+              "text": "Beg for extra tests.",
+              "isCorrect": false,
+              "tip": "시험 더 달라고 애원하라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 12,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "TEN, NINE, EIGHT... THREE, TWO, ONE! The siren is blaring! Summer vacation has officially begun!",
+          "npcKr": "10, 9, 8... 3, 2, 1! 종소리 울린다! 여름방학 공식 개막이다!",
+          "mission": "\"우리가 끝까지 다 버텨냈어!\"라고 구동사 make through를 써서 기쁨을 터뜨려보세요!",
+          "target": "We made it through!",
+          "npcReactionEn": "Papers flying in the air! Teachers smiling and waving goodbye in the hallways!",
+          "npcReactionKr": "종이비행기 허공으로 날리고! 선생님들도 복도에서 미소 지으며 손 흔드신다!",
+          "culturalTip": "구동사 \"make it through\"는 힘든 한 해나 시험 기간을 무사히 \"끝까지 버텨내고 헤쳐 나오다\"라는 감격의 구동사입니다.",
+          "options": [
+            {
+              "text": "We made it through!",
+              "isCorrect": true,
+              "tip": "우리가 끝까지 다 버텨냈어! (완주 및 극복 구동사)"
+            },
+            {
+              "text": "We failed the year.",
+              "isCorrect": false,
+              "tip": "낙제했다는 비관적 오답이에요."
+            },
+            {
+              "text": "Turn around and study.",
+              "isCorrect": false,
+              "tip": "뒤돌아 더 공부하라는 오답이에요."
+            }
+          ]
+        },
+        {
+          "turnIndex": 13,
+          "npcName": "Jordan",
+          "npcAvatar": "🏀",
+          "npcEn": "Lockers cleared out, beach towels packed, infinite sunshine ahead! Have the greatest summer of your life!",
+          "npcKr": "사물함 다 비웠고, 비치 타월 챙겼고, 찬란한 햇살만 남았다! 인생 최고의 여름방학 보내!",
+          "mission": "\"원 없이 후회 없이 만끽해!\"라고 기본동사 make를 써서 멋진 작별 인사를 건네보세요!",
+          "target": "Make the most of it!",
+          "npcReactionEn": "Pedaling out the school gates into golden June freedom! See you next year!",
+          "npcReactionKr": "학교 교문 박차고 황금빛 6월의 자유 속으로 페달 밟아 질주! 내년에 또 보자!",
+          "culturalTip": "기본동사 \"make\"를 활용한 관용구 \"Make the most of it!\"은 주어진 좋은 기회나 시간을 \"최대한 즐겨라, 알차게 누려라\"라는 최고의 축원입니다.",
+          "options": [
+            {
+              "text": "Make the most of it!",
+              "isCorrect": true,
+              "tip": "원 없이 후회 없이 만끽해! (최대 활용 핵심 관용구)"
+            },
+            {
+              "text": "Stay indoors alone.",
+              "isCorrect": false,
+              "tip": "집에만 혼자 틀어박히라는 오답이에요."
+            },
+            {
+              "text": "Worry about next year.",
+              "isCorrect": false,
+              "tip": "내년 걱정만 하라는 답답한 오답이에요."
             }
           ]
         }
